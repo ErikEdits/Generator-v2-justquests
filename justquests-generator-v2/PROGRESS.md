@@ -32,7 +32,7 @@ Auto-resume routine: `trig_01VkvYQ75m7uPB1RPLGp5Diq` (every 2 h) — delete when
 
 ## Extension phase (user: ">= 3 more hours, ZIP up to 5 MB") — started 2026-09-27 13:36 UTC, work until >= 16:40 UTC
 Routine: "Generator v2 extension auto-resume" (hourly) — delete when done.
-- [ ] E1 Content: vanilla catalog >= 450 targets (more ores/blocks/mobs/crafts/foods/smelts/places/breeds), more reward items/effects, more title/hint variety
+- [~] E1 Content: vanilla catalog 463 targets DONE (verified by tools/verify_vanilla.py vs misode/mcmeta registries+recipes); rewards/titles pending — (more ores/blocks/mobs/crafts/foods/smelts/places/breeds), more reward items/effects, more title/hint variety
 - [ ] E2 Themes: +12 vanilla, +4 FD, +4 Create (some mixed vanilla+mod)
 - [ ] E3 Mod profiles: more FD and Create targets (verified ids only; re-run lang check in /home/user/research or re-fetch)
 - [ ] E4 Tools: `./gradlew catalogReport` -> samples/catalog-report.md (every target: types, count range, minutes, difficulties); `./gradlew simulate` -> samples/simulation/ (14 days of rotations with claims, stats text)

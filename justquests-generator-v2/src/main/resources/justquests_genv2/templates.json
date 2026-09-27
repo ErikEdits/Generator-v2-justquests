@@ -237,7 +237,18 @@
     "create_tools": "Engineer",
     "create_decor": "Seating",
     "create_sweets": "Treat",
-    "create_quartz": "Rose Quartz"
+    "create_quartz": "Rose Quartz",
+    "deep_dark": "Deep Dark",
+    "dyes": "Dye",
+    "stone_tools": "Stonecutter",
+    "leather_armor": "Leatherwork",
+    "workstations": "Workshop",
+    "transport": "Transport",
+    "brewing": "Brewer",
+    "exploration": "Explorer",
+    "nether_animals": "Nether Ranch",
+    "nether_crafts": "Nether Mason",
+    "storage_blocks": "Treasury"
   },
   "tools": {
     "stone": "Needs a stone pickaxe or better",
@@ -291,7 +302,10 @@
     "outpost": "Found at pillager outposts.",
     "monument": "Found at ocean monuments.",
     "trial_chambers": "Found in trial chambers.",
-    "layers": "Found in thick stone layers underground."
+    "layers": "Found in thick stone layers underground.",
+    "warm_ocean": "Look on coral reefs in warm oceans.",
+    "ruined_portal": "Look around ruined portals.",
+    "deep_dark": "Found in the deep dark."
   },
   "sentences": {
     "tag": "Any {noun} counts.",

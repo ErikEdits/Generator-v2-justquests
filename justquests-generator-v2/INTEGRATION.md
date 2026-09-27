@@ -89,9 +89,9 @@ General rules for every method:
 | `loaderName()` | `"neoforge"`, `"fabric"` or `"forge"` (lower case) | — | Per rotation. Constant. |
 | `minecraftVersion()` | e.g. `"1.21.1"` (`SharedConstants.getCurrentVersion().getName()` or a build constant) | `""` | Per rotation. Constant. |
 | `isModLoaded(modId)` | NeoForge/Forge `ModList.get().isLoaded(id)`, Fabric `FabricLoader.getInstance().isModLoaded(id)` | `false` | Per rotation, a few calls. |
-| `itemExists(id)` | `BuiltInRegistries.ITEM.containsKey(rl)` (1.18.2–1.19.2: `Registry.ITEM.containsKey`) | `false` | ~500 calls per rotation; must be cheap. |
-| `blockExists(id)` | `BLOCK.containsKey` | `false` | same |
-| `entityTypeExists(id)` | `ENTITY_TYPE.containsKey` | `false` | same |
+| `itemExists(id)` | registered **and enabled for this world**: `BuiltInRegistries.ITEM.containsKey(rl) && ITEM.get(rl).isEnabled(server.getWorldData().enabledFeatures())` (1.18.2–1.19.2: `Registry.ITEM.containsKey`, no feature flags before 1.19.3) | `false` | ~500 calls per rotation; must be cheap. |
+| `blockExists(id)` | `BLOCK.containsKey` + `block.isEnabled(flags)` | `false` | same |
+| `entityTypeExists(id)` | `ENTITY_TYPE.containsKey` + `type.isEnabled(flags)` | `false` | same |
 | `dimensionExists(id)` | `server.levelKeys()` contains the key (dimensions of the **running** server) | `false` | Per rotation. |
 | `itemTagMembers(tagId)` | ids of all items in the tag (resolved after datapack load) | empty set | ≤ 1 call per tag per rotation; cache per rotation if expensive. |
 | `blockTagMembers(tagId)` | same for blocks | empty set | rarely |
@@ -103,6 +103,12 @@ General rules for every method:
 | `isTamableAnimal(id)` | `YES` if `TamableAnimal` subclass | `UNKNOWN` | same |
 | `isConsumable(itemId)` | `YES` for food / drinkable (`UseAnim.EAT`/`DRINK`, food component) | `UNKNOWN` | same |
 | `englishName(kind, id)` | English display name if the server knows it (vanilla `en_us` on dedicated servers) | `null` | Optional. Returning `null` everywhere is fine; the catalog has names. |
+
+**Feature flags matter.** From 1.19.3 on, content of experimental data packs is *registered* even when
+the world has the experiment off (cherry wood on 1.19.4, the breeze on 1.20.4, the bogged on 1.20.6,
+pale oak on 1.21.2/1.21.3). Check `isEnabled(enabledFeatures)` as shown. The core adds a second guard:
+a catalog target whose `since` version is newer than `minecraftVersion()` is rejected — so return the
+real version string from `minecraftVersion()`.
 
 A definite `NO` removes a catalog target; `UNKNOWN` keeps it. The core is designed to work with
 every TriState `UNKNOWN` and every name `null` (this is tested).

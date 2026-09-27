@@ -3798,6 +3798,2049 @@
           "minDifficulty": "hard"
         }
       ]
+    },
+    {
+      "key": "deep_coal",
+      "family": "coal",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "wood",
+      "hints": [
+        "deep"
+      ],
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:deepslate_coal_ore",
+          "effort": 0.6,
+          "min": 4,
+          "max": 24
+        }
+      ]
+    },
+    {
+      "key": "deep_copper",
+      "family": "metals",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "stone",
+      "hints": [
+        "deep"
+      ],
+      "since": "1.17",
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:deepslate_copper_ore",
+          "effort": 0.4,
+          "min": 8,
+          "max": 32
+        }
+      ]
+    },
+    {
+      "key": "deep_lapis",
+      "family": "gems",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "stone",
+      "hints": [
+        "deep"
+      ],
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:deepslate_lapis_ore",
+          "effort": 1.2,
+          "min": 2,
+          "max": 16
+        }
+      ]
+    },
+    {
+      "key": "deep_redstone",
+      "family": "redstone",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "iron",
+      "hints": [
+        "deep"
+      ],
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:deepslate_redstone_ore",
+          "effort": 0.9,
+          "min": 4,
+          "max": 24
+        }
+      ]
+    },
+    {
+      "key": "copper_blocks",
+      "family": "copper_works",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "since": "1.17",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:copper_block",
+          "effort": 1.3,
+          "min": 1,
+          "max": 8,
+          "hint": "Nine copper ingots."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:cut_copper",
+          "effort": 1.4,
+          "min": 4,
+          "max": 16,
+          "hint": "Four copper blocks make four cut copper."
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:copper_block",
+          "effort": 1.35,
+          "min": 1,
+          "max": 8,
+          "hint": "Watch it oxidize over time."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:copper_grate",
+          "effort": 1.4,
+          "min": 4,
+          "max": 16,
+          "since": "1.21"
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:copper_door",
+          "effort": 0.5,
+          "min": 3,
+          "max": 12,
+          "since": "1.21"
+        }
+      ]
+    },
+    {
+      "key": "polished_stone",
+      "family": "stonework",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:polished_andesite",
+          "effort": 0.07,
+          "min": 16,
+          "max": 64
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:polished_granite",
+          "effort": 0.07,
+          "min": 16,
+          "max": 64
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:polished_diorite",
+          "effort": 0.07,
+          "min": 16,
+          "max": 64
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:mossy_cobblestone",
+          "effort": 0.15,
+          "min": 8,
+          "max": 48,
+          "hint": "Cobblestone with vines or moss."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:mossy_stone_bricks",
+          "effort": 0.2,
+          "min": 8,
+          "max": 48,
+          "hint": "Stone bricks with vines or moss."
+        },
+        {
+          "type": "smelt_item",
+          "id": "minecraft:cracked_stone_bricks",
+          "effort": 0.2,
+          "min": 8,
+          "max": 48,
+          "hint": "Smelt stone bricks."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:stone_brick_stairs",
+          "effort": 0.2,
+          "min": 8,
+          "max": 48
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:smooth_stone_slab",
+          "effort": 0.12,
+          "min": 12,
+          "max": 48,
+          "hint": "Three smooth stone make six slabs."
+        }
+      ]
+    },
+    {
+      "key": "deepslate_masonry",
+      "family": "stonework",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "deep"
+      ],
+      "since": "1.17",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:polished_deepslate",
+          "effort": 0.1,
+          "min": 16,
+          "max": 64
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:deepslate_bricks",
+          "effort": 0.12,
+          "min": 16,
+          "max": 64
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:deepslate_tiles",
+          "effort": 0.14,
+          "min": 16,
+          "max": 64
+        },
+        {
+          "type": "smelt_item",
+          "id": "minecraft:cracked_deepslate_bricks",
+          "effort": 0.2,
+          "min": 8,
+          "max": 32
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:deepslate_tiles",
+          "effort": 0.16,
+          "min": 16,
+          "max": 64
+        }
+      ]
+    },
+    {
+      "key": "mud_bricks",
+      "family": "soil",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "mangrove_swamp"
+      ],
+      "since": "1.19",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:packed_mud",
+          "effort": 0.25,
+          "min": 8,
+          "max": 32,
+          "hint": "Mud and wheat."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:mud_bricks",
+          "effort": 0.3,
+          "min": 8,
+          "max": 32
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:mud_bricks",
+          "effort": 0.32,
+          "min": 8,
+          "max": 32
+        }
+      ]
+    },
+    {
+      "key": "sandstone_crafts",
+      "family": "sand",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:cut_sandstone",
+          "effort": 0.1,
+          "min": 8,
+          "max": 48
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:red_sandstone",
+          "effort": 0.3,
+          "min": 8,
+          "max": 32,
+          "hints": [
+            "badlands"
+          ],
+          "hint": "Four red sand."
+        },
+        {
+          "type": "smelt_item",
+          "id": "minecraft:smooth_red_sandstone",
+          "effort": 0.35,
+          "min": 8,
+          "max": 32,
+          "hints": [
+            "badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "terracotta_art",
+      "family": "badlands",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:white_terracotta",
+          "effort": 0.5,
+          "min": 8,
+          "max": 32,
+          "hint": "Terracotta around white dye."
+        },
+        {
+          "type": "smelt_item",
+          "id": "minecraft:white_glazed_terracotta",
+          "effort": 0.6,
+          "min": 4,
+          "max": 24,
+          "hint": "Smelt white terracotta."
+        }
+      ]
+    },
+    {
+      "key": "snow_blocks",
+      "family": "snow",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "snowy"
+      ],
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:snow_block",
+          "effort": 0.15,
+          "min": 8,
+          "max": 48,
+          "hint": "Four snowballs."
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:snow_block",
+          "effort": 0.17,
+          "min": 8,
+          "max": 48
+        }
+      ]
+    },
+    {
+      "key": "clay_blocks",
+      "family": "soil",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "river"
+      ],
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:clay",
+          "effort": 0.3,
+          "min": 8,
+          "max": 32
+        }
+      ]
+    },
+    {
+      "key": "cobwebs",
+      "family": "arthropods",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "mineshaft"
+      ],
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:cobweb",
+          "effort": 0.5,
+          "min": 4,
+          "max": 24,
+          "hint": "Cut them with a sword or shears."
+        }
+      ]
+    },
+    {
+      "key": "sculk",
+      "family": "deep_dark",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "deep_dark"
+      ],
+      "since": "1.19",
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:sculk",
+          "effort": 0.2,
+          "min": 16,
+          "max": 64,
+          "hint": "Move quietly: the warden listens."
+        },
+        {
+          "type": "mine_block",
+          "id": "minecraft:sculk_sensor",
+          "effort": 1.2,
+          "min": 2,
+          "max": 8,
+          "minDifficulty": "normal"
+        }
+      ]
+    },
+    {
+      "key": "crying_obsidian",
+      "family": "obsidian",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "diamond",
+      "hints": [
+        "ruined_portal"
+      ],
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:crying_obsidian",
+          "effort": 2.0,
+          "min": 2,
+          "max": 8,
+          "minDifficulty": "normal"
+        }
+      ]
+    },
+    {
+      "key": "mangrove_roots",
+      "family": "wood",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "mangrove_swamp"
+      ],
+      "since": "1.19",
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:mangrove_roots",
+          "effort": 0.12,
+          "min": 16,
+          "max": 48
+        }
+      ]
+    },
+    {
+      "key": "mushroom_blocks",
+      "family": "mushrooms",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "dark_forest"
+      ],
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:red_mushroom_block",
+          "effort": 0.15,
+          "min": 16,
+          "max": 48
+        },
+        {
+          "type": "mine_block",
+          "id": "minecraft:brown_mushroom_block",
+          "effort": 0.15,
+          "min": 16,
+          "max": 48
+        }
+      ]
+    },
+    {
+      "key": "pointed_dripstone",
+      "family": "stone",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "dripstone_caves"
+      ],
+      "since": "1.17",
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:pointed_dripstone",
+          "effort": 0.2,
+          "min": 8,
+          "max": 32
+        }
+      ]
+    },
+    {
+      "key": "more_flowers",
+      "family": "flowers",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:blue_orchid",
+          "effort": 0.35,
+          "min": 4,
+          "max": 16,
+          "hints": [
+            "swamp"
+          ]
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:allium",
+          "effort": 0.35,
+          "min": 4,
+          "max": 16,
+          "hints": [
+            "flower_forest"
+          ]
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:azure_bluet",
+          "effort": 0.2,
+          "min": 4,
+          "max": 24
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:oxeye_daisy",
+          "effort": 0.2,
+          "min": 4,
+          "max": 24
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:red_tulip",
+          "effort": 0.3,
+          "min": 4,
+          "max": 16,
+          "hints": [
+            "flower_forest"
+          ]
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:sunflower",
+          "effort": 0.3,
+          "min": 4,
+          "max": 16,
+          "hint": "Sunflower plains are full of them."
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:lilac",
+          "effort": 0.35,
+          "min": 4,
+          "max": 16
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:peony",
+          "effort": 0.35,
+          "min": 4,
+          "max": 16
+        }
+      ]
+    },
+    {
+      "key": "dyes",
+      "family": "dyes",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:red_dye",
+          "effort": 0.12,
+          "min": 8,
+          "max": 32,
+          "hint": "From poppies, tulips or beetroot."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:yellow_dye",
+          "effort": 0.12,
+          "min": 8,
+          "max": 32,
+          "hint": "From dandelions or sunflowers."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:white_dye",
+          "effort": 0.1,
+          "min": 8,
+          "max": 32,
+          "hint": "From bone meal or lilies of the valley."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:blue_dye",
+          "effort": 0.25,
+          "min": 4,
+          "max": 24,
+          "hint": "From cornflowers or lapis lazuli."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:black_dye",
+          "effort": 0.5,
+          "min": 4,
+          "max": 16,
+          "hint": "From ink sacs or wither roses."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:bone_meal",
+          "effort": 0.15,
+          "min": 12,
+          "max": 64,
+          "hint": "One bone makes three bone meal."
+        }
+      ]
+    },
+    {
+      "key": "shears_harvest",
+      "family": "plants",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "shears",
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:vine",
+          "effort": 0.12,
+          "min": 8,
+          "max": 32,
+          "hints": [
+            "jungle"
+          ]
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:seagrass",
+          "effort": 0.1,
+          "min": 8,
+          "max": 32,
+          "hints": [
+            "ocean"
+          ]
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:glow_lichen",
+          "effort": 0.2,
+          "min": 8,
+          "max": 32,
+          "hints": [
+            "caves"
+          ],
+          "since": "1.17"
+        }
+      ]
+    },
+    {
+      "key": "sea_pickles",
+      "family": "ocean",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "warm_ocean"
+      ],
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:sea_pickle",
+          "effort": 0.4,
+          "min": 4,
+          "max": 16
+        }
+      ]
+    },
+    {
+      "key": "sticks",
+      "family": "forestry",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:stick",
+          "effort": 0.12,
+          "min": 8,
+          "max": 32,
+          "hint": "Leaves and dead bushes drop sticks."
+        }
+      ]
+    },
+    {
+      "key": "beetroot_seeds",
+      "family": "crops",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "village"
+      ],
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:beetroot_seeds",
+          "effort": 0.15,
+          "min": 8,
+          "max": 32
+        }
+      ]
+    },
+    {
+      "key": "more_saplings",
+      "family": "forestry",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "place_block",
+          "id": "minecraft:jungle_sapling",
+          "effort": 0.3,
+          "min": 4,
+          "max": 16,
+          "hints": [
+            "jungle"
+          ]
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:acacia_sapling",
+          "effort": 0.25,
+          "min": 4,
+          "max": 16,
+          "hints": [
+            "savanna"
+          ]
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:dark_oak_sapling",
+          "effort": 0.3,
+          "min": 4,
+          "max": 16,
+          "hints": [
+            "dark_forest"
+          ]
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:cherry_sapling",
+          "effort": 0.35,
+          "min": 4,
+          "max": 16,
+          "hints": [
+            "cherry_grove"
+          ],
+          "since": "1.20"
+        }
+      ]
+    },
+    {
+      "key": "mooshrooms",
+      "family": "wild_animals",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "mushroom_fields",
+        "rare"
+      ],
+      "targets": [
+        {
+          "type": "breed_animal",
+          "id": "minecraft:mooshroom",
+          "effort": 5.0,
+          "min": 2,
+          "max": 3,
+          "hint": "Mooshrooms breed with wheat.",
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "pandas",
+      "family": "wild_animals",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "jungle",
+        "rare"
+      ],
+      "targets": [
+        {
+          "type": "breed_animal",
+          "id": "minecraft:panda",
+          "effort": 5.0,
+          "min": 2,
+          "max": 3,
+          "hint": "Pandas breed with bamboo near bamboo.",
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "axolotls",
+      "family": "wild_animals",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "lush_caves"
+      ],
+      "since": "1.17",
+      "targets": [
+        {
+          "type": "breed_animal",
+          "id": "minecraft:axolotl",
+          "effort": 3.5,
+          "min": 2,
+          "max": 4,
+          "hint": "Axolotls breed with a bucket of tropical fish.",
+          "minDifficulty": "normal"
+        }
+      ]
+    },
+    {
+      "key": "ocelots",
+      "family": "wild_animals",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "jungle"
+      ],
+      "targets": [
+        {
+          "type": "breed_animal",
+          "id": "minecraft:ocelot",
+          "effort": 4.0,
+          "min": 2,
+          "max": 4,
+          "hint": "Ocelots breed with raw cod or salmon.",
+          "minDifficulty": "normal"
+        }
+      ]
+    },
+    {
+      "key": "striders",
+      "family": "nether_animals",
+      "tier": 3,
+      "dimension": "minecraft:the_nether",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "breed_animal",
+          "id": "minecraft:strider",
+          "effort": 3.0,
+          "min": 2,
+          "max": 4,
+          "hint": "Striders breed with warped fungus."
+        }
+      ]
+    },
+    {
+      "key": "hoglins_farm",
+      "family": "nether_animals",
+      "tier": 3,
+      "dimension": "minecraft:the_nether",
+      "tool": "none",
+      "hints": [
+        "crimson_forest"
+      ],
+      "targets": [
+        {
+          "type": "breed_animal",
+          "id": "minecraft:hoglin",
+          "effort": 4.0,
+          "min": 2,
+          "max": 4,
+          "hint": "Hoglins breed with crimson fungus; they fight back.",
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "rabbit_food",
+      "family": "wild_animals",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "desert"
+      ],
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:rabbit",
+          "effort": 1.0,
+          "min": 2,
+          "max": 12,
+          "name": "Raw Rabbit"
+        },
+        {
+          "type": "smelt_item",
+          "id": "minecraft:cooked_rabbit",
+          "effort": 1.1,
+          "min": 2,
+          "max": 12,
+          "hints": [
+            "cook"
+          ]
+        },
+        {
+          "type": "consume_item",
+          "id": "minecraft:cooked_rabbit",
+          "effort": 1.6,
+          "min": 1,
+          "max": 4
+        }
+      ]
+    },
+    {
+      "key": "more_meals",
+      "family": "cooking",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "consume_item",
+          "id": "minecraft:cooked_chicken",
+          "effort": 1.1,
+          "min": 2,
+          "max": 6
+        },
+        {
+          "type": "consume_item",
+          "id": "minecraft:cooked_mutton",
+          "effort": 1.2,
+          "min": 2,
+          "max": 6
+        },
+        {
+          "type": "consume_item",
+          "id": "minecraft:cooked_salmon",
+          "effort": 2.0,
+          "min": 2,
+          "max": 4
+        },
+        {
+          "type": "consume_item",
+          "id": "minecraft:golden_apple",
+          "effort": 10.5,
+          "min": 1,
+          "max": 1,
+          "tier": 2,
+          "hint": "Golden apples can be eaten any time.",
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "turtle_scute",
+      "family": "wild_animals",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "beach"
+      ],
+      "notes": "minecraft:scute was renamed to turtle_scute in 1.20.5; both ids are tried.",
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:turtle_scute",
+          "effort": 12.0,
+          "min": 1,
+          "max": 2,
+          "alt": [
+            "minecraft:scute"
+          ],
+          "hint": "Baby turtles drop a scute when they grow up.",
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "silverfish",
+      "family": "arthropods",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "mountains"
+      ],
+      "targets": [
+        {
+          "type": "kill_mob",
+          "id": "minecraft:silverfish",
+          "effort": 1.5,
+          "min": 4,
+          "max": 12,
+          "hint": "They hide in infested stone in mountains and strongholds.",
+          "minDifficulty": "normal"
+        }
+      ]
+    },
+    {
+      "key": "phantoms",
+      "family": "undead",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "night"
+      ],
+      "exclusions": [
+        "hint: phantoms only spawn after three nights without sleep"
+      ],
+      "targets": [
+        {
+          "type": "kill_mob",
+          "id": "minecraft:phantom",
+          "effort": 3.0,
+          "min": 2,
+          "max": 6,
+          "minDifficulty": "hard"
+        },
+        {
+          "type": "collect_item",
+          "id": "minecraft:phantom_membrane",
+          "effort": 3.5,
+          "min": 1,
+          "max": 4,
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "piglin_hunt",
+      "family": "nether_mobs",
+      "tier": 3,
+      "dimension": "minecraft:the_nether",
+      "tool": "none",
+      "hints": [
+        "crimson_forest"
+      ],
+      "targets": [
+        {
+          "type": "kill_mob",
+          "id": "minecraft:piglin",
+          "effort": 1.4,
+          "min": 4,
+          "max": 12,
+          "hint": "Piglins attack players without gold armor."
+        }
+      ]
+    },
+    {
+      "key": "prismarine",
+      "family": "ocean",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "iron",
+      "hints": [
+        "monument"
+      ],
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:prismarine_crystals",
+          "effort": 2.0,
+          "min": 2,
+          "max": 12,
+          "minDifficulty": "normal"
+        },
+        {
+          "type": "mine_block",
+          "id": "minecraft:prismarine",
+          "effort": 0.35,
+          "min": 8,
+          "max": 32,
+          "minDifficulty": "normal"
+        }
+      ]
+    },
+    {
+      "key": "gold_nuggets",
+      "family": "nether_ores",
+      "tier": 3,
+      "dimension": "minecraft:the_nether",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:gold_nugget",
+          "effort": 0.1,
+          "min": 16,
+          "max": 64,
+          "hint": "Nether gold ore drops gold nuggets."
+        }
+      ]
+    },
+    {
+      "key": "shroomlight",
+      "family": "nether_plants",
+      "tier": 3,
+      "dimension": "minecraft:the_nether",
+      "tool": "none",
+      "hints": [
+        "crimson_forest"
+      ],
+      "targets": [
+        {
+          "type": "collect_item",
+          "id": "minecraft:shroomlight",
+          "effort": 0.8,
+          "min": 4,
+          "max": 16
+        }
+      ]
+    },
+    {
+      "key": "nether_wart_blocks",
+      "family": "nether_plants",
+      "tier": 3,
+      "dimension": "minecraft:the_nether",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:nether_wart_block",
+          "effort": 0.15,
+          "min": 16,
+          "max": 48,
+          "hints": [
+            "crimson_forest"
+          ]
+        },
+        {
+          "type": "mine_block",
+          "id": "minecraft:warped_wart_block",
+          "effort": 0.15,
+          "min": 16,
+          "max": 48,
+          "hints": [
+            "warped_forest"
+          ]
+        },
+        {
+          "type": "mine_block",
+          "id": "minecraft:crimson_nylium",
+          "effort": 0.08,
+          "min": 16,
+          "max": 64,
+          "hints": [
+            "crimson_forest"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "magma_glow",
+      "family": "nether_blocks",
+      "tier": 3,
+      "dimension": "minecraft:the_nether",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:magma_block",
+          "effort": 0.12,
+          "min": 8,
+          "max": 32
+        },
+        {
+          "type": "mine_block",
+          "id": "minecraft:glowstone",
+          "effort": 0.3,
+          "min": 8,
+          "max": 32
+        },
+        {
+          "type": "mine_block",
+          "id": "minecraft:bone_block",
+          "effort": 1.0,
+          "min": 2,
+          "max": 8,
+          "hints": [
+            "soul_sand_valley"
+          ],
+          "hint": "Fossils in soul sand valleys."
+        }
+      ]
+    },
+    {
+      "key": "nether_masonry",
+      "family": "nether_crafts",
+      "tier": 3,
+      "dimension": "minecraft:the_nether",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:nether_bricks",
+          "effort": 0.35,
+          "min": 8,
+          "max": 32,
+          "hint": "Four Nether brick items."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:red_nether_bricks",
+          "effort": 1.0,
+          "min": 4,
+          "max": 16,
+          "hint": "Nether bricks and Nether wart."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:quartz_block",
+          "effort": 1.2,
+          "min": 4,
+          "max": 16,
+          "hint": "Four Nether quartz."
+        },
+        {
+          "type": "smelt_item",
+          "id": "minecraft:smooth_quartz",
+          "effort": 1.3,
+          "min": 4,
+          "max": 16
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:polished_blackstone",
+          "effort": 0.08,
+          "min": 16,
+          "max": 64,
+          "hints": [
+            "basalt_deltas"
+          ]
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:blaze_powder",
+          "effort": 0.8,
+          "min": 4,
+          "max": 16,
+          "hint": "One blaze rod makes two powder."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:magma_cream",
+          "effort": 1.6,
+          "min": 2,
+          "max": 8
+        }
+      ]
+    },
+    {
+      "key": "chorus_plants",
+      "family": "end_plants",
+      "tier": 4,
+      "dimension": "minecraft:the_end",
+      "tool": "none",
+      "hints": [
+        "outer_islands"
+      ],
+      "targets": [
+        {
+          "type": "mine_block",
+          "id": "minecraft:chorus_plant",
+          "effort": 0.1,
+          "min": 16,
+          "max": 64
+        }
+      ]
+    },
+    {
+      "key": "stone_tools",
+      "family": "stone_tools",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:stone_pickaxe",
+          "effort": 0.3,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:stone_axe",
+          "effort": 0.3,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:stone_sword",
+          "effort": 0.25,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:stone_shovel",
+          "effort": 0.15,
+          "min": 2,
+          "max": 6
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:stone_hoe",
+          "effort": 0.25,
+          "min": 1,
+          "max": 4
+        }
+      ]
+    },
+    {
+      "key": "leather_armor",
+      "family": "leather_armor",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "plains"
+      ],
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:leather_helmet",
+          "effort": 2.2,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:leather_chestplate",
+          "effort": 3.4,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:leather_leggings",
+          "effort": 3.0,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:leather_boots",
+          "effort": 1.8,
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    {
+      "key": "diamond_armor",
+      "family": "diamond_gear",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "weight": 0.5,
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:diamond_helmet",
+          "effort": 25.0,
+          "min": 1,
+          "max": 1,
+          "minDifficulty": "hard"
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:diamond_boots",
+          "effort": 20.0,
+          "min": 1,
+          "max": 1,
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "workstations",
+      "family": "workstations",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:cartography_table",
+          "effort": 0.6,
+          "min": 1,
+          "max": 3
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:fletching_table",
+          "effort": 0.6,
+          "min": 1,
+          "max": 3
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:loom",
+          "effort": 0.7,
+          "min": 1,
+          "max": 3
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:grindstone",
+          "effort": 0.6,
+          "min": 1,
+          "max": 3
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:smithing_table",
+          "effort": 1.3,
+          "min": 1,
+          "max": 2,
+          "tier": 1
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:stonecutter",
+          "effort": 0.8,
+          "min": 1,
+          "max": 3,
+          "tier": 1
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:cauldron",
+          "effort": 3.9,
+          "min": 1,
+          "max": 1,
+          "tier": 1
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:lectern",
+          "effort": 5.0,
+          "min": 1,
+          "max": 1
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:anvil",
+          "effort": 17.0,
+          "min": 1,
+          "max": 1,
+          "tier": 1,
+          "hint": "31 iron ingots.",
+          "minDifficulty": "hard"
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:enchanting_table",
+          "effort": 16.0,
+          "min": 1,
+          "max": 1,
+          "tier": 2,
+          "minDifficulty": "hard"
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:brewing_stand",
+          "effort": 2.0,
+          "min": 1,
+          "max": 2,
+          "tier": 3
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:jukebox",
+          "effort": 5.5,
+          "min": 1,
+          "max": 1,
+          "tier": 2,
+          "minDifficulty": "normal"
+        }
+      ]
+    },
+    {
+      "key": "redstone_parts",
+      "family": "redstone",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:redstone_torch",
+          "effort": 0.3,
+          "min": 4,
+          "max": 16
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:repeater",
+          "effort": 1.0,
+          "min": 2,
+          "max": 8
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:dispenser",
+          "effort": 1.6,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:dropper",
+          "effort": 0.6,
+          "min": 2,
+          "max": 6
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:note_block",
+          "effort": 1.0,
+          "min": 2,
+          "max": 6
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:target",
+          "effort": 2.0,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:tripwire_hook",
+          "effort": 0.8,
+          "min": 2,
+          "max": 8,
+          "tier": 1
+        }
+      ]
+    },
+    {
+      "key": "transport",
+      "family": "transport",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:oak_boat",
+          "effort": 0.3,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:lead",
+          "effort": 1.8,
+          "min": 1,
+          "max": 4,
+          "tier": 1,
+          "hint": "String and a slimeball."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:powered_rail",
+          "effort": 1.6,
+          "min": 6,
+          "max": 18,
+          "tier": 2,
+          "hint": "Gold ingots, a stick and redstone."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:detector_rail",
+          "effort": 1.0,
+          "min": 6,
+          "max": 12,
+          "tier": 1
+        }
+      ]
+    },
+    {
+      "key": "gear_misc",
+      "family": "archery",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:crossbow",
+          "effort": 2.2,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:flint_and_steel",
+          "effort": 0.8,
+          "min": 1,
+          "max": 3
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:spectral_arrow",
+          "effort": 1.2,
+          "min": 2,
+          "max": 8,
+          "tier": 3
+        }
+      ]
+    },
+    {
+      "key": "potion_prep",
+      "family": "brewing",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:fermented_spider_eye",
+          "effort": 1.8,
+          "min": 1,
+          "max": 8,
+          "tier": 0,
+          "hint": "Spider eye, sugar and a brown mushroom."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:glistering_melon_slice",
+          "effort": 1.5,
+          "min": 1,
+          "max": 8,
+          "tier": 2
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:glass_bottle",
+          "effort": 0.12,
+          "min": 6,
+          "max": 24,
+          "tier": 0
+        }
+      ]
+    },
+    {
+      "key": "maps",
+      "family": "exploration",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:map",
+          "effort": 3.5,
+          "min": 1,
+          "max": 2,
+          "minDifficulty": "normal"
+        }
+      ]
+    },
+    {
+      "key": "storage",
+      "family": "woodwork",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:trapped_chest",
+          "effort": 0.6,
+          "min": 2,
+          "max": 8
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:ender_chest",
+          "effort": 9.0,
+          "min": 1,
+          "max": 1,
+          "tier": 3,
+          "minDifficulty": "hard"
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:barrel",
+          "effort": 0.4,
+          "min": 2,
+          "max": 12
+        }
+      ]
+    },
+    {
+      "key": "decor_more",
+      "family": "decor",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:white_carpet",
+          "tag": "wool_carpets",
+          "effort": 0.15,
+          "min": 6,
+          "max": 48,
+          "hint": "Two wool make three carpets."
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:white_carpet",
+          "effort": 0.18,
+          "min": 6,
+          "max": 48
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:white_banner",
+          "effort": 1.6,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:glow_item_frame",
+          "effort": 1.4,
+          "min": 2,
+          "max": 6,
+          "tier": 1
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:white_stained_glass",
+          "effort": 0.2,
+          "min": 8,
+          "max": 32
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:beehive",
+          "effort": 3.6,
+          "min": 1,
+          "max": 2,
+          "hints": [
+            "bees"
+          ]
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:chiseled_bookshelf",
+          "effort": 0.4,
+          "min": 1,
+          "max": 6,
+          "since": "1.20"
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:decorated_pot",
+          "effort": 0.5,
+          "min": 1,
+          "max": 6,
+          "since": "1.20"
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:oak_fence",
+          "effort": 0.12,
+          "min": 8,
+          "max": 48
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:oak_fence",
+          "effort": 0.1,
+          "min": 9,
+          "max": 48
+        }
+      ]
+    },
+    {
+      "key": "food_crafts",
+      "family": "baking",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:mushroom_stew",
+          "effort": 1.0,
+          "min": 1,
+          "max": 6,
+          "hints": [
+            "dark_forest"
+          ]
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:beetroot_soup",
+          "effort": 1.8,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:rabbit_stew",
+          "effort": 3.0,
+          "min": 1,
+          "max": 3,
+          "hints": [
+            "desert"
+          ]
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:sugar",
+          "effort": 0.1,
+          "min": 8,
+          "max": 64,
+          "hint": "Crafted from sugar cane."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:honey_block",
+          "effort": 4.5,
+          "min": 1,
+          "max": 2,
+          "hints": [
+            "bees"
+          ]
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:dried_kelp_block",
+          "effort": 1.0,
+          "min": 2,
+          "max": 8,
+          "hints": [
+            "ocean"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "sponge",
+      "family": "ocean",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "monument"
+      ],
+      "targets": [
+        {
+          "type": "smelt_item",
+          "id": "minecraft:sponge",
+          "effort": 4.0,
+          "min": 1,
+          "max": 4,
+          "hint": "Dry wet sponges from ocean monuments.",
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "lighting_more",
+      "family": "lighting",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:soul_torch",
+          "effort": 0.12,
+          "min": 8,
+          "max": 48,
+          "tier": 3,
+          "dimension": "minecraft:the_nether"
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:soul_lantern",
+          "effort": 1.0,
+          "min": 2,
+          "max": 8,
+          "tier": 3,
+          "dimension": "minecraft:the_nether"
+        },
+        {
+          "type": "place_block",
+          "id": "minecraft:campfire",
+          "effort": 0.55,
+          "min": 2,
+          "max": 8,
+          "tier": 0
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:sea_lantern",
+          "effort": 5.5,
+          "min": 1,
+          "max": 4,
+          "tier": 2,
+          "hints": [
+            "monument"
+          ],
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "glass_more",
+      "family": "glass",
+      "tier": 0,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "place_block",
+          "id": "minecraft:glass_pane",
+          "effort": 0.06,
+          "min": 16,
+          "max": 64
+        }
+      ]
+    },
+    {
+      "key": "chain_place",
+      "family": "iron_works",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "place_block",
+          "id": "minecraft:iron_chain",
+          "effort": 0.75,
+          "min": 4,
+          "max": 16,
+          "alt": [
+            "minecraft:chain"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "blocks_of",
+      "family": "storage_blocks",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "minecraft:iron_block",
+          "effort": 5.0,
+          "min": 1,
+          "max": 3,
+          "hint": "Nine iron ingots."
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:lapis_block",
+          "effort": 1.8,
+          "min": 1,
+          "max": 6,
+          "tier": 2
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:redstone_block",
+          "effort": 1.8,
+          "min": 1,
+          "max": 6,
+          "tier": 2
+        },
+        {
+          "type": "craft_item",
+          "id": "minecraft:coal_block",
+          "effort": 2.3,
+          "min": 1,
+          "max": 6,
+          "tier": 0
+        }
+      ]
     }
   ]
 }

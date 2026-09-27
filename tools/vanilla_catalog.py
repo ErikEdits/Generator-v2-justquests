@@ -506,6 +506,9 @@ ENTRIES = [
     ], requires=["nether"]),
 ]
 
+from vanilla_more import MORE  # noqa: E402  (second batch, extension phase)
+ENTRIES = ENTRIES + MORE
+
 VANILLA = {
     "format": 1,
     "id": "vanilla",

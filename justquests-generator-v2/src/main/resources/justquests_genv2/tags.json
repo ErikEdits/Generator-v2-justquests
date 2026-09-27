@@ -54,6 +54,23 @@
       "name": "zinc ingot",
       "plural": "zinc ingots"
     },
+    "wool_carpets": {
+      "kind": "item",
+      "candidates": [
+        "minecraft:wool_carpets",
+        "minecraft:carpets"
+      ],
+      "name": "carpet",
+      "plural": "carpets"
+    },
+    "fishes": {
+      "kind": "item",
+      "candidates": [
+        "minecraft:fishes"
+      ],
+      "name": "fish",
+      "plural": "fish"
+    },
     "tomatoes": {
       "kind": "item",
       "candidates": [

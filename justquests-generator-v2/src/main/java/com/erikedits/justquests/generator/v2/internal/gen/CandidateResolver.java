@@ -135,7 +135,11 @@ public final class CandidateResolver {
         return true;
     }
 
+    private String runningVersion;
+
     public Pool resolve() {
+        String mc = safe(content::minecraftVersion, "");
+        runningVersion = mc != null && Versions.isVersion(mc) ? mc : null;
         Set<String> hostTypes = safe(caps::objectiveTypes, Set.of());
         if (hostTypes == null || hostTypes.isEmpty()) {
             hostTypes = STANDARD_TYPES;
@@ -189,6 +193,13 @@ public final class CandidateResolver {
 
     private Candidate resolveTarget(ProfileDef p, EntryDef e, TargetDef t) {
         ObjectiveType type = t.type();
+        // content registered before its release (experimental feature flags, e.g. the breeze on 1.20.4)
+        String since = t.since() != null ? t.since() : e.since();
+        if (since != null && runningVersion != null && Versions.isVersion(since)
+            && Versions.compare(runningVersion, since) < 0) {
+            reject(e, t, STEP_ID, "released in " + since + ", running " + runningVersion);
+            return null;
+        }
         // step 3: id exists (tag first when supported, then id, then alternatives)
         String target = null;
         boolean isTag = false;
@@ -495,6 +506,11 @@ public final class CandidateResolver {
     /** Numeric dotted-version comparison ("1.21.10" &gt; "1.21.9"; "26.1" &gt; "1.21.10"). */
     public static final class Versions {
         private Versions() {
+        }
+
+        /** True for dotted numeric versions such as "1.21.1" or "26.1". */
+        public static boolean isVersion(String s) {
+            return s != null && s.matches("\\d+(\\.\\d+)+.*");
         }
 
         public static int compare(String a, String b) {

@@ -150,7 +150,10 @@ TEMPLATES = {
         "create_zinc": "Zinc", "create_stone": "Stone Layer", "create_masonry": "Masonry",
         "create_alloy": "Alloy", "create_kinetics": "Kinetics", "create_power": "Mill", "create_logistics": "Logistics",
         "create_machines": "Machine", "create_tools": "Engineer", "create_decor": "Seating", "create_sweets": "Treat",
-        "create_quartz": "Rose Quartz"
+        "create_quartz": "Rose Quartz",
+        "deep_dark": "Deep Dark", "dyes": "Dye", "stone_tools": "Stonecutter", "leather_armor": "Leatherwork",
+        "workstations": "Workshop", "transport": "Transport", "brewing": "Brewer", "exploration": "Explorer",
+        "nether_animals": "Nether Ranch", "nether_crafts": "Nether Mason", "storage_blocks": "Treasury"
     },
     "tools": {
         "stone": "Needs a stone pickaxe or better",
@@ -205,6 +208,9 @@ TEMPLATES = {
         "monument": "Found at ocean monuments.",
         "trial_chambers": "Found in trial chambers.",
         "layers": "Found in thick stone layers underground.",
+        "warm_ocean": "Look on coral reefs in warm oceans.",
+        "ruined_portal": "Look around ruined portals.",
+        "deep_dark": "Found in the deep dark.",
     },
     "sentences": {
         "tag": "Any {noun} counts.",
@@ -311,7 +317,8 @@ BALANCE = {
                         "village": 1.2, "rare": 1.6, "fortress": 1.3, "bastion": 1.5, "crimson_forest": 1.2,
                         "warped_forest": 1.2, "soul_sand_valley": 1.2, "basalt_deltas": 1.2, "end_city": 1.5,
                         "outer_islands": 1.3, "mineshaft": 1.3, "outpost": 1.3, "monument": 1.6,
-                        "trial_chambers": 1.5, "deep": 1.1, "bees": 1.2, "layers": 1.3},
+                        "trial_chambers": 1.5, "deep": 1.1, "bees": 1.2, "layers": 1.3, "warm_ocean": 1.4,
+                        "ruined_portal": 1.4, "deep_dark": 1.6},
     "dimensionOverheadMinutes": {"minecraft:the_nether": 3.0, "minecraft:the_end": 5.0, "modded": 5.0},
     "toolLevels": {"none": 0, "wood": 0, "fishing_rod": 0, "knife": 0, "shovel": 0, "stone": 1, "shears": 1,
                    "iron": 2, "diamond": 3, "silk_touch": 3, "netherite": 4},
@@ -345,6 +352,8 @@ TAGS = {
                         "name": "iron ingot", "plural": "iron ingots"},
         "zinc_ingots": {"kind": "item", "candidates": ["c:ingots/zinc", "c:zinc_ingots", "forge:ingots/zinc"],
                         "name": "zinc ingot", "plural": "zinc ingots"},
+        "wool_carpets": {"kind": "item", "candidates": ["minecraft:wool_carpets", "minecraft:carpets"], "name": "carpet", "plural": "carpets"},
+        "fishes": {"kind": "item", "candidates": ["minecraft:fishes"], "name": "fish", "plural": "fish"},
         "tomatoes": {"kind": "item", "candidates": ["c:crops/tomato", "c:tomatoes", "forge:crops/tomato"],
                      "name": "tomato", "plural": "tomatoes"},
     },

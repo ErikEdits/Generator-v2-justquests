@@ -31,6 +31,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.flag.FeatureElement;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.UseAnim;
@@ -99,15 +100,17 @@ public final class GenV2Host implements GeneratorHost {
 
         @Override public boolean isModLoaded(String modId) { return ModList.get().isLoaded(modId); }
 
-        @Override public boolean itemExists(String id) { return has(BuiltInRegistries.ITEM, id); }
+        // registered AND enabled by the world's feature flags (experimental content is registered too)
+        @Override public boolean itemExists(String id) { return enabled(BuiltInRegistries.ITEM, id); }
 
-        @Override public boolean blockExists(String id) { return has(BuiltInRegistries.BLOCK, id); }
+        @Override public boolean blockExists(String id) { return enabled(BuiltInRegistries.BLOCK, id); }
 
-        @Override public boolean entityTypeExists(String id) { return has(BuiltInRegistries.ENTITY_TYPE, id); }
+        @Override public boolean entityTypeExists(String id) { return enabled(BuiltInRegistries.ENTITY_TYPE, id); }
 
-        private boolean has(Registry<?> reg, String id) {
+        private <T extends FeatureElement> boolean enabled(Registry<T> reg, String id) {
             ResourceLocation r = rl(id);
-            return r != null && reg.containsKey(r);
+            if (r == null || !reg.containsKey(r)) return false;
+            return reg.get(r).isEnabled(server.getWorldData().enabledFeatures());
         }
 
         @Override

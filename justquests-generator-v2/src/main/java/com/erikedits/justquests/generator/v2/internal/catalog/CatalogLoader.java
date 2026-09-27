@@ -360,7 +360,7 @@ public final class CatalogLoader {
             Math.max(0.0, Json.dbl(t, "weight", 1.0)), tierOverride, Json.str(t, "tool", null),
             lower(Json.strings(t, "hints")), Json.str(t, "name", null), Json.str(t, "plural", null),
             Json.str(t, "hint", null), Json.integer(t, "stack", 0), Ids.isValid(dim) ? dim : null, minDifficulty,
-            Json.bool(t, "tamable", false), Json.str(t, "note", null));
+            Json.bool(t, "tamable", false), Json.str(t, "note", null), Json.str(t, "since", null));
     }
 
     // ------------------------------------------------------------------ rewards & themes
