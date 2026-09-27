@@ -22,3 +22,5 @@ Auto-resume routine: `trig_01VkvYQ75m7uPB1RPLGp5Diq` (every 2 h) — delete when
 - 2026-09-27 ~09:00 UTC: started, spec read, mods chosen.
 - 2026-09-27 ~10:00 UTC: API + core engine compiled. Next: data files (vanilla.json, profiles, rewards, templates, themes, balance, tags), then tests.
 - 2026-09-27 ~10:45 UTC: data + tests done, build green. Next: review pass, samples (SampleWriter), docs, reference adapter, ZIP.
+- 2026-09-27 ~13:00 UTC: INTEGRATION.md, DESIGN.md, MODS.md written. Next: README.md, CHANGELOG-snippet.md, samples/README.md, reference adapter (reference-adapter/neoforge-1.21.1, REFERENCE ONLY), §19 checklist pass, ZIP (./gradlew deliverableZip), send ZIP, delete trigger trig_01VkvYQ75m7uPB1RPLGp5Diq, German summary.
+- User note (13:00): size of the deliverable/state does not matter ("20 MB, 300 MB egal").
