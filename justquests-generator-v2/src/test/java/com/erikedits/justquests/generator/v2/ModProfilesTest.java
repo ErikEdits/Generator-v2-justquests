@@ -20,6 +20,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /** §16.14 — profiles activate only with their mod; modded share and one quest per active mod. */
 class ModProfilesTest {
+    /** Prettified Mekanism ids ("Ingot Osmium", "Block Salt", "Fluorite Gem") instead of English names. */
+    private static final java.util.regex.Pattern INVERTED_NAME = java.util.regex.Pattern.compile(
+        "(?i)\\b(ingot (osmium|tin|lead|uranium|steel)|block (osmium|fluorite|salt)|fluorite gems?)\\b");
+
     @Test
     void inactiveWithoutMod() {
         FakeHost host = new FakeHost();
@@ -27,7 +31,7 @@ class ModProfilesTest {
             for (long seed = 1; seed <= 100; seed++) {
                 for (QuestDraft q : TestSupport.generate(host, TestSupport.config(d, 10), TestSupport.unlockedProgression(host), seed, 10).drafts()) {
                     String t = Json.compact(q.json);
-                    assertFalse(t.contains("farmersdelight:") || t.contains("create:"), t);
+                    assertFalse(t.contains("farmersdelight:") || t.contains("create:") || t.contains("mekanism:"), t);
                     assertEquals(Set.of("vanilla"), q.profiles());
                 }
             }
@@ -109,5 +113,48 @@ class ModProfilesTest {
         assertEquals(2.0, c.balance.level(Difficulty.EASY).minMinutes);
         assertEquals(3.0, c.balance.level(Difficulty.EASY).maxMinutes);
         assertEquals(8.0, c.balance.level(Difficulty.NORMAL).minMinutes, "untouched values keep the bundled defaults");
+    }
+
+    @Test
+    void allThreeModsTogetherGetAQuestEachAndReadableNames() {
+        FakeHost host = new FakeHost().withMods("farmersdelight", "create", "mekanism");
+        Progression p = TestSupport.unlockedProgression(host);
+        int mekQuests = 0;
+        for (Difficulty d : Difficulty.values()) {
+            for (long seed = 1; seed <= 60; seed++) {
+                Generation.Result r = TestSupport.generate(host, TestSupport.config(d, 12), p, seed, 12);
+                assertEquals(12, r.drafts().size());
+                if (!r.relaxations().containsKey("modded_share")) {
+                    for (String mod : List.of("farmersdelight", "create", "mekanism")) {
+                        assertTrue(r.drafts().stream().anyMatch(q -> q.profiles().contains(mod)),
+                            d + " seed " + seed + ": no " + mod + " quest");
+                    }
+                }
+                for (QuestDraft q : r.drafts()) {
+                    String t = Json.compact(q.json);
+                    if (t.contains("mekanism:")) {
+                        mekQuests++;
+                        // a dedicated server has no mod lang files: inverted ids must not leak as names
+                        assertFalse(INVERTED_NAME.matcher(t).find(), "unreadable Mekanism name in " + t);
+                    }
+                }
+            }
+        }
+        assertTrue(mekQuests > 60, "Mekanism quests generated: " + mekQuests);
+    }
+
+    @Test
+    void mekanismMachinesOnlyOnHard() {
+        FakeHost host = new FakeHost().withMods("mekanism");
+        Progression p = TestSupport.unlockedProgression(host);
+        GeneratorConfig easy = TestSupport.config(Difficulty.EASY, 10).withModdedShare(1.0);
+        for (long seed = 1; seed <= 80; seed++) {
+            for (QuestDraft q : TestSupport.generate(host, easy, p, seed, 10).drafts()) {
+                String t = Json.compact(q.json);
+                for (String machine : List.of("steel_casing", "enrichment_chamber", "energized_smelter", "configurator")) {
+                    assertFalse(t.contains("mekanism:" + machine), "EASY set uses " + machine + ": " + t);
+                }
+            }
+        }
     }
 }

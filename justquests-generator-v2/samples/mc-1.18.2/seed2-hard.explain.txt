@@ -1,0 +1,103 @@
+# mc-1.18.2 | world seed 2 | HARD | 10 quests | day 30, Nether and End unlocked
+
+Generator v2: enabled, difficulty hard, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.18.2 (forge)
+
+justquests:gen/1790510400_0  "Ice Excavation"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:ice ×48
+  effort 0.12 min/unit (×1.30 snowy) → 7.5 min (target 17.0, range 15–35 min)
+  tier 0 (always available), family snow, profile vanilla, hints snowy
+estimated 7.5 min (quick)
+reward give_item minecraft:honey_bottle ×8 (value 9.6) + xp 100 (value 8.3)  → 17.9 / budget 18.0
+rejected alternatives: collect_item minecraft:snowball (max count takes only 2.5 min)
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Phantom Membrane Haul"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:phantom_membrane ×4
+  effort 3.50 min/unit → 14.0 min (target 19.5, range 15–35 min)
+  tier 1 (always available), family undead, profile vanilla, hints night
+estimated 14.0 min (quick)
+reward give_item minecraft:sea_lantern ×2 (value 11.0) + xp 120 (value 10.0)  → 21.0 / budget 21.0
+rejected alternatives: hint: phantoms only spawn after three nights without sleep
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Library Project"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:paper ×64
+  effort 0.10 min/unit → 6.4 min (target 16.6, range 15–35 min)
+  tier 0 (always available), family plants, profile vanilla, hints river
+objective craft_item minecraft:bookshelf ×2
+  effort 4.50 min/unit → 9.0 min (target 16.6, range 15–35 min)
+  tier 0 (always available), family library, profile vanilla
+theme library_project
+estimated 15.4 min (quick)
+reward give_item minecraft:iron_ingot ×24 (value 14.4) + xp 130 (value 10.8)  → 25.2 / budget 25.4
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Obsidian Errand"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:crying_obsidian ×3
+  effort 2.00 min/unit (×1.40 ruined_portal) → 8.4 min (target 16.6, range 15–35 min)
+  tier 2 (always available), family obsidian, profile vanilla, tool diamond, hints ruined_portal
+objective mine_block minecraft:obsidian ×8
+  effort 1.00 min/unit → 8.0 min (target 16.6, range 15–35 min)
+  tier 2 (always available), family obsidian, profile vanilla, tool diamond
+combo within family obsidian
+estimated 16.4 min (quick)
+reward give_item minecraft:music_disc_cat ×1 (value 6.0) + give_item minecraft:book ×8 (value 9.6) + xp 140 (value 11.7)  → 27.3 / budget 27.1
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Ghast Tear Delivery"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:ghast_tear ×3
+  effort 4.00 min/unit (×1.20 soul_sand_valley) → 14.4 min (target 26.0, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_mobs, profile vanilla, hints soul_sand_valley, minecraft:the_nether
+travel overhead 3.0 min
+estimated 17.4 min (quick)
+reward give_item minecraft:diamond ×3 (value 15.0) + effect minecraft:regeneration 90s (value 4.5) + xp 80 (value 6.7)  → 26.2 / budget 26.1
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Wool Errand"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:mutton ×24
+  effort 0.35 min/unit → 8.4 min (target 18.7, range 15–35 min)
+  tier 0 (always available), family wool, profile vanilla
+objective smelt_item minecraft:cooked_mutton ×24
+  effort 0.45 min/unit → 10.8 min (target 18.7, range 15–35 min)
+  tier 0 (always available), family wool, profile vanilla, hints cook
+combo within family wool
+estimated 19.2 min (quick)
+reward give_item minecraft:cookie ×32 (value 3.8) + give_item minecraft:coal_block ×4 (value 9.2) + xp 225 (value 18.8)  → 31.8 / budget 31.7
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Eye of Ender Workshop"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:ender_eye ×4
+  effort 5.00 min/unit → 20.0 min (target 34.1, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family end_prep, profile vanilla
+estimated 20.0 min (quick)
+reward give_item minecraft:shulker_shell ×2 (value 10.0) + give_item minecraft:cooked_salmon ×14 (value 12.6) + xp 90 (value 7.5)  → 30.1 / budget 30.0
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Ocelot Ranch"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective breed_animal minecraft:ocelot ×4
+  effort 4.00 min/unit (×1.40 jungle) → 22.4 min (target 29.9, range 15–35 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints jungle
+estimated 22.4 min
+reward give_item minecraft:experience_bottle ×16 (value 19.2) + xp 175 (value 14.6)  → 33.8 / budget 33.6
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Sponge Smeltery"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item minecraft:sponge ×4
+  effort 4.00 min/unit (×1.60 monument) → 25.6 min (target 24.2, range 15–35 min)
+  tier 2 (always available), family ocean, profile vanilla, hints monument
+estimated 25.6 min
+reward give_item minecraft:blaze_rod ×8 (value 14.4) + give_item minecraft:bookshelf ×3 (value 13.5) + xp 125 (value 10.4)  → 38.3 / budget 38.4
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Track Crew"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:iron_chain ×16
+  effort 0.70 min/unit → 11.2 min (target 34.8, range 15–35 min)
+  tier 1 (always available), family iron_works, profile vanilla
+objective place_block minecraft:rail ×64
+  effort 0.30 min/unit → 19.2 min (target 34.8, range 15–35 min)
+  tier 1 (always available), family iron_works, profile vanilla
+theme railway_builder
+estimated 30.4 min
+reward give_item minecraft:leather ×16 (value 6.4) + give_item minecraft:powered_rail ×12 (value 19.2) + xp 295 (value 24.6)  → 50.2 / budget 50.2
+state: AVAILABLE
+

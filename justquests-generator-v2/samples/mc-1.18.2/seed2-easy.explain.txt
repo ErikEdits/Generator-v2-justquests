@@ -1,0 +1,86 @@
+# mc-1.18.2 | world seed 2 | EASY | 10 quests | day 30, Nether and End unlocked
+
+Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.18.2 (forge)
+
+justquests:gen/1790510400_0  "Jungle Log Quarry"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:jungle_log ×32
+  effort 0.10 min/unit (×1.40 jungle) → 4.5 min (target 4.6, range 4–10 min)
+  tier 0 (always available), family wood, profile vanilla, hints jungle
+estimated 4.5 min (quick)
+reward give_item minecraft:copper_ingot ×22 (value 3.3) + xp 14 (value 1.2)  → 4.5 / budget 4.5
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Campfire Builder"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective place_block minecraft:campfire ×8
+  effort 0.55 min/unit → 4.4 min (target 5.9, range 4–10 min)
+  tier 0 (always available), family lighting, profile vanilla
+estimated 4.4 min (quick)
+reward give_item minecraft:book ×3 (value 3.6) + xp 10 (value 0.8)  → 4.4 / budget 4.4
+rejected alternatives: craft_item minecraft:soul_torch (tier 3 above EASY cap); craft_item minecraft:soul_lantern (tier 3 above EASY cap); craft_item minecraft:sea_lantern (tier 2 above EASY cap)
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Break Melons"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:melon ×8
+  effort 0.40 min/unit (×1.40 jungle) → 4.5 min (target 4.0, range 4–10 min)
+  tier 0 (always available), family fruit, profile vanilla, hints jungle
+estimated 4.5 min (quick)
+reward give_item minecraft:baked_potato ×13 (value 3.3) + xp 15 (value 1.3)  → 4.5 / budget 4.5
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Bring Clay Balls"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:clay_ball ×64
+  effort 0.08 min/unit → 5.1 min (target 5.0, range 4–10 min)
+  tier 0 (always available), family soil, profile vanilla, hints river
+estimated 5.1 min (quick)
+reward give_item minecraft:cooked_porkchop ×8 (value 4.0) + xp 13 (value 1.1)  → 5.1 / budget 5.1
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Trapped Chest Batch"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:trapped_chest ×8
+  effort 0.60 min/unit → 4.8 min (target 5.7, range 4–10 min)
+  tier 0 (always available), family woodwork, profile vanilla
+estimated 4.8 min (quick)
+reward give_item minecraft:honeycomb ×4 (value 4.0) + xp 10 (value 0.8)  → 4.8 / budget 4.8
+rejected alternatives: craft_item minecraft:ender_chest (tier 3 above EASY cap)
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Bring Sand"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:sand ×96
+  effort 0.04 min/unit (×1.20 beach) → 4.6 min (target 4.8, range 4–10 min)
+  tier 0 (always available), family sand, profile vanilla, hints beach
+estimated 4.6 min (quick)
+reward give_item minecraft:book ×3 (value 3.6) + xp 12 (value 1.0)  → 4.6 / budget 4.6
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Furnace: Deepslate"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item minecraft:deepslate ×48
+  effort 0.12 min/unit (×1.10 deep) → 6.3 min (target 7.2, range 4–10 min)
+  tier 1 (always available), family stone, profile vanilla, tool wood, hints deep
+estimated 6.3 min
+reward give_item minecraft:cooked_beef ×10 (value 5.0) + xp 16 (value 1.3)  → 6.3 / budget 6.3
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Cooked Chicken Batch"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item minecraft:cooked_chicken ×16
+  effort 0.40 min/unit → 6.4 min (target 6.9, range 4–10 min)
+  tier 0 (always available), family livestock, profile vanilla, hints cook
+estimated 6.4 min
+reward give_item minecraft:cooked_salmon ×5 (value 4.5) + xp 23 (value 1.9)  → 6.4 / budget 6.4
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Taste Beetroot Soup"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective consume_item minecraft:beetroot_soup ×3
+  effort 2.00 min/unit (×1.20 village) → 7.2 min (target 5.9, range 4–10 min)
+  tier 0 (always available), family crops, profile vanilla, hints village/farm
+estimated 7.2 min
+reward give_item minecraft:arrow ×32 (value 4.8) + xp 29 (value 2.4)  → 7.2 / budget 7.2
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Slime Cleanup"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective kill_mob minecraft:slime ×5
+  effort 1.50 min/unit (×1.30 swamp) → 9.8 min (target 10.0, range 4–10 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp
+estimated 9.8 min
+reward give_item minecraft:cake ×1 (value 3.0) + give_item minecraft:coal ×17 (value 4.3) + xp 30 (value 2.5)  → 9.8 / budget 9.8
+state: AVAILABLE
+

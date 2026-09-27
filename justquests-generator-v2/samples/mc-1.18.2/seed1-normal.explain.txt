@@ -1,0 +1,98 @@
+# mc-1.18.2 | world seed 1 | NORMAL | 10 quests | day 30, Nether and End unlocked
+
+Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.18.2 (forge)
+
+justquests:gen/1790510400_3  "Florist"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:blue_orchid ×8
+  effort 0.35 min/unit (×1.30 swamp) → 3.6 min (target 8.4, range 8–20 min)
+  tier 0 (always available), family flowers, profile vanilla, hints swamp
+objective collect_item minecraft:lily_of_the_valley ×8
+  effort 0.35 min/unit (×1.40 flower_forest) → 3.9 min (target 8.4, range 8–20 min)
+  tier 0 (always available), family flowers, profile vanilla, hints flower_forest
+theme florist
+estimated 7.6 min (quick)
+reward give_item minecraft:cooked_chicken ×15 (value 7.5) + xp 30 (value 2.5)  → 10.0 / budget 10.0
+state: AVAILABLE
+
+justquests:gen/1790510400_0  "Golden Carrot Request"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:golden_carrot ×6
+  effort 1.50 min/unit → 9.0 min (target 9.4, range 8–20 min)
+  tier 2 (always available), family golden_food, profile vanilla
+estimated 9.0 min (quick)
+reward give_item minecraft:nautilus_shell ×2 (value 10.0) + xp 10 (value 0.8)  → 10.8 / budget 10.8
+rejected alternatives: craft_item minecraft:golden_apple (tier 2 above NORMAL cap)
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Bring Slimeballs"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:slime_ball ×5
+  effort 1.50 min/unit (×1.30 swamp) → 9.8 min (target 9.3, range 8–20 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp
+estimated 9.8 min (quick)
+reward give_item minecraft:copper_ingot ×32 (value 4.8) + give_item minecraft:gold_ingot ×3 (value 3.9) + xp 36 (value 3.0)  → 11.7 / budget 11.7
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Smelt Smooth Sandstone"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective smelt_item minecraft:smooth_sandstone ×64
+  effort 0.12 min/unit (×1.30 desert) → 10.0 min (target 9.3, range 8–20 min)
+  tier 0 (always available), family sand, profile vanilla, tool wood, hints desert
+estimated 10.0 min (quick)
+reward give_item minecraft:honeycomb ×8 (value 8.0) + xp 48 (value 4.0)  → 12.0 / budget 12.0
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Night Watch"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective kill_mob minecraft:skeleton ×8
+  effort 0.90 min/unit → 7.2 min (target 13.9, range 8–20 min)
+  tier 0 (always available), family undead, profile vanilla, hints night
+objective kill_mob minecraft:drowned ×5
+  effort 1.20 min/unit (×1.20 ocean) → 7.2 min (target 13.9, range 8–20 min)
+  tier 0 (always available), family undead, profile vanilla, hints ocean/night
+theme monster_patrol
+estimated 14.4 min
+reward give_item minecraft:experience_bottle ×12 (value 14.4) + xp 55 (value 4.6)  → 19.0 / budget 19.0
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Cave Spider Slayer"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective kill_mob minecraft:cave_spider ×8
+  effort 1.50 min/unit (×1.30 mineshaft) → 15.6 min (target 16.2, range 8–20 min)
+  tier 1 (always available), family arthropods, profile vanilla, hints mineshaft
+estimated 15.6 min
+reward give_item minecraft:golden_apple ×2 (value 18.0) + xp 9 (value 0.8)  → 18.8 / budget 18.7
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Mine Redstone Ore"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:redstone_ore ×16
+  effort 0.90 min/unit (×1.10 deep) → 15.8 min (target 17.0, range 8–20 min)
+  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
+estimated 15.8 min
+reward give_item minecraft:hay_block ×8 (value 11.2) + xp 95 (value 7.9)  → 19.1 / budget 19.0
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "White Terracotta Order"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:white_terracotta ×32
+  effort 0.50 min/unit → 16.0 min (target 18.5, range 8–20 min)
+  tier 0 (always available), family badlands, profile vanilla
+estimated 16.0 min
+reward give_item minecraft:white_wool ×32 (value 8.0) + give_item minecraft:honey_bottle ×5 (value 6.0) + xp 60 (value 5.0)  → 19.0 / budget 19.2
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Lumber Duty"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:jungle_log ×64
+  effort 0.10 min/unit (×1.40 jungle) → 9.0 min (target 19.5, range 8–20 min)
+  tier 0 (always available), family wood, profile vanilla, hints jungle
+objective mine_block minecraft:acacia_log ×64
+  effort 0.10 min/unit (×1.20 savanna) → 7.7 min (target 19.5, range 8–20 min)
+  tier 0 (always available), family wood, profile vanilla, hints savanna
+combo within family wood
+estimated 16.6 min
+reward give_item minecraft:name_tag ×1 (value 8.0) + give_item minecraft:slime_ball ×6 (value 9.0) + xp 60 (value 5.0)  → 22.0 / budget 22.0
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Breed Llamas"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective breed_animal minecraft:llama ×6
+  effort 2.50 min/unit (×1.20 savanna) → 18.0 min (target 17.3, range 8–20 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints savanna
+estimated 18.0 min
+reward give_item minecraft:emerald ×6 (value 15.0) + xp 80 (value 6.7)  → 21.7 / budget 21.6
+rejected alternatives: tame_animal minecraft:llama (not counted on Fabric)
+state: AVAILABLE
+

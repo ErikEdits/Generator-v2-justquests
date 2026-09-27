@@ -1,99 +1,17 @@
 {
   "justquests:gen/1790510400_3": {
-    "title": "Asurine Miner",
-    "description": "Break 64 asurine. Found in thick stone layers underground.",
+    "title": "Scoria Breaker",
+    "description": "Mine 64 scoria. Found in thick stone layers underground.",
     "category": "generated",
     "sort": 7,
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "create:asurine",
+        "block": "create:scoria",
         "count": 64
       }
     ],
     "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:bread",
-        "count": 15
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 27
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Cooked Bacon Kitchen",
-    "description": "Cook 16 bacon. Cut porkchops on a cutting board, then cook. Use a Farmer's Delight knife.",
-    "category": "generated",
-    "sort": 8,
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "farmersdelight:cooked_bacon",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:copper_ingot",
-        "count": 32
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 60
-      }
-    ]
-  },
-  "justquests:gen/1790510400_0": {
-    "title": "Jungle Log Haul",
-    "description": "Pick up 64 jungle logs. Look in jungles.",
-    "category": "generated",
-    "sort": 9,
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:jungle_log",
-        "count": 64
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "farmersdelight:sweet_berry_cookie",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "farmersdelight:flint_knife",
-        "count": 1
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 65
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Stray Patrol",
-    "description": "Hunt 6 strays. Look in snowy biomes. They spawn at night and in dark caves.",
-    "category": "generated",
-    "sort": 9,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:stray",
-        "count": 6
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:oak_sapling",
-        "count": 16
-      },
       {
         "type": "justquests:give_item",
         "item": "create:zinc_ingot",
@@ -101,171 +19,245 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 30
+        "amount": 32
       }
     ]
   },
-  "justquests:gen/1790510400_2": {
-    "title": "Build with Rail",
-    "description": "Place 32 rails. Build a railway.",
+  "justquests:gen/1790510400_0": {
+    "title": "Bring Dark Oak Logs",
+    "description": "Gather 64 dark oak logs. Dark forests have plenty.",
     "category": "generated",
-    "sort": 10,
+    "sort": 8,
     "objectives": [
       {
-        "type": "justquests:place_block",
-        "block": "minecraft:rail",
-        "count": 32
+        "type": "justquests:collect_item",
+        "item": "minecraft:dark_oak_log",
+        "count": 64
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:experience_nugget",
-        "count": 29
+        "item": "farmersdelight:fried_rice",
+        "count": 3
       },
       {
         "type": "justquests:xp",
-        "amount": 34
-      },
-      {
-        "type": "justquests:message",
-        "message": "The village thanks you!"
+        "amount": 33
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Taste Baked Cod Stew",
-    "description": "Eat 4 baked cod stew. Cook it in a Cooking Pot.",
+  "justquests:gen/1790510400_2": {
+    "title": "More Pigs",
+    "description": "Breed 8 pigs. Pigs breed with carrots, potatoes or beetroots.",
+    "category": "generated",
+    "sort": 8,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:pig",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:coal_block",
+        "count": 3
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 32
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Make Candles",
+    "description": "Craft 6 candles. Needs bees and flowers.",
+    "category": "generated",
+    "sort": 9,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:candle",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:lantern",
+        "count": 8
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 48
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Stone Brick Stairs Job",
+    "description": "Craft 48 stone brick stairs.",
     "category": "generated",
     "sort": 10,
     "objectives": [
       {
-        "type": "justquests:consume_item",
-        "item": "farmersdelight:baked_cod_stew",
+        "type": "justquests:craft_item",
+        "item": "minecraft:stone_brick_stairs",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:slime_ball",
+        "count": 6
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 30
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Undead Supplies",
+    "description": "Defeat 4 husks and defeat 4 strays. Look in deserts. They spawn at night and in dark caves. Look in snowy biomes.",
+    "category": "generated",
+    "sort": 11,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:husk",
+        "count": 4
+      },
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:stray",
         "count": 4
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:bacon_sandwich",
-        "count": 5
+        "item": "minecraft:golden_carrot",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 42
+        "amount": 37
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Dig Deepslate Tin Ore",
+    "description": "Break 16 deepslate tin ore. Needs a stone pickaxe or better. Found in caves. Found deep underground.",
+    "category": "generated",
+    "sort": 14,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "mekanism:deepslate_tin_ore",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:brass_ingot",
+        "count": 6
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 60
       }
     ]
   },
   "justquests:gen/1790510400_1": {
-    "title": "Dessert Order",
-    "description": "Craft 8 melon popsicles and eat 16 sweet berry cookies. Melon slices, ice and a stick.",
+    "title": "Farmer's Market",
+    "description": "The market needs fresh produce: collect 48 cabbage and pick up 48 rice. Cabbage seeds come from wild cabbages on beaches. Look in swamps.",
     "category": "generated",
-    "sort": 11,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "farmersdelight:melon_popsicle",
-        "count": 8
-      },
-      {
-        "type": "justquests:consume_item",
-        "item": "farmersdelight:sweet_berry_cookie",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:andesite_alloy",
-        "count": 32
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 43
-      }
-    ]
-  },
-  "justquests:gen/1790510400_4": {
-    "title": "Ranch Job",
-    "description": "Gather 16 feathers and pick up 16 leather. Common in plains.",
-    "category": "generated",
-    "sort": 11,
+    "sort": 17,
     "mode": "all",
     "objectives": [
       {
         "type": "justquests:collect_item",
-        "item": "minecraft:feather",
-        "count": 16
+        "item": "farmersdelight:cabbage",
+        "count": 48
       },
       {
         "type": "justquests:collect_item",
-        "item": "minecraft:leather",
-        "count": 16
+        "item": "farmersdelight:rice",
+        "count": 48
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:andesite_alloy",
+        "item": "minecraft:white_wool",
         "count": 32
       },
       {
+        "type": "justquests:give_item",
+        "item": "mekanism:raw_osmium",
+        "count": 12
+      },
+      {
         "type": "justquests:xp",
-        "amount": 43
+        "amount": 65
       }
     ]
   },
-  "justquests:gen/1790510400_7": {
-    "title": "Smelt Gold Ingots",
-    "description": "Smelt 8 gold ingots. Smelt raw gold in a furnace. Needs an iron pickaxe or better. Found deep underground.",
+  "justquests:gen/1790510400_5": {
+    "title": "Dig Osmium Ore",
+    "description": "Mine 24 osmium ore. Needs a stone pickaxe or better. Found in caves.",
     "category": "generated",
-    "sort": 11,
+    "sort": 17,
     "objectives": [
       {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:gold_ingot",
-        "count": 8
+        "type": "justquests:mine_block",
+        "block": "mekanism:osmium_ore",
+        "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:glowstone_dust",
-        "count": 32
+        "item": "mekanism:ingot_lead",
+        "count": 16
       },
       {
         "type": "justquests:xp",
-        "amount": 70
+        "amount": 60
       }
     ]
   },
   "justquests:gen/1790510400_9": {
-    "title": "Obsidian Excavation",
-    "description": "Break 16 obsidian. Pour water on lava pools, then mine it. Needs a diamond pickaxe.",
+    "title": "Smooth Red Sandstone Batch",
+    "description": "Smelt 32 smooth red sandstone. Look in badlands.",
     "category": "generated",
-    "sort": 16,
+    "sort": 18,
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:obsidian",
-        "count": 16
+        "type": "justquests:smelt_item",
+        "item": "minecraft:smooth_red_sandstone",
+        "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:cabbage",
-        "count": 32
+        "item": "minecraft:redstone_block",
+        "count": 4
       },
       {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/abandoned_mineshaft"
+        "type": "justquests:give_item",
+        "item": "mekanism:fluorite_gem",
+        "count": 26
       },
       {
         "type": "justquests:xp",
-        "amount": 90
+        "amount": 60
       }
     ]
   }

@@ -1,0 +1,87 @@
+# mc-1.18.2 | world seed 3 | EASY | 10 quests | day 30, Nether and End unlocked
+
+Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.18.2 (forge)
+
+justquests:gen/1790510400_7  "Crossbow Batch"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:crossbow ×2
+  effort 2.20 min/unit → 4.4 min (target 4.1, range 4–10 min)
+  tier 1 (always available), family archery, profile vanilla
+estimated 4.4 min (quick)
+reward give_item minecraft:coal ×13 (value 3.3) + xp 14 (value 1.2)  → 4.4 / budget 4.4
+rejected alternatives: craft_item minecraft:spectral_arrow (tier 3 above EASY cap)
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Oak Planks Builder"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective place_block minecraft:oak_planks ×128
+  effort 0.04 min/unit → 5.1 min (target 5.4, range 4–10 min)
+  tier 0 (always available), family woodwork, profile vanilla
+estimated 5.1 min (quick)
+reward give_item minecraft:apple ×8 (value 3.2) + xp 23 (value 1.9) + message  → 5.1 / budget 5.1
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Bricks Request"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:bricks ×5
+  effort 0.90 min/unit → 4.5 min (target 4.9, range 4–10 min)
+  tier 0 (always available), family stonework, profile vanilla
+estimated 4.5 min (quick)
+reward give_item minecraft:paper ×28 (value 3.4) + xp 14 (value 1.2) + message  → 4.5 / budget 4.5
+state: AVAILABLE
+
+justquests:gen/1790510400_0  "Raw Salmon Run"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:salmon ×4
+  effort 1.40 min/unit → 5.6 min (target 5.5, range 4–10 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
+estimated 5.6 min (quick)
+reward give_item minecraft:iron_ingot ×7 (value 4.2) + xp 17 (value 1.4)  → 5.6 / budget 5.6
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Wool Pickup"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective collect_item #minecraft:wool ×24
+  effort 0.25 min/unit → 6.0 min (target 6.6, range 4–10 min)
+  tier 0 (always available), family wool, profile vanilla, tool shears
+estimated 6.0 min
+reward give_item minecraft:lapis_block ×3 (value 5.4) + xp 7 (value 0.6)  → 6.0 / budget 6.0
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Cactus Run"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:cactus ×48
+  effort 0.12 min/unit (×1.30 desert) → 7.5 min (target 8.0, range 4–10 min)
+  tier 0 (always available), family plants, profile vanilla, hints desert
+estimated 7.5 min
+reward give_item minecraft:lapis_block ×3 (value 5.4) + xp 25 (value 2.1)  → 7.5 / budget 7.5
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Creeper Slayer"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:creeper ×8
+  effort 1.00 min/unit → 8.0 min (target 8.0, range 4–10 min)
+  tier 0 (always available), family monsters, profile vanilla, hints night
+estimated 8.0 min
+reward give_item minecraft:amethyst_shard ×16 (value 5.6) + xp 29 (value 2.4) + message  → 8.0 / budget 8.0
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Mine Coal Ore"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:coal_ore ×32
+  effort 0.25 min/unit → 8.0 min (target 7.4, range 4–10 min)
+  tier 0 (always available), family coal, profile vanilla, tool wood, hints caves
+estimated 8.0 min
+reward give_item minecraft:cake ×1 (value 3.0) + give_item minecraft:string ×8 (value 3.2) + xp 22 (value 1.8)  → 8.0 / budget 8.0
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "More Horses"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:horse ×2
+  effort 4.00 min/unit → 8.0 min (target 7.1, range 4–10 min)
+  tier 1 (always available), family horses, profile vanilla, hints plains
+estimated 8.0 min
+reward give_item minecraft:bread ×13 (value 5.9) + xp 26 (value 2.2)  → 8.0 / budget 8.0
+rejected alternatives: tame_animal minecraft:horse (horses/donkeys/llamas are not counted on Fabric)
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Torch Request"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:torch ×128
+  effort 0.07 min/unit → 9.0 min (target 10.0, range 4–10 min)
+  tier 0 (always available), family lighting, profile vanilla
+estimated 9.0 min
+reward give_item minecraft:redstone ×32 (value 6.4) + xp 31 (value 2.6)  → 9.0 / budget 9.0
+rejected alternatives: place_block minecraft:torch (wall torches are a different block id)
+state: AVAILABLE
+

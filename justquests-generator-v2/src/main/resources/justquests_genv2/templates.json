@@ -276,7 +276,16 @@
     "exploration": "Explorer",
     "nether_animals": "Nether Ranch",
     "nether_crafts": "Nether Mason",
-    "storage_blocks": "Treasury"
+    "storage_blocks": "Treasury",
+    "mek_osmium": "Osmium",
+    "mek_tin": "Tin",
+    "mek_lead": "Lead",
+    "mek_uranium": "Uranium",
+    "mek_fluorite": "Fluorite",
+    "mek_salt": "Salt",
+    "mek_gear": "Workshop",
+    "mek_radiation": "Hazmat",
+    "mek_machines": "Machine"
   },
   "tools": {
     "stone": "Needs a stone pickaxe or better",

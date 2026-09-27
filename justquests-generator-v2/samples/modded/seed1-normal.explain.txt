@@ -1,96 +1,99 @@
 # modded | world seed 1 | NORMAL | 10 quests | day 30, Nether and End unlocked
 
-justquests:gen/1790510400_5  "Hopper Workshop"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:hopper ×2
-  effort 3.50 min/unit → 7.0 min (target 8.5, range 8–20 min)
-  tier 1 (always available), family iron_works, profile vanilla
-estimated 7.0 min (quick)
-reward give_item minecraft:amethyst_shard ×16 (value 5.6) + xp 34 (value 2.8)  → 8.4 / budget 8.4
+Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism], Minecraft 1.21.1 (neoforge)
+
+justquests:gen/1790510400_7  "Build with Cogwheel"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective place_block create:cogwheel ×32
+  effort 0.25 min/unit → 8.0 min (target 10.8, range 8–20 min)
+  tier 1 (always available), family create_kinetics, profile create
+estimated 8.0 min (quick)
+reward give_item minecraft:arrow ×32 (value 4.8) + xp 60 (value 5.0)  → 9.8 / budget 9.6
+rejected alternatives: craft_item create:hand_crank (max count takes only 2.0 min)
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Salad Order"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective craft_item farmersdelight:mixed_salad ×3
-  effort 1.30 min/unit → 3.9 min (target 9.7, range 8–20 min)
-  tier 0 (always available), family fd_salads, profile farmersdelight
-objective consume_item farmersdelight:fruit_salad ×3
-  effort 1.40 min/unit → 4.2 min (target 9.7, range 8–20 min)
-  tier 0 (always available), family fd_salads, profile farmersdelight
-combo within family fd_salads
-estimated 8.1 min (quick)
-reward give_item minecraft:baked_potato ×32 (value 8.0) + xp 32 (value 2.7)  → 10.7 / budget 10.7
-rejected alternatives: craft_item farmersdelight:nether_salad (tier 3 above NORMAL cap)
+justquests:gen/1790510400_0  "Dig Deepslate Copper Ore"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:deepslate_copper_ore ×20
+  effort 0.40 min/unit (×1.10 deep) → 8.8 min (target 9.4, range 8–20 min)
+  tier 1 (always available), family metals, profile vanilla, tool stone, hints deep
+estimated 8.8 min (quick)
+reward give_item minecraft:prismarine_crystals ×5 (value 7.5) + xp 37 (value 3.1)  → 10.6 / budget 10.6
 state: AVAILABLE
 
-justquests:gen/1790510400_0  "Cooked Cod Snack"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective consume_item minecraft:cooked_cod ×6
-  effort 1.50 min/unit → 9.0 min (target 9.4, range 8–20 min)
-  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
-estimated 9.0 min (quick)
-reward give_item minecraft:experience_bottle ×7 (value 8.4) + xp 29 (value 2.4)  → 10.8 / budget 10.8
+justquests:gen/1790510400_2  "Wild Cabbages Shift"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block farmersdelight:wild_cabbages ×12
+  effort 0.60 min/unit (×1.20 beach) → 8.6 min (target 11.9, range 8–20 min)
+  tier 0 (always available), family fd_wild, profile farmersdelight, hints beach
+estimated 8.6 min (quick)
+reward give_item farmersdelight:rope ×32 (value 2.6) + give_item minecraft:gold_ingot ×4 (value 5.2) + xp 31 (value 2.6)  → 10.3 / budget 10.4
 state: AVAILABLE
 
-justquests:gen/1790510400_1  "Break Wild Rice"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective mine_block farmersdelight:wild_rice ×12
-  effort 0.60 min/unit (×1.30 swamp) → 9.4 min (target 9.9, range 8–20 min)
-  tier 0 (always available), family fd_wild, profile farmersdelight, hints swamp
-estimated 9.4 min (quick)
-reward give_item minecraft:leather ×16 (value 6.4) + xp 60 (value 5.0)  → 11.4 / budget 11.2
+justquests:gen/1790510400_8  "New Metals"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block mekanism:lead_ore ×6
+  effort 0.80 min/unit → 4.8 min (target 9.2, range 8–20 min)
+  tier 1 (always available), family mek_lead, profile mekanism, tool stone, hints caves
+objective mine_block mekanism:deepslate_fluorite_ore ×4
+  effort 1.00 min/unit (×1.10 deep) → 4.4 min (target 9.2, range 8–20 min)
+  tier 1 (always available), family mek_fluorite, profile mekanism, tool stone, hints caves/deep
+theme mek_metal_survey
+estimated 9.2 min (quick)
+reward give_item minecraft:hay_block ×7 (value 9.8) + xp 28 (value 2.3)  → 12.1 / budget 12.1
+rejected alternatives: craft_item mekanism:block_fluorite (tier 1 above NORMAL cap)
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "Make Tomato Crates"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective craft_item farmersdelight:tomato_crate ×6
-  effort 1.50 min/unit → 9.0 min (target 14.6, range 8–20 min)
-  tier 0 (always available), family fd_crops, profile farmersdelight, hints farm
-estimated 9.0 min (quick)
-reward give_item minecraft:coal ×32 (value 8.0) + xp 34 (value 2.8)  → 10.8 / budget 10.8
+justquests:gen/1790510400_3  "Decorator Order"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective craft_item #minecraft:beds ×4
+  effort 1.00 min/unit → 4.0 min (target 12.4, range 8–20 min)
+  tier 0 (always available), family decor, profile vanilla
+objective craft_item minecraft:white_carpet ×40
+  effort 0.15 min/unit → 6.0 min (target 12.4, range 8–20 min)
+  tier 0 (always available), family decor, profile vanilla
+combo within family decor
+estimated 10.0 min (quick)
+reward give_item create:andesite_alloy_block ×3 (value 9.6) + xp 43 (value 3.6) + message  → 13.2 / budget 13.2
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Masonry Work"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective smelt_item minecraft:glass ×64
-  effort 0.10 min/unit → 6.4 min (target 15.4, range 8–20 min)
-  tier 0 (always available), family glass, profile vanilla
-objective place_block minecraft:cobblestone ×128
-  effort 0.05 min/unit → 6.4 min (target 15.4, range 8–20 min)
-  tier 0 (always available), family stone, profile vanilla, tool wood
-theme builders_order
-estimated 12.8 min
-reward give_item farmersdelight:hot_cocoa ×4 (value 6.4) + give_item farmersdelight:bacon_sandwich ×3 (value 5.4) + xp 60 (value 5.0)  → 16.8 / budget 16.9
+justquests:gen/1790510400_6  "Packed Ice Shift"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:packed_ice ×24
+  effort 0.20 min/unit (×1.30 snowy ×1.60 rare) → 10.0 min (target 9.3, range 8–20 min)
+  tier 0 (always available), family snow, profile vanilla, hints snowy/rare
+estimated 10.0 min (quick)
+reward give_item farmersdelight:rope ×32 (value 2.6) + give_item minecraft:lapis_lazuli ×32 (value 6.4) + xp 36 (value 3.0)  → 12.0 / budget 12.0
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "Bring Raw Zinc"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective collect_item create:raw_zinc ×16
-  effort 0.80 min/unit → 12.8 min (target 9.6, range 8–20 min)
-  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves
-estimated 12.8 min
-reward give_item minecraft:baked_potato ×32 (value 8.0) + xp 90 (value 7.5)  → 15.5 / budget 15.4
-rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch); craft_item create:zinc_block (tier 1 above NORMAL cap)
+justquests:gen/1790510400_4  "Need Raw Porkchop"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:porkchop ×40
+  effort 0.30 min/unit → 12.0 min (target 11.2, range 8–20 min)
+  tier 0 (always available), family livestock, profile vanilla
+estimated 12.0 min
+reward give_item minecraft:gold_ingot ×8 (value 10.4) + xp 48 (value 4.0)  → 14.4 / budget 14.4
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Break Redstone Ore"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:redstone_ore ×16
-  effort 0.90 min/unit (×1.10 deep) → 15.8 min (target 17.0, range 8–20 min)
-  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
-estimated 15.8 min
-reward give_item minecraft:saddle ×1 (value 6.0) + give_item minecraft:diamond ×2 (value 10.0) + xp 36 (value 3.0)  → 19.0 / budget 19.0
+justquests:gen/1790510400_5  "Red Sandstone Workshop"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:red_sandstone ×32
+  effort 0.30 min/unit (×1.60 badlands) → 15.4 min (target 18.5, range 8–20 min)
+  tier 0 (always available), family sand, profile vanilla, hints badlands
+estimated 15.4 min
+reward give_item mekanism:fluorite_gem ×32 (value 11.2) + xp 85 (value 7.1)  → 18.3 / budget 18.4
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Ocean Voyage"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:prismarine_shard ×4
-  effort 1.50 min/unit (×1.60 monument) → 9.6 min (target 9.7, range 8–20 min)
-  tier 2 (always available), family ocean, profile vanilla, tool iron, hints monument
-objective kill_mob minecraft:guardian ×2
-  effort 2.50 min/unit (×1.60 monument) → 8.0 min (target 9.7, range 8–20 min)
-  tier 2 (always available), family ocean, profile vanilla, tool iron, hints monument
-theme ocean_voyage
-estimated 17.6 min
-reward give_item farmersdelight:bacon_sandwich ×8 (value 14.4) + xp 105 (value 8.8) + message  → 23.2 / budget 23.2
+justquests:gen/1790510400_9  "Bumper Crop"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:beetroot ×32
+  effort 0.20 min/unit (×1.20 village) → 7.7 min (target 12.6, range 8–20 min)
+  tier 0 (always available), family crops, profile vanilla, hints village/farm
+objective collect_item minecraft:wheat ×48
+  effort 0.15 min/unit → 7.2 min (target 12.6, range 8–20 min)
+  tier 0 (always available), family crops, profile vanilla, hints farm
+theme harvest_festival
+estimated 14.9 min
+reward give_item farmersdelight:bacon_sandwich ×8 (value 14.4) + xp 65 (value 5.4) + message  → 19.8 / budget 19.6
+rejected alternatives: mine_block minecraft:wheat (breaking crops at any stage counts)
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Stray Hunt"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective kill_mob minecraft:stray ×12
-  effort 1.20 min/unit (×1.30 snowy) → 18.7 min (target 17.5, range 8–20 min)
-  tier 1 (always available), family undead, profile vanilla, hints snowy/night
-estimated 18.7 min
-reward give_item create:brass_ingot ×8 (value 16.0) + xp 80 (value 6.7) + message  → 22.7 / budget 22.5
+justquests:gen/1790510400_1  "Tin Ingot Batch"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective smelt_item mekanism:ingot_tin ×24
+  effort 0.75 min/unit → 18.0 min (target 15.6, range 8–20 min)
+  tier 1 (always available), family mek_tin, profile mekanism, tool stone, hints caves
+estimated 18.0 min
+reward give_item minecraft:honey_bottle ×8 (value 9.6) + give_item minecraft:leather ×16 (value 6.4) + xp 65 (value 5.4)  → 21.4 / budget 21.6
 state: AVAILABLE
 

@@ -1,96 +1,96 @@
 # vanilla | world seed 1 | NORMAL | 10 quests | day 30, Nether and End unlocked
 
-justquests:gen/1790510400_0  "Cooked Cod Snack"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective consume_item minecraft:cooked_cod ×6
-  effort 1.50 min/unit → 9.0 min (target 9.4, range 8–20 min)
-  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
-estimated 9.0 min (quick)
-reward give_item minecraft:hay_block ×6 (value 8.4) + xp 29 (value 2.4)  → 10.8 / budget 10.8
+Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.21.1 (neoforge)
+
+justquests:gen/1790510400_0  "Dig Deepslate Copper Ore"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:deepslate_copper_ore ×20
+  effort 0.40 min/unit (×1.10 deep) → 8.8 min (target 9.4, range 8–20 min)
+  tier 1 (always available), family metals, profile vanilla, tool stone, hints deep
+estimated 8.8 min (quick)
+reward give_item minecraft:golden_carrot ×5 (value 7.5) + xp 37 (value 3.1)  → 10.6 / budget 10.6
 state: AVAILABLE
 
-justquests:gen/1790510400_1  "Break Dripstone Blocks"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:dripstone_block ×48
-  effort 0.15 min/unit (×1.30 dripstone_caves) → 9.4 min (target 9.9, range 8–20 min)
-  tier 1 (always available), family stone, profile vanilla, tool wood, hints dripstone_caves
-estimated 9.4 min (quick)
-reward give_item minecraft:baked_potato ×32 (value 8.0) + xp 39 (value 3.3)  → 11.3 / budget 11.2
-state: AVAILABLE
-
-justquests:gen/1790510400_6  "Bee Family"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective breed_animal minecraft:bee ×5
-  effort 1.50 min/unit (×1.20 bees) → 9.0 min (target 9.5, range 8–20 min)
-  tier 0 (always available), family bees, profile vanilla, hints bees
-estimated 9.0 min (quick)
-reward give_item minecraft:coal ×32 (value 8.0) + xp 34 (value 2.8)  → 10.8 / budget 10.8
-state: AVAILABLE
-
-justquests:gen/1790510400_2  "Charcoal Batch"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective smelt_item minecraft:charcoal ×64
-  effort 0.15 min/unit → 9.6 min (target 14.6, range 8–20 min)
-  tier 0 (always available), family wood, profile vanilla
+justquests:gen/1790510400_5  "Smooth Stone Heat"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective smelt_item minecraft:smooth_stone ×64
+  effort 0.15 min/unit → 9.6 min (target 10.8, range 8–20 min)
+  tier 0 (always available), family stone, profile vanilla
 estimated 9.6 min (quick)
-reward give_item minecraft:coal ×32 (value 8.0) + xp 42 (value 3.5)  → 11.5 / budget 11.5
+reward give_item minecraft:iron_ingot ×14 (value 8.4) + xp 37 (value 3.1)  → 11.5 / budget 11.5
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Deep Dig"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:deepslate_gold_ore ×4
-  effort 1.20 min/unit (×1.10 deep) → 5.3 min (target 10.8, range 8–20 min)
-  tier 2 (always available), family metals, profile vanilla, tool iron, hints deep
-objective mine_block minecraft:copper_ore ×16
-  effort 0.30 min/unit → 4.8 min (target 10.8, range 8–20 min)
-  tier 1 (always available), family metals, profile vanilla, tool stone, hints caves
-theme mining_expedition
-estimated 10.1 min (quick)
-reward give_item minecraft:experience_bottle ×8 (value 9.6) + xp 44 (value 3.7) + message  → 13.3 / budget 13.3
-rejected alternatives: collect_item minecraft:gold_ore (drops raw_gold, needs Silk Touch)
+justquests:gen/1790510400_6  "Need Feathers"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:feather ×32
+  effort 0.30 min/unit → 9.6 min (target 9.3, range 8–20 min)
+  tier 0 (always available), family livestock, profile vanilla
+estimated 9.6 min (quick)
+reward give_item minecraft:string ×16 (value 6.4) + xp 60 (value 5.0)  → 11.4 / budget 11.5
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Iron Chain Workshop"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:iron_chain ×16
-  effort 0.70 min/unit → 11.2 min (target 12.8, range 8–20 min)
-  tier 1 (always available), family iron_works, profile vanilla
-estimated 11.2 min (quick)
-reward give_item minecraft:paper ×32 (value 3.8) + effect minecraft:night_vision 510s (value 3.4) + xp 75 (value 6.3)  → 13.5 / budget 13.4
+justquests:gen/1790510400_3  "Copper Order"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:spyglass ×2
+  effort 2.00 min/unit → 4.0 min (target 12.4, range 8–20 min)
+  tier 1 (always available), family copper_works, profile vanilla
+objective craft_item minecraft:copper_block ×5
+  effort 1.30 min/unit → 6.5 min (target 12.4, range 8–20 min)
+  tier 1 (always available), family copper_works, profile vanilla
+combo within family copper_works
+estimated 10.5 min (quick)
+reward give_item minecraft:phantom_membrane ×3 (value 9.0) + xp 60 (value 5.0) + message  → 14.0 / budget 13.9
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Harvest Festival"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:carrot ×32
-  effort 0.15 min/unit (×1.20 village) → 5.8 min (target 11.4, range 8–20 min)
-  tier 0 (always available), family crops, profile vanilla, hints village/farm
-objective collect_item minecraft:beetroot ×24
-  effort 0.20 min/unit (×1.20 village) → 5.8 min (target 11.4, range 8–20 min)
-  tier 0 (always available), family crops, profile vanilla, hints village/farm
-theme harvest_festival
-estimated 11.5 min (quick)
-reward give_item minecraft:lapis_lazuli ×32 (value 6.4) + give_item minecraft:leather ×13 (value 5.2) + xp 43 (value 3.6)  → 15.2 / budget 15.2
+justquests:gen/1790510400_4  "Need Red Mushrooms"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:red_mushroom ×24
+  effort 0.35 min/unit (×1.30 dark_forest) → 10.9 min (target 11.2, range 8–20 min)
+  tier 0 (always available), family mushrooms, profile vanilla, hints dark_forest
+estimated 10.9 min (quick)
+reward give_item minecraft:book ×8 (value 9.6) + xp 42 (value 3.5)  → 13.1 / budget 13.1
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Gather Raw Beef"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:beef ×48
-  effort 0.30 min/unit → 14.4 min (target 16.2, range 8–20 min)
-  tier 0 (always available), family livestock, profile vanilla, hints plains
+justquests:gen/1790510400_9  "Lumberjack"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:dark_oak_log ×64
+  effort 0.10 min/unit (×1.30 dark_forest) → 8.3 min (target 19.2, range 8–20 min)
+  tier 0 (always available), family wood, profile vanilla, hints dark_forest
+objective craft_item minecraft:composter ×8
+  effort 0.30 min/unit → 2.4 min (target 19.2, range 8–20 min)
+  tier 0 (always available), family woodwork, profile vanilla
+theme lumberjack
+estimated 10.7 min (quick)
+reward give_item minecraft:phantom_membrane ×4 (value 12.0) + xp 26 (value 2.2) + message  → 14.2 / budget 14.2
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Slime Menace"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective kill_mob minecraft:slime ×6
+  effort 1.50 min/unit (×1.30 swamp) → 11.7 min (target 10.8, range 8–20 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp
+estimated 11.7 min (quick)
+reward give_item minecraft:baked_potato ×32 (value 8.0) + xp 70 (value 5.8)  → 13.8 / budget 14.0
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Fisherman's Day"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:cod ×8
+  effort 0.80 min/unit → 6.4 min (target 13.4, range 8–20 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
+objective smelt_item minecraft:cooked_salmon ×4
+  effort 1.50 min/unit → 6.0 min (target 13.4, range 8–20 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod, hints cook
+theme fishermans_day
+estimated 12.4 min
+reward give_item minecraft:phantom_membrane ×4 (value 12.0) + xp 50 (value 4.2)  → 16.2 / budget 16.4
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Stop the Skeletons"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective kill_mob minecraft:skeleton ×16
+  effort 0.90 min/unit → 14.4 min (target 15.6, range 8–20 min)
+  tier 0 (always available), family undead, profile vanilla, hints night
 estimated 14.4 min
-reward give_item minecraft:coal ×32 (value 8.0) + xp 110 (value 9.2)  → 17.2 / budget 17.3
+reward give_item minecraft:gold_ingot ×10 (value 13.0) + xp 50 (value 4.2) + message  → 17.2 / budget 17.3
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "Gather Redstone Dust"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:redstone ×64
-  effort 0.20 min/unit (×1.10 deep) → 14.1 min (target 15.3, range 8–20 min)
-  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
-estimated 14.1 min
-reward give_item minecraft:ender_pearl ×5 (value 12.5) + xp 55 (value 4.6)  → 17.1 / budget 16.9
-state: AVAILABLE
-
-justquests:gen/1790510400_3  "Wildlife Job"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective breed_animal minecraft:llama ×3
-  effort 2.50 min/unit (×1.20 savanna) → 9.0 min (target 15.4, range 8–20 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints savanna
-objective collect_item minecraft:rabbit_hide ×6
-  effort 1.00 min/unit (×1.30 desert) → 7.8 min (target 15.4, range 8–20 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints desert
-combo within family wild_animals
-estimated 16.8 min
-reward give_item minecraft:experience_bottle ×14 (value 16.8) + xp 65 (value 5.4)  → 22.2 / budget 22.2
-rejected alternatives: tame_animal minecraft:llama (not counted on Fabric)
+justquests:gen/1790510400_2  "Build with Bookshelf"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective place_block minecraft:bookshelf ×4
+  effort 4.60 min/unit → 18.4 min (target 16.8, range 8–20 min)
+  tier 0 (always available), family library, profile vanilla
+estimated 18.4 min
+reward give_item minecraft:lapis_lazuli ×32 (value 6.4) + give_item minecraft:pumpkin_pie ×8 (value 8.0) + xp 90 (value 7.5)  → 21.9 / budget 22.1
 state: AVAILABLE
 

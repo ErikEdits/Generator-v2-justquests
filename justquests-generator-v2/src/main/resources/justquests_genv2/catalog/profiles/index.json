@@ -2,6 +2,7 @@
   "format": 1,
   "profiles": [
     "farmersdelight.json",
-    "create.json"
+    "create.json",
+    "mekanism.json"
   ]
 }

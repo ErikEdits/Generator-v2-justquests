@@ -1,95 +1,98 @@
 # vanilla | world seed 3 | NORMAL | 10 quests | day 30, Nether and End unlocked
 
-justquests:gen/1790510400_0  "Lily Of The Valley Run"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:lily_of_the_valley ×16
-  effort 0.35 min/unit (×1.40 flower_forest) → 7.8 min (target 10.9, range 8–20 min)
-  tier 0 (always available), family flowers, profile vanilla, hints flower_forest
+Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.21.1 (neoforge)
+
+justquests:gen/1790510400_6  "Goat Herd"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:goat ×3
+  effort 2.00 min/unit (×1.30 mountains) → 7.8 min (target 8.3, range 8–20 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints mountains
 estimated 7.8 min (quick)
-reward give_item minecraft:name_tag ×1 (value 8.0) + xp 17 (value 1.4)  → 9.4 / budget 9.4
+reward give_item minecraft:lapis_block ×4 (value 7.2) + xp 26 (value 2.2)  → 9.4 / budget 9.4
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Sweet Berries Pickup"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:sweet_berries ×64
-  effort 0.12 min/unit (×1.20 taiga) → 9.2 min (target 12.3, range 8–20 min)
-  tier 0 (always available), family fruit, profile vanilla, hints taiga
-estimated 9.2 min (quick)
-reward give_item minecraft:iron_ingot ×14 (value 8.4) + xp 32 (value 2.7)  → 11.1 / budget 11.1
+justquests:gen/1790510400_8  "Pumpkin Pie Crafter"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:pumpkin_pie ×8
+  effort 1.00 min/unit → 8.0 min (target 11.6, range 8–20 min)
+  tier 0 (always available), family fruit, profile vanilla, hints plains
+estimated 8.0 min (quick)
+reward give_item minecraft:redstone_block ×4 (value 7.2) + xp 29 (value 2.4)  → 9.6 / budget 9.6
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Honey Bottle Break"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective consume_item minecraft:honey_bottle ×4
-  effort 1.80 min/unit (×1.20 bees) → 8.6 min (target 14.4, range 8–20 min)
-  tier 0 (always available), family bees, profile vanilla, hints bees/drink
+justquests:gen/1790510400_9  "Builder's Order"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective smelt_item minecraft:glass ×48
+  effort 0.10 min/unit → 4.8 min (target 8.7, range 8–20 min)
+  tier 0 (always available), family glass, profile vanilla
+objective place_block minecraft:bricks ×4
+  effort 0.95 min/unit → 3.8 min (target 8.7, range 8–20 min)
+  tier 0 (always available), family stonework, profile vanilla
+theme builders_order
 estimated 8.6 min (quick)
-reward give_item minecraft:bread ×16 (value 7.2) + xp 38 (value 3.2)  → 10.4 / budget 10.4
+reward give_item minecraft:cookie ×32 (value 3.8) + give_item minecraft:arrow ×31 (value 4.6) + xp 34 (value 2.8)  → 11.3 / budget 11.4
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "Bookworm"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:sugar_cane ×48
-  effort 0.10 min/unit → 4.8 min (target 9.9, range 8–20 min)
-  tier 0 (always available), family plants, profile vanilla, hints river
-objective craft_item minecraft:book ×4
-  effort 1.20 min/unit → 4.8 min (target 9.9, range 8–20 min)
-  tier 0 (always available), family library, profile vanilla
-theme library_project
+justquests:gen/1790510400_3  "Ranch Hand"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:cow ×5
+  effort 1.00 min/unit → 5.0 min (target 10.9, range 8–20 min)
+  tier 0 (always available), family livestock, profile vanilla, hints plains
+objective breed_animal minecraft:sheep ×5
+  effort 1.00 min/unit → 5.0 min (target 10.9, range 8–20 min)
+  tier 0 (always available), family wool, profile vanilla
+theme ranch_hand
+estimated 10.0 min (quick)
+reward give_item minecraft:iron_ingot ×17 (value 10.2) + xp 36 (value 3.0)  → 13.2 / budget 13.2
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Gather Mangrove Logs"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:mangrove_log ×64
+  effort 0.10 min/unit (×1.50 mangrove_swamp) → 9.6 min (target 15.1, range 8–20 min)
+  tier 0 (always available), family wood, profile vanilla, hints mangrove_swamp
 estimated 9.6 min (quick)
-reward give_item minecraft:oak_sapling ×16 (value 2.4) + loot_table minecraft:chests/abandoned_mineshaft (value 7.0) + xp 39 (value 3.3)  → 12.7 / budget 12.7
+reward give_item minecraft:gold_ingot ×7 (value 9.1) + xp 29 (value 2.4)  → 11.5 / budget 11.5
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Smithy Supply"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective smelt_item minecraft:copper_ingot ×64
-  effort 0.13 min/unit → 8.3 min (target 15.4, range 8–20 min)
-  tier 1 (always available), family metals, profile vanilla, tool stone, hints caves
-objective craft_item minecraft:iron_sword ×2
-  effort 1.20 min/unit → 2.4 min (target 15.4, range 8–20 min)
-  tier 1 (always available), family iron_tools, profile vanilla
-theme blacksmith_order
-estimated 10.7 min (quick)
-reward give_item minecraft:book ×8 (value 9.6) + xp 55 (value 4.6)  → 14.2 / budget 14.2
-rejected alternatives: craft_item minecraft:iron_shovel (max count takes only 2.1 min)
+justquests:gen/1790510400_0  "Skeleton Patrol"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:skeleton ×12
+  effort 0.90 min/unit → 10.8 min (target 10.9, range 8–20 min)
+  tier 0 (always available), family undead, profile vanilla, hints night
+estimated 10.8 min (quick)
+reward give_item minecraft:coal_block ×4 (value 9.2) + xp 45 (value 3.8)  → 13.0 / budget 13.0
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Coal Ore Quarry"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective mine_block minecraft:coal_ore ×48
-  effort 0.25 min/unit → 12.0 min (target 11.7, range 8–20 min)
-  tier 0 (always available), family coal, profile vanilla, tool wood, hints caves
-estimated 12.0 min
-reward give_item minecraft:apple ×8 (value 3.2) + give_item minecraft:baked_potato ×30 (value 7.5) + xp 44 (value 3.7)  → 14.4 / budget 14.4
+justquests:gen/1790510400_2  "Camp Cook"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective smelt_item minecraft:cooked_salmon ×4
+  effort 1.50 min/unit → 6.0 min (target 11.6, range 8–20 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod, hints cook
+objective consume_item minecraft:cookie ×16
+  effort 0.32 min/unit → 5.1 min (target 11.6, range 8–20 min)
+  tier 0 (always available), family baking, profile vanilla
+theme camp_cook
+estimated 11.1 min (quick)
+reward give_item minecraft:tnt ×4 (value 10.0) + xp 55 (value 4.6)  → 14.6 / budget 14.7
+rejected alternatives: consume_item minecraft:cake (cake is eaten as a placed block, not a use action)
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Cull the Pillagers"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective kill_mob minecraft:pillager ×4
-  effort 2.50 min/unit (×1.30 outpost) → 13.0 min (target 13.9, range 8–20 min)
-  tier 1 (always available), family illagers, profile vanilla, hints outpost
-estimated 13.0 min
-reward give_item minecraft:redstone ×32 (value 6.4) + give_item minecraft:coal ×21 (value 5.3) + xp 47 (value 3.9)  → 15.6 / budget 15.6
+justquests:gen/1790510400_7  "Crying Obsidian Miner"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:crying_obsidian ×4
+  effort 2.00 min/unit (×1.40 ruined_portal) → 11.2 min (target 10.5, range 8–20 min)
+  tier 2 (always available), family obsidian, profile vanilla, tool diamond, hints ruined_portal
+estimated 11.2 min (quick)
+reward give_item minecraft:glowstone_dust ×32 (value 8.0) + xp 65 (value 5.4)  → 13.4 / budget 13.4
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Sand and Sun"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:sand ×128
-  effort 0.04 min/unit (×1.20 beach) → 6.1 min (target 17.5, range 8–20 min)
-  tier 0 (always available), family sand, profile vanilla, hints beach
-objective kill_mob minecraft:husk ×6
-  effort 1.00 min/unit (×1.30 desert) → 7.8 min (target 17.5, range 8–20 min)
-  tier 0 (always available), family undead, profile vanilla, hints desert/night
-theme desert_trek
-estimated 13.9 min
-reward give_item minecraft:iron_ingot ×23 (value 13.8) + xp 55 (value 4.6)  → 18.4 / budget 18.4
-state: AVAILABLE
-
-justquests:gen/1790510400_1  "Steak Batch"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective smelt_item minecraft:cooked_beef ×40
-  effort 0.40 min/unit → 16.0 min (target 16.2, range 8–20 min)
-  tier 0 (always available), family livestock, profile vanilla, hints plains/cook
+justquests:gen/1790510400_1  "Make Rails"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:rail ×64
+  effort 0.25 min/unit → 16.0 min (target 19.0, range 8–20 min)
+  tier 1 (always available), family iron_works, profile vanilla
 estimated 16.0 min
-reward give_item minecraft:emerald ×6 (value 15.0) + xp 50 (value 4.2)  → 19.2 / budget 19.2
+reward give_item minecraft:cooked_beef ×16 (value 8.0) + give_item minecraft:pumpkin_pie ×6 (value 6.0) + xp 60 (value 5.0)  → 19.0 / budget 19.2
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "More Rabbits"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective breed_animal minecraft:rabbit ×6
-  effort 2.00 min/unit (×1.30 desert) → 15.6 min (target 14.7, range 8–20 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints desert
-estimated 15.6 min
-reward give_item minecraft:cooked_beef ×16 (value 8.0) + give_item minecraft:paper ×32 (value 3.8) + xp 85 (value 7.1)  → 18.9 / budget 18.7
+justquests:gen/1790510400_4  "Hot Iron Ingots"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective smelt_item minecraft:iron_ingot ×32
+  effort 0.55 min/unit → 17.6 min (target 17.4, range 8–20 min)
+  tier 1 (always available), family metals, profile vanilla, tool stone, hints caves
+estimated 17.6 min
+reward give_item minecraft:experience_bottle ×13 (value 15.6) + xp 65 (value 5.4)  → 21.0 / budget 21.1
+rejected alternatives: collect_item minecraft:iron_ore (drops raw_iron, needs Silk Touch)
 state: AVAILABLE
 

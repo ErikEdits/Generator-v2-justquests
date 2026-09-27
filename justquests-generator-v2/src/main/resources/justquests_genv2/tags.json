@@ -80,6 +80,33 @@
       ],
       "name": "tomato",
       "plural": "tomatoes"
+    },
+    "osmium_ingots": {
+      "kind": "item",
+      "candidates": [
+        "c:ingots/osmium",
+        "forge:ingots/osmium"
+      ],
+      "name": "osmium ingot",
+      "plural": "osmium ingots"
+    },
+    "tin_ingots": {
+      "kind": "item",
+      "candidates": [
+        "c:ingots/tin",
+        "forge:ingots/tin"
+      ],
+      "name": "tin ingot",
+      "plural": "tin ingots"
+    },
+    "lead_ingots": {
+      "kind": "item",
+      "candidates": [
+        "c:ingots/lead",
+        "forge:ingots/lead"
+      ],
+      "name": "lead ingot",
+      "plural": "lead ingots"
     }
   }
 }

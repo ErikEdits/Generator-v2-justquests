@@ -1,106 +1,98 @@
 {
   "justquests:gen/1790510400_0": {
-    "title": "Diamond Sword Crafter",
-    "description": "Craft a diamond sword.",
+    "title": "Mine Nether Gold Ore",
+    "description": "Mine 32 Nether gold ore. Found in the Nether.",
     "category": "generated",
-    "sort": 11,
+    "sort": 14,
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:diamond_sword",
-        "count": 1
+        "type": "justquests:mine_block",
+        "block": "minecraft:nether_gold_ore",
+        "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:ender_pearl",
-        "count": 3
+        "item": "farmersdelight:tomato",
+        "count": 32
       },
       {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/village/village_weaponsmith"
+        "type": "justquests:effect",
+        "effect": "minecraft:jump_boost",
+        "seconds": 300,
+        "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 42
+        "amount": 180
       }
     ]
   },
   "justquests:gen/1790510400_8": {
-    "title": "Kinetics Supplies",
-    "description": "Craft 24 large cogwheels and place 64 shafts.",
+    "title": "Dinner Job",
+    "description": "Eat 5 cooked rice and craft 4 stuffed potatoes. Cook rice in a Cooking Pot.",
     "category": "generated",
-    "sort": 12,
+    "sort": 14,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "create:large_cogwheel",
-        "count": 24
+        "type": "justquests:consume_item",
+        "item": "farmersdelight:cooked_rice",
+        "count": 5
       },
       {
-        "type": "justquests:place_block",
-        "block": "create:shaft",
-        "count": 64
+        "type": "justquests:craft_item",
+        "item": "farmersdelight:stuffed_potato",
+        "count": 4
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:honeyed_apple",
-        "count": 3
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/abandoned_mineshaft"
+        "item": "mekanism:ingot_lead",
+        "count": 18
       },
       {
         "type": "justquests:xp",
-        "amount": 50
+        "amount": 75
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Chocolate Glazed Berries Snack",
+    "description": "Eat 4 chocolate glazed berries.",
+    "category": "generated",
+    "sort": 16,
+    "objectives": [
+      {
+        "type": "justquests:consume_item",
+        "item": "create:chocolate_glazed_berries",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:powered_rail",
+        "count": 11
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 75
       }
     ]
   },
   "justquests:gen/1790510400_1": {
-    "title": "Cooked Salmon Slice Order",
-    "description": "Cook 16 salmon slices. Slice salmon on a cutting board, then cook. Use a fishing rod.",
+    "title": "Furnace: Uranium Ingot",
+    "description": "Smelt 16 uranium ingots. Smelt raw uranium in a furnace. Needs a stone pickaxe or better. Found in caves.",
     "category": "generated",
-    "sort": 14,
+    "sort": 19,
     "objectives": [
       {
         "type": "justquests:smelt_item",
-        "item": "farmersdelight:cooked_salmon_slice",
+        "item": "mekanism:ingot_uranium",
         "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:hay_block",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 125
-      }
-    ]
-  },
-  "justquests:gen/1790510400_2": {
-    "title": "Farmer's Market",
-    "description": "The market needs fresh produce: pick up 48 cabbage and gather 48 onions. Cabbage seeds come from wild cabbages on beaches.",
-    "category": "generated",
-    "sort": 14,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "farmersdelight:cabbage",
-        "count": 48
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "farmersdelight:onion",
-        "count": 48
       }
     ],
     "rewards": [
@@ -110,184 +102,206 @@
         "count": 6
       },
       {
-        "type": "justquests:xp",
-        "amount": 100
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Orchard Supplies",
-    "description": "Pick up 24 pumpkins and pick up 4 apples. Common in plains. Oak and dark oak leaves sometimes drop apples.",
-    "category": "generated",
-    "sort": 18,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:pumpkin",
-        "count": 24
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:apple",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:emerald",
-        "count": 9
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 80
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Deepslate Zinc Ore Dig",
-    "description": "Break 20 deepslate zinc ore. Needs an iron pickaxe or better. Found in caves. Found deep underground.",
-    "category": "generated",
-    "sort": 20,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "create:deepslate_zinc_ore",
-        "count": 20
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 16
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 105
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Busy Bees",
-    "description": "Tend the hives: breed 8 bees and drink 4 honey bottles. Bees breed with flowers. Needs bees and flowers. Use a glass bottle on a full hive.",
-    "category": "generated",
-    "sort": 23,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:bee",
-        "count": 8
-      },
-      {
-        "type": "justquests:consume_item",
-        "item": "minecraft:honey_bottle",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
-        "count": 24
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/desert_pyramid"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 175
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Gold Ore Excavation",
-    "description": "Break 20 gold ore. Needs an iron pickaxe or better. Found deep underground.",
-    "category": "generated",
-    "sort": 26,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:gold_ore",
-        "count": 20
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:emerald",
-        "count": 10
-      },
-      {
         "type": "justquests:effect",
-        "effect": "minecraft:water_breathing",
+        "effect": "minecraft:luck",
         "seconds": 600,
         "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 115
+        "amount": 120
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Emerald Ore Dig",
-    "description": "Break 2 emerald ore. Needs an iron pickaxe or better. Look in the mountains. Rare, so take your time.",
+  "justquests:gen/1790510400_6": {
+    "title": "Prismarine Shard Run",
+    "description": "Collect 8 prismarine shards. Needs an iron pickaxe or better. Found at ocean monuments.",
     "category": "generated",
-    "sort": 29,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:emerald_ore",
-        "count": 2
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:netherite_scrap",
-        "count": 1
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 16
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 130
-      }
-    ]
-  },
-  "justquests:gen/1790510400_3": {
-    "title": "Prismarine Shard Haul",
-    "description": "Pick up 16 prismarine shards. Needs an iron pickaxe or better. Found at ocean monuments.",
-    "category": "generated",
-    "sort": 38,
+    "sort": 19,
     "objectives": [
       {
         "type": "justquests:collect_item",
         "item": "minecraft:prismarine_shard",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:tnt",
+        "count": 4
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:haste",
+        "seconds": 480,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 150
+      }
+    ]
+  },
+  "justquests:gen/1790510400_2": {
+    "title": "Sandwich Job",
+    "description": "Craft 6 bacon sandwiches and eat 4 hamburgers.",
+    "category": "generated",
+    "sort": 21,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "farmersdelight:bacon_sandwich",
+        "count": 6
+      },
+      {
+        "type": "justquests:consume_item",
+        "item": "farmersdelight:hamburger",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:hay_block",
+        "count": 8
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "create:zinc_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 100
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Deepslate Gold Ore Dig",
+    "description": "Mine 16 deepslate gold ore. Needs an iron pickaxe or better. Found deep underground.",
+    "category": "generated",
+    "sort": 21,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:deepslate_gold_ore",
         "count": 16
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 16
+        "item": "minecraft:honey_bottle",
+        "count": 8
       },
       {
-        "type": "justquests:give_item",
-        "item": "create:bar_of_chocolate",
-        "count": 7
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/bastion_other"
       },
       {
         "type": "justquests:xp",
-        "amount": 190
+        "amount": 75
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Nether Garden Order",
+    "description": "Collect 24 Nether wart and pick up 16 crimson fungi. Found in Nether fortresses. Found in the Nether. Found in crimson forests.",
+    "category": "generated",
+    "sort": 21,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:nether_wart",
+        "count": 24
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:crimson_fungus",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:ender_pearl",
+        "count": 8
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 180
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Library Duty",
+    "description": "Craft 8 books and place 3 bookshelves.",
+    "category": "generated",
+    "sort": 23,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:book",
+        "count": 8
+      },
+      {
+        "type": "justquests:place_block",
+        "block": "minecraft:bookshelf",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:cake",
+        "count": 1
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:raw_osmium",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 160
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Catch of the Day",
+    "description": "A day by the water: collect 16 raw salmon and cook 8 salmon. Use a fishing rod.",
+    "category": "generated",
+    "sort": 34,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:salmon",
+        "count": 16
+      },
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:cooked_salmon",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:slime_ball",
+        "count": 8
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/village/village_weaponsmith"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 455
       }
     ]
   }

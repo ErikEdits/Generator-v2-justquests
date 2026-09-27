@@ -1,92 +1,92 @@
 # vanilla | world seed 2 | NORMAL | 10 quests | day 30, Nether and End unlocked
 
-justquests:gen/1790510400_5  "Apple Snack"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective consume_item minecraft:apple ×3
-  effort 2.40 min/unit → 7.2 min (target 11.3, range 8–20 min)
-  tier 0 (always available), family fruit, profile vanilla
-estimated 7.2 min (quick)
-reward give_item minecraft:emerald ×3 (value 7.5) + xp 14 (value 1.2)  → 8.7 / budget 8.6
+Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.21.1 (neoforge)
+
+justquests:gen/1790510400_0  "Bring Dark Oak Logs"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:dark_oak_log ×64
+  effort 0.10 min/unit (×1.30 dark_forest) → 8.3 min (target 9.2, range 8–20 min)
+  tier 0 (always available), family wood, profile vanilla, hints dark_forest
+estimated 8.3 min (quick)
+reward give_item minecraft:honeycomb ×7 (value 7.0) + xp 36 (value 3.0)  → 10.0 / budget 10.0
 state: AVAILABLE
 
-justquests:gen/1790510400_0  "Jungle Log Haul"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective collect_item minecraft:jungle_log ×64
-  effort 0.10 min/unit (×1.40 jungle) → 9.0 min (target 9.2, range 8–20 min)
-  tier 0 (always available), family wood, profile vanilla, hints jungle
+justquests:gen/1790510400_7  "Packed Mud Request"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:packed_mud ×24
+  effort 0.25 min/unit (×1.50 mangrove_swamp) → 9.0 min (target 9.5, range 8–20 min)
+  tier 0 (always available), family soil, profile vanilla, hints mangrove_swamp
 estimated 9.0 min (quick)
-reward give_item minecraft:emerald ×3 (value 7.5) + xp 39 (value 3.3)  → 10.8 / budget 10.8
+reward give_item minecraft:tnt ×3 (value 7.5) + xp 40 (value 3.3)  → 10.8 / budget 10.8
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "Raw Beef Stockpile"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective collect_item minecraft:beef ×32
-  effort 0.30 min/unit → 9.6 min (target 10.4, range 8–20 min)
-  tier 0 (always available), family livestock, profile vanilla, hints plains
+justquests:gen/1790510400_5  "Pumpkin Delivery"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:pumpkin ×24
+  effort 0.40 min/unit → 9.6 min (target 17.7, range 8–20 min)
+  tier 0 (always available), family fruit, profile vanilla, hints plains
 estimated 9.6 min (quick)
-reward give_item minecraft:paper ×32 (value 3.8) + effect minecraft:jump_boost 300s (value 1.5) + xp 75 (value 6.3)  → 11.6 / budget 11.5
+reward give_item minecraft:iron_block ×2 (value 10.8) + xp 9 (value 0.8) + message  → 11.6 / budget 11.5
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Breed Sheep"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective breed_animal minecraft:sheep ×12
-  effort 1.00 min/unit → 12.0 min (target 16.2, range 8–20 min)
-  tier 0 (always available), family wool, profile vanilla
-estimated 12.0 min
-reward give_item minecraft:pumpkin_pie ×8 (value 8.0) + xp 75 (value 6.3)  → 14.3 / budget 14.4
+justquests:gen/1790510400_6  "Baby Cows"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective breed_animal minecraft:cow ×10
+  effort 1.00 min/unit → 10.0 min (target 9.3, range 8–20 min)
+  tier 0 (always available), family livestock, profile vanilla, hints plains
+estimated 10.0 min (quick)
+reward give_item minecraft:gold_ingot ×7 (value 9.1) + xp 35 (value 2.9)  → 12.0 / budget 12.0
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Craft Rails"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective craft_item minecraft:rail ×48
-  effort 0.25 min/unit → 12.0 min (target 13.8, range 8–20 min)
+justquests:gen/1790510400_1  "Railway Builder"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:bucket ×3
+  effort 1.60 min/unit → 4.8 min (target 19.2, range 8–20 min)
   tier 1 (always available), family iron_works, profile vanilla
-estimated 12.0 min
-reward give_item minecraft:emerald ×3 (value 7.5) + effect minecraft:luck 600s (value 3.0) + xp 47 (value 3.9)  → 14.4 / budget 14.4
-state: AVAILABLE
-
-justquests:gen/1790510400_2  "Craft Bread"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective craft_item minecraft:bread ×32
-  effort 0.45 min/unit → 14.4 min (target 14.6, range 8–20 min)
-  tier 0 (always available), family baking, profile vanilla
+objective place_block minecraft:rail ×32
+  effort 0.30 min/unit → 9.6 min (target 19.2, range 8–20 min)
+  tier 1 (always available), family iron_works, profile vanilla
+theme railway_builder
 estimated 14.4 min
-reward give_item minecraft:lantern ×8 (value 6.4) + give_item minecraft:emerald ×3 (value 7.5) + xp 41 (value 3.4)  → 17.3 / budget 17.3
-rejected alternatives: consume_item minecraft:cake (cake is eaten as a placed block, not a use action)
+reward give_item minecraft:golden_carrot ×10 (value 15.0) + xp 48 (value 4.0)  → 19.0 / budget 19.0
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "String Stockpile"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective collect_item minecraft:string ×32
-  effort 0.50 min/unit → 16.0 min (target 18.7, range 8–20 min)
-  tier 0 (always available), family arthropods, profile vanilla, hints night
-estimated 16.0 min
-reward give_item minecraft:tnt ×4 (value 10.0) + xp 110 (value 9.2)  → 19.2 / budget 19.2
+justquests:gen/1790510400_2  "Copper Ore Excavation"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:copper_ore ×48
+  effort 0.30 min/unit → 14.4 min (target 18.5, range 8–20 min)
+  tier 1 (always available), family metals, profile vanilla, tool stone, hints caves
+estimated 14.4 min
+reward give_item minecraft:white_wool ×32 (value 8.0) + xp 110 (value 9.2) + message  → 17.2 / budget 17.3
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Construction Job"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective craft_item minecraft:blast_furnace ×3
-  effort 3.00 min/unit → 9.0 min (target 19.8, range 8–20 min)
-  tier 1 (always available), family stonework, profile vanilla
-objective place_block minecraft:glass ×64
-  effort 0.12 min/unit → 7.7 min (target 19.8, range 8–20 min)
-  tier 0 (always available), family glass, profile vanilla
-theme builders_order
-estimated 16.7 min
-reward give_item minecraft:golden_apple ×2 (value 18.0) + xp 48 (value 4.0)  → 22.0 / budget 22.0
+justquests:gen/1790510400_8  "Dig Crying Obsidian"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:crying_obsidian ×5
+  effort 2.00 min/unit (×1.40 ruined_portal) → 14.0 min (target 14.9, range 8–20 min)
+  tier 2 (always available), family obsidian, profile vanilla, tool diamond, hints ruined_portal
+estimated 14.0 min
+reward give_item minecraft:redstone_block ×4 (value 7.2) + give_item minecraft:blaze_powder ×6 (value 5.4) + xp 50 (value 4.2)  → 16.8 / budget 16.8
 state: AVAILABLE
 
-justquests:gen/1790510400_1  "Harvest Festival"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective collect_item minecraft:wheat ×64
-  effort 0.15 min/unit → 9.6 min (target 17.7, range 8–20 min)
-  tier 0 (always available), family crops, profile vanilla, hints farm
-objective collect_item minecraft:beetroot ×40
-  effort 0.20 min/unit (×1.20 village) → 9.6 min (target 17.7, range 8–20 min)
-  tier 0 (always available), family crops, profile vanilla, hints village/farm
-theme harvest_festival
-estimated 19.2 min
-reward give_item minecraft:arrow ×32 (value 4.8) + give_item minecraft:slime_ball ×8 (value 12.0) + xp 105 (value 8.8)  → 25.6 / budget 25.3
-rejected alternatives: mine_block minecraft:wheat (breaking crops at any stage counts)
+justquests:gen/1790510400_9  "Cobweb Dig"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:cobweb ×24
+  effort 0.50 min/unit (×1.30 mineshaft) → 15.6 min (target 17.9, range 8–20 min)
+  tier 1 (always available), family arthropods, profile vanilla, hints mineshaft
+estimated 15.6 min
+reward give_item minecraft:obsidian ×14 (value 14.0) + xp 55 (value 4.6)  → 18.6 / budget 18.7
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Rabbit Breeder"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective breed_animal minecraft:rabbit ×8
-  effort 2.00 min/unit (×1.30 desert) → 20.8 min (target 19.2, range 8–20 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints desert
+justquests:gen/1790510400_4  "Sand Chores"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item minecraft:smooth_red_sandstone ×16
+  effort 0.35 min/unit (×1.60 badlands) → 9.0 min (target 18.4, range 8–20 min)
+  tier 0 (always available), family sand, profile vanilla, hints badlands
+objective smelt_item minecraft:smooth_sandstone ×64
+  effort 0.12 min/unit (×1.30 desert) → 10.0 min (target 18.4, range 8–20 min)
+  tier 0 (always available), family sand, profile vanilla, tool wood, hints desert
+combo within family sand
+estimated 18.9 min
+reward give_item minecraft:bookshelf ×4 (value 18.0) + xp 85 (value 7.1)  → 25.1 / budget 25.0
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Husk Hunt"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective kill_mob minecraft:husk ×16
+  effort 1.00 min/unit (×1.30 desert) → 20.8 min (target 18.7, range 8–20 min)
+  tier 0 (always available), family undead, profile vanilla, hints desert/night
 estimated 20.8 min
-reward give_item minecraft:gold_ingot ×14 (value 18.2) + xp 80 (value 6.7)  → 24.9 / budget 25.0
+reward give_item minecraft:iron_ingot ×24 (value 14.4) + xp 125 (value 10.4)  → 24.8 / budget 25.0
 state: AVAILABLE
 

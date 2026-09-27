@@ -1,0 +1,119 @@
+# mc-1.18.2 | world seed 3 | HARD | 10 quests | day 30, Nether and End unlocked
+
+Generator v2: enabled, difficulty hard, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.18.2 (forge)
+
+justquests:gen/1790510400_3  "Lumber Chores"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:oak_log ×64
+  effort 0.10 min/unit → 6.4 min (target 28.1, range 15–35 min)
+  tier 0 (always available), family wood, profile vanilla
+objective collect_item minecraft:dark_oak_log ×64
+  effort 0.10 min/unit (×1.30 dark_forest) → 8.3 min (target 28.1, range 15–35 min)
+  tier 0 (always available), family wood, profile vanilla, hints dark_forest
+combo within family wood
+estimated 14.7 min (quick)
+reward give_item minecraft:gold_ingot ×14 (value 18.2) + xp 75 (value 6.3)  → 24.5 / budget 24.3
+state: AVAILABLE
+
+justquests:gen/1790510400_0  "Mine Ancient Debris"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:ancient_debris ×1
+  effort 10.00 min/unit (×1.60 rare) → 16.0 min (target 19.8, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_ores, profile vanilla, tool diamond, hints rare, minecraft:the_nether
+travel overhead 3.0 min
+estimated 19.0 min (quick)
+reward give_item minecraft:prismarine_crystals ×8 (value 12.0) + give_item minecraft:experience_bottle ×8 (value 9.6) + xp 85 (value 7.1)  → 28.7 / budget 28.5
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Campfire Dinner"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective smelt_item minecraft:cooked_porkchop ×32
+  effort 0.40 min/unit → 12.8 min (target 27.3, range 15–35 min)
+  tier 0 (always available), family livestock, profile vanilla, hints cook
+objective consume_item minecraft:beetroot_soup ×3
+  effort 2.00 min/unit (×1.20 village) → 7.2 min (target 27.3, range 15–35 min)
+  tier 0 (always available), family crops, profile vanilla, hints village/farm
+theme camp_cook
+estimated 20.0 min (quick)
+reward give_item minecraft:emerald ×10 (value 25.0) + xp 95 (value 7.9)  → 32.9 / budget 33.0
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Cave Spider Cleanup"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:cave_spider ×10
+  effort 1.50 min/unit (×1.30 mineshaft) → 19.5 min (target 18.4, range 15–35 min)
+  tier 1 (always available), family arthropods, profile vanilla, hints mineshaft
+estimated 19.5 min (quick)
+reward give_item minecraft:golden_carrot ×15 (value 22.5) + xp 80 (value 6.7)  → 29.2 / budget 29.3
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Monster Errand"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:slime ×5
+  effort 1.50 min/unit (×1.30 swamp) → 9.8 min (target 19.6, range 15–35 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp
+objective kill_mob minecraft:creeper ×10
+  effort 1.00 min/unit → 10.0 min (target 19.6, range 15–35 min)
+  tier 0 (always available), family monsters, profile vanilla, hints night
+combo within family monsters
+estimated 19.8 min (quick)
+reward give_item minecraft:golden_apple ×2 (value 18.0) + xp 175 (value 14.6)  → 32.6 / budget 32.6
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Bouquet"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:red_tulip ×16
+  effort 0.30 min/unit (×1.40 flower_forest) → 6.7 min (target 31.3, range 15–35 min)
+  tier 0 (always available), family flowers, profile vanilla, hints flower_forest
+objective collect_item minecraft:lily_of_the_valley ×16
+  effort 0.35 min/unit (×1.40 flower_forest) → 7.8 min (target 31.3, range 15–35 min)
+  tier 0 (always available), family flowers, profile vanilla, hints flower_forest
+objective craft_item minecraft:blue_dye ×24
+  effort 0.25 min/unit → 6.0 min (target 31.3, range 15–35 min)
+  tier 0 (always available), family dyes, profile vanilla
+theme florist
+estimated 20.6 min (quick)
+reward give_item minecraft:white_wool ×32 (value 8.0) + give_item minecraft:iron_ingot ×24 (value 14.4) + xp 175 (value 14.6)  → 37.0 / budget 37.0
+rejected alternatives: collect_item minecraft:dandelion (max count takes only 3.2 min); collect_item minecraft:poppy (max count takes only 3.2 min); craft_item minecraft:red_dye (max count takes only 3.8 min)
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Rail Line"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:iron_chain ×16
+  effort 0.70 min/unit → 11.2 min (target 20.1, range 15–35 min)
+  tier 1 (always available), family iron_works, profile vanilla
+objective place_block minecraft:rail ×32
+  effort 0.30 min/unit → 9.6 min (target 20.1, range 15–35 min)
+  tier 1 (always available), family iron_works, profile vanilla
+theme railway_builder
+estimated 20.8 min (quick)
+reward give_item minecraft:emerald_block ×1 (value 22.5) + xp 140 (value 11.7)  → 34.2 / budget 34.3
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Husk Bounty"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:husk ×16
+  effort 1.00 min/unit (×1.30 desert) → 20.8 min (target 21.1, range 15–35 min)
+  tier 0 (always available), family undead, profile vanilla, hints desert/night
+estimated 20.8 min (quick)
+reward give_item minecraft:bookshelf ×4 (value 18.0) + xp 160 (value 13.3)  → 31.3 / budget 31.2
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Circuit Builder"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:redstone ×64
+  effort 0.20 min/unit (×1.10 deep) → 14.1 min (target 33.3, range 15–35 min)
+  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
+objective craft_item minecraft:piston ×8
+  effort 1.20 min/unit → 9.6 min (target 33.3, range 15–35 min)
+  tier 2 (always available), family redstone, profile vanilla
+theme redstone_workshop
+estimated 23.7 min
+reward give_item minecraft:tnt ×4 (value 10.0) + give_item minecraft:gold_ingot ×15 (value 19.5) + xp 115 (value 9.6)  → 39.1 / budget 39.1
+rejected alternatives: craft_item minecraft:compass (max count takes only 2.4 min)
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Gem Errand"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:emerald_ore ×1
+  effort 7.00 min/unit (×1.30 mountains ×1.60 rare) → 14.6 min (target 25.0, range 15–35 min)
+  tier 2 (always available), family gems, profile vanilla, tool iron, hints mountains/rare
+objective mine_block minecraft:lapis_ore ×8
+  effort 1.20 min/unit (×1.10 deep) → 10.6 min (target 25.0, range 15–35 min)
+  tier 2 (always available), family gems, profile vanilla, tool stone, hints deep
+combo within family gems
+estimated 25.1 min
+reward give_item minecraft:prismarine_crystals ×8 (value 12.0) + give_item minecraft:cooked_beef ×16 (value 8.0) + xp 255 (value 21.3)  → 41.3 / budget 41.4
+rejected alternatives: collect_item minecraft:emerald (villager trades do not count as pickups)
+state: AVAILABLE
+

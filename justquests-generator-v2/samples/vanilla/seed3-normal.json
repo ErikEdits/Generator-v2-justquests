@@ -1,133 +1,188 @@
 {
-  "justquests:gen/1790510400_0": {
-    "title": "Lily Of The Valley Run",
-    "description": "Collect 16 lily of the valleys. Flower forests have the most.",
+  "justquests:gen/1790510400_6": {
+    "title": "Goat Herd",
+    "description": "Breed 3 goats. Goats breed with wheat. Look in the mountains.",
     "category": "generated",
     "sort": 8,
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:lily_of_the_valley",
-        "count": 16
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:goat",
+        "count": 3
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:name_tag",
-        "count": 1
+        "item": "minecraft:lapis_block",
+        "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 17
+        "amount": 26
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Sweet Berries Pickup",
-    "description": "Gather 64 sweet berries. Look in taigas.",
+  "justquests:gen/1790510400_8": {
+    "title": "Pumpkin Pie Crafter",
+    "description": "Craft 8 pumpkin pies. Pumpkin, sugar and an egg. Common in plains.",
     "category": "generated",
-    "sort": 9,
+    "sort": 8,
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:sweet_berries",
-        "count": 64
+        "type": "justquests:craft_item",
+        "item": "minecraft:pumpkin_pie",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:redstone_block",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 29
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Builder's Order",
+    "description": "The builders need material: smelt 48 glass and place 4 bricks. Smelt sand in a furnace.",
+    "category": "generated",
+    "sort": 9,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:glass",
+        "count": 48
+      },
+      {
+        "type": "justquests:place_block",
+        "block": "minecraft:bricks",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:cookie",
+        "count": 32
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:arrow",
+        "count": 31
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 34
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Ranch Hand",
+    "description": "The ranch needs a hand: breed 5 cows and breed 5 sheep. Cows breed with wheat. Common in plains. Sheep breed with wheat.",
+    "category": "generated",
+    "sort": 10,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:cow",
+        "count": 5
+      },
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:sheep",
+        "count": 5
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
         "item": "minecraft:iron_ingot",
-        "count": 14
+        "count": 17
       },
       {
         "type": "justquests:xp",
-        "amount": 32
+        "amount": 36
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Honey Bottle Break",
-    "description": "Drink 4 honey bottles. Use a glass bottle on a full hive. Needs bees and flowers.",
+  "justquests:gen/1790510400_5": {
+    "title": "Gather Mangrove Logs",
+    "description": "Collect 64 mangrove logs. Look in mangrove swamps.",
     "category": "generated",
-    "sort": 9,
+    "sort": 10,
     "objectives": [
       {
-        "type": "justquests:consume_item",
-        "item": "minecraft:honey_bottle",
-        "count": 4
+        "type": "justquests:collect_item",
+        "item": "minecraft:mangrove_log",
+        "count": 64
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:bread",
-        "count": 16
+        "item": "minecraft:gold_ingot",
+        "count": 7
       },
       {
         "type": "justquests:xp",
-        "amount": 38
+        "amount": 29
+      }
+    ]
+  },
+  "justquests:gen/1790510400_0": {
+    "title": "Skeleton Patrol",
+    "description": "Defeat 12 skeletons. They spawn at night and in dark caves.",
+    "category": "generated",
+    "sort": 11,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:skeleton",
+        "count": 12
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:coal_block",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 45
       }
     ]
   },
   "justquests:gen/1790510400_2": {
-    "title": "Bookworm",
-    "description": "The librarian needs books: pick up 48 sugar cane and craft 4 books. Look along rivers.",
-    "category": "generated",
-    "sort": 10,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:sugar_cane",
-        "count": 48
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:book",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:oak_sapling",
-        "count": 16
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/abandoned_mineshaft"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 39
-      }
-    ]
-  },
-  "justquests:gen/1790510400_3": {
-    "title": "Smithy Supply",
-    "description": "The smithy needs help: smelt 64 copper ingots and craft 2 iron swords. Smelt raw copper in a furnace. Needs a stone pickaxe or better.",
+    "title": "Camp Cook",
+    "description": "Feed the camp: cook 4 salmon and eat 16 cookies. Use a fishing rod.",
     "category": "generated",
     "sort": 11,
     "mode": "all",
     "objectives": [
       {
         "type": "justquests:smelt_item",
-        "item": "minecraft:copper_ingot",
-        "count": 64
+        "item": "minecraft:cooked_salmon",
+        "count": 4
       },
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:iron_sword",
-        "count": 2
+        "type": "justquests:consume_item",
+        "item": "minecraft:cookie",
+        "count": 16
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:book",
-        "count": 8
+        "item": "minecraft:tnt",
+        "count": 4
       },
       {
         "type": "justquests:xp",
@@ -135,128 +190,40 @@
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Coal Ore Quarry",
-    "description": "Mine 48 coal ore. Found in caves.",
+  "justquests:gen/1790510400_7": {
+    "title": "Crying Obsidian Miner",
+    "description": "Mine 4 crying obsidian. Needs a diamond pickaxe. Look around ruined portals.",
     "category": "generated",
-    "sort": 12,
+    "sort": 11,
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "minecraft:coal_ore",
-        "count": 48
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:apple",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:baked_potato",
-        "count": 30
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 44
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Cull the Pillagers",
-    "description": "Defeat 4 pillagers. Found at pillager outposts.",
-    "category": "generated",
-    "sort": 13,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:pillager",
+        "block": "minecraft:crying_obsidian",
         "count": 4
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:redstone",
+        "item": "minecraft:glowstone_dust",
         "count": 32
       },
       {
-        "type": "justquests:give_item",
-        "item": "minecraft:coal",
-        "count": 21
-      },
-      {
         "type": "justquests:xp",
-        "amount": 47
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Sand and Sun",
-    "description": "Brave the desert: pick up 128 sand and hunt 6 husks. Dig sand with a shovel. Look along beaches. Look in deserts.",
-    "category": "generated",
-    "sort": 14,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:sand",
-        "count": 128
-      },
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:husk",
-        "count": 6
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
-        "count": 23
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 55
+        "amount": 65
       }
     ]
   },
   "justquests:gen/1790510400_1": {
-    "title": "Steak Batch",
-    "description": "Cook 40 steak. Cook raw beef. Common in plains.",
+    "title": "Make Rails",
+    "description": "Craft 64 rails.",
     "category": "generated",
     "sort": 16,
     "objectives": [
       {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_beef",
-        "count": 40
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:emerald",
-        "count": 6
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 50
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "More Rabbits",
-    "description": "Breed 6 rabbits. Rabbits breed with carrots or dandelions. Look in deserts.",
-    "category": "generated",
-    "sort": 16,
-    "objectives": [
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:rabbit",
-        "count": 6
+        "type": "justquests:craft_item",
+        "item": "minecraft:rail",
+        "count": 64
       }
     ],
     "rewards": [
@@ -267,12 +234,36 @@
       },
       {
         "type": "justquests:give_item",
-        "item": "minecraft:paper",
-        "count": 32
+        "item": "minecraft:pumpkin_pie",
+        "count": 6
       },
       {
         "type": "justquests:xp",
-        "amount": 85
+        "amount": 60
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Hot Iron Ingots",
+    "description": "Smelt 32 iron ingots. Smelt raw iron in a furnace. Needs a stone pickaxe or better. Found in caves.",
+    "category": "generated",
+    "sort": 18,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:iron_ingot",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:experience_bottle",
+        "count": 13
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 65
       }
     ]
   }

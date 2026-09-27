@@ -27,13 +27,18 @@ public final class SampleWriter {
 
     public static void main(String[] args) throws IOException {
         Path root = Path.of(args.length > 0 ? args[0] : "samples");
-        for (String kind : new String[]{"vanilla", "modded"}) {
+        for (String kind : new String[]{"vanilla", "modded", "mc-1.18.2"}) {
             Files.createDirectories(root.resolve(kind));
             for (long seed = 1; seed <= 3; seed++) {
                 for (Difficulty d : Difficulty.values()) {
                     FakeHost host = new FakeHost();
                     if (kind.equals("modded")) {
-                        host.withMods("farmersdelight", "create");
+                        host.withMods("farmersdelight", "create", "mekanism");
+                    }
+                    if (kind.equals("mc-1.18.2")) {
+                        // an old version: content released later (mangrove, cherry, armadillo, ...) never appears
+                        host.content.version = "1.18.2";
+                        host.content.loader = "forge";
                     }
                     host.now = NOW;
                     host.world.seed = seed;
@@ -49,7 +54,8 @@ public final class SampleWriter {
                     JsonObject quests = new JsonObject();
                     StringBuilder explain = new StringBuilder();
                     explain.append("# ").append(kind).append(" | world seed ").append(seed).append(" | ")
-                        .append(d).append(" | 10 quests | day 30, Nether and End unlocked\n\n");
+                        .append(d).append(" | 10 quests | day 30, Nether and End unlocked\n\n")
+                        .append(gen.status()).append("\n\n");
                     for (Map.Entry<String, JsonObject> e : gen.servedQuests().entrySet()) {
                         quests.add(e.getKey(), e.getValue());
                         explain.append(gen.explain(e.getKey())).append("\n\n");

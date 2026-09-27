@@ -1,84 +1,86 @@
 # modded | world seed 1 | EASY | 10 quests | day 30, Nether and End unlocked
 
-justquests:gen/1790510400_0  "Goat Family"  (EASY, cycle 1790510400, seed 0x2897…)
-objective breed_animal minecraft:goat ×2
-  effort 2.00 min/unit (×1.30 mountains) → 5.2 min (target 4.7, range 4–10 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints mountains
-estimated 5.2 min (quick)
-reward give_item minecraft:arrow ×26 (value 3.9) + xp 16 (value 1.3)  → 5.2 / budget 5.2
+Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism], Minecraft 1.21.1 (neoforge)
+
+justquests:gen/1790510400_1  "Smelt Tin Ingots"  (EASY, cycle 1790510400, seed 0x2897…)
+objective smelt_item mekanism:ingot_tin ×6
+  effort 0.75 min/unit → 4.5 min (target 5.0, range 4–10 min)
+  tier 1 (always available), family mek_tin, profile mekanism, tool stone, hints caves
+estimated 4.5 min (quick)
+reward give_item farmersdelight:fried_rice ×1 (value 2.4) + xp 25 (value 2.1)  → 4.5 / budget 4.5
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Wild Rice Miner"  (EASY, cycle 1790510400, seed 0x2897…)
-objective mine_block farmersdelight:wild_rice ×6
-  effort 0.60 min/unit (×1.30 swamp) → 4.7 min (target 4.5, range 4–10 min)
-  tier 0 (always available), family fd_wild, profile farmersdelight, hints swamp
-estimated 4.7 min (quick)
-reward give_item create:shaft ×32 (value 2.6) + xp 25 (value 2.1)  → 4.6 / budget 4.7
+justquests:gen/1790510400_9  "Make Cut Sandstone"  (EASY, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:cut_sandstone ×48
+  effort 0.10 min/unit → 4.8 min (target 9.0, range 4–10 min)
+  tier 0 (always available), family sand, profile vanilla
+estimated 4.8 min (quick)
+reward give_item minecraft:lapis_block ×2 (value 3.6) + xp 14 (value 1.2) + message  → 4.8 / budget 4.8
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "Limestone Dig"  (EASY, cycle 1790510400, seed 0x2897…)
-objective mine_block create:limestone ×48
-  effort 0.09 min/unit (×1.30 layers) → 5.6 min (target 5.9, range 4–10 min)
-  tier 1 (always available), family create_stone, profile create, tool wood, hints layers
+justquests:gen/1790510400_0  "Copper Grate Order"  (EASY, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:copper_grate ×4
+  effort 1.40 min/unit → 5.6 min (target 4.7, range 4–10 min)
+  tier 1 (always available), family copper_works, profile vanilla
 estimated 5.6 min (quick)
-reward give_item minecraft:lapis_lazuli ×21 (value 4.2) + xp 17 (value 1.4)  → 5.6 / budget 5.6
+reward give_item minecraft:book ×3 (value 3.6) + xp 24 (value 2.0)  → 5.6 / budget 5.6
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Need Peonies"  (EASY, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:peony ×16
+  effort 0.35 min/unit → 5.6 min (target 6.4, range 4–10 min)
+  tier 0 (always available), family flowers, profile vanilla
+estimated 5.6 min (quick)
+reward give_item farmersdelight:apple_pie ×1 (value 3.0) + xp 31 (value 2.6) + message  → 5.6 / budget 5.6
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "More Armadillos"  (EASY, cycle 1790510400, seed 0x2897…)
+objective breed_animal minecraft:armadillo ×2
+  effort 3.00 min/unit (×1.20 savanna) → 7.2 min (target 4.2, range 4–10 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints savanna
+estimated 7.2 min
+reward give_item minecraft:glow_berries ×16 (value 4.0) + xp 38 (value 3.2)  → 7.2 / budget 7.2
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Scoria Miner"  (EASY, cycle 1790510400, seed 0x2897…)
+objective mine_block create:scoria ×64
+  effort 0.09 min/unit (×1.30 layers) → 7.5 min (target 9.9, range 4–10 min)
+  tier 1 (always available), family create_stone, profile create, tool wood, hints layers
+estimated 7.5 min
+reward give_item minecraft:slime_ball ×4 (value 6.0) + xp 18 (value 1.5)  → 7.5 / budget 7.5
 rejected alternatives: craft_item create:cut_limestone (made on a stonecutter, which does not count as crafting)
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Smooth Stone Supply"  (EASY, cycle 1790510400, seed 0x2897…)
-objective smelt_item minecraft:smooth_stone ×48
-  effort 0.15 min/unit → 7.2 min (target 6.8, range 4–10 min)
-  tier 0 (always available), family stone, profile vanilla
-estimated 7.2 min
-reward give_item minecraft:emerald ×2 (value 5.0) + xp 26 (value 2.2)  → 7.2 / budget 7.2
+justquests:gen/1790510400_3  "Deepslate Coal Ore Dig"  (EASY, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:deepslate_coal_ore ×12
+  effort 0.60 min/unit (×1.10 deep) → 7.9 min (target 9.0, range 4–10 min)
+  tier 1 (always available), family coal, profile vanilla, tool wood, hints deep
+estimated 7.9 min
+reward give_item farmersdelight:carrot_crate ×4 (value 6.0) + xp 23 (value 1.9)  → 7.9 / budget 7.9
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Deepslate Iron Ore Dig"  (EASY, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:deepslate_iron_ore ×10
-  effort 0.60 min/unit (×1.10 deep) → 6.6 min (target 7.0, range 4–10 min)
-  tier 1 (always available), family metals, profile vanilla, tool stone, hints caves/deep
-estimated 6.6 min
-reward give_item minecraft:string ×12 (value 4.8) + xp 22 (value 1.8) + message  → 6.6 / budget 6.6
-rejected alternatives: collect_item minecraft:iron_ore (drops raw_iron, needs Silk Touch)
+justquests:gen/1790510400_6  "Need Lily Pads"  (EASY, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:lily_pad ×32
+  effort 0.20 min/unit (×1.30 swamp) → 8.3 min (target 9.6, range 4–10 min)
+  tier 0 (always available), family plants, profile vanilla, hints swamp
+estimated 8.3 min
+reward give_item farmersdelight:hot_cocoa ×4 (value 6.4) + xp 23 (value 1.9)  → 8.3 / budget 8.3
 state: AVAILABLE
 
-justquests:gen/1790510400_1  "Craft Tomato Crates"  (EASY, cycle 1790510400, seed 0x2897…)
-objective craft_item farmersdelight:tomato_crate ×5
-  effort 1.50 min/unit → 7.5 min (target 8.2, range 4–10 min)
-  tier 0 (always available), family fd_crops, profile farmersdelight, hints farm
-estimated 7.5 min
-reward give_item minecraft:torch ×32 (value 2.2) + give_item minecraft:arrow ×23 (value 3.4) + xp 22 (value 1.8)  → 7.5 / budget 7.5
+justquests:gen/1790510400_8  "Baked Cod Stew Feast"  (EASY, cycle 1790510400, seed 0x2897…)
+objective consume_item farmersdelight:baked_cod_stew ×3
+  effort 2.60 min/unit → 7.8 min (target 8.0, range 4–10 min)
+  tier 1 (always available), family fd_stews, profile farmersdelight
+estimated 7.8 min
+reward give_item minecraft:cookie ×32 (value 3.8) + xp 48 (value 4.0)  → 7.8 / budget 7.8
+rejected alternatives: craft_item farmersdelight:beef_stew (Cooking Pot output is not a crafting grid)
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "Cooked Mutton Chops Batch"  (EASY, cycle 1790510400, seed 0x2897…)
-objective smelt_item farmersdelight:cooked_mutton_chops ×16
-  effort 0.50 min/unit → 8.0 min (target 7.2, range 4–10 min)
-  tier 0 (always available), family fd_butchery, profile farmersdelight, tool knife, hints cook
-estimated 8.0 min
-reward give_item minecraft:cooked_porkchop ×12 (value 6.0) + xp 24 (value 2.0)  → 8.0 / budget 8.0
-state: AVAILABLE
-
-justquests:gen/1790510400_3  "Steak Break"  (EASY, cycle 1790510400, seed 0x2897…)
-objective consume_item minecraft:cooked_beef ×6
-  effort 1.25 min/unit → 7.5 min (target 9.1, range 4–10 min)
-  tier 0 (always available), family livestock, profile vanilla, hints plains
-estimated 7.5 min
-reward give_item minecraft:cake ×1 (value 3.0) + give_item create:belt_connector ×4 (value 2.8) + xp 20 (value 1.7)  → 7.5 / budget 7.5
-state: AVAILABLE
-
-justquests:gen/1790510400_6  "Rotten Flesh Haul"  (EASY, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:rotten_flesh ×16
-  effort 0.50 min/unit → 8.0 min (target 7.8, range 4–10 min)
-  tier 0 (always available), family undead, profile vanilla, hints night
-estimated 8.0 min
-reward give_item minecraft:redstone ×30 (value 6.0) + xp 24 (value 2.0) + message  → 8.0 / budget 8.0
-state: AVAILABLE
-
-justquests:gen/1790510400_9  "Slimeball Pickup"  (EASY, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:slime_ball ×5
-  effort 1.50 min/unit (×1.30 swamp) → 9.8 min (target 9.2, range 4–10 min)
-  tier 1 (always available), family monsters, profile vanilla, hints swamp
-estimated 9.8 min
-reward give_item minecraft:redstone ×32 (value 6.4) + xp 40 (value 3.3)  → 9.7 / budget 9.8
+justquests:gen/1790510400_2  "Make Organic Compost"  (EASY, cycle 1790510400, seed 0x2897…)
+objective craft_item farmersdelight:organic_compost ×4
+  effort 2.40 min/unit → 9.6 min (target 9.1, range 4–10 min)
+  tier 0 (always available), family fd_soil, profile farmersdelight
+estimated 9.6 min
+reward give_item farmersdelight:bacon_sandwich ×4 (value 7.2) + xp 29 (value 2.4)  → 9.6 / budget 9.6
 state: AVAILABLE
 

@@ -1,85 +1,84 @@
 # modded | world seed 3 | EASY | 10 quests | day 30, Nether and End unlocked
 
-justquests:gen/1790510400_2  "Furnace: Deepslate"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective smelt_item minecraft:deepslate ×32
-  effort 0.12 min/unit (×1.10 deep) → 4.2 min (target 4.2, range 4–10 min)
-  tier 1 (always available), family stone, profile vanilla, tool wood, hints deep
-estimated 4.2 min (quick)
-reward give_item minecraft:book ×3 (value 3.6) + xp 7 (value 0.6)  → 4.2 / budget 4.2
+Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism], Minecraft 1.21.1 (neoforge)
+
+justquests:gen/1790510400_5  "Cogwheel Layout"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective place_block create:cogwheel ×16
+  effort 0.25 min/unit → 4.0 min (target 4.0, range 4–10 min)
+  tier 1 (always available), family create_kinetics, profile create
+estimated 4.0 min (quick)
+reward give_item mekanism:ingot_tin ×4 (value 3.4) + xp 7 (value 0.6) + message  → 4.0 / budget 4.0
 state: AVAILABLE
 
-justquests:gen/1790510400_0  "Mixed Salad Crafter"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective craft_item farmersdelight:mixed_salad ×4
-  effort 1.30 min/unit → 5.2 min (target 5.5, range 4–10 min)
-  tier 0 (always available), family fd_salads, profile farmersdelight
+justquests:gen/1790510400_0  "Hot Cocoa Break"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective consume_item farmersdelight:hot_cocoa ×3
+  effort 1.60 min/unit → 4.8 min (target 5.5, range 4–10 min)
+  tier 1 (always available), family fd_drinks, profile farmersdelight, hints drink
+estimated 4.8 min (quick)
+reward give_item minecraft:glow_ink_sac ×4 (value 4.0) + xp 10 (value 0.8)  → 4.8 / budget 4.8
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Minecart Commission"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:minecart ×2
+  effort 2.60 min/unit → 5.2 min (target 8.7, range 4–10 min)
+  tier 1 (always available), family iron_works, profile vanilla
 estimated 5.2 min (quick)
-reward give_item minecraft:lapis_lazuli ×20 (value 4.0) + xp 14 (value 1.2)  → 5.2 / budget 5.2
-rejected alternatives: craft_item farmersdelight:nether_salad (tier 3 above EASY cap)
+reward give_item mekanism:ingot_steel ×1 (value 3.0) + xp 26 (value 2.2)  → 5.2 / budget 5.2
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Make Onion Crates"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective craft_item farmersdelight:onion_crate ×4
-  effort 1.50 min/unit → 6.0 min (target 5.6, range 4–10 min)
-  tier 0 (always available), family fd_crops, profile farmersdelight, hints farm
+justquests:gen/1790510400_4  "Goat Ranch"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:goat ×2
+  effort 2.00 min/unit (×1.30 mountains) → 5.2 min (target 6.2, range 4–10 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints mountains
+estimated 5.2 min (quick)
+reward give_item minecraft:book ×3 (value 3.6) + xp 19 (value 1.6)  → 5.2 / budget 5.2
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Raw Cod Stockpile"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:cod ×6
+  effort 0.80 min/unit → 4.8 min (target 5.1, range 4–10 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
+estimated 4.8 min (quick)
+reward give_item minecraft:coal ×14 (value 3.5) + xp 16 (value 1.3)  → 4.8 / budget 4.8
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Cherry Log Gathering"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:cherry_log ×40
+  effort 0.10 min/unit (×1.50 cherry_grove) → 6.0 min (target 5.8, range 4–10 min)
+  tier 0 (always available), family wood, profile vanilla, hints cherry_grove
 estimated 6.0 min
-reward give_item minecraft:coal ×18 (value 4.5) + xp 18 (value 1.5)  → 6.0 / budget 6.0
+reward give_item minecraft:book ×4 (value 4.8) + xp 14 (value 1.2)  → 6.0 / budget 6.0
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Zinc Ingot Smeltery"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective smelt_item #c:ingots/zinc ×8
-  effort 0.85 min/unit → 6.8 min (target 7.0, range 4–10 min)
-  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves
-estimated 6.8 min
-reward give_item minecraft:diamond ×1 (value 5.0) + xp 22 (value 1.8)  → 6.8 / budget 6.8
-rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch); craft_item create:zinc_block (tier 1 above EASY cap)
+justquests:gen/1790510400_9  "Honeycomb Haul"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:honeycomb ×6
+  effort 1.00 min/unit (×1.20 bees) → 7.2 min (target 7.1, range 4–10 min)
+  tier 0 (always available), family bees, profile vanilla, tool shears, hints bees
+estimated 7.2 min
+reward give_item farmersdelight:tomato ×32 (value 4.8) + xp 29 (value 2.4)  → 7.2 / budget 7.2
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "Beef Stew Tasting"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective consume_item farmersdelight:beef_stew ×3
-  effort 2.20 min/unit → 6.6 min (target 5.8, range 4–10 min)
-  tier 1 (always available), family fd_stews, profile farmersdelight
-estimated 6.6 min
-reward give_item create:large_cogwheel ×14 (value 4.9) + xp 20 (value 1.7)  → 6.6 / budget 6.6
-rejected alternatives: craft_item farmersdelight:beef_stew (Cooking Pot output is not a crafting grid)
+justquests:gen/1790510400_6  "Tin Ore Breaker"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective mine_block mekanism:tin_ore ×12
+  effort 0.70 min/unit → 8.4 min (target 9.3, range 4–10 min)
+  tier 1 (always available), family mek_tin, profile mekanism, tool stone, hints caves
+estimated 8.4 min
+reward give_item minecraft:lapis_block ×3 (value 5.4) + xp 36 (value 3.0)  → 8.4 / budget 8.4
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Gather Rabbit Hides"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:rabbit_hide ×6
-  effort 1.00 min/unit (×1.30 desert) → 7.8 min (target 8.1, range 4–10 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints desert
-estimated 7.8 min
-reward give_item farmersdelight:honey_cookie ×29 (value 5.8) + xp 24 (value 2.0) + message  → 7.8 / budget 7.8
-state: AVAILABLE
-
-justquests:gen/1790510400_9  "Bogged Bounty"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective kill_mob minecraft:bogged ×3
-  effort 2.00 min/unit (×1.30 swamp) → 7.8 min (target 7.7, range 4–10 min)
-  tier 1 (always available), family undead, profile vanilla, hints swamp
-estimated 7.8 min
-reward give_item farmersdelight:rope ×32 (value 2.6) + give_item minecraft:compass ×1 (value 2.4) + xp 34 (value 2.8)  → 7.8 / budget 7.8
-state: AVAILABLE
-
-justquests:gen/1790510400_1  "Craft Bookshelves"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective craft_item minecraft:bookshelf ×2
-  effort 4.50 min/unit → 9.0 min (target 8.2, range 4–10 min)
-  tier 0 (always available), family library, profile vanilla
+justquests:gen/1790510400_3  "Packed Mud Crafter"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:packed_mud ×24
+  effort 0.25 min/unit (×1.50 mangrove_swamp) → 9.0 min (target 8.9, range 4–10 min)
+  tier 0 (always available), family soil, profile vanilla, hints mangrove_swamp
 estimated 9.0 min
-reward give_item minecraft:slime_ball ×5 (value 7.5) + xp 18 (value 1.5)  → 9.0 / budget 9.0
+reward give_item farmersdelight:apple_pie ×2 (value 6.0) + xp 36 (value 3.0)  → 9.0 / budget 9.0
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Log Run"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective collect_item #minecraft:logs ×96
-  effort 0.09 min/unit → 8.6 min (target 8.0, range 4–10 min)
-  tier 0 (always available), family wood, profile vanilla
-estimated 8.6 min
-reward give_item minecraft:coal ×26 (value 6.5) + xp 26 (value 2.2)  → 8.7 / budget 8.6
-state: AVAILABLE
-
-justquests:gen/1790510400_8  "White Wool Works"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective place_block minecraft:white_wool ×32
-  effort 0.30 min/unit → 9.6 min (target 9.8, range 4–10 min)
-  tier 0 (always available), family wool, profile vanilla
-estimated 9.6 min
-reward give_item minecraft:bread ×16 (value 7.2) + xp 29 (value 2.4)  → 9.6 / budget 9.6
+justquests:gen/1790510400_7  "Make Bacon Sandwiches"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective craft_item farmersdelight:bacon_sandwich ×5
+  effort 1.70 min/unit → 8.5 min (target 7.7, range 4–10 min)
+  tier 1 (always available), family fd_meals, profile farmersdelight
+estimated 8.5 min
+reward give_item minecraft:slime_ball ×4 (value 6.0) + xp 30 (value 2.5)  → 8.5 / budget 8.5
 state: AVAILABLE
 

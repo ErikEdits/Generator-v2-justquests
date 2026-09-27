@@ -5,13 +5,19 @@ from catalog_dsl import dump
 from vanilla_catalog import VANILLA
 from mod_profiles import FARMERS_DELIGHT, CREATE
 from other_data import REWARDS, TEMPLATES, THEMES, BALANCE, TAGS
+from mod_mekanism import MEKANISM, MEK_FAMILY_NAMES, MEK_TAGS
+
+TEMPLATES["familyNames"].update(MEK_FAMILY_NAMES)
+TAGS["concepts"].update(MEK_TAGS)
 
 ROOT = os.path.join(os.path.dirname(__file__), "..", "justquests-generator-v2", "src", "main", "resources", "justquests_genv2")
 os.makedirs(os.path.join(ROOT, "catalog", "profiles"), exist_ok=True)
 dump(VANILLA, os.path.join(ROOT, "catalog", "vanilla.json"))
 dump(FARMERS_DELIGHT, os.path.join(ROOT, "catalog", "profiles", "farmersdelight.json"))
 dump(CREATE, os.path.join(ROOT, "catalog", "profiles", "create.json"))
-dump({"format": 1, "profiles": ["farmersdelight.json", "create.json"]}, os.path.join(ROOT, "catalog", "profiles", "index.json"))
+dump(MEKANISM, os.path.join(ROOT, "catalog", "profiles", "mekanism.json"))
+dump({"format": 1, "profiles": ["farmersdelight.json", "create.json", "mekanism.json"]},
+     os.path.join(ROOT, "catalog", "profiles", "index.json"))
 dump(REWARDS, os.path.join(ROOT, "rewards.json"))
 dump(TEMPLATES, os.path.join(ROOT, "templates.json"))
 dump(THEMES, os.path.join(ROOT, "themes.json"))

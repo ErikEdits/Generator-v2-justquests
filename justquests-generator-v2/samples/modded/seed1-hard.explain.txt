@@ -1,103 +1,108 @@
 # modded | world seed 1 | HARD | 10 quests | day 30, Nether and End unlocked
 
-justquests:gen/1790510400_0  "Diamond Sword Crafter"  (HARD, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:diamond_sword ×1
-  effort 11.00 min/unit → 11.0 min (target 17.3, range 15–35 min)
-  tier 2 (always available), family diamond_gear, profile vanilla
-estimated 11.0 min (quick)
-reward give_item minecraft:ender_pearl ×3 (value 7.5) + loot_table minecraft:chests/village/village_weaponsmith (value 7.0) + xp 42 (value 3.5)  → 18.0 / budget 18.0
+Generator v2: enabled, difficulty hard, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism], Minecraft 1.21.1 (neoforge)
+
+justquests:gen/1790510400_0  "Mine Nether Gold Ore"  (HARD, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:nether_gold_ore ×32
+  effort 0.35 min/unit → 11.2 min (target 15.9, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_ores, profile vanilla, tool wood, minecraft:the_nether
+travel overhead 3.0 min
+estimated 14.2 min (quick)
+reward give_item farmersdelight:tomato ×32 (value 4.8) + effect minecraft:jump_boost 300s (value 1.5) + xp 180 (value 15.0)  → 21.3 / budget 21.3
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Kinetics Supplies"  (HARD, cycle 1790510400, seed 0x2897…)
-objective craft_item create:large_cogwheel ×24
-  effort 0.30 min/unit → 7.2 min (target 15.6, range 15–35 min)
-  tier 1 (always available), family create_kinetics, profile create
-objective place_block create:shaft ×64
-  effort 0.08 min/unit → 5.1 min (target 15.6, range 15–35 min)
-  tier 1 (always available), family create_kinetics, profile create
-combo within family create_kinetics
-estimated 12.3 min (quick)
-reward give_item create:honeyed_apple ×3 (value 9.0) + loot_table minecraft:chests/abandoned_mineshaft (value 7.0) + xp 50 (value 4.2)  → 20.2 / budget 20.3
-rejected alternatives: craft_item create:shaft (max count takes only 3.8 min); craft_item create:hand_crank (max count takes only 2.0 min)
+justquests:gen/1790510400_8  "Dinner Job"  (HARD, cycle 1790510400, seed 0x2897…)
+objective consume_item farmersdelight:cooked_rice ×5
+  effort 1.40 min/unit → 7.0 min (target 15.4, range 15–35 min)
+  tier 1 (always available), family fd_plates, profile farmersdelight
+objective craft_item farmersdelight:stuffed_potato ×4
+  effort 1.80 min/unit → 7.2 min (target 15.4, range 15–35 min)
+  tier 1 (always available), family fd_plates, profile farmersdelight
+combo within family fd_plates
+estimated 14.2 min (quick)
+reward give_item mekanism:ingot_lead ×18 (value 17.1) + xp 75 (value 6.3)  → 23.3 / budget 23.4
 state: AVAILABLE
 
-justquests:gen/1790510400_1  "Cooked Salmon Slice Order"  (HARD, cycle 1790510400, seed 0x2897…)
-objective smelt_item farmersdelight:cooked_salmon_slice ×16
-  effort 0.90 min/unit → 14.4 min (target 18.2, range 15–35 min)
-  tier 0 (always available), family fd_seafood, profile farmersdelight, tool fishing_rod, hints cook
-estimated 14.4 min (quick)
-reward give_item minecraft:hay_block ×8 (value 11.2) + xp 125 (value 10.4)  → 21.6 / budget 21.6
+justquests:gen/1790510400_7  "Chocolate Glazed Berries Snack"  (HARD, cycle 1790510400, seed 0x2897…)
+objective consume_item create:chocolate_glazed_berries ×4
+  effort 4.00 min/unit → 16.0 min (target 25.1, range 15–35 min)
+  tier 2 (always available), family create_sweets, profile create
+estimated 16.0 min (quick)
+reward give_item minecraft:powered_rail ×11 (value 17.6) + xp 75 (value 6.3)  → 23.9 / budget 24.0
+rejected alternatives: craft_item create:bar_of_chocolate (made by mixing and compacting, not a crafting grid)
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "Farmer's Market"  (HARD, cycle 1790510400, seed 0x2897…)
-objective collect_item farmersdelight:cabbage ×48
-  effort 0.15 min/unit → 7.2 min (target 27.3, range 15–35 min)
-  tier 0 (always available), family fd_crops, profile farmersdelight, hints farm
-objective collect_item farmersdelight:onion ×48
-  effort 0.15 min/unit → 7.2 min (target 27.3, range 15–35 min)
-  tier 0 (always available), family fd_crops, profile farmersdelight, hints farm
-theme fd_farmers_market
-estimated 14.4 min (quick)
-reward give_item farmersdelight:hamburger ×6 (value 15.6) + xp 100 (value 8.3)  → 23.9 / budget 23.8
-rejected alternatives: consume_item farmersdelight:cabbage (max count takes only 2.8 min)
+justquests:gen/1790510400_1  "Furnace: Uranium Ingot"  (HARD, cycle 1790510400, seed 0x2897…)
+objective smelt_item mekanism:ingot_uranium ×16
+  effort 1.20 min/unit → 19.2 min (target 26.5, range 15–35 min)
+  tier 2 (always available), family mek_uranium, profile mekanism, tool stone, hints caves
+estimated 19.2 min (quick)
+reward give_item farmersdelight:hamburger ×6 (value 15.6) + effect minecraft:luck 600s (value 3.0) + xp 120 (value 10.0)  → 28.6 / budget 28.8
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Orchard Supplies"  (HARD, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:pumpkin ×24
-  effort 0.40 min/unit → 9.6 min (target 27.1, range 15–35 min)
-  tier 0 (always available), family fruit, profile vanilla, hints plains
-objective collect_item minecraft:apple ×4
-  effort 2.00 min/unit → 8.0 min (target 27.1, range 15–35 min)
-  tier 0 (always available), family fruit, profile vanilla
-combo within family fruit
-estimated 17.6 min (quick)
-reward give_item minecraft:emerald ×9 (value 22.5) + xp 80 (value 6.7)  → 29.2 / budget 29.0
+justquests:gen/1790510400_6  "Prismarine Shard Run"  (HARD, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:prismarine_shard ×8
+  effort 1.50 min/unit (×1.60 monument) → 19.2 min (target 24.8, range 15–35 min)
+  tier 2 (always available), family ocean, profile vanilla, tool iron, hints monument
+estimated 19.2 min (quick)
+reward give_item minecraft:tnt ×4 (value 10.0) + effect minecraft:haste 480s (value 6.4) + xp 150 (value 12.5)  → 28.9 / budget 28.8
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "Deepslate Zinc Ore Dig"  (HARD, cycle 1790510400, seed 0x2897…)
-objective mine_block create:deepslate_zinc_ore ×20
-  effort 0.90 min/unit (×1.10 deep) → 19.8 min (target 21.1, range 15–35 min)
-  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves/deep
-estimated 19.8 min (quick)
-reward give_item minecraft:gold_ingot ×16 (value 20.8) + xp 105 (value 8.8)  → 29.6 / budget 29.7
-rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch)
+justquests:gen/1790510400_2  "Sandwich Job"  (HARD, cycle 1790510400, seed 0x2897…)
+objective craft_item farmersdelight:bacon_sandwich ×6
+  effort 1.70 min/unit → 10.2 min (target 28.3, range 15–35 min)
+  tier 1 (always available), family fd_meals, profile farmersdelight
+objective consume_item farmersdelight:hamburger ×4
+  effort 2.70 min/unit → 10.8 min (target 28.3, range 15–35 min)
+  tier 1 (always available), family fd_meals, profile farmersdelight
+combo within family fd_meals
+estimated 21.0 min (quick)
+reward give_item minecraft:hay_block ×8 (value 11.2) + give_item create:zinc_block ×2 (value 15.2) + xp 100 (value 8.3)  → 34.7 / budget 34.7
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Busy Bees"  (HARD, cycle 1790510400, seed 0x2897…)
-objective breed_animal minecraft:bee ×8
-  effort 1.50 min/unit (×1.20 bees) → 14.4 min (target 33.1, range 15–35 min)
-  tier 0 (always available), family bees, profile vanilla, hints bees
-objective consume_item minecraft:honey_bottle ×4
-  effort 1.80 min/unit (×1.20 bees) → 8.6 min (target 33.1, range 15–35 min)
-  tier 0 (always available), family bees, profile vanilla, hints bees/drink
-theme beekeeper
-estimated 23.0 min
-reward give_item minecraft:iron_ingot ×24 (value 14.4) + loot_table minecraft:chests/desert_pyramid (value 9.0) + xp 175 (value 14.6)  → 38.0 / budget 38.0
-state: AVAILABLE
-
-justquests:gen/1790510400_6  "Gold Ore Excavation"  (HARD, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:gold_ore ×20
-  effort 1.20 min/unit (×1.10 deep) → 26.4 min (target 27.8, range 15–35 min)
+justquests:gen/1790510400_4  "Deepslate Gold Ore Dig"  (HARD, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:deepslate_gold_ore ×16
+  effort 1.20 min/unit (×1.10 deep) → 21.1 min (target 22.3, range 15–35 min)
   tier 2 (always available), family metals, profile vanilla, tool iron, hints deep
-estimated 26.4 min
-reward give_item minecraft:emerald ×10 (value 25.0) + effect minecraft:water_breathing 600s (value 5.0) + xp 115 (value 9.6)  → 39.6 / budget 39.6
+estimated 21.1 min (quick)
+reward give_item minecraft:honey_bottle ×8 (value 9.6) + loot_table minecraft:chests/bastion_other (value 16.0) + xp 75 (value 6.3)  → 31.9 / budget 31.7
 rejected alternatives: collect_item minecraft:gold_ore (drops raw_gold, needs Silk Touch)
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Emerald Ore Dig"  (HARD, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:emerald_ore ×2
-  effort 7.00 min/unit (×1.30 mountains ×1.60 rare) → 29.1 min (target 21.2, range 15–35 min)
-  tier 2 (always available), family gems, profile vanilla, tool iron, hints mountains/rare
-estimated 29.1 min
-reward give_item minecraft:netherite_scrap ×1 (value 12.0) + give_item minecraft:gold_ingot ×16 (value 20.8) + xp 130 (value 10.8)  → 43.6 / budget 43.7
-rejected alternatives: collect_item minecraft:emerald (villager trades do not count as pickups)
+justquests:gen/1790510400_5  "Nether Garden Order"  (HARD, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:nether_wart ×24
+  effort 0.40 min/unit (×1.30 fortress) → 12.5 min (target 29.2, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_plants, profile vanilla, hints fortress, minecraft:the_nether
+objective collect_item minecraft:crimson_fungus ×16
+  effort 0.30 min/unit (×1.20 crimson_forest) → 5.8 min (target 29.2, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_plants, profile vanilla, hints crimson_forest, minecraft:the_nether
+travel overhead 3.0 min
+combo within family nether_plants
+estimated 21.2 min (quick)
+reward give_item minecraft:ender_pearl ×8 (value 20.0) + xp 180 (value 15.0)  → 35.0 / budget 35.0
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Prismarine Shard Haul"  (HARD, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:prismarine_shard ×16
-  effort 1.50 min/unit (×1.60 monument) → 38.4 min (target 30.8, range 15–35 min)
-  tier 2 (always available), family ocean, profile vanilla, tool iron, hints monument
-estimated 38.4 min
-reward give_item minecraft:gold_ingot ×16 (value 20.8) + give_item create:bar_of_chocolate ×7 (value 21.0) + xp 190 (value 15.8)  → 57.6 / budget 57.6
+justquests:gen/1790510400_3  "Library Duty"  (HARD, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:book ×8
+  effort 1.20 min/unit → 9.6 min (target 25.9, range 15–35 min)
+  tier 0 (always available), family library, profile vanilla
+objective place_block minecraft:bookshelf ×3
+  effort 4.60 min/unit → 13.8 min (target 25.9, range 15–35 min)
+  tier 0 (always available), family library, profile vanilla
+combo within family library
+estimated 23.4 min
+reward give_item minecraft:cake ×1 (value 3.0) + give_item mekanism:raw_osmium ×32 (value 22.4) + xp 160 (value 13.3)  → 38.7 / budget 38.6
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Catch of the Day"  (HARD, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:salmon ×16
+  effort 1.40 min/unit → 22.4 min (target 31.5, range 15–35 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
+objective smelt_item minecraft:cooked_salmon ×8
+  effort 1.50 min/unit → 12.0 min (target 31.5, range 15–35 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod, hints cook
+theme fishermans_day
+estimated 34.4 min
+reward give_item minecraft:slime_ball ×8 (value 12.0) + loot_table minecraft:chests/village/village_weaponsmith (value 7.0) + xp 455 (value 37.9)  → 56.9 / budget 56.8
 state: AVAILABLE
 
