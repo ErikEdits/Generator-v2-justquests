@@ -17,7 +17,7 @@ class RelaxationProbe {
         if (!Boolean.getBoolean("probe")) {
             return;
         }
-        FakeHost host = new FakeHost().withMods("farmersdelight", "create");
+        FakeHost host = new FakeHost().withMods("farmersdelight", "create", "mekanism", "botania");
         QuestGeneratorV2 g = new QuestGeneratorV2(host, TestSupport.config(Difficulty.HARD, 20));
         g.start(Map.of());
         for (int i = 0; i < 180; i++) {
@@ -42,7 +42,11 @@ class RelaxationProbe {
         for (boolean mods : new boolean[]{false, true}) {
             for (Difficulty d : Difficulty.values()) {
                 for (int n : new int[]{1, 5, 10, 20}) {
-                    FakeHost host = mods ? new FakeHost().withMods("farmersdelight", "create") : new FakeHost();
+                    FakeHost host = new FakeHost();
+                    if (mods) {
+                        host.withMods("farmersdelight", "create", "mekanism", "twilightforest", "botania");
+                        host.content.dimensions.add("twilightforest:twilight_forest");
+                    }
                     Progression p = TestSupport.unlockedProgression(host);
                     Map<String, Long> relax = new TreeMap<>();
                     int total = 0;

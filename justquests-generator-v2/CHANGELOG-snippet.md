@@ -14,9 +14,13 @@ The quest generator was rebuilt from scratch.
   generated quest at a time. (Both rules can be switched off in `settings.json`.)
 - **Difficulty for the whole world:** `easy`, `normal` or `hard` (OP: `/quest difficulty`). Hard means
   longer expeditions, deeper tiers and better rewards.
-- **Grows with your world.** Nether and End quests appear once players have been there.
-- **Mod support:** with **Farmer's Delight** or **Create** installed, the board also offers quests for
-  their crops, meals, ores and machines.
+- **Grows with your world.** Nether and End quests appear once players have been there, and quests
+  in the Twilight Forest once players have found a portal.
+- **Mod support:** with **Farmer's Delight**, **Create**, **Mekanism**, **The Twilight Forest** or
+  **Botania** installed, the board also offers quests for their crops, meals, ores, machines, mobs and
+  flowers. Every installed mod gets its turn on the board.
+- **Right for your version:** content that your Minecraft version only has behind an experimental
+  toggle (for example cherry wood on 1.19.4) never shows up.
 - **For admins:** `/quest generator status | explain <id> | preview | stats | release <id>`, new
   `settings.json` keys (`difficulty`, `generatorExclusiveClaims`, `generatorOneActivePerPlayer`, …),
   optional world overrides in `justquests/generator_v2/`. Existing worlds are migrated automatically;

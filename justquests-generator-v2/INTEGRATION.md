@@ -41,6 +41,9 @@ justquests_genv2/catalog/vanilla.json
 justquests_genv2/catalog/profiles/index.json
 justquests_genv2/catalog/profiles/farmersdelight.json
 justquests_genv2/catalog/profiles/create.json
+justquests_genv2/catalog/profiles/mekanism.json
+justquests_genv2/catalog/profiles/twilightforest.json
+justquests_genv2/catalog/profiles/botania.json
 ```
 
 Notes
@@ -102,7 +105,7 @@ General rules for every method:
 | `isBreedableAnimal(id)` | `YES` if the entity class is an `Animal` subclass | `UNKNOWN` | Needs a class check; if you cannot get the class cheaply, return `UNKNOWN`. Never create entities. |
 | `isTamableAnimal(id)` | `YES` if `TamableAnimal` subclass | `UNKNOWN` | same |
 | `isConsumable(itemId)` | `YES` for food / drinkable (`UseAnim.EAT`/`DRINK`, food component) | `UNKNOWN` | same |
-| `englishName(kind, id)` | English display name if the server knows it (vanilla `en_us` on dedicated servers) | `null` | Optional. Returning `null` everywhere is fine; the catalog has names. |
+| `englishName(kind, id)` | English display name if the server knows it (vanilla `en_us` on dedicated servers) | `null` | Optional. Returning `null` everywhere is fine: the prettified id is used, and the catalogs name every target whose id reads badly. Formatting codes are stripped; untranslated keys and names over 40 characters are ignored. |
 
 **Feature flags matter.** From 1.19.3 on, content of experimental data packs is *registered* even when
 the world has the experiment off (cherry wood on 1.19.4, the breeze on 1.20.4, the bogged on 1.20.6,
@@ -189,9 +192,10 @@ public final class GenV2 {
 
 ### 3.1 Server start — replaces `GeneratedQuestStore.init(server)`
 
-In `ServerStorageEvents.onServerStarting` (Fabric: `ServerLifecycleEvents.SERVER_STARTED`), **after**
-`WorldQuestStore.load`, `WorldSettings.load` and `CustomQuestLoader.init` (tags and recipes are bound
-at this point):
+In `ServerStorageEvents.onServerStarting` (Fabric: `ServerLifecycleEvents.SERVER_STARTED`, **not**
+`SERVER_STARTING`, which fires before the worlds are loaded), **after** `WorldQuestStore.load`,
+`WorldSettings.load` and `CustomQuestLoader.init` (tags and recipes are bound at this point). The
+reference adapters show the wiring for every loader (`reference-adapter/README.md`):
 
 ```java
 gen = new QuestGeneratorV2(new GenV2Host(server), GenV2Config.fromSettings());
@@ -207,6 +211,11 @@ for (String dead : r.deadQuestIds()) {            // definitions that no longer 
 WorldQuestStore.get().markDirty();
 registerServed();                                  // always after start, even if nothing rotated
 ```
+
+`deadQuestIds` lists every quest a player has active that the generator cannot serve any more:
+unknown ids, and stored quests that failed re-validation at start (a content mod was removed, or the
+state file was edited). The generator drops those and tops the current set up by itself, so
+`registerServed` after `start` shows a full set.
 
 `registerServed()`:
 
@@ -471,8 +480,12 @@ Not required for v2; each unlocks more generator content with a data-only change
 ## 10. Checklist per build
 
 - [ ] core + resources copied (identical to this project)
-- [ ] `GenV2Host` implemented (registries, tags, recipes-or-UNKNOWN, advancements, store, validator)
-- [ ] start / tick / accept / abandon / complete / reroll / reload / admin reset / stop wired (§3)
+- [ ] `GenV2Host` implemented (registries, tags, recipes-or-UNKNOWN, advancements, store, validator);
+      start from the matching `reference-adapter/` folder
+- [ ] existence checks include `isEnabled(enabledFeatures())` on 1.19.3+; `minecraftVersion()` returns
+      the real version (`/quest generator status` ends with `Minecraft <version> (<loader>)`)
+- [ ] start / tick / accept / abandon / complete / reroll / reload / admin reset / stop wired (§3);
+      on Fabric the start runs on `SERVER_STARTED`
 - [ ] `deadQuestIds` and `expiredClaims` handled
 - [ ] settings keys + `_help` updated
 - [ ] `/quest test` updated

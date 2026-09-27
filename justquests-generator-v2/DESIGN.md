@@ -19,6 +19,7 @@ Contents
 12. [Tuning guide](#12-tuning-guide)
 13. [Assumptions](#13-assumptions)
 14. [Known limitations](#14-known-limitations)
+15. [Tools, verification and tests](#15-tools-verification-and-tests)
 
 ---
 
@@ -59,7 +60,7 @@ rejection per step (visible in `stats()` and `explain`):
 |---|---|---|
 | 1 | type is generator-usable and in `HostCapabilities.objectiveTypes()` | `1_type` |
 | 2 | profile active: vanilla, or `isModLoaded(any of requiresMod)` and loader/version filters match, and not in `disabledProfiles` | `2_profile` |
-| 3 | id exists: tag concept first (if the host supports tags for the type and the tag has members), then `id`, then `alt` ids in order | `3_missing_id` |
+| 3 | released on the running version: the target's (or entry's) `since` is not newer than `ContentView.minecraftVersion()`; then the id exists: tag concept first (if the host supports tags for the type and the tag has members), then `id`, then `alt` ids in order | `3_missing_id` |
 | 4 | hook compatible: `tame_animal` needs the catalog flag `tamable` and host `isTamableAnimal != NO`; `breed_animal` needs `isBreedableAnimal != NO`; `craft_item` needs `hasCraftingRecipe != NO`; `smelt_item` needs `hasSmeltingRecipe != NO`; `consume_item` needs `isConsumable != NO`; `collect_item` is trusted to the catalog (drops only) | `4_hook` |
 | 5a | tier ≤ difficulty cap and target `minDifficulty` ≤ difficulty | `5_tier` |
 | 5b | tier unlocked by progression; dimension exists, travel allowed on this difficulty, dimension unlocked; `requires` satisfied | `5_progression` |
@@ -155,22 +156,27 @@ Value units ≈ minutes of average play; e.g. iron ingot 0.6, emerald 2.5, diamo
    - at least `min(N, 3)` distinct objective types — repaired at the end by rebuilding the latest
      quests whose types are duplicated, with "new type only";
    - at least one quick quest;
-   - modded share and one quest per active mod as planned;
+   - modded share and one quest per active mod as planned (the per-mod guarantee takes at most
+     `maxPerModShare` of the set; with more mods, a rotating subset is covered and `per_mod` is
+     counted);
    - no duplicate targets, signatures or titles (never relaxed).
 4. **Relaxation order** when a slot cannot be filled: `family` → `type_share` → `modded_share` →
    `history`; a quick slot that cannot be quick retries as a normal slot (`quick`); a slot that still
    fails is skipped (`slot_skipped`, the set has fewer quests). Every relaxation is counted in the
    stats and logged as one line. The loop is bounded (≤ 2 passes × 5 levels × 40 attempts per slot).
 
-Measured on the bundled catalog (200 seeds per cell): with vanilla only, no set of any difficulty or
-size needs a relaxation; with both mod profiles active, Easy and Normal never relax, Hard relaxes the
-family rule in 0.5 % of the sets of 10 and 5 % of the sets of 20 (the modded slots of a 20-quest Hard
-set compete for few mod families). A set of 20 takes about 2 ms.
+Measured on the bundled catalog (`RelaxationProbe`, 200 seeds per cell, Nether/End unlocked): with
+vanilla only, no set of any difficulty or size needs a relaxation. With all five mod profiles active
+(Twilight Forest unlocked), sets of 5 always report `per_mod` (four or five mods, three covered per
+cycle), and 4 % of them also relax the family and type-share rules. Sets of 10 relax in 0.5 % (Normal)
+and 3.5 % (Hard) of the cases, sets of 20 in 0–1 %. Easy never relaxes anything but `per_mod`. A set
+of 20 takes 2–4 ms.
 
 ## 6. Text generation
 
-- **Names:** target `name` → `ContentView.englishName` → prettified id (`raw_iron` → "Raw Iron",
-  namespace dropped). Plurals via a small English helper (mass nouns stay singular: "24 raw iron";
+- **Names:** target `name` → `ContentView.englishName` (cleaned: formatting codes, braces and
+  control characters removed; untranslated keys such as `item.mod.thing` and names over 40 characters
+  are ignored) → prettified id (`raw_iron` → "Raw Iron", namespace dropped). Plurals via a small English helper (mass nouns stay singular: "24 raw iron";
   "wolf" → "wolves", "enderman" → "endermen", "fungus" → "fungi"), overridable per target
   (`plural`).
 - **Titles:** theme names → combo titles (`{Family} Order`, family nouns from `templates.familyNames`)
@@ -255,7 +261,8 @@ source of truth and can be edited directly.
   "tool": "stone",                    // none|wood|stone|iron|diamond|netherite|shears|silk_touch|fishing_rod|knife|shovel
   "hints": ["caves"],                 // biome/structure/rarity keys: effort multiplier + description sentence
   "requires": ["nether"],             // optional: nether | end | dim:<id> | key:<entry key>
-  "since": "1.17",                    // informational; runtime existence checks decide
+  "since": "1.17",                    // first release that has it in survival; newer than the running
+                                      // version → rejected (also per target; guards feature-flag leaks)
   "notes": "free text",
   "exclusions": ["collect_item minecraft:iron_ore (drops raw_iron, needs Silk Touch)"],  // shown by explain
   "weight": 1.0,                      // optional selection weight
@@ -284,7 +291,7 @@ source of truth and can be edited directly.
 
 | File | Content |
 |---|---|
-| `catalog/profiles/index.json` | `{"profiles": ["farmersdelight.json", "create.json"]}` — the bundled profile list (a jar cannot be listed) |
+| `catalog/profiles/index.json` | `{"profiles": ["farmersdelight.json", "create.json", "mekanism.json", "twilightforest.json", "botania.json"]}`: the bundled profile list (a jar cannot be listed) |
 | `rewards.json` | `items` (`id`, `alt`, `value`, `tier`, `max`, `stack`, `family`, `avoidFamilies`, `weight`, `minDifficulty`), `effects` (`id`, `valuePerMinute`, `minSeconds`, `maxSeconds`, `amplifier`, `minDifficulty`, `weight`), `lootTables` (`id`, `value`, `tier`, `minDifficulty`, `weight`), `messages` |
 | `templates.json` | `titles` and `phrases` per type, `variants`, `fallbackTitles`, `comboTitles`, `familyNames`, `tools`, `hints`, `sentences`, `dimensionNames` |
 | `themes.json` | `themes[]`: `key`, `names`, `descriptions` (with `{list}`), `slots[]` (`types`, `keys`, `families`, `profiles`, `optional`), `requiresProfiles`, `minDifficulty`, `maxDifficulty`, `weight` |
@@ -356,8 +363,15 @@ Rules that keep a profile safe:
 - Families should be mod-prefixed (`ex_gems`), so the family rule and reward exclusion work.
 - Themes are only used when every profile in `requiresProfiles` (the owning profile is added
   automatically) is active.
+- Give an English `name` (and `plural` if needed) wherever the prettified id reads badly
+  (`ingot_osmium` → "Osmium Ingot"): dedicated servers have no mod language files.
+- Put `since` on content that some versions register before it is obtainable (experimental feature
+  flags, like pale oak in 1.21.2/1.21.3).
+- A modded dimension needs a `dimensions` rule and `requires: ["dim:<id>"]` on its entries, so
+  nothing is generated before the world unlocks it.
 - Run the tests (`CatalogIntegrityTest`) after adding a bundled profile; add the family nouns to
-  `templates.familyNames` for nicer combo titles.
+  `templates.familyNames` for nicer combo titles. `./gradlew catalogReport` shows which targets each
+  difficulty can use, and `tools/verify_mods.py` checks ids and recipes against the mod's own data.
 
 ## 12. Tuning guide
 
@@ -376,6 +390,12 @@ All numbers live in `balance.json` (or a world override). The most useful knobs:
 | Themes too frequent | `setRules.themeChance` |
 | Quests too far below their target time | `setRules.minTargetFraction` ↑ (more rejected attempts) |
 | Claim expiry per difficulty | `difficulties.<D>.claimExpiryHours` (used when `generatorClaimExpiryHours` is 0) |
+| Many mods crowd out vanilla in small sets | `setRules.maxPerModShare` (default 0.5) or `generatorModdedShare` |
+| A mod's dimension opens too early/late | its profile's `dimensions[].share` / `day` |
+
+Before and after a change, `./gradlew catalogReport` lists every target's minute range and
+difficulties, and `./gradlew simulate` shows the effect on 14 simulated days (variety, completion
+rates, calibration ratio).
 
 Workflow for the test phase: play with `generatorStats: true`, look at `/quest generator stats`
 (completion rate per type/tier, median observed vs. estimated minutes, relaxations, rejections), then
@@ -418,8 +438,9 @@ Decisions taken where the specification left room:
     animals, iron tools by the mid game). Consume efforts include getting hungry again.
 15. **Loot tables** are not verifiable through the host; only vanilla tables that exist in every
     version 1.18.2+ are listed.
-16. **Tags on mod content:** Farmer's Delight and Create use the same namespace on every loader, so
-    tags are only needed for the demonstration concept `zinc_ingots` (smelting any zinc ingot).
+16. **Tags on mod content:** the bundled mods use the same namespace on every loader, so tags are only
+    used for interchangeable metals (`zinc_ingots`, `osmium_ingots`, `tin_ingots`, `lead_ingots`,
+    with `c:` and `forge:` candidates).
     Discovery of extra targets from a mod's tags (spec §9.2 c, a SHOULD) is not implemented — the
     profiles are explicit.
 17. **Time zone** defaults to the system zone (`ZoneId.systemDefault()`), as §13 specifies; tests pin
@@ -429,6 +450,29 @@ Decisions taken where the specification left room:
 20. **`servedRevision()`** was added so the mod can re-register lazily after `onAbandon`/
     `releaseAllFor`/`forceRelease` removed a retained quest (these methods return `void`/lists in the
     spec'd signatures).
+21. **One quest per active mod, capped.** The spec asks for a `moddedShare` target *and* at least one
+    quest per active mod for N ≥ 5, which conflict when more mods are active than a small set can hold
+    (five bundled profiles, N = 5 would be all modded). The guarantee takes at most
+    `setRules.maxPerModShare` (0.5) of the set, or the modded target if that is larger. When it cannot
+    cover every mod, the cycle's RNG picks a rotating subset and the relaxation `per_mod` is counted.
+    For N ≥ 2 × active mods the rule holds literally.
+22. **Feature-flag leaks** are handled by versions, not by the host alone. Minecraft registers the
+    content of the next release behind experimental flags (cherry in 1.19.4, breeze and copper grates
+    in 1.20.3/1.20.4, bogged in 1.20.5/1.20.6, pale oak in 1.21.2/1.21.3; the sculk sensor exists in
+    1.18.2 but cannot be obtained in survival). The catalog marks such content with `since`, and step 3
+    rejects it when the running version is older. An unparsable version string disables only this
+    guard. The host should still check `isEnabled(enabledFeatures())` (`INTEGRATION.md` §2.2).
+23. **Stored quests are re-validated at start** (schema check and host validator). A state file may
+    be edited by hand, or a content mod removed since the last run. Invalid quests are dropped; a player
+    who still has one active gets it reported in `StartResult.deadQuestIds()`, and the current set is
+    topped up to `questsPerCycle`. When the check itself fails (host exception or a `null` answer), the
+    quest is kept. v1-imported quests skip the core's schema check and rely on the host validator.
+24. **Host display names are cleaned** before use (see §6). A mod can report formatting codes, an
+    untranslated key or a very long name; the id's prettified form is the fallback.
+25. **`status()` ends with `Minecraft <version> (<loader>)`**, from `ContentView`, to make porting
+    problems visible in one line.
+26. **Mod reward tiers**: rewards from a dimension profile use tier 3+ (a reward may be one tier above
+    its quest), so the Twilight Forest's items do not appear on the first quests of a world.
 
 ## 14. Known limitations
 
@@ -446,6 +490,43 @@ Decisions taken where the specification left room:
   that removes a vanilla crafting recipe is only noticed if the host answers `NO`.
 - **Modded names on dedicated servers** come from the catalog or the prettified id (the server has no
   modded `en_us`); the client shows the real item names in the objective list anyway.
-- **Create machine outputs** (brass, sheets, sweets) cannot be `craft_item`/`smelt_item` targets; they
-  appear only as `consume_item` or as rewards.
+- **Machine outputs** of Create (brass, sheets, sweets), Mekanism (steel, alloys, circuits) and Botania
+  (apothecary, runic altar, mana infusion) cannot be `craft_item`/`smelt_item` targets; they appear
+  only as `consume_item`, as inputs mentioned in hints, or as rewards.
+- **World-generation settings are invisible.** A pack that turns off Mekanism's ores or salt still
+  gets those quests; such packs disable the profile or override the entries in a world profile.
+- **Mod progression locks are not modelled** beyond dimension unlocks (for example, the Twilight
+  Forest's biome effects before its bosses are defeated); boss quests are Hard-only.
 - **Only English** (as required).
+
+## 15. Tools, verification and tests
+
+The data files are authored with the Python scripts in `tools/` at the repository root (not part of
+the deliverable ZIP's build):
+
+| Script | Purpose |
+|---|---|
+| `tools/build_data.py` | writes every JSON file under `src/main/resources/justquests_genv2/` from `vanilla_catalog.py`, `vanilla_more.py`, `mod_profiles.py`, `mod_more.py`, `mod_mekanism.py`, `mod_twilightforest.py`, `mod_botania.py` and `other_data.py` |
+| `tools/verify_vanilla.py` | checks every vanilla target, reward item, effect, loot table and tag against Minecraft's own registries and recipes (misode/mcmeta data) for 17 versions from 1.18.2 to 1.21.10: 458 targets, 83 reward items, 0 problems; notes for feature-flag leaks, all covered by `since` |
+| `tools/verify_mods.py` | checks the five profiles against the mods' language files and recipe data (`MODS.md` §7): 267 targets, 0 problems |
+
+Gradle tasks that write documentation from the real code:
+
+| Task | Output |
+|---|---|
+| `./gradlew samples` | `samples/{vanilla,modded,mc-1.18.2}/`: 27 sets with `status()` and `explain()` |
+| `./gradlew catalogReport` | `samples/catalog-report.md`: every target with count range, minutes, E/N/H |
+| `./gradlew simulate` | `samples/simulation/*.md`: 14 simulated days per difficulty with the statistics text |
+
+The tests (24 classes, 105 tests, about a minute) cover the 17 groups of the specification plus:
+
+| Test | What it proves |
+|---|---|
+| `HostFuzzTest` | random TriStates, missing ids, content calls that throw, hostile display names, a broken world/capabilities/validator: nothing escapes the facade, every served quest is valid and uses only ids the host confirmed, and the set fills again once the host recovers |
+| `ClaimsPropertyTest` | 12 configurations × 300 random operations (claim, complete, abandon, release, force release, time jumps, reroll, lossy restarts, disable/enable) checked against a model of the mod's view after every step; a coverage check makes sure every claim result was exercised |
+| `StateFuzzTest` | 250 mutated or truncated state and stats files, 3000 mutated quest JSONs through the schema check, and a content mod removed between two runs |
+| `OldVersionTest` | the since-guard on eleven versions from 1.18.2 to 26.1: flagged content never appears, sets still fill, unparsable versions only disable the guard |
+| `TextQualityTest` | 3600 quests with all profiles: spacing, punctuation, articles, repeated words or sentences, counts of one |
+| `EnglishTest` | plurals of the names the catalogs use, mass nouns, articles |
+| `ModProfilesTest` | each mod profile activates only with its mod, the per-mod guarantee (and its cap), readable modded names, dimension unlocks, Hard-only bosses and machines |
+
