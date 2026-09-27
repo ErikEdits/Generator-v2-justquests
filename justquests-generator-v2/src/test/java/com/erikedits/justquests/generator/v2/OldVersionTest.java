@@ -146,4 +146,15 @@ class OldVersionTest {
         assertTrue(CandidateResolver.Versions.compare("26.1", "1.21.10") > 0);
         assertEquals(0, CandidateResolver.Versions.compare("1.21", "1.21.0"));
     }
+
+    @Test
+    void statusNamesTheRunningVersionAndLoader() {
+        FakeHost h = host("1.20.1");
+        h.content.loader = "forge";
+        QuestGeneratorV2 g = new QuestGeneratorV2(h, TestSupport.config(Difficulty.NORMAL, 5));
+        g.start(Map.of());
+        assertTrue(g.status().endsWith("Minecraft 1.20.1 (forge)"), g.status());
+        h.content.version = null;
+        assertTrue(g.status().endsWith("Minecraft ? (forge)"), g.status());
+    }
 }

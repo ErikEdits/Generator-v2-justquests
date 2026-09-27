@@ -966,6 +966,17 @@ public final class Core {
             }
             sb.append(", profiles ").append(active);
         }
+        String mc;
+        String loader;
+        try {
+            mc = host.content().minecraftVersion();
+            loader = host.content().loaderName();
+        } catch (RuntimeException e) {
+            mc = null;
+            loader = null;
+        }
+        sb.append(", Minecraft ").append(mc == null || mc.isBlank() ? "?" : mc)
+            .append(" (").append(loader == null || loader.isBlank() ? "?" : loader).append(")");
         return sb.toString();
     }
 
