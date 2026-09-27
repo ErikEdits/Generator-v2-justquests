@@ -1,13 +1,14 @@
 # Samples
 
-Everything in this folder is generated and deterministic: running the three Gradle tasks again
-reproduces the files byte for byte.
+Everything in this folder except `world-overrides/` is generated and deterministic: running the three
+Gradle tasks again reproduces the files byte for byte.
 
 | Path | Task | Content |
 |---|---|---|
 | `vanilla/`, `modded/`, `mc-1.18.2/` | `./gradlew samples` | example sets with `explain()` output |
 | `catalog-report.md` | `./gradlew catalogReport` | every catalog target: type, count range, minutes, which difficulties can use it |
 | `simulation/{easy,normal,hard}.md` | `./gradlew simulate` | 14 simulated days on a busy server, with variety figures and `stats().toText()` |
+| `world-overrides/` | hand-written, checked by `WorldOverrideSamplesTest` | copy-ready examples of a world `balance.json` override and a world profile for another mod (see its README) |
 
 ## Example sets (`SampleWriter.java`)
 
