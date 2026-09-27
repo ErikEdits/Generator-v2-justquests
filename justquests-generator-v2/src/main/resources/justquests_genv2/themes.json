@@ -1346,6 +1346,78 @@
       ]
     },
     {
+      "key": "workshop_setup",
+      "names": [
+        "Workshop Setup",
+        "New Workshop",
+        "Crafting Corner"
+      ],
+      "descriptions": [
+        "Every village needs a workshop: {list}."
+      ],
+      "slots": [
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "workstations"
+          ]
+        },
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "workstations"
+          ]
+        },
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "workstations",
+            "storage",
+            "furnaces"
+          ],
+          "optional": true
+        }
+      ]
+    },
+    {
+      "key": "adventurers_kit",
+      "names": [
+        "Adventurer's Kit",
+        "Ready to Roam",
+        "Travel Gear"
+      ],
+      "descriptions": [
+        "Pack for the road: {list}."
+      ],
+      "slots": [
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "iron_tools",
+            "gear_misc"
+          ]
+        },
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "iron_armor",
+            "leather_armor",
+            "transport"
+          ]
+        }
+      ]
+    },
+    {
       "key": "treasure_hunter",
       "names": [
         "Treasure Hunter",

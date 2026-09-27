@@ -67,7 +67,7 @@ BOT_THEMES = [
     {"key": "bot_first_steps", "names": ["Botanist's Start", "Garden Magic", "Flower Power"],
      "descriptions": ["Every botanist starts in a meadow: {list}."],
      "slots": [{"types": ["collect_item"], "keys": ["bot_flowers"]},
-               {"types": ["craft_item"], "keys": ["bot_start"]}]},
+               {"types": ["craft_item"], "keys": ["bot_start", "bot_petals"]}]},
     {"key": "bot_florist", "names": ["Florist", "Bouquet", "Petal Picker"],
      "descriptions": ["The florist wants colour: {list}."],
      "slots": [{"types": ["collect_item"], "keys": ["bot_flowers"]},

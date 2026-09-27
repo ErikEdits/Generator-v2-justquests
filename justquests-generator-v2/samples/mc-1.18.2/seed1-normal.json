@@ -232,32 +232,37 @@
     ]
   },
   "justquests:gen/1790510400_9": {
-    "title": "Quarry Job",
-    "description": "Break 64 tuff and break 96 deepslate. Found deep underground.",
+    "title": "Leatherworker",
+    "description": "The tannery is busy: breed 3 rabbits and craft 6 books. Rabbits breed with carrots or dandelions. Look in deserts.",
     "category": "generated",
-    "sort": 14,
+    "sort": 15,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:tuff",
-        "count": 64
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:rabbit",
+        "count": 3
       },
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:deepslate",
-        "count": 96
+        "type": "justquests:craft_item",
+        "item": "minecraft:book",
+        "count": 6
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 11
+        "item": "minecraft:cooked_porkchop",
+        "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:experience_bottle",
+        "count": 6
       },
       {
         "type": "justquests:xp",
-        "amount": 50
+        "amount": 55
       }
     ]
   }

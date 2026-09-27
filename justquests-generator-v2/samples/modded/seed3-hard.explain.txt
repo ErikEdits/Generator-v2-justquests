@@ -2,26 +2,6 @@
 
 Generator v2: enabled, difficulty hard, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest, botania], Minecraft 1.21.1 (neoforge)
 
-justquests:gen/1790510400_7  "Make Mutton Wraps"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective craft_item farmersdelight:mutton_wrap ×6
-  effort 1.90 min/unit → 11.4 min (target 19.3, range 15–35 min)
-  tier 1 (always available), family fd_meals, profile farmersdelight
-estimated 11.4 min (quick)
-reward give_item minecraft:lantern ×8 (value 6.4) + loot_table minecraft:chests/abandoned_mineshaft (value 7.0) + xp 55 (value 4.6)  → 18.0 / budget 18.0
-state: AVAILABLE
-
-justquests:gen/1790510400_4  "Woodcutter"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective mine_block minecraft:spruce_log ×64
-  effort 0.10 min/unit (×1.20 taiga) → 7.7 min (target 20.4, range 15–35 min)
-  tier 0 (always available), family wood, profile vanilla, hints taiga
-objective place_block minecraft:dark_oak_sapling ×16
-  effort 0.30 min/unit (×1.30 dark_forest) → 6.2 min (target 20.4, range 15–35 min)
-  tier 0 (always available), family forestry, profile vanilla, hints dark_forest
-theme lumberjack
-estimated 13.9 min (quick)
-reward give_item minecraft:phantom_membrane ×4 (value 12.0) + effect minecraft:fire_resistance 480s (value 5.6) + xp 65 (value 5.4)  → 23.0 / budget 23.0
-state: AVAILABLE
-
 justquests:gen/1790510400_1  "Masonry Duty"  (HARD, cycle 1790510400, seed 0xEE71…)
 objective craft_item minecraft:polished_deepslate ×64
   effort 0.10 min/unit (×1.10 deep) → 7.0 min (target 18.3, range 15–35 min)
@@ -35,12 +15,29 @@ reward give_item minecraft:experience_bottle ×16 (value 19.2) + xp 65 (value 5.
 rejected alternatives: craft_item minecraft:polished_andesite (max count takes only 4.5 min); craft_item minecraft:polished_granite (max count takes only 4.5 min); craft_item minecraft:polished_diorite (max count takes only 4.5 min)
 state: AVAILABLE
 
+justquests:gen/1790510400_5  "Craft Zinc Blocks"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item create:zinc_block ×2
+  effort 7.50 min/unit → 15.0 min (target 26.4, range 15–35 min)
+  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves
+estimated 15.0 min (quick)
+reward give_item create:honeyed_apple ×6 (value 18.0) + xp 55 (value 4.6)  → 22.6 / budget 22.5
+rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch)
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Honey Glazed Ham Feast"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective consume_item farmersdelight:honey_glazed_ham ×2
+  effort 7.50 min/unit → 15.0 min (target 19.2, range 15–35 min)
+  tier 1 (always available), family fd_feasts, profile farmersdelight
+estimated 15.0 min (quick)
+reward give_item create:zinc_ingot ×19 (value 17.1) + xp 65 (value 5.4)  → 22.5 / budget 22.5
+state: AVAILABLE
+
 justquests:gen/1790510400_9  "Make Livingwood Planks"  (HARD, cycle 1790510400, seed 0xEE71…)
 objective craft_item botania:livingwood_planks ×16
-  effort 1.00 min/unit → 16.0 min (target 20.8, range 15–35 min)
+  effort 1.00 min/unit → 16.0 min (target 16.2, range 15–35 min)
   tier 2 (always available), family bot_livingwood, profile botania
 estimated 16.0 min (quick)
-reward give_item mekanism:ingot_osmium ×20 (value 18.0) + xp 70 (value 5.8) + message  → 23.8 / budget 24.0
+reward give_item mekanism:ingot_osmium ×16 (value 14.4) + effect minecraft:water_breathing 600s (value 5.0) + xp 55 (value 4.6)  → 24.0 / budget 24.0
 rejected alternatives: collect_item botania:livingwood_log (a Pure Daisy converts logs in place; nothing is picked up)
 state: AVAILABLE
 
@@ -53,45 +50,50 @@ estimated 17.0 min (quick)
 reward give_item twilightforest:cooked_venison ×16 (value 17.6) + xp 95 (value 7.9)  → 25.5 / budget 25.5
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Tin Ore Shift"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective mine_block mekanism:tin_ore ×24
-  effort 0.70 min/unit → 16.8 min (target 31.3, range 15–35 min)
-  tier 1 (always available), family mek_tin, profile mekanism, tool stone, hints caves
-estimated 16.8 min (quick)
-reward give_item minecraft:cooked_salmon ×13 (value 11.7) + loot_table minecraft:chests/jungle_temple (value 9.0) + xp 55 (value 4.6)  → 25.3 / budget 25.2
+justquests:gen/1790510400_3  "Nether Mason Chores"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:quartz_block ×8
+  effort 1.20 min/unit → 9.6 min (target 20.7, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_crafts, profile vanilla, minecraft:the_nether
+objective smelt_item minecraft:smooth_quartz ×6
+  effort 1.30 min/unit → 7.8 min (target 20.7, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_crafts, profile vanilla, minecraft:the_nether
+travel overhead 3.0 min
+combo within family nether_crafts
+estimated 20.4 min (quick)
+reward give_item minecraft:rabbit_foot ×2 (value 8.0) + give_item minecraft:blaze_rod ×8 (value 14.4) + xp 135 (value 11.3)  → 33.7 / budget 33.7
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Undead Chores"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective kill_mob minecraft:skeleton ×10
-  effort 0.90 min/unit → 9.0 min (target 17.6, range 15–35 min)
-  tier 0 (always available), family undead, profile vanilla, hints night
-objective kill_mob minecraft:drowned ×6
-  effort 1.20 min/unit (×1.20 ocean) → 8.6 min (target 17.6, range 15–35 min)
-  tier 0 (always available), family undead, profile vanilla, hints ocean/night
-combo within family undead
-estimated 17.6 min (quick)
-reward give_item farmersdelight:barbecue_stick ×8 (value 10.4) + give_item farmersdelight:cabbage ×32 (value 4.8) + xp 165 (value 13.8)  → 29.0 / budget 29.1
+justquests:gen/1790510400_4  "Monster Supplies"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:ender_pearl ×4
+  effort 3.00 min/unit → 12.0 min (target 29.0, range 15–35 min)
+  tier 2 (always available), family monsters, profile vanilla, hints night
+objective kill_mob minecraft:witch ×1
+  effort 5.00 min/unit (×1.30 swamp ×1.60 rare) → 10.4 min (target 29.0, range 15–35 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp/rare
+combo within family monsters
+estimated 22.4 min
+reward give_item mekanism:alloy_infused ×8 (value 28.0) + xp 110 (value 9.2)  → 37.2 / budget 37.0
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Harvest Market"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective craft_item minecraft:rabbit_stew ×3
-  effort 3.00 min/unit (×1.30 desert) → 11.7 min (target 20.7, range 15–35 min)
-  tier 0 (always available), family baking, profile vanilla, hints desert
-objective breed_animal minecraft:sheep ×10
-  effort 1.00 min/unit → 10.0 min (target 20.7, range 15–35 min)
-  tier 0 (always available), family wool, profile vanilla
-theme village_fair
-estimated 21.7 min
-reward give_item minecraft:slime_ball ×8 (value 12.0) + give_item minecraft:phantom_membrane ×4 (value 12.0) + xp 140 (value 11.7)  → 35.7 / budget 35.8
+justquests:gen/1790510400_6  "Osmium Ingot Supply"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective smelt_item mekanism:ingot_osmium ×32
+  effort 0.75 min/unit → 24.0 min (target 21.6, range 15–35 min)
+  tier 1 (always available), family mek_osmium, profile mekanism, tool stone, hints caves
+estimated 24.0 min
+reward give_item minecraft:obsidian ×16 (value 16.0) + give_item minecraft:prismarine_crystals ×7 (value 10.5) + xp 115 (value 9.6)  → 36.1 / budget 36.0
+rejected alternatives: collect_item mekanism:osmium_ore (drops raw osmium, needs Silk Touch)
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Zinc Ingot Batch"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective smelt_item #c:ingots/zinc ×32
-  effort 0.85 min/unit → 27.2 min (target 26.4, range 15–35 min)
-  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves
-estimated 27.2 min
-reward give_item mekanism:ingot_lead ×32 (value 30.4) + xp 125 (value 10.4)  → 40.8 / budget 40.8
-rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch)
+justquests:gen/1790510400_8  "Potter's Wheel"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:clay ×32
+  effort 0.30 min/unit → 9.6 min (target 25.1, range 15–35 min)
+  tier 0 (always available), family soil, profile vanilla, hints river
+objective smelt_item minecraft:white_glazed_terracotta ×24
+  effort 0.60 min/unit → 14.4 min (target 25.1, range 15–35 min)
+  tier 0 (always available), family badlands, profile vanilla
+theme potter
+estimated 24.0 min
+reward give_item create:zinc_ingot ×26 (value 23.4) + loot_table minecraft:chests/desert_pyramid (value 9.0) + xp 85 (value 7.1)  → 39.5 / budget 39.6
 state: AVAILABLE
 
 justquests:gen/1790510400_2  "Gem Duty"  (HARD, cycle 1790510400, seed 0xEE71…)

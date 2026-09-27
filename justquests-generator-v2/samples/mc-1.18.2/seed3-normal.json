@@ -164,36 +164,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Rail Line",
-    "description": "Lay down a new line: make 2 minecarts and build with 32 rails. Build a railway.",
-    "category": "generated",
-    "sort": 15,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:minecart",
-        "count": 2
-      },
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:rail",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:diamond",
-        "count": 3
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 55
-      }
-    ]
-  },
   "justquests:gen/1790510400_5": {
     "title": "Gold Ore Shift",
     "description": "Mine 12 gold ore. Needs an iron pickaxe or better. Found deep underground.",
@@ -245,6 +215,36 @@
       {
         "type": "justquests:xp",
         "amount": 85
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Circuit Builder",
+    "description": "Wire up the workshop: collect 48 redstone dust and make 8 pistons. Redstone ore drops dust. Needs an iron pickaxe or better.",
+    "category": "generated",
+    "sort": 20,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:redstone",
+        "count": 48
+      },
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:piston",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:obsidian",
+        "count": 16
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 125
       }
     ]
   },

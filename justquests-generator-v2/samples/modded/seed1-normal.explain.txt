@@ -2,6 +2,18 @@
 
 Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest, botania], Minecraft 1.21.1 (neoforge)
 
+justquests:gen/1790510400_9  "Sand Job"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective smelt_item minecraft:smooth_red_sandstone ×8
+  effort 0.35 min/unit (×1.60 badlands) → 4.5 min (target 8.2, range 8–20 min)
+  tier 0 (always available), family sand, profile vanilla, hints badlands
+objective collect_item minecraft:red_sand ×40
+  effort 0.06 min/unit (×1.60 badlands) → 3.8 min (target 8.2, range 8–20 min)
+  tier 0 (always available), family sand, profile vanilla, hints badlands
+combo within family sand
+estimated 8.3 min (quick)
+reward give_item minecraft:redstone ×32 (value 6.4) + xp 55 (value 4.6)  → 11.0 / budget 11.0
+state: AVAILABLE
+
 justquests:gen/1790510400_0  "Dig Deepslate Copper Ore"  (NORMAL, cycle 1790510400, seed 0x2897…)
 objective mine_block minecraft:deepslate_copper_ore ×20
   effort 0.40 min/unit (×1.10 deep) → 8.8 min (target 9.4, range 8–20 min)
@@ -63,25 +75,13 @@ estimated 9.6 min (quick)
 reward give_item create:honeyed_apple ×3 (value 9.0) + xp 30 (value 2.5)  → 11.5 / budget 11.5
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Undead Errand"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:rotten_flesh ×8
-  effort 0.50 min/unit → 4.0 min (target 10.8, range 8–20 min)
-  tier 0 (always available), family undead, profile vanilla, hints night
-objective kill_mob minecraft:stray ×4
-  effort 1.20 min/unit (×1.30 snowy) → 6.2 min (target 10.8, range 8–20 min)
-  tier 1 (always available), family undead, profile vanilla, hints snowy/night
-combo within family undead
-estimated 10.2 min (quick)
-reward give_item mekanism:basic_control_circuit ×3 (value 12.0) + xp 18 (value 1.5)  → 13.5 / budget 13.5
-state: AVAILABLE
-
-justquests:gen/1790510400_8  "Mine Twilight Oak Logs"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective mine_block twilightforest:twilight_oak_log ×64
-  effort 0.12 min/unit → 7.7 min (target 19.5, range 8–20 min)
-  tier 2 (always available), family tf_wood, profile twilightforest, twilightforest:twilight_forest
+justquests:gen/1790510400_8  "Venison Steak Supper"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective consume_item twilightforest:cooked_venison ×6
+  effort 1.10 min/unit → 6.6 min (target 19.5, range 8–20 min)
+  tier 2 (always available), family tf_game, profile twilightforest, twilightforest:twilight_forest
 travel overhead 5.0 min
-estimated 12.7 min
-reward give_item twilightforest:liveroot ×16 (value 9.6) + xp 65 (value 5.4)  → 15.0 / budget 15.2
+estimated 11.6 min (quick)
+reward give_item farmersdelight:hamburger ×4 (value 10.4) + xp 42 (value 3.5) + message  → 13.9 / budget 13.9
 state: AVAILABLE
 
 justquests:gen/1790510400_1  "Tin Ingot Batch"  (NORMAL, cycle 1790510400, seed 0x2897…)

@@ -1,34 +1,4 @@
 {
-  "justquests:gen/1790510400_9": {
-    "title": "Fletcher Job",
-    "description": "Make 2 crossbows and make 3 bows.",
-    "category": "generated",
-    "sort": 7,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:crossbow",
-        "count": 2
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:bow",
-        "count": 3
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glistering_melon_slice",
-        "count": 5
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 27
-      }
-    ]
-  },
   "justquests:gen/1790510400_0": {
     "title": "Dig Deepslate Copper Ore",
     "description": "Mine 20 deepslate copper ore. Needs a stone pickaxe or better. Found deep underground.",
@@ -74,6 +44,41 @@
       {
         "type": "justquests:xp",
         "amount": 17
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Florist",
+    "description": "Fresh flowers for the market: pick up 16 peonies and pick up 32 poppies.",
+    "category": "generated",
+    "sort": 9,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:peony",
+        "count": 16
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:poppy",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:glow_berries",
+        "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:phantom_membrane",
+        "count": 2
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 19
       }
     ]
   },
@@ -183,30 +188,19 @@
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Bakery Supplies",
-    "description": "Craft 6 mushroom stew and craft 16 bread. Dark forests have plenty. Three wheat make a loaf.",
+  "justquests:gen/1790510400_9": {
+    "title": "Place Bricks",
+    "description": "Place 16 bricks.",
     "category": "generated",
     "sort": 15,
-    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:mushroom_stew",
-        "count": 6
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:bread",
+        "type": "justquests:place_block",
+        "block": "minecraft:bricks",
         "count": 16
       }
     ],
     "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glow_berries",
-        "count": 16
-      },
       {
         "type": "justquests:give_item",
         "item": "minecraft:phantom_membrane",
@@ -214,7 +208,7 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 46
+        "amount": 75
       }
     ]
   },

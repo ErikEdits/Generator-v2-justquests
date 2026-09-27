@@ -11,6 +11,14 @@ estimated 14.2 min (quick)
 reward give_item minecraft:ghast_tear ×4 (value 16.0) + effect minecraft:jump_boost 300s (value 1.5) + xp 46 (value 3.8)  → 21.3 / budget 21.3
 state: AVAILABLE
 
+justquests:gen/1790510400_6  "Fox Farm"  (HARD, cycle 1790510400, seed 0x2897…)
+objective breed_animal minecraft:fox ×3
+  effort 4.00 min/unit (×1.20 taiga) → 14.4 min (target 16.5, range 15–35 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints taiga
+estimated 14.4 min (quick)
+reward give_item minecraft:iron_block ×2 (value 10.8) + loot_table minecraft:chests/jungle_temple (value 9.0) + xp 22 (value 1.8)  → 21.6 / budget 21.6
+state: AVAILABLE
+
 justquests:gen/1790510400_4  "Gold Ore Quarry"  (HARD, cycle 1790510400, seed 0x2897…)
 objective mine_block minecraft:gold_ore ×12
   effort 1.20 min/unit (×1.10 deep) → 15.8 min (target 16.5, range 15–35 min)
@@ -44,44 +52,42 @@ estimated 18.6 min (quick)
 reward give_item minecraft:leather ×16 (value 6.4) + give_item minecraft:phantom_membrane ×4 (value 12.0) + xp 145 (value 12.1)  → 30.5 / budget 30.6
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Tannery Order"  (HARD, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:rabbit_hide ×8
-  effort 1.00 min/unit (×1.30 desert) → 10.4 min (target 30.3, range 15–35 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints desert
-objective craft_item minecraft:book ×8
-  effort 1.20 min/unit → 9.6 min (target 30.3, range 15–35 min)
-  tier 0 (always available), family library, profile vanilla
-theme leatherworker
-estimated 20.0 min (quick)
-reward give_item minecraft:cooked_porkchop ×16 (value 8.0) + loot_table minecraft:chests/jungle_temple (value 9.0) + xp 190 (value 15.8)  → 32.8 / budget 33.0
-state: AVAILABLE
-
-justquests:gen/1790510400_9  "Silverfish Slayer"  (HARD, cycle 1790510400, seed 0x2897…)
-objective kill_mob minecraft:silverfish ×10
-  effort 1.50 min/unit (×1.30 mountains) → 19.5 min (target 20.6, range 15–35 min)
-  tier 1 (always available), family arthropods, profile vanilla, hints mountains
-estimated 19.5 min (quick)
-reward give_item minecraft:emerald ×9 (value 22.5) + xp 80 (value 6.7)  → 29.2 / budget 29.3
-state: AVAILABLE
-
-justquests:gen/1790510400_7  "Village Fair"  (HARD, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:dried_kelp_block ×8
-  effort 1.00 min/unit (×1.20 ocean) → 9.6 min (target 28.3, range 15–35 min)
-  tier 0 (always available), family baking, profile vanilla, hints ocean
-objective breed_animal minecraft:sheep ×12
-  effort 1.00 min/unit → 12.0 min (target 28.3, range 15–35 min)
-  tier 0 (always available), family wool, profile vanilla
-theme village_fair
+justquests:gen/1790510400_5  "Potion Ingredients"  (HARD, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:nether_wart ×24
+  effort 0.40 min/unit (×1.30 fortress) → 12.5 min (target 27.8, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_plants, profile vanilla, hints fortress, minecraft:the_nether
+objective craft_item minecraft:polished_blackstone ×64
+  effort 0.08 min/unit (×1.20 basalt_deltas) → 6.1 min (target 27.8, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_crafts, profile vanilla, hints basalt_deltas, minecraft:the_nether
+travel overhead 3.0 min
+theme brewers_supplies
 estimated 21.6 min (quick)
-reward give_item minecraft:experience_bottle ×16 (value 19.2) + xp 195 (value 16.3)  → 35.5 / budget 35.6
+reward give_item minecraft:gold_ingot ×16 (value 20.8) + xp 180 (value 15.0)  → 35.8 / budget 35.7
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Breeze Slayer"  (HARD, cycle 1790510400, seed 0x2897…)
-objective kill_mob minecraft:breeze ×3
-  effort 5.00 min/unit (×1.50 trial_chambers) → 22.5 min (target 30.2, range 15–35 min)
-  tier 2 (always available), family trial, profile vanilla, hints trial_chambers
-estimated 22.5 min
-reward give_item minecraft:golden_apple ×2 (value 18.0) + xp 190 (value 15.8)  → 33.8 / budget 33.8
+justquests:gen/1790510400_7  "Stonemason"  (HARD, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:pointed_dripstone ×32
+  effort 0.20 min/unit (×1.30 dripstone_caves) → 8.3 min (target 28.3, range 15–35 min)
+  tier 1 (always available), family stone, profile vanilla, hints dripstone_caves
+objective place_block minecraft:bricks ×16
+  effort 0.95 min/unit → 15.2 min (target 28.3, range 15–35 min)
+  tier 0 (always available), family stonework, profile vanilla
+theme stonemason
+estimated 23.5 min
+reward give_item minecraft:ender_pearl ×8 (value 20.0) + xp 225 (value 18.8)  → 38.8 / budget 38.8
+rejected alternatives: craft_item minecraft:flower_pot (max count takes only 3.2 min)
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Mushroom Supplies"  (HARD, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:brown_mushroom_block ×48
+  effort 0.15 min/unit (×1.30 dark_forest) → 9.4 min (target 27.0, range 15–35 min)
+  tier 0 (always available), family mushrooms, profile vanilla, hints dark_forest
+objective collect_item minecraft:red_mushroom ×32
+  effort 0.35 min/unit (×1.30 dark_forest) → 14.6 min (target 27.0, range 15–35 min)
+  tier 0 (always available), family mushrooms, profile vanilla, hints dark_forest
+combo within family mushrooms
+estimated 23.9 min
+reward give_item minecraft:iron_ingot ×24 (value 14.4) + loot_table minecraft:chests/village/village_weaponsmith (value 7.0) + xp 215 (value 17.9)  → 39.3 / budget 39.5
 state: AVAILABLE
 
 justquests:gen/1790510400_1  "Wither Skeleton Bounty"  (HARD, cycle 1790510400, seed 0x2897…)
@@ -93,15 +99,11 @@ estimated 26.4 min
 reward give_item minecraft:ender_pearl ×8 (value 20.0) + effect minecraft:luck 600s (value 3.0) + xp 200 (value 16.7)  → 39.7 / budget 39.6
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Silent Depths"  (HARD, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:sculk ×40
-  effort 0.20 min/unit (×1.60 deep_dark) → 12.8 min (target 27.8, range 15–35 min)
-  tier 2 (always available), family deep_dark, profile vanilla, hints deep_dark
-objective mine_block minecraft:deepslate_lapis_ore ×12
-  effort 1.20 min/unit (×1.10 deep) → 15.8 min (target 27.8, range 15–35 min)
-  tier 2 (always available), family gems, profile vanilla, tool stone, hints deep
-theme deep_dark_delve
-estimated 28.6 min
-reward give_item minecraft:tnt ×4 (value 10.0) + give_item minecraft:golden_carrot ×16 (value 24.0) + xp 160 (value 13.3)  → 47.3 / budget 47.3
+justquests:gen/1790510400_9  "Slime Hunt"  (HARD, cycle 1790510400, seed 0x2897…)
+objective kill_mob minecraft:slime ×16
+  effort 1.50 min/unit (×1.30 swamp) → 31.2 min (target 33.2, range 15–35 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp
+estimated 31.2 min
+reward give_item minecraft:emerald_block ×1 (value 22.5) + xp 290 (value 24.2)  → 46.7 / budget 46.8
 state: AVAILABLE
 

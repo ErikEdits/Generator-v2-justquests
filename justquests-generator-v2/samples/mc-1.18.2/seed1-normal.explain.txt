@@ -80,15 +80,15 @@ estimated 14.4 min
 reward give_item minecraft:experience_bottle ×11 (value 13.2) + xp 49 (value 4.1)  → 17.3 / budget 17.3
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Quarry Job"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:tuff ×64
-  effort 0.08 min/unit (×1.10 deep) → 5.6 min (target 15.3, range 8–20 min)
-  tier 1 (always available), family stone, profile vanilla, tool wood, hints deep
-objective mine_block minecraft:deepslate ×96
-  effort 0.08 min/unit (×1.10 deep) → 8.4 min (target 15.3, range 8–20 min)
-  tier 1 (always available), family stone, profile vanilla, tool wood, hints deep
-combo within family stone
-estimated 14.1 min
-reward give_item minecraft:gold_ingot ×11 (value 14.3) + xp 50 (value 4.2)  → 18.5 / budget 18.6
+justquests:gen/1790510400_9  "Leatherworker"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective breed_animal minecraft:rabbit ×3
+  effort 2.00 min/unit (×1.30 desert) → 7.8 min (target 17.2, range 8–20 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints desert
+objective craft_item minecraft:book ×6
+  effort 1.20 min/unit → 7.2 min (target 17.2, range 8–20 min)
+  tier 0 (always available), family library, profile vanilla
+theme leatherworker
+estimated 15.0 min
+reward give_item minecraft:cooked_porkchop ×16 (value 8.0) + give_item minecraft:experience_bottle ×6 (value 7.2) + xp 55 (value 4.6)  → 19.8 / budget 19.8
 state: AVAILABLE
 

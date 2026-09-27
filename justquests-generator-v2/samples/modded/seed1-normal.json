@@ -1,4 +1,34 @@
 {
+  "justquests:gen/1790510400_9": {
+    "title": "Sand Job",
+    "description": "Smelt 8 smooth red sandstone and pick up 40 red sand. Look in badlands.",
+    "category": "generated",
+    "sort": 8,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:smooth_red_sandstone",
+        "count": 8
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:red_sand",
+        "count": 40
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:redstone",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 55
+      }
+    ]
+  },
   "justquests:gen/1790510400_0": {
     "title": "Dig Deepslate Copper Ore",
     "description": "Mine 20 deepslate copper ore. Needs a stone pickaxe or better. Found deep underground.",
@@ -187,57 +217,31 @@
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Undead Errand",
-    "description": "Pick up 8 rotten flesh and hunt 4 strays. They spawn at night and in dark caves. Look in snowy biomes.",
-    "category": "generated",
-    "sort": 10,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:rotten_flesh",
-        "count": 8
-      },
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:stray",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:basic_control_circuit",
-        "count": 3
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 18
-      }
-    ]
-  },
   "justquests:gen/1790510400_8": {
-    "title": "Mine Twilight Oak Logs",
-    "description": "Break 64 twilight oak logs. Found in the Twilight Forest.",
+    "title": "Venison Steak Supper",
+    "description": "Eat 6 venison steaks. Found in the Twilight Forest.",
     "category": "generated",
-    "sort": 13,
+    "sort": 12,
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "twilightforest:twilight_oak_log",
-        "count": 64
+        "type": "justquests:consume_item",
+        "item": "twilightforest:cooked_venison",
+        "count": 6
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "twilightforest:liveroot",
-        "count": 16
+        "item": "farmersdelight:hamburger",
+        "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 65
+        "amount": 42
+      },
+      {
+        "type": "justquests:message",
+        "message": "Another job well done."
       }
     ]
   },

@@ -1,88 +1,55 @@
 {
-  "justquests:gen/1790510400_4": {
-    "title": "Hopper Crafter",
-    "description": "Craft 2 hoppers.",
+  "justquests:gen/1790510400_5": {
+    "title": "Apple Feast",
+    "description": "Eat 3 apples.",
     "category": "generated",
     "sort": 7,
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:hopper",
-        "count": 2
+        "type": "justquests:consume_item",
+        "item": "minecraft:apple",
+        "count": 3
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
-        "count": 4
+        "item": "minecraft:iron_ingot",
+        "count": 11
       },
       {
         "type": "justquests:xp",
-        "amount": 29
-      },
-      {
-        "type": "justquests:message",
-        "message": "The village thanks you!"
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Ink Sac Haul",
-    "description": "Collect 16 ink sacs. Squid drop ink sacs. Look in and near oceans.",
-    "category": "generated",
-    "sort": 10,
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:ink_sac",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:arrow",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:redstone",
-        "count": 19
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 35
+        "amount": 24
       }
     ]
   },
   "justquests:gen/1790510400_9": {
-    "title": "Supper Time",
-    "description": "Feed the camp: cook 4 salmon and eat 8 carrots. Use a fishing rod. Villages often have them. Grow them on a farm.",
+    "title": "Masonry Supplies",
+    "description": "Make 64 polished granite and smelt 24 cracked stone bricks. Smelt stone bricks.",
     "category": "generated",
-    "sort": 10,
+    "sort": 9,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 4
+        "type": "justquests:craft_item",
+        "item": "minecraft:polished_granite",
+        "count": 64
       },
       {
-        "type": "justquests:consume_item",
-        "item": "minecraft:carrot",
-        "count": 8
+        "type": "justquests:smelt_item",
+        "item": "minecraft:cracked_stone_bricks",
+        "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:tnt",
-        "count": 4
+        "item": "minecraft:book",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 43
+        "amount": 32
       }
     ]
   },
@@ -107,6 +74,30 @@
       {
         "type": "justquests:xp",
         "amount": 45
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Terracotta Supply",
+    "description": "Smelt 32 terracotta. Smelt clay blocks. Look along rivers.",
+    "category": "generated",
+    "sort": 11,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:terracotta",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:book",
+        "count": 8
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 46
       }
     ]
   },
@@ -138,69 +129,27 @@
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "Woodcutter",
-    "description": "The sawmill is waiting: mine 48 spruce logs and build with 32 oak saplings. Look in taigas. Plant saplings to regrow the forest.",
+  "justquests:gen/1790510400_4": {
+    "title": "Gold Ore Miner",
+    "description": "Break 10 gold ore. Needs an iron pickaxe or better. Found deep underground.",
     "category": "generated",
-    "sort": 12,
-    "mode": "all",
+    "sort": 13,
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "minecraft:spruce_log",
-        "count": 48
-      },
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:oak_sapling",
-        "count": 32
+        "block": "minecraft:gold_ore",
+        "count": 10
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:book",
-        "count": 8
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:slow_falling",
-        "seconds": 300,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 43
-      }
-    ]
-  },
-  "justquests:gen/1790510400_2": {
-    "title": "Flower Market",
-    "description": "Fresh flowers for the market: collect 24 azure bluets and pick up 16 lily of the valleys. Flower forests have the most.",
-    "category": "generated",
-    "sort": 13,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:azure_bluet",
-        "count": 24
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:lily_of_the_valley",
+        "item": "minecraft:cooked_chicken",
         "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:honeycomb",
-        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 105
+        "amount": 95
       },
       {
         "type": "justquests:message",
@@ -208,15 +157,115 @@
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Armadillo Family",
-    "description": "Breed 4 armadillos. Armadillos breed with spider eyes. Look in savannas.",
+  "justquests:gen/1790510400_6": {
+    "title": "Packed Ice Shift",
+    "description": "Mine 32 packed ice. Look in snowy biomes. Rare, so take your time.",
+    "category": "generated",
+    "sort": 13,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:packed_ice",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:cookie",
+        "count": 32
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:iron_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 16
+      }
+    ]
+  },
+  "justquests:gen/1790510400_2": {
+    "title": "Market Fair",
+    "description": "The fair opens soon: make 2 rabbit stew and breed 6 pigs. Look in deserts. Pigs breed with carrots, potatoes or beetroots.",
     "category": "generated",
     "sort": 14,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:rabbit_stew",
+        "count": 2
+      },
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:pig",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:lead",
+        "count": 2
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:arrow",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 120
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Horse Ranch",
+    "description": "The stable needs work: breed 2 horses and craft 4 hay blocks. Horses breed with golden carrots or apples. Common in plains.",
+    "category": "generated",
+    "sort": 14,
+    "mode": "all",
     "objectives": [
       {
         "type": "justquests:breed_animal",
-        "entity": "minecraft:armadillo",
+        "entity": "minecraft:horse",
+        "count": 2
+      },
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:hay_block",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:sea_lantern",
+        "count": 2
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:luck",
+        "seconds": 600,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 47
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Diamond Run",
+    "description": "Gather 4 diamonds. Dig deep, around y=-58. Needs an iron pickaxe or better. Found deep underground.",
+    "category": "generated",
+    "sort": 22,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:diamond",
         "count": 4
       }
     ],
@@ -224,59 +273,11 @@
       {
         "type": "justquests:give_item",
         "item": "minecraft:bookshelf",
-        "count": 3
+        "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 45
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Dig Deepslate Copper Ore",
-    "description": "Break 32 deepslate copper ore. Needs a stone pickaxe or better. Found deep underground.",
-    "category": "generated",
-    "sort": 14,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:deepslate_copper_ore",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:hay_block",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 70
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Cave Spider Slayer",
-    "description": "Defeat 10 cave spiders. Found in abandoned mineshafts.",
-    "category": "generated",
-    "sort": 20,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:cave_spider",
-        "count": 10
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 2
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 65
+        "amount": 100
       }
     ]
   }

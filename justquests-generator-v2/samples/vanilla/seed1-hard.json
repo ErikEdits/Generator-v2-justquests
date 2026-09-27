@@ -29,6 +29,34 @@
       }
     ]
   },
+  "justquests:gen/1790510400_6": {
+    "title": "Fox Farm",
+    "description": "Breed 3 foxes. Sneak up on foxes with sweet berries. Look in taigas.",
+    "category": "generated",
+    "sort": 14,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:fox",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:iron_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/jungle_temple"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 22
+      }
+    ]
+  },
   "justquests:gen/1790510400_4": {
     "title": "Gold Ore Quarry",
     "description": "Mine 12 gold ore. Needs an iron pickaxe or better. Found deep underground.",
@@ -128,115 +156,97 @@
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Tannery Order",
-    "description": "The tannery is busy: gather 8 rabbit hides and make 8 books. Look in deserts.",
-    "category": "generated",
-    "sort": 20,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:rabbit_hide",
-        "count": 8
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:book",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:cooked_porkchop",
-        "count": 16
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/jungle_temple"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 190
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Silverfish Slayer",
-    "description": "Defeat 10 silverfish. They hide in infested stone in mountains and strongholds. Look in the mountains.",
-    "category": "generated",
-    "sort": 20,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:silverfish",
-        "count": 10
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:emerald",
-        "count": 9
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 80
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Village Fair",
-    "description": "The fair opens soon: make 8 dried kelp blocks and breed 12 sheep. Look in and near oceans. Sheep breed with wheat.",
+  "justquests:gen/1790510400_5": {
+    "title": "Potion Ingredients",
+    "description": "The brewer needs Nether goods: collect 24 Nether wart and craft 64 polished blackstone. Found in Nether fortresses. Found in the Nether.",
     "category": "generated",
     "sort": 22,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:dried_kelp_block",
-        "count": 8
+        "type": "justquests:collect_item",
+        "item": "minecraft:nether_wart",
+        "count": 24
       },
       {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:sheep",
-        "count": 12
+        "type": "justquests:craft_item",
+        "item": "minecraft:polished_blackstone",
+        "count": 64
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:experience_bottle",
+        "item": "minecraft:gold_ingot",
         "count": 16
       },
       {
         "type": "justquests:xp",
-        "amount": 195
+        "amount": 180
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Breeze Slayer",
-    "description": "Hunt 3 breezes. Found in trial chambers.",
+  "justquests:gen/1790510400_7": {
+    "title": "Stonemason",
+    "description": "The stonemason needs help: pick up 32 pointed dripstones and build with 16 bricks. Look in dripstone caves.",
     "category": "generated",
-    "sort": 23,
+    "sort": 24,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:breeze",
-        "count": 3
+        "type": "justquests:collect_item",
+        "item": "minecraft:pointed_dripstone",
+        "count": 32
+      },
+      {
+        "type": "justquests:place_block",
+        "block": "minecraft:bricks",
+        "count": 16
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 2
+        "item": "minecraft:ender_pearl",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 190
+        "amount": 225
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Mushroom Supplies",
+    "description": "Mine 48 brown mushroom blocks and gather 32 red mushrooms. Dark forests have plenty.",
+    "category": "generated",
+    "sort": 24,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:brown_mushroom_block",
+        "count": 48
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:red_mushroom",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:iron_ingot",
+        "count": 24
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/village/village_weaponsmith"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 215
       }
     ]
   },
@@ -270,38 +280,27 @@
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Silent Depths",
-    "description": "Descend into the deep dark: mine 40 sculk and mine 12 deepslate lapis ore. Move quietly: the warden listens. Found in the deep dark.",
+  "justquests:gen/1790510400_9": {
+    "title": "Slime Hunt",
+    "description": "Slay 16 slimes. Look in swamps.",
     "category": "generated",
-    "sort": 29,
-    "mode": "all",
+    "sort": 31,
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:sculk",
-        "count": 40
-      },
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:deepslate_lapis_ore",
-        "count": 12
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:slime",
+        "count": 16
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:tnt",
-        "count": 4
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
-        "count": 16
+        "item": "minecraft:emerald_block",
+        "count": 1
       },
       {
         "type": "justquests:xp",
-        "amount": 160
+        "amount": 290
       }
     ]
   }

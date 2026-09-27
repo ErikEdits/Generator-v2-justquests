@@ -1,68 +1,4 @@
 {
-  "justquests:gen/1790510400_7": {
-    "title": "Make Mutton Wraps",
-    "description": "Craft 6 mutton wraps.",
-    "category": "generated",
-    "sort": 11,
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "farmersdelight:mutton_wrap",
-        "count": 6
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:lantern",
-        "count": 8
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/abandoned_mineshaft"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 55
-      }
-    ]
-  },
-  "justquests:gen/1790510400_4": {
-    "title": "Woodcutter",
-    "description": "The sawmill is waiting: mine 64 spruce logs and place 16 dark oak saplings. Look in taigas. Dark forests have plenty.",
-    "category": "generated",
-    "sort": 14,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:spruce_log",
-        "count": 64
-      },
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:dark_oak_sapling",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:phantom_membrane",
-        "count": 4
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:fire_resistance",
-        "seconds": 480,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 65
-      }
-    ]
-  },
   "justquests:gen/1790510400_1": {
     "title": "Masonry Duty",
     "description": "Make 64 polished deepslate and make 40 mossy stone bricks. Found deep underground. Stone bricks with vines or moss.",
@@ -93,6 +29,54 @@
       }
     ]
   },
+  "justquests:gen/1790510400_5": {
+    "title": "Craft Zinc Blocks",
+    "description": "Craft 2 zinc blocks. Needs an iron pickaxe or better. Found in caves.",
+    "category": "generated",
+    "sort": 15,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "create:zinc_block",
+        "count": 2
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:honeyed_apple",
+        "count": 6
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 55
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Honey Glazed Ham Feast",
+    "description": "Eat 2 honey glazed ham. Place a glazed ham and serve it into a bowl.",
+    "category": "generated",
+    "sort": 15,
+    "objectives": [
+      {
+        "type": "justquests:consume_item",
+        "item": "farmersdelight:honey_glazed_ham",
+        "count": 2
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:zinc_ingot",
+        "count": 19
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 65
+      }
+    ]
+  },
   "justquests:gen/1790510400_9": {
     "title": "Make Livingwood Planks",
     "description": "Craft 16 livingwood planks. A Pure Daisy turns logs placed around it into livingwood.",
@@ -109,15 +93,17 @@
       {
         "type": "justquests:give_item",
         "item": "mekanism:ingot_osmium",
-        "count": 20
+        "count": 16
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:water_breathing",
+        "seconds": 600,
+        "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 70
-      },
-      {
-        "type": "justquests:message",
-        "message": "The quest board has a new hero."
+        "amount": 55
       }
     ]
   },
@@ -145,125 +131,131 @@
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Tin Ore Shift",
-    "description": "Break 24 tin ore. Needs a stone pickaxe or better. Found in caves.",
+  "justquests:gen/1790510400_3": {
+    "title": "Nether Mason Chores",
+    "description": "Craft 8 quartz blocks and smelt 6 smooth quartz. Four Nether quartz. Found in the Nether.",
     "category": "generated",
-    "sort": 17,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "mekanism:tin_ore",
-        "count": 24
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 13
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/jungle_temple"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 55
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Undead Chores",
-    "description": "Slay 10 skeletons and hunt 6 drowned. They spawn at night and in dark caves. Look in and near oceans.",
-    "category": "generated",
-    "sort": 18,
+    "sort": 20,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:skeleton",
-        "count": 10
+        "type": "justquests:craft_item",
+        "item": "minecraft:quartz_block",
+        "count": 8
       },
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:drowned",
+        "type": "justquests:smelt_item",
+        "item": "minecraft:smooth_quartz",
         "count": 6
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:barbecue_stick",
-        "count": 8
+        "item": "minecraft:rabbit_foot",
+        "count": 2
       },
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:cabbage",
-        "count": 32
+        "item": "minecraft:blaze_rod",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 165
+        "amount": 135
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "Harvest Market",
-    "description": "The fair opens soon: make 3 rabbit stew and breed 10 sheep. Look in deserts. Sheep breed with wheat.",
+  "justquests:gen/1790510400_4": {
+    "title": "Monster Supplies",
+    "description": "Collect 4 ender pearls and slay a witch. They spawn at night and in dark caves. Look in swamps. Rare, so take your time.",
     "category": "generated",
     "sort": 22,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:rabbit_stew",
-        "count": 3
-      },
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:sheep",
-        "count": 10
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:slime_ball",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:phantom_membrane",
+        "type": "justquests:collect_item",
+        "item": "minecraft:ender_pearl",
         "count": 4
       },
       {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:witch",
+        "count": 1
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:alloy_infused",
+        "count": 8
+      },
+      {
         "type": "justquests:xp",
-        "amount": 140
+        "amount": 110
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Zinc Ingot Batch",
-    "description": "Smelt 32 zinc ingots. Smelt raw zinc in a furnace. Any zinc ingot counts. Needs an iron pickaxe or better. Found in caves.",
+  "justquests:gen/1790510400_6": {
+    "title": "Osmium Ingot Supply",
+    "description": "Smelt 32 osmium ingots. Smelt raw osmium in a furnace. Needs a stone pickaxe or better. Found in caves.",
     "category": "generated",
-    "sort": 27,
+    "sort": 24,
     "objectives": [
       {
         "type": "justquests:smelt_item",
-        "item": "#c:ingots/zinc",
+        "item": "mekanism:ingot_osmium",
         "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_lead",
-        "count": 32
+        "item": "minecraft:obsidian",
+        "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:prismarine_crystals",
+        "count": 7
       },
       {
         "type": "justquests:xp",
-        "amount": 125
+        "amount": 115
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Potter's Wheel",
+    "description": "The potter's kiln is waiting: mine 32 clay and smelt 24 white glazed terracotta. Look along rivers. Smelt white terracotta.",
+    "category": "generated",
+    "sort": 24,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:clay",
+        "count": 32
+      },
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:white_glazed_terracotta",
+        "count": 24
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:zinc_ingot",
+        "count": 26
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/desert_pyramid"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 85
       }
     ]
   },

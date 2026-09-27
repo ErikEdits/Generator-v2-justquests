@@ -57,18 +57,6 @@ reward give_item minecraft:cooked_beef ×16 (value 8.0) + give_item minecraft:pu
 rejected alternatives: tame_animal minecraft:llama (not counted on Fabric)
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Rail Line"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective craft_item minecraft:minecart ×2
-  effort 2.60 min/unit → 5.2 min (target 19.2, range 8–20 min)
-  tier 1 (always available), family iron_works, profile vanilla
-objective place_block minecraft:rail ×32
-  effort 0.30 min/unit → 9.6 min (target 19.2, range 8–20 min)
-  tier 1 (always available), family iron_works, profile vanilla
-theme railway_builder
-estimated 14.8 min
-reward give_item minecraft:diamond ×3 (value 15.0) + xp 55 (value 4.6)  → 19.6 / budget 19.5
-state: AVAILABLE
-
 justquests:gen/1790510400_5  "Gold Ore Shift"  (NORMAL, cycle 1790510400, seed 0xEE71…)
 objective mine_block minecraft:gold_ore ×12
   effort 1.20 min/unit (×1.10 deep) → 15.8 min (target 17.0, range 8–20 min)
@@ -84,6 +72,18 @@ objective mine_block minecraft:prismarine ×32
   tier 2 (always available), family ocean, profile vanilla, tool iron, hints monument
 estimated 17.9 min
 reward give_item minecraft:blaze_rod ×8 (value 14.4) + xp 85 (value 7.1)  → 21.5 / budget 21.5
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Circuit Builder"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:redstone ×48
+  effort 0.20 min/unit (×1.10 deep) → 10.6 min (target 19.2, range 8–20 min)
+  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
+objective craft_item minecraft:piston ×8
+  effort 1.20 min/unit → 9.6 min (target 19.2, range 8–20 min)
+  tier 2 (always available), family redstone, profile vanilla
+theme redstone_workshop
+estimated 20.2 min
+reward give_item minecraft:obsidian ×16 (value 16.0) + xp 125 (value 10.4)  → 26.4 / budget 26.6
 state: AVAILABLE
 
 justquests:gen/1790510400_2  "Spider Supplies"  (NORMAL, cycle 1790510400, seed 0xEE71…)

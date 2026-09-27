@@ -1,31 +1,31 @@
 {
-  "justquests:gen/1790510400_9": {
-    "title": "Deep Dig",
-    "description": "Head underground: mine 12 deepslate coal ore and break 96 andesite. Found deep underground.",
+  "justquests:gen/1790510400_7": {
+    "title": "Engineer Duty",
+    "description": "Craft 2 super glues and make 2 fluid tanks.",
     "category": "generated",
     "sort": 13,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:deepslate_coal_ore",
-        "count": 12
+        "type": "justquests:craft_item",
+        "item": "create:super_glue",
+        "count": 2
       },
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:andesite",
-        "count": 96
+        "type": "justquests:craft_item",
+        "item": "create:fluid_tank",
+        "count": 2
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_lead",
-        "count": 17
+        "item": "minecraft:slime_ball",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 60
+        "amount": 115
       }
     ]
   },
@@ -60,7 +60,7 @@
     ]
   },
   "justquests:gen/1790510400_4": {
-    "title": "Mana Pool Workshop",
+    "title": "Mana Pool Crafting",
     "description": "Make a mana pool. Five livingrock; a Pure Daisy turns stone into livingrock.",
     "category": "generated",
     "sort": 16,
@@ -74,18 +74,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:slime_ball",
-        "count": 8
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:resistance",
-        "seconds": 300,
-        "amplifier": 0
+        "item": "minecraft:experience_bottle",
+        "count": 15
       },
       {
         "type": "justquests:xp",
-        "amount": 85
+        "amount": 70
       }
     ]
   },
@@ -119,208 +113,201 @@
       }
     ]
   },
-  "justquests:gen/1790510400_2": {
-    "title": "Butcher's Order",
-    "description": "The butcher needs help: gather 32 leather and cook 24 bacon. Common in plains. Cut porkchops on a cutting board, then cook.",
+  "justquests:gen/1790510400_9": {
+    "title": "Spider Job",
+    "description": "Slay 12 spiders and defeat 5 silverfish. They spawn at night and in dark caves. They hide in infested stone in mountains and strongholds.",
     "category": "generated",
-    "sort": 25,
+    "sort": 19,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:leather",
-        "count": 32
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:spider",
+        "count": 12
       },
       {
-        "type": "justquests:smelt_item",
-        "item": "farmersdelight:cooked_bacon",
-        "count": 24
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:silverfish",
+        "count": 5
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:pumpkin_pie",
+        "item": "mekanism:ingot_lead",
+        "count": 25
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 100
+      }
+    ]
+  },
+  "justquests:gen/1790510400_2": {
+    "title": "Kitchen Rush",
+    "description": "Tonight's menu: make 6 bacon sandwiches and eat 4 fried rice. Cook it in a Cooking Pot.",
+    "category": "generated",
+    "sort": 20,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "farmersdelight:bacon_sandwich",
+        "count": 6
+      },
+      {
+        "type": "justquests:consume_item",
+        "item": "farmersdelight:fried_rice",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:hay_block",
         "count": 8
       },
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_tin",
-        "count": 27
+        "item": "mekanism:ingot_osmium",
+        "count": 15
       },
       {
         "type": "justquests:xp",
-        "amount": 120
+        "amount": 95
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Wildlife Supplies",
-    "description": "Pick up a turtle scute and breed 3 turtles. Baby turtles drop a scute when they grow up. Look along beaches. Turtles breed with seagrass.",
+  "justquests:gen/1790510400_3": {
+    "title": "Sand Duty",
+    "description": "Smelt 24 smooth red sandstone and mine 128 sand. Look in badlands. Look along beaches.",
     "category": "generated",
-    "sort": 25,
+    "sort": 20,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:turtle_scute",
-        "count": 1
+        "type": "justquests:smelt_item",
+        "item": "minecraft:smooth_red_sandstone",
+        "count": 24
       },
       {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:turtle",
-        "count": 3
+        "type": "justquests:mine_block",
+        "block": "minecraft:sand",
+        "count": 128
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:beef_stew",
-        "count": 4
+        "item": "minecraft:slime_ball",
+        "count": 8
       },
       {
         "type": "justquests:give_item",
-        "item": "minecraft:phantom_membrane",
-        "count": 4
+        "item": "minecraft:baked_potato",
+        "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 250
+        "amount": 150
       }
     ]
   },
-  "justquests:gen/1790510400_7": {
-    "title": "Zinc Supplies",
-    "description": "Mine 16 zinc ore and craft 2 zinc blocks. Needs an iron pickaxe or better. Found in caves.",
+  "justquests:gen/1790510400_6": {
+    "title": "Dig Lapis Ore",
+    "description": "Break 16 lapis ore. Needs a stone pickaxe or better. Found deep underground.",
     "category": "generated",
-    "sort": 28,
-    "mode": "all",
+    "sort": 21,
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "create:zinc_ore",
+        "block": "minecraft:lapis_ore",
         "count": 16
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "create:zinc_block",
-        "count": 2
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 2
+        "item": "mekanism:raw_osmium",
+        "count": 31
       },
       {
         "type": "justquests:effect",
-        "effect": "minecraft:resistance",
+        "effect": "minecraft:invisibility",
         "seconds": 300,
         "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 275
+        "amount": 90
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Raw Gold Delivery",
-    "description": "Collect 24 raw gold. Gold ore drops raw gold. Needs an iron pickaxe or better. Found deep underground.",
+  "justquests:gen/1790510400_5": {
+    "title": "Fisherman's Day",
+    "description": "A day by the water: collect 24 raw cod and cook 8 salmon. Use a fishing rod.",
     "category": "generated",
-    "sort": 32,
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:raw_gold",
-        "count": 24
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "twilightforest:ironwood_ingot",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "farmersdelight:hamburger",
-        "count": 6
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 170
-      }
-    ]
-  },
-  "justquests:gen/1790510400_3": {
-    "title": "Monster Supplies",
-    "description": "Slay 2 witches and hunt 6 endermen. Look in swamps. Rare, so take your time. They spawn at night and in dark caves.",
-    "category": "generated",
-    "sort": 36,
+    "sort": 31,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:witch",
-        "count": 2
+        "type": "justquests:collect_item",
+        "item": "minecraft:cod",
+        "count": 24
       },
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:enderman",
-        "count": 6
+        "type": "justquests:smelt_item",
+        "item": "minecraft:cooked_salmon",
+        "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:diamond_pickaxe",
-        "count": 1
+        "item": "minecraft:cooked_chicken",
+        "count": 16
       },
       {
-        "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
-        "count": 24
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/jungle_temple"
       },
       {
         "type": "justquests:xp",
-        "amount": 345
+        "amount": 415
       }
     ]
   },
   "justquests:gen/1790510400_8": {
-    "title": "Boss Duty",
-    "description": "Slay a naga and collect 6 naga scales. The Naga coils in a stone courtyard in the forest. Found in the Twilight Forest. Dropped by the Naga.",
+    "title": "Boss Errand",
+    "description": "Collect 6 naga scales and slay a naga. Dropped by the Naga. Found in the Twilight Forest. The Naga coils in a stone courtyard in the forest.",
     "category": "generated",
     "sort": 39,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "twilightforest:naga",
-        "count": 1
-      },
-      {
         "type": "justquests:collect_item",
         "item": "twilightforest:naga_scale",
         "count": 6
+      },
+      {
+        "type": "justquests:kill_mob",
+        "entity": "twilightforest:naga",
+        "count": 1
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:experience_bottle",
-        "count": 16
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "create:brass_ingot",
-        "count": 13
+        "item": "mekanism:ingot_tin",
+        "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 180
+        "amount": 395
+      },
+      {
+        "type": "justquests:message",
+        "message": "Another job well done."
       }
     ]
   }

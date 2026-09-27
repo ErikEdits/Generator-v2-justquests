@@ -285,7 +285,8 @@
             "craft_item"
           ],
           "keys": [
-            "bot_start"
+            "bot_start",
+            "bot_petals"
           ]
         }
       ]

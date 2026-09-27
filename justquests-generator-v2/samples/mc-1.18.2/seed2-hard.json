@@ -23,36 +23,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "Quarry Supplies",
-    "description": "Gather 96 cobbled deepslate and place 128 cobblestone. Found deep underground. Build something with it.",
-    "category": "generated",
-    "sort": 15,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:cobbled_deepslate",
-        "count": 96
-      },
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:cobblestone",
-        "count": 128
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 14
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 75
-      }
-    ]
-  },
   "justquests:gen/1790510400_1": {
     "title": "Treasure Hunter",
     "description": "Riches lie deep underground: break 6 deepslate lapis ore and mine 3 crying obsidian. Found deep underground. Needs a diamond pickaxe.",
@@ -84,143 +54,140 @@
     ]
   },
   "justquests:gen/1790510400_6": {
-    "title": "Craft White Terracotta",
-    "description": "Make 32 white terracotta. Terracotta around white dye.",
+    "title": "Cave Spider Hunt",
+    "description": "Defeat 8 cave spiders. Found in abandoned mineshafts.",
     "category": "generated",
     "sort": 16,
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:white_terracotta",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:book",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:tnt",
-        "count": 3
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 85
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Husk Watch",
-    "description": "Defeat 16 husks. Look in deserts. They spawn at night and in dark caves.",
-    "category": "generated",
-    "sort": 21,
-    "objectives": [
-      {
         "type": "justquests:kill_mob",
-        "entity": "minecraft:husk",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:lapis_block",
-        "count": 4
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/jungle_temple"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 180
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Magma Cube Bounty",
-    "description": "Hunt 16 magma cubes. Found in basalt deltas. Found in the Nether.",
-    "category": "generated",
-    "sort": 22,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:magma_cube",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:honeycomb",
+        "entity": "minecraft:cave_spider",
         "count": 8
-      },
+      }
+    ],
+    "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:obsidian",
-        "count": 16
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 110
-      }
-    ]
-  },
-  "justquests:gen/1790510400_4": {
-    "title": "Deep Dig",
-    "description": "Head underground: break 48 coal ore and mine 12 redstone ore. Found in caves. Needs an iron pickaxe or better. Found deep underground.",
-    "category": "generated",
-    "sort": 24,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:coal_ore",
-        "count": 48
-      },
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:redstone_ore",
+        "item": "minecraft:golden_carrot",
         "count": 12
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:diamond",
-        "count": 6
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:dolphins_grace",
-        "seconds": 300,
-        "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 90
+        "amount": 65
       }
     ]
   },
   "justquests:gen/1790510400_5": {
-    "title": "Wildlife Supplies",
-    "description": "Eat 2 rabbit stew and breed 3 axolotls. Look in deserts. Axolotls breed with a bucket of tropical fish. Look in lush caves.",
+    "title": "Base Camp",
+    "description": "Set up camp before nightfall: pick up 96 logs and make 128 torches. Chop any kind of tree. Any log counts. Coal or charcoal on a stick.",
     "category": "generated",
-    "sort": 25,
+    "sort": 18,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:consume_item",
-        "item": "minecraft:rabbit_stew",
+        "type": "justquests:collect_item",
+        "item": "#minecraft:logs",
+        "count": 96
+      },
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:torch",
+        "count": 128
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:rabbit_foot",
         "count": 2
       },
       {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:axolotl",
-        "count": 3
+        "type": "justquests:give_item",
+        "item": "minecraft:gold_ingot",
+        "count": 11
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 80
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Bake Sale",
+    "description": "The village bake sale needs you: make 2 honey blocks and pick up 4 apples. Needs bees and flowers.",
+    "category": "generated",
+    "sort": 19,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:honey_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:apple",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:iron_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:haste",
+        "seconds": 480,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 165
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Smelt Popped Chorus Fruit",
+    "description": "Smelt 48 popped chorus fruit. Grows on the outer End islands. Found in the End.",
+    "category": "generated",
+    "sort": 21,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:popped_chorus_fruit",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:ender_pearl",
+        "count": 8
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 130
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Undead Duty",
+    "description": "Slay 12 skeletons and defeat 4 phantoms. They spawn at night and in dark caves.",
+    "category": "generated",
+    "sort": 23,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:skeleton",
+        "count": 12
+      },
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:phantom",
+        "count": 4
       }
     ],
     "rewards": [
@@ -230,8 +197,12 @@
         "count": 16
       },
       {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/jungle_temple"
+      },
+      {
         "type": "justquests:xp",
-        "amount": 245
+        "amount": 95
       }
     ]
   },
@@ -270,31 +241,55 @@
     ]
   },
   "justquests:gen/1790510400_9": {
-    "title": "Slimeball Haul",
-    "description": "Gather 16 slimeballs. Look in swamps.",
+    "title": "Breed Mooshrooms",
+    "description": "Breed 2 mooshrooms. Mooshrooms breed with wheat. Look on mushroom islands. Rare, so take your time.",
     "category": "generated",
-    "sort": 31,
+    "sort": 32,
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:slime_ball",
-        "count": 16
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:mooshroom",
+        "count": 2
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:honeycomb",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 16
+        "item": "minecraft:emerald",
+        "count": 14
       },
       {
         "type": "justquests:xp",
-        "amount": 215
+        "amount": 155
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Ancient Debris Breaker",
+    "description": "Mine 2 ancient debris. Needs a diamond pickaxe. Rare, so take your time. Found in the Nether.",
+    "category": "generated",
+    "sort": 35,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:ancient_debris",
+        "count": 2
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:redstone_block",
+        "count": 4
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:ender_eye",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 350
       }
     ]
   }

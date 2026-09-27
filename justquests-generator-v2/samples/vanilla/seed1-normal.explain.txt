@@ -2,19 +2,6 @@
 
 Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.21.1 (neoforge)
 
-justquests:gen/1790510400_9  "Fletcher Job"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:crossbow ×2
-  effort 2.20 min/unit → 4.4 min (target 8.2, range 8–20 min)
-  tier 1 (always available), family archery, profile vanilla
-objective craft_item minecraft:bow ×3
-  effort 1.00 min/unit → 3.0 min (target 8.2, range 8–20 min)
-  tier 0 (always available), family archery, profile vanilla
-combo within family archery
-estimated 7.4 min (quick)
-reward give_item minecraft:glistering_melon_slice ×5 (value 7.5) + xp 27 (value 2.3)  → 9.8 / budget 9.8
-rejected alternatives: craft_item minecraft:spectral_arrow (tier 3 above NORMAL cap)
-state: AVAILABLE
-
 justquests:gen/1790510400_0  "Dig Deepslate Copper Ore"  (NORMAL, cycle 1790510400, seed 0x2897…)
 objective mine_block minecraft:deepslate_copper_ore ×20
   effort 0.40 min/unit (×1.10 deep) → 8.8 min (target 9.4, range 8–20 min)
@@ -30,6 +17,18 @@ objective place_block minecraft:hay_block ×6
 estimated 8.7 min (quick)
 reward give_item minecraft:bookshelf ×2 (value 9.0) + xp 17 (value 1.4)  → 10.4 / budget 10.4
 rejected alternatives: mine_block minecraft:wheat (breaking crops at any stage counts)
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Florist"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:peony ×16
+  effort 0.35 min/unit → 5.6 min (target 16.0, range 8–20 min)
+  tier 0 (always available), family flowers, profile vanilla
+objective collect_item minecraft:poppy ×32
+  effort 0.10 min/unit → 3.2 min (target 16.0, range 8–20 min)
+  tier 0 (always available), family flowers, profile vanilla
+theme florist
+estimated 8.8 min (quick)
+reward give_item minecraft:glow_berries ×16 (value 4.0) + give_item minecraft:phantom_membrane ×2 (value 6.0) + xp 19 (value 1.6)  → 11.6 / budget 11.6
 state: AVAILABLE
 
 justquests:gen/1790510400_7  "Rail Batch"  (NORMAL, cycle 1790510400, seed 0x2897…)
@@ -64,17 +63,12 @@ estimated 14.4 min
 reward give_item minecraft:iron_ingot ×19 (value 11.4) + effect minecraft:dolphins_grace 300s (value 2.0) + xp 47 (value 3.9)  → 17.3 / budget 17.3
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Bakery Supplies"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:mushroom_stew ×6
-  effort 1.00 min/unit (×1.30 dark_forest) → 7.8 min (target 16.0, range 8–20 min)
-  tier 0 (always available), family baking, profile vanilla, hints dark_forest
-objective craft_item minecraft:bread ×16
-  effort 0.45 min/unit → 7.2 min (target 16.0, range 8–20 min)
-  tier 0 (always available), family baking, profile vanilla
-combo within family baking
-estimated 15.0 min
-reward give_item minecraft:glow_berries ×16 (value 4.0) + give_item minecraft:phantom_membrane ×4 (value 12.0) + xp 46 (value 3.8)  → 19.8 / budget 19.8
-rejected alternatives: consume_item minecraft:cake (cake is eaten as a placed block, not a use action)
+justquests:gen/1790510400_9  "Place Bricks"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective place_block minecraft:bricks ×16
+  effort 0.95 min/unit → 15.2 min (target 15.2, range 8–20 min)
+  tier 0 (always available), family stonework, profile vanilla
+estimated 15.2 min
+reward give_item minecraft:phantom_membrane ×4 (value 12.0) + xp 75 (value 6.3)  → 18.3 / budget 18.2
 state: AVAILABLE
 
 justquests:gen/1790510400_3  "Lumber Order"  (NORMAL, cycle 1790510400, seed 0x2897…)

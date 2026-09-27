@@ -23,76 +23,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Forestry Order",
-    "description": "Build with 16 cherry saplings and place 32 birch saplings. Look in cherry groves. Plant saplings to regrow the forest.",
-    "category": "generated",
-    "sort": 14,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:cherry_sapling",
-        "count": 16
-      },
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:birch_sapling",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:leather",
-        "count": 16
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:haste",
-        "seconds": 450,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 130
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Sweet Tooth",
-    "description": "The village bake sale needs you: make 2 cakes and collect 96 melon slices. Needs milk, sugar, wheat and an egg. Look in jungles.",
-    "category": "generated",
-    "sort": 14,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:cake",
-        "count": 2
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:melon_slice",
-        "count": 96
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
-        "count": 8
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/abandoned_mineshaft"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 50
-      }
-    ]
-  },
   "justquests:gen/1790510400_1": {
     "title": "Treasure Hunter",
     "description": "Riches lie deep underground: break 6 deepslate lapis ore and mine 3 crying obsidian. Found deep underground. Needs a diamond pickaxe.",
@@ -123,46 +53,58 @@
       }
     ]
   },
-  "justquests:gen/1790510400_7": {
-    "title": "Rail Order",
-    "description": "Make 64 rails.",
+  "justquests:gen/1790510400_5": {
+    "title": "Harvest Time",
+    "description": "Bring in the harvest: collect 32 beetroot seeds and collect 64 carrots. Villages often have them. Grow them on a farm.",
     "category": "generated",
-    "sort": 16,
+    "sort": 17,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:rail",
+        "type": "justquests:collect_item",
+        "item": "minecraft:beetroot_seeds",
+        "count": 32
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:carrot",
         "count": 64
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:ender_pearl",
-        "count": 7
+        "item": "minecraft:experience_bottle",
+        "count": 14
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:fire_resistance",
+        "seconds": 480,
+        "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 80
+        "amount": 75
       }
     ]
   },
   "justquests:gen/1790510400_9": {
-    "title": "Llama Breeder",
-    "description": "Breed 6 llamas. Llamas breed with hay bales. Look in savannas.",
+    "title": "Zombie Watch",
+    "description": "Defeat 24 zombies. They spawn at night and in dark caves.",
     "category": "generated",
-    "sort": 18,
+    "sort": 17,
     "objectives": [
       {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:llama",
-        "count": 6
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:zombie",
+        "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:coal_block",
+        "item": "minecraft:redstone_block",
         "count": 4
       },
       {
@@ -171,59 +113,154 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 105
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Enderman Cleanup",
-    "description": "Slay 8 endermen. They spawn at night and in dark caves.",
-    "category": "generated",
-    "sort": 20,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:enderman",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:experience_bottle",
-        "count": 16
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 130
+        "amount": 110
       }
     ]
   },
   "justquests:gen/1790510400_3": {
-    "title": "Bogged Hunt",
-    "description": "Slay 8 bogged. Look in swamps.",
+    "title": "Bake Sale",
+    "description": "The village bake sale needs you: make 2 honey blocks and pick up 4 apples. Needs bees and flowers.",
     "category": "generated",
-    "sort": 21,
+    "sort": 19,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:bogged",
-        "count": 8
+        "type": "justquests:craft_item",
+        "item": "minecraft:honey_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:apple",
+        "count": 4
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_beef",
-        "count": 16
+        "item": "minecraft:iron_block",
+        "count": 2
       },
       {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/buried_treasure"
+        "type": "justquests:effect",
+        "effect": "minecraft:haste",
+        "seconds": 480,
+        "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 110
+        "amount": 165
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Snowbound",
+    "description": "Get ready for the cold: break 48 ice and pick up 48 wool. Look in snowy biomes. Shear sheep. Any wool counts. Use shears.",
+    "category": "generated",
+    "sort": 19,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:ice",
+        "count": 48
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "#minecraft:wool",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:pumpkin_pie",
+        "count": 8
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/jungle_temple"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 180
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Eye of Ender Crafter",
+    "description": "Make 4 eyes of ender. Blaze powder and an ender pearl.",
+    "category": "generated",
+    "sort": 20,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:ender_eye",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:bookshelf",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 145
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Hoglin Nursery",
+    "description": "Breed 4 hoglins. Hoglins breed with crimson fungus; they fight back. Found in crimson forests. Found in the Nether.",
+    "category": "generated",
+    "sort": 22,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:hoglin",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:iron_ingot",
+        "count": 24
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:oak_sapling",
+        "count": 16
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 200
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Shulker Patrol",
+    "description": "Slay 6 shulkers. Found in End cities. Found in the End.",
+    "category": "generated",
+    "sort": 28,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:shulker",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:gold_ingot",
+        "count": 16
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 245
       }
     ]
   },
@@ -258,35 +295,6 @@
       {
         "type": "justquests:xp",
         "amount": 350
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Smelt Netherite Scrap",
-    "description": "Smelt 2 netherite scrap. Needs a diamond pickaxe. Rare, so take your time. Found in the Nether.",
-    "category": "generated",
-    "sort": 38,
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:netherite_scrap",
-        "count": 2
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:redstone_block",
-        "count": 4
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:ghast_tear",
-        "count": 4
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 410
       }
     ]
   }
