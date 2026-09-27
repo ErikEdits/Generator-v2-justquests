@@ -33,7 +33,7 @@ public final class SampleWriter {
                 for (Difficulty d : Difficulty.values()) {
                     FakeHost host = new FakeHost();
                     if (kind.equals("modded")) {
-                        host.withMods("farmersdelight", "create", "mekanism", "twilightforest");
+                        host.withMods("farmersdelight", "create", "mekanism", "twilightforest", "botania");
                         host.content.dimensions.add("twilightforest:twilight_forest");
                     }
                     if (kind.equals("mc-1.18.2")) {

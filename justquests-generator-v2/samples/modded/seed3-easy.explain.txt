@@ -1,84 +1,84 @@
 # modded | world seed 3 | EASY | 10 quests | day 30, Nether and End unlocked
 
-Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest], Minecraft 1.21.1 (neoforge)
+Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest, botania], Minecraft 1.21.1 (neoforge)
 
-justquests:gen/1790510400_5  "Cogwheel Layout"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective place_block create:cogwheel ×16
-  effort 0.25 min/unit → 4.0 min (target 4.0, range 4–10 min)
-  tier 1 (always available), family create_kinetics, profile create
+justquests:gen/1790510400_7  "Stuffed Potato Tasting"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective consume_item farmersdelight:stuffed_potato ×2
+  effort 2.00 min/unit → 4.0 min (target 4.1, range 4–10 min)
+  tier 0 (always available), family fd_snacks, profile farmersdelight
 estimated 4.0 min (quick)
-reward give_item mekanism:ingot_tin ×4 (value 3.4) + xp 7 (value 0.6) + message  → 4.0 / budget 4.0
+reward give_item minecraft:bread ×7 (value 3.2) + xp 10 (value 0.8)  → 4.0 / budget 4.0
 state: AVAILABLE
 
-justquests:gen/1790510400_0  "Hot Cocoa Break"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective consume_item farmersdelight:hot_cocoa ×3
-  effort 1.60 min/unit → 4.8 min (target 5.5, range 4–10 min)
-  tier 1 (always available), family fd_drinks, profile farmersdelight, hints drink
-estimated 4.8 min (quick)
-reward give_item minecraft:glow_ink_sac ×4 (value 4.0) + xp 10 (value 0.8)  → 4.8 / budget 4.8
+justquests:gen/1790510400_0  "Mystical Purple Flower Run"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective collect_item botania:purple_mystical_flower ×16
+  effort 0.35 min/unit → 5.6 min (target 5.5, range 4–10 min)
+  tier 0 (always available), family bot_flowers, profile botania
+estimated 5.6 min (quick)
+reward give_item minecraft:lead ×2 (value 3.6) + xp 24 (value 2.0)  → 5.6 / budget 5.6
 state: AVAILABLE
 
-justquests:gen/1790510400_1  "Minecart Commission"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective craft_item minecraft:minecart ×2
-  effort 2.60 min/unit → 5.2 min (target 8.7, range 4–10 min)
-  tier 1 (always available), family iron_works, profile vanilla
-estimated 5.2 min (quick)
-reward give_item mekanism:ingot_steel ×1 (value 3.0) + xp 26 (value 2.2)  → 5.2 / budget 5.2
+justquests:gen/1790510400_3  "Barrel Order"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:barrel ×16
+  effort 0.35 min/unit → 5.6 min (target 5.4, range 4–10 min)
+  tier 0 (always available), family woodwork, profile vanilla
+estimated 5.6 min (quick)
+reward give_item minecraft:string ×10 (value 4.0) + xp 19 (value 1.6) + message  → 5.6 / budget 5.6
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Goat Ranch"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective breed_animal minecraft:goat ×2
-  effort 2.00 min/unit (×1.30 mountains) → 5.2 min (target 6.2, range 4–10 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints mountains
-estimated 5.2 min (quick)
-reward give_item minecraft:book ×3 (value 3.6) + xp 19 (value 1.6)  → 5.2 / budget 5.2
+justquests:gen/1790510400_4  "Acacia Log Shift"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:acacia_log ×48
+  effort 0.10 min/unit (×1.20 savanna) → 5.8 min (target 5.6, range 4–10 min)
+  tier 0 (always available), family wood, profile vanilla, hints savanna
+estimated 5.8 min (quick)
+reward give_item minecraft:coal ×17 (value 4.3) + xp 18 (value 1.5)  → 5.8 / budget 5.8
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Raw Cod Stockpile"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:cod ×6
-  effort 0.80 min/unit → 4.8 min (target 5.1, range 4–10 min)
-  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
-estimated 4.8 min (quick)
-reward give_item minecraft:coal ×14 (value 3.5) + xp 16 (value 1.3)  → 4.8 / budget 4.8
-state: AVAILABLE
-
-justquests:gen/1790510400_2  "Cherry Log Gathering"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:cherry_log ×40
-  effort 0.10 min/unit (×1.50 cherry_grove) → 6.0 min (target 5.8, range 4–10 min)
-  tier 0 (always available), family wood, profile vanilla, hints cherry_grove
-estimated 6.0 min
-reward give_item minecraft:book ×4 (value 4.8) + xp 14 (value 1.2)  → 6.0 / budget 6.0
-state: AVAILABLE
-
-justquests:gen/1790510400_9  "Honeycomb Haul"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:honeycomb ×6
-  effort 1.00 min/unit (×1.20 bees) → 7.2 min (target 7.1, range 4–10 min)
-  tier 0 (always available), family bees, profile vanilla, tool shears, hints bees
-estimated 7.2 min
-reward give_item farmersdelight:tomato ×32 (value 4.8) + xp 29 (value 2.4)  → 7.2 / budget 7.2
-state: AVAILABLE
-
-justquests:gen/1790510400_6  "Tin Ore Breaker"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective mine_block mekanism:tin_ore ×12
-  effort 0.70 min/unit → 8.4 min (target 9.3, range 4–10 min)
+justquests:gen/1790510400_6  "Mine Tin Ore"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective mine_block mekanism:tin_ore ×10
+  effort 0.70 min/unit → 7.0 min (target 7.4, range 4–10 min)
   tier 1 (always available), family mek_tin, profile mekanism, tool stone, hints caves
-estimated 8.4 min
-reward give_item minecraft:lapis_block ×3 (value 5.4) + xp 36 (value 3.0)  → 8.4 / budget 8.4
+estimated 7.0 min
+reward give_item minecraft:lantern ×7 (value 5.6) + xp 17 (value 1.4)  → 7.0 / budget 7.0
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Packed Mud Crafter"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective craft_item minecraft:packed_mud ×24
-  effort 0.25 min/unit (×1.50 mangrove_swamp) → 9.0 min (target 8.9, range 4–10 min)
-  tier 0 (always available), family soil, profile vanilla, hints mangrove_swamp
+justquests:gen/1790510400_9  "Hot Cooked Cod"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective smelt_item minecraft:cooked_cod ×8
+  effort 0.90 min/unit → 7.2 min (target 9.2, range 4–10 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod, hints cook
+estimated 7.2 min
+reward give_item farmersdelight:honey_cookie ×27 (value 5.4) + xp 22 (value 1.8) + message  → 7.2 / budget 7.2
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Cave Spider Slayer"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:cave_spider ×4
+  effort 1.50 min/unit (×1.30 mineshaft) → 7.8 min (target 8.0, range 4–10 min)
+  tier 1 (always available), family arthropods, profile vanilla, hints mineshaft
+estimated 7.8 min
+reward give_item farmersdelight:onion ×32 (value 4.8) + xp 36 (value 3.0) + message  → 7.8 / budget 7.8
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Bamboo Run"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:bamboo ×128
+  effort 0.05 min/unit (×1.40 jungle) → 9.0 min (target 8.0, range 4–10 min)
+  tier 0 (always available), family plants, profile vanilla, hints jungle
 estimated 9.0 min
-reward give_item farmersdelight:apple_pie ×2 (value 6.0) + xp 36 (value 3.0)  → 9.0 / budget 9.0
+reward give_item create:linear_chassis ×11 (value 6.6) + xp 28 (value 2.3)  → 8.9 / budget 9.0
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "Make Bacon Sandwiches"  (EASY, cycle 1790510400, seed 0xEE71…)
-objective craft_item farmersdelight:bacon_sandwich ×5
-  effort 1.70 min/unit → 8.5 min (target 7.7, range 4–10 min)
-  tier 1 (always available), family fd_meals, profile farmersdelight
-estimated 8.5 min
-reward give_item minecraft:slime_ball ×4 (value 6.0) + xp 30 (value 2.5)  → 8.5 / budget 8.5
+justquests:gen/1790510400_5  "Cut Limestone Project"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective place_block create:cut_limestone ×48
+  effort 0.14 min/unit (×1.30 layers) → 8.7 min (target 9.3, range 4–10 min)
+  tier 1 (always available), family create_masonry, profile create, hints layers
+estimated 8.7 min
+reward give_item minecraft:coal_block ×3 (value 6.9) + xp 22 (value 1.8)  → 8.7 / budget 8.7
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Stray Slayer"  (EASY, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:stray ×6
+  effort 1.20 min/unit (×1.30 snowy) → 9.4 min (target 9.1, range 4–10 min)
+  tier 1 (always available), family undead, profile vanilla, hints snowy/night
+estimated 9.4 min
+reward give_item botania:manasteel_ingot ×2 (value 7.0) + xp 28 (value 2.3)  → 9.3 / budget 9.4
 state: AVAILABLE
 

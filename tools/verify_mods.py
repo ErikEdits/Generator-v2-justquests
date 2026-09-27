@@ -1,6 +1,6 @@
 """Verifies the mod profiles: every id against the en_us files of all studied mod versions, and every
 craft_item/smelt_item target against the mod's own recipe data (Farmer's Delight 1.20, Create mc1.20.1 and
-Mekanism 1.20.x/1.21.x, Twilight Forest 1.20.1/1.21.1 generated data, sparse clones in the research dir).
+Mekanism 1.20.x/1.21.x, Twilight Forest 1.20.1/1.21.1, Botania 1.20.x generated data, sparse clones in the research dir).
 Usage: python3 tools/verify_mods.py [research_dir]"""
 import json, os, sys, glob
 R = sys.argv[1] if len(sys.argv) > 1 else '/home/user/research'
@@ -9,12 +9,14 @@ LANGS = {'farmersdelight': ['fd-1.18.2.json', 'fd-1.19.json', 'fd-1.20.json', 'f
          'create': ['create-0.5.1-1.18.json', 'createfabric-1.18.json', 'create-0.5.1-1.19.json', 'create-1.20.1.json',
                     'createfabric-1.20.1.json', 'create-1.21.1.json', 'createfabric-1.21.1.json'],
          'mekanism': ['mek-1.18.x.json', 'mek-1.19.x.json', 'mek-1.20.x.json', 'mek-1.21.x.json'],
-         'twilightforest': ['tf-1.18.x.json', 'tf-1.19.x.json', 'tf-1.20.1.json', 'tf-1.21.1.json']}
+         'twilightforest': ['tf-1.18.x.json', 'tf-1.19.x.json', 'tf-1.20.1.json', 'tf-1.21.1.json'],
+         'botania': ['botania-1.18.x.json', 'botania-1.19.x.json', 'botania-1.20.x.json']}
 SRC = {'farmersdelight': ['fd-1.20/src'], 'create': ['create-1.20.1/src'],
        'mekanism': ['mek-1.20.x/src/datagen/generated', 'mek-1.21.x/src/datagen/generated'],
-       'twilightforest': ['tf-1.20.1/src/generated/resources/data', 'tf-1.21.1/src/generated/resources/data']}
+       'twilightforest': ['tf-1.20.1/src/generated/resources/data', 'tf-1.21.1/src/generated/resources/data'],
+       'botania': ['botania-1.20.x/Xplat/src/generated/resources/data']}
 # grid recipes with a mod-specific serializer (the result still comes out of a crafting grid)
-GRID_TYPES = ('minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'mekanism:mek_data')
+GRID_TYPES = ('minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'mekanism:mek_data', 'botania:twig_wand')
 
 def lang_ids(f):
     j = json.load(open(f'{R}/lang/{f}'))
@@ -50,7 +52,7 @@ def recipes_one(src):
     return out
 
 problems = []
-for pid in ('farmersdelight', 'create', 'mekanism', 'twilightforest'):
+for pid in ('farmersdelight', 'create', 'mekanism', 'twilightforest', 'botania'):
     prof = json.load(open(f'{RES}/catalog/profiles/{pid}.json'))
     langs = {f: lang_ids(f) for f in LANGS[pid]}
     rec = recipes(SRC[pid])

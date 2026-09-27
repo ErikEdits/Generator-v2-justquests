@@ -1,79 +1,55 @@
 {
-  "justquests:gen/1790510400_7": {
-    "title": "Roasted Mutton Chops Break",
-    "description": "Eat 3 roasted mutton chops.",
-    "category": "generated",
-    "sort": 7,
-    "objectives": [
-      {
-        "type": "justquests:consume_item",
-        "item": "farmersdelight:roasted_mutton_chops",
-        "count": 3
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:honey_bottle",
-        "count": 5
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 32
-      }
-    ]
-  },
-  "justquests:gen/1790510400_3": {
-    "title": "Sand Chores",
-    "description": "Break 80 sand and craft 40 cut sandstone. Look along beaches.",
-    "category": "generated",
-    "sort": 8,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:sand",
-        "count": 80
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:cut_sandstone",
-        "count": 40
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:experience_nugget",
-        "count": 26
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 31
-      }
-    ]
-  },
   "justquests:gen/1790510400_5": {
-    "title": "Andesite Alloy Crafter",
-    "description": "Craft 24 andesite alloy. Two andesite and two iron nuggets.",
+    "title": "Andesite Tunnel Batch",
+    "description": "Craft 8 andesite tunnels.",
     "category": "generated",
-    "sort": 8,
+    "sort": 6,
     "objectives": [
       {
         "type": "justquests:craft_item",
-        "item": "create:andesite_alloy",
-        "count": 24
+        "item": "create:andesite_tunnel",
+        "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
+        "item": "minecraft:bread",
         "count": 13
       },
       {
         "type": "justquests:xp",
-        "amount": 27
+        "amount": 26
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Earthworks Chores",
+    "description": "Smelt 32 bricks and craft 8 packed mud. Smelt clay balls. Look along rivers. Mud and wheat. Look in mangrove swamps.",
+    "category": "generated",
+    "sort": 7,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:brick",
+        "count": 32
+      },
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:packed_mud",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:linear_chassis",
+        "count": 11
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 29
       }
     ]
   },
@@ -92,71 +68,64 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:salt",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:quartz",
-        "count": 15
+        "item": "twilightforest:cooked_venison",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 35
+        "amount": 30
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Wolf Breeder",
-    "description": "Breed 5 wolves. Tamed wolves breed with meat. Look in taigas.",
+  "justquests:gen/1790510400_7": {
+    "title": "Wild Cabbages Quarry",
+    "description": "Mine 12 wild cabbages. Wild cabbages grow on beaches. Look along beaches.",
     "category": "generated",
     "sort": 9,
     "objectives": [
       {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:wolf",
-        "count": 5
+        "type": "justquests:mine_block",
+        "block": "farmersdelight:wild_cabbages",
+        "count": 12
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:zinc_ingot",
-        "count": 9
+        "item": "farmersdelight:hot_cocoa",
+        "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 32
+        "amount": 48
       }
     ]
   },
   "justquests:gen/1790510400_9": {
-    "title": "Obsidian Chores",
-    "description": "Mine 4 obsidian and mine 2 crying obsidian. Pour water on lava pools, then mine it. Needs a diamond pickaxe. Look around ruined portals.",
+    "title": "Wand of the Forest Job",
+    "description": "Craft a wand of the forest. A livingwood twig and two petals; livingwood comes from a Pure Daisy.",
     "category": "generated",
-    "sort": 10,
-    "mode": "all",
+    "sort": 9,
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:obsidian",
-        "count": 4
-      },
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:crying_obsidian",
-        "count": 2
+        "type": "justquests:craft_item",
+        "item": "botania:twig_wand",
+        "count": 1
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "twilightforest:cooked_venison",
-        "count": 9
+        "item": "minecraft:phantom_membrane",
+        "count": 3
       },
       {
         "type": "justquests:xp",
-        "amount": 33
+        "amount": 22
+      },
+      {
+        "type": "justquests:message",
+        "message": "The village thanks you!"
       }
     ]
   },
@@ -175,90 +144,129 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:pumpkin_pie",
-        "count": 8
+        "item": "minecraft:cookie",
+        "count": 32
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:iron_ingot",
+        "count": 10
       },
       {
         "type": "justquests:xp",
-        "amount": 60
+        "amount": 40
       }
     ]
   },
   "justquests:gen/1790510400_2": {
-    "title": "Seafaring Errand",
-    "description": "Collect 2 prismarine crystals and collect 4 prismarine shards. Needs an iron pickaxe or better. Found at ocean monuments.",
+    "title": "Coal Duty",
+    "description": "Break 8 deepslate coal ore and collect 24 coal. Found deep underground. Mine coal ore. Found in caves.",
     "category": "generated",
-    "sort": 16,
+    "sort": 11,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:prismarine_crystals",
-        "count": 2
+        "type": "justquests:mine_block",
+        "block": "minecraft:deepslate_coal_ore",
+        "count": 8
       },
       {
         "type": "justquests:collect_item",
-        "item": "minecraft:prismarine_shard",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 2
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 37
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Tin Ingot Supply",
-    "description": "Smelt 24 tin ingots. Smelt raw tin in a furnace. Needs a stone pickaxe or better. Found in caves.",
-    "category": "generated",
-    "sort": 18,
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "mekanism:ingot_tin",
+        "item": "minecraft:coal",
         "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:obsidian",
-        "count": 16
+        "item": "minecraft:experience_bottle",
+        "count": 9
       },
       {
         "type": "justquests:xp",
-        "amount": 65
+        "amount": 49
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Slime Patrol",
-    "description": "Hunt 10 slimes. Look in swamps.",
+  "justquests:gen/1790510400_8": {
+    "title": "More Frogs",
+    "description": "Breed 4 frogs. Frogs breed with slimeballs. Look in swamps.",
     "category": "generated",
-    "sort": 20,
+    "sort": 13,
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:slime",
-        "count": 10
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:frog",
+        "count": 4
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 2
+        "item": "minecraft:glistering_melon_slice",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 65
+        "amount": 43
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Pillager Menace",
+    "description": "Defeat 6 pillagers. Found at pillager outposts.",
+    "category": "generated",
+    "sort": 20,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:pillager",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "farmersdelight:hot_cocoa",
+        "count": 4
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:golden_carrot",
+        "count": 7
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 80
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Smelt Lead Ingots",
+    "description": "Smelt 24 lead ingots. Smelt raw lead in a furnace. Needs a stone pickaxe or better. Found in caves.",
+    "category": "generated",
+    "sort": 20,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "mekanism:ingot_lead",
+        "count": 24
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "farmersdelight:fried_rice",
+        "count": 4
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:coal_block",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 70
       }
     ]
   }

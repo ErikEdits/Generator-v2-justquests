@@ -32,7 +32,7 @@ class ModProfilesTest {
                 for (QuestDraft q : TestSupport.generate(host, TestSupport.config(d, 10), TestSupport.unlockedProgression(host), seed, 10).drafts()) {
                     String t = Json.compact(q.json);
                     assertFalse(t.contains("farmersdelight:") || t.contains("create:") || t.contains("mekanism:")
-                        || t.contains("twilightforest:"), t);
+                        || t.contains("twilightforest:") || t.contains("botania:"), t);
                     assertEquals(Set.of("vanilla"), q.profiles());
                 }
             }
@@ -209,6 +209,64 @@ class ModProfilesTest {
                     String t = Json.compact(q.json);
                     assertFalse(t.contains("twilightforest:naga\"") || t.contains("twilightforest:lich\"")
                         || t.contains("naga_scale"), d + ": " + t);
+                }
+            }
+        }
+    }
+
+    @Test
+    void botaniaStartsInTheMeadowAndKeepsPureDaisyWorkOffEasy() {
+        FakeHost host = new FakeHost().withMods("botania");
+        Progression p = TestSupport.unlockedProgression(host);
+        int botania = 0;
+        for (Difficulty d : Difficulty.values()) {
+            GeneratorConfig cfg = TestSupport.config(d, 10).withModdedShare(1.0);
+            for (long seed = 1; seed <= 40; seed++) {
+                for (QuestDraft q : TestSupport.generate(host, cfg, p, seed, 10).drafts()) {
+                    String objectives = q.json.getAsJsonArray("objectives").toString();
+                    if (objectives.contains("botania:")) {
+                        botania++;
+                    }
+                    if (d == Difficulty.EASY) {
+                        assertFalse(objectives.contains("livingwood") || objectives.contains("twig_wand")
+                            || objectives.contains("mana_pool"), "Pure Daisy work on Easy: " + objectives);
+                    }
+                }
+            }
+        }
+        assertTrue(botania > 60, "Botania quests: " + botania);
+    }
+
+    @Test
+    void manyModsSmallSetsRotateThePerModGuarantee() {
+        FakeHost host = new FakeHost().withMods("farmersdelight", "create", "mekanism", "twilightforest", "botania");
+        host.content.dimensions.add("twilightforest:twilight_forest");
+        Progression p = TestSupport.unlockedProgression(host);
+        List<String> mods = List.of("farmersdelight", "create", "mekanism", "twilightforest", "botania");
+        // N = 5 with five mods: at most three modded quests (half the set, rounded up), and over many
+        // cycles every mod gets its turn
+        java.util.Map<String, Integer> seen = new java.util.TreeMap<>();
+        for (long seed = 1; seed <= 60; seed++) {
+            Generation.Result r = TestSupport.generate(host, TestSupport.config(Difficulty.HARD, 5), p, seed, 5);
+            long modded = r.drafts().stream().filter(QuestDraft::modded).count();
+            assertTrue(modded <= 3, "seed " + seed + ": " + modded + " modded of 5");
+            assertTrue(r.relaxations().containsKey("per_mod"), r.relaxations().toString());
+            for (QuestDraft q : r.drafts()) {
+                for (String m : q.profiles()) {
+                    seen.merge(m, 1, Integer::sum);
+                }
+            }
+        }
+        for (String m : mods) {
+            assertTrue(seen.getOrDefault(m, 0) >= 5, m + " rarely appears: " + seen);
+        }
+        // N = 10: the guarantee holds literally again (every active mod at least once)
+        for (long seed = 1; seed <= 40; seed++) {
+            Generation.Result r = TestSupport.generate(host, TestSupport.config(Difficulty.HARD, 10), p, seed, 10);
+            assertFalse(r.relaxations().containsKey("per_mod"), r.relaxations().toString());
+            if (!r.relaxations().containsKey("modded_share")) {
+                for (String m : mods) {
+                    assertTrue(r.drafts().stream().anyMatch(q -> q.profiles().contains(m)), "seed " + seed + " misses " + m);
                 }
             }
         }

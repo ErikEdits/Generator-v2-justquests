@@ -1,13 +1,13 @@
 # modded | world seed 2 | EASY | 10 quests | day 30, Nether and End unlocked
 
-Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest], Minecraft 1.21.1 (neoforge)
+Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest, botania], Minecraft 1.21.1 (neoforge)
 
 justquests:gen/1790510400_0  "Jungle Log Collector"  (EASY, cycle 1790510400, seed 0xDC9F…)
 objective collect_item minecraft:jungle_log ×32
   effort 0.10 min/unit (×1.40 jungle) → 4.5 min (target 4.6, range 4–10 min)
   tier 0 (always available), family wood, profile vanilla, hints jungle
 estimated 4.5 min (quick)
-reward give_item minecraft:cooked_salmon ×4 (value 3.6) + xp 11 (value 0.9)  → 4.5 / budget 4.5
+reward give_item minecraft:honey_bottle ×3 (value 3.6) + xp 11 (value 0.9)  → 4.5 / budget 4.5
 state: AVAILABLE
 
 justquests:gen/1790510400_4  "Make Polished Andesite"  (EASY, cycle 1790510400, seed 0xDC9F…)
@@ -15,7 +15,7 @@ objective craft_item minecraft:polished_andesite ×64
   effort 0.07 min/unit → 4.5 min (target 5.7, range 4–10 min)
   tier 0 (always available), family stonework, profile vanilla
 estimated 4.5 min (quick)
-reward give_item mekanism:ingot_osmium ×4 (value 3.6) + xp 11 (value 0.9)  → 4.5 / budget 4.5
+reward give_item mekanism:ingot_lead ×4 (value 3.8) + xp 8 (value 0.7)  → 4.5 / budget 4.5
 state: AVAILABLE
 
 justquests:gen/1790510400_5  "Deepslate Osmium Ore Shift"  (EASY, cycle 1790510400, seed 0xDC9F…)
@@ -23,7 +23,7 @@ objective mine_block mekanism:deepslate_osmium_ore ×5
   effort 0.80 min/unit (×1.10 deep) → 4.4 min (target 4.2, range 4–10 min)
   tier 1 (always available), family mek_osmium, profile mekanism, tool stone, hints caves/deep
 estimated 4.4 min (quick)
-reward give_item farmersdelight:hot_cocoa ×2 (value 3.2) + xp 14 (value 1.2)  → 4.4 / budget 4.4
+reward give_item farmersdelight:rope ×32 (value 2.6) + xp 22 (value 1.8)  → 4.4 / budget 4.4
 rejected alternatives: collect_item mekanism:osmium_ore (drops raw osmium, needs Silk Touch); craft_item mekanism:block_osmium (tier 1 above EASY cap)
 state: AVAILABLE
 
@@ -32,15 +32,15 @@ objective craft_item farmersdelight:tatami ×8
   effort 0.80 min/unit → 6.4 min (target 8.8, range 4–10 min)
   tier 0 (always available), family fd_straw, profile farmersdelight, tool knife
 estimated 6.4 min
-reward give_item mekanism:ingot_tin ×6 (value 5.1) + xp 16 (value 1.3)  → 6.4 / budget 6.4
+reward give_item mekanism:raw_osmium ×7 (value 4.9) + xp 18 (value 1.5)  → 6.4 / budget 6.4
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Smelt Smooth Stone"  (EASY, cycle 1790510400, seed 0xDC9F…)
-objective smelt_item minecraft:smooth_stone ×40
-  effort 0.15 min/unit → 6.0 min (target 6.1, range 4–10 min)
-  tier 0 (always available), family stone, profile vanilla
-estimated 6.0 min
-reward give_item mekanism:salt ×32 (value 3.8) + xp 26 (value 2.2)  → 6.0 / budget 6.0
+justquests:gen/1790510400_8  "Need Mystical Purple Flowers"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective collect_item botania:purple_mystical_flower ×16
+  effort 0.35 min/unit → 5.6 min (target 8.1, range 4–10 min)
+  tier 0 (always available), family bot_flowers, profile botania
+estimated 5.6 min (quick)
+reward give_item minecraft:cooked_beef ×8 (value 4.0) + xp 19 (value 1.6)  → 5.6 / budget 5.6
 state: AVAILABLE
 
 justquests:gen/1790510400_2  "Zombie Cleanup"  (EASY, cycle 1790510400, seed 0xDC9F…)
@@ -56,15 +56,15 @@ objective craft_item create:andesite_alloy ×24
   effort 0.35 min/unit → 8.4 min (target 8.6, range 4–10 min)
   tier 1 (always available), family create_alloy, profile create
 estimated 8.4 min
-reward give_item minecraft:cooked_salmon ×7 (value 6.3) + xp 25 (value 2.1)  → 8.4 / budget 8.4
+reward give_item minecraft:honey_bottle ×5 (value 6.0) + xp 29 (value 2.4)  → 8.4 / budget 8.4
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Cooked Rice Break"  (EASY, cycle 1790510400, seed 0xDC9F…)
-objective consume_item farmersdelight:cooked_rice ×6
-  effort 1.40 min/unit → 8.4 min (target 8.1, range 4–10 min)
-  tier 1 (always available), family fd_plates, profile farmersdelight
-estimated 8.4 min
-reward give_item minecraft:cooked_beef ×13 (value 6.5) + xp 23 (value 1.9)  → 8.4 / budget 8.4
+justquests:gen/1790510400_9  "Creeper Bounty"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective kill_mob minecraft:creeper ×8
+  effort 1.00 min/unit → 8.0 min (target 7.3, range 4–10 min)
+  tier 0 (always available), family monsters, profile vanilla, hints night
+estimated 8.0 min
+reward give_item mekanism:raw_osmium ×9 (value 6.3) + xp 20 (value 1.7)  → 8.0 / budget 8.0
 state: AVAILABLE
 
 justquests:gen/1790510400_6  "Cat Ranch"  (EASY, cycle 1790510400, seed 0xDC9F…)
@@ -72,7 +72,7 @@ objective breed_animal minecraft:cat ×4
   effort 2.00 min/unit (×1.20 village) → 9.6 min (target 10.0, range 4–10 min)
   tier 0 (always available), family pets, profile vanilla, hints village
 estimated 9.6 min
-reward give_item minecraft:lapis_block ×4 (value 7.2) + xp 29 (value 2.4)  → 9.6 / budget 9.6
+reward give_item minecraft:redstone_block ×4 (value 7.2) + xp 29 (value 2.4)  → 9.6 / budget 9.6
 rejected alternatives: tame_animal minecraft:ocelot (ocelots only trust players; not a TamableAnimal)
 state: AVAILABLE
 
@@ -81,6 +81,6 @@ objective smelt_item minecraft:baked_potato ×40
   effort 0.20 min/unit (×1.20 village) → 9.6 min (target 9.4, range 4–10 min)
   tier 0 (always available), family crops, profile vanilla, hints village/farm/cook
 estimated 9.6 min
-reward give_item create:andesite_alloy_block ×2 (value 6.4) + xp 38 (value 3.2)  → 9.6 / budget 9.6
+reward give_item mekanism:ingot_tin ×8 (value 6.8) + xp 34 (value 2.8)  → 9.6 / budget 9.6
 state: AVAILABLE
 

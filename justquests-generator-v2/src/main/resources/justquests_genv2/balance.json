@@ -228,6 +228,7 @@
     "requireQuick": true,
     "quickFraction": 0.3333,
     "minPerActiveModAt": 5,
+    "maxPerModShare": 0.5,
     "typeRepeatPenalty": 0.45,
     "themeChance": 0.85,
     "maxAttemptsPerSlot": 40,

@@ -7,9 +7,11 @@ from mod_profiles import FARMERS_DELIGHT, CREATE
 from other_data import REWARDS, TEMPLATES, THEMES, BALANCE, TAGS
 from mod_mekanism import MEKANISM, MEK_FAMILY_NAMES, MEK_TAGS
 from mod_twilightforest import TWILIGHT_FOREST, TF_FAMILY_NAMES, TF_DIMENSION_NAMES
+from mod_botania import BOTANIA, BOT_FAMILY_NAMES
 
 TEMPLATES["familyNames"].update(MEK_FAMILY_NAMES)
 TEMPLATES["familyNames"].update(TF_FAMILY_NAMES)
+TEMPLATES["familyNames"].update(BOT_FAMILY_NAMES)
 TEMPLATES["dimensionNames"].update(TF_DIMENSION_NAMES)
 TAGS["concepts"].update(MEK_TAGS)
 
@@ -20,7 +22,9 @@ dump(FARMERS_DELIGHT, os.path.join(ROOT, "catalog", "profiles", "farmersdelight.
 dump(CREATE, os.path.join(ROOT, "catalog", "profiles", "create.json"))
 dump(MEKANISM, os.path.join(ROOT, "catalog", "profiles", "mekanism.json"))
 dump(TWILIGHT_FOREST, os.path.join(ROOT, "catalog", "profiles", "twilightforest.json"))
-dump({"format": 1, "profiles": ["farmersdelight.json", "create.json", "mekanism.json", "twilightforest.json"]},
+dump(BOTANIA, os.path.join(ROOT, "catalog", "profiles", "botania.json"))
+dump({"format": 1, "profiles": ["farmersdelight.json", "create.json", "mekanism.json", "twilightforest.json",
+                                "botania.json"]},
      os.path.join(ROOT, "catalog", "profiles", "index.json"))
 dump(REWARDS, os.path.join(ROOT, "rewards.json"))
 dump(TEMPLATES, os.path.join(ROOT, "templates.json"))

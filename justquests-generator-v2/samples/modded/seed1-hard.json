@@ -14,8 +14,8 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:bacon_sandwich",
-        "count": 8
+        "item": "farmersdelight:fried_rice",
+        "count": 4
       },
       {
         "type": "justquests:effect",
@@ -25,21 +25,73 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 65
+        "amount": 120
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Build with Mud Bricks",
+    "description": "Place 32 mud bricks. Look in mangrove swamps.",
+    "category": "generated",
+    "sort": 15,
+    "objectives": [
+      {
+        "type": "justquests:place_block",
+        "block": "minecraft:mud_bricks",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:zinc_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 95
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Make Livingwood Planks",
+    "description": "Craft 16 livingwood planks. A Pure Daisy turns logs placed around it into livingwood.",
+    "category": "generated",
+    "sort": 16,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "botania:livingwood_planks",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:basic_control_circuit",
+        "count": 3
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/simple_dungeon"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 48
       }
     ]
   },
   "justquests:gen/1790510400_7": {
-    "title": "Kinetics Chores",
-    "description": "Craft 6 encased chain drives and craft 24 large cogwheels.",
+    "title": "Gear Up",
+    "description": "Every machine starts small: craft 32 andesite alloy and craft 24 large cogwheels. Two andesite and two iron nuggets.",
     "category": "generated",
-    "sort": 14,
+    "sort": 18,
     "mode": "all",
     "objectives": [
       {
         "type": "justquests:craft_item",
-        "item": "create:encased_chain_drive",
-        "count": 6
+        "item": "create:andesite_alloy",
+        "count": 32
       },
       {
         "type": "justquests:craft_item",
@@ -50,42 +102,17 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:emerald",
-        "count": 7
+        "item": "minecraft:prismarine_crystals",
+        "count": 8
       },
-      {
-        "type": "justquests:xp",
-        "amount": 75
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Twilight Timber Job",
-    "description": "Craft 64 twilight oak planks and break 64 canopy tree logs. One twilight oak log makes four planks. Found in the Twilight Forest.",
-    "category": "generated",
-    "sort": 16,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "twilightforest:twilight_oak_planks",
-        "count": 64
-      },
-      {
-        "type": "justquests:mine_block",
-        "block": "twilightforest:canopy_log",
-        "count": 64
-      }
-    ],
-    "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 2
+        "item": "create:zinc_block",
+        "count": 1
       },
       {
         "type": "justquests:xp",
-        "amount": 105
+        "amount": 130
       }
     ]
   },
@@ -104,8 +131,8 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:apple_pie",
-        "count": 2
+        "item": "farmersdelight:barbecue_stick",
+        "count": 8
       },
       {
         "type": "justquests:effect",
@@ -115,42 +142,42 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 240
+        "amount": 185
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Undead Job",
-    "description": "Defeat 6 drowned and hunt 8 husks. Look in and near oceans. They spawn at night and in dark caves. Look in deserts.",
+  "justquests:gen/1790510400_2": {
+    "title": "Picnic Basket",
+    "description": "Pack the picnic basket: craft 6 mixed salad and craft 64 honey cookies. Cabbage, tomato and beetroot in a bowl. Needs bees and flowers.",
     "category": "generated",
     "sort": 19,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:drowned",
+        "type": "justquests:craft_item",
+        "item": "farmersdelight:mixed_salad",
         "count": 6
       },
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:husk",
-        "count": 8
+        "type": "justquests:craft_item",
+        "item": "farmersdelight:honey_cookie",
+        "count": 64
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:book",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
+        "item": "minecraft:leather",
         "count": 16
       },
       {
+        "type": "justquests:give_item",
+        "item": "mekanism:ingot_osmium",
+        "count": 19
+      },
+      {
         "type": "justquests:xp",
-        "amount": 90
+        "amount": 100
       }
     ]
   },
@@ -175,7 +202,7 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:prismarine_crystals",
+        "item": "minecraft:glistering_melon_slice",
         "count": 8
       },
       {
@@ -189,132 +216,103 @@
       }
     ]
   },
-  "justquests:gen/1790510400_2": {
-    "title": "Village Bakery",
-    "description": "The bakery is short-handed: craft 48 wheat dough and cook 32 bread. Wheat with an egg or water. Bake wheat dough in a furnace.",
+  "justquests:gen/1790510400_9": {
+    "title": "Beekeeping Duty",
+    "description": "Craft 6 candles and breed 8 bees. Needs bees and flowers. Bees breed with flowers.",
     "category": "generated",
-    "sort": 21,
+    "sort": 23,
     "mode": "all",
     "objectives": [
       {
         "type": "justquests:craft_item",
-        "item": "farmersdelight:wheat_dough",
-        "count": 48
+        "item": "minecraft:candle",
+        "count": 6
       },
       {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:bread",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:paper",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:ingot_tin",
-        "count": 26
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 100
-      }
-    ]
-  },
-  "justquests:gen/1790510400_4": {
-    "title": "Stop the Witches",
-    "description": "Hunt 2 witches. Look in swamps. Rare, so take your time.",
-    "category": "generated",
-    "sort": 21,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:witch",
-        "count": 2
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:raw_osmium",
-        "count": 25
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/simple_dungeon"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 70
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Dig Deepslate Gold Ore",
-    "description": "Break 20 deepslate gold ore. Needs an iron pickaxe or better. Found deep underground.",
-    "category": "generated",
-    "sort": 26,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:deepslate_gold_ore",
-        "count": 20
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:raw_osmium",
-        "count": 32
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:invisibility",
-        "seconds": 300,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 175
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Nether Hunt Supplies",
-    "description": "Gather 3 ghast tears and collect 8 blaze rods. Found in soul sand valleys. Found in the Nether. Found in Nether fortresses.",
-    "category": "generated",
-    "sort": 31,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:ghast_tear",
-        "count": 3
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:blaze_rod",
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:bee",
         "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_tin",
+        "item": "mekanism:ingot_osmium",
+        "count": 24
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/jungle_temple"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 90
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Metal Chores",
+    "description": "Mine 32 deepslate copper ore and mine 12 deepslate gold ore. Found deep underground. Needs an iron pickaxe or better.",
+    "category": "generated",
+    "sort": 30,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:deepslate_copper_ore",
         "count": 32
       },
       {
+        "type": "justquests:mine_block",
+        "block": "minecraft:deepslate_gold_ore",
+        "count": 12
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:diamond",
+        "count": 7
+      },
+      {
         "type": "justquests:effect",
-        "effect": "minecraft:fire_resistance",
-        "seconds": 480,
+        "effect": "minecraft:resistance",
+        "seconds": 300,
         "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 220
+        "amount": 110
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Lich Hunt",
+    "description": "Defeat a lich. The Lich rules the tallest tower. Found in the Twilight Forest.",
+    "category": "generated",
+    "sort": 37,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "twilightforest:lich",
+        "count": 1
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:cooked_salmon",
+        "count": 16
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:dolphins_grace",
+        "seconds": 300,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 470
       }
     ]
   }

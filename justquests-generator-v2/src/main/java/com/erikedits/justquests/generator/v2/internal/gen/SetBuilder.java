@@ -224,6 +224,19 @@ public final class SetBuilder {
                 }
             }
             int target = (int) Math.round(totalSize * moddedShare) - keptModded;
+            // with more mods than the set can carry, the guarantee covers a rotating subset (the cycle's
+            // RNG picks it) and never takes more than maxPerModShare of the set or the modded target
+            int cap = Math.max(target, (int) Math.ceil(n * balance.maxPerModShare));
+            if (required.size() > cap) {
+                for (int i = required.size() - 1; i > 0; i--) {
+                    int j = rng.nextInt(i + 1);
+                    String x = required.get(i);
+                    required.set(i, required.get(j));
+                    required.set(j, x);
+                }
+                relax("per_mod", required.size() + " active mods, " + Math.max(0, cap) + " covered this cycle");
+                required = new ArrayList<>(required.subList(0, Math.max(0, cap)));
+            }
             int modded = Math.max(0, Math.min(n, Math.max(target, required.size())));
             for (int i = 0; i < n; i++) {
                 if (i < Math.min(required.size(), modded)) {

@@ -1,42 +1,6 @@
 {
-  "justquests:gen/1790510400_3": {
-    "title": "Iron Age",
-    "description": "Time for better tools: smelt 16 iron ingots and craft an iron chestplate. Smelt raw iron in a furnace. Needs a stone pickaxe or better.",
-    "category": "generated",
-    "sort": 13,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:iron_ingot",
-        "count": 16
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:iron_chestplate",
-        "count": 1
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:zinc_ingot",
-        "count": 14
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:speed",
-        "seconds": 480,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 55
-      }
-    ]
-  },
   "justquests:gen/1790510400_7": {
-    "title": "Honey Glazed Ham Feast",
+    "title": "Honey Glazed Ham Lunch",
     "description": "Eat 2 honey glazed ham. Place a glazed ham and serve it into a bowl.",
     "category": "generated",
     "sort": 15,
@@ -50,12 +14,42 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 16
+        "item": "create:zinc_ingot",
+        "count": 19
       },
       {
         "type": "justquests:xp",
-        "amount": 95
+        "amount": 65
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Mana Pool Request",
+    "description": "Craft a mana pool. Five livingrock; a Pure Daisy turns stone into livingrock.",
+    "category": "generated",
+    "sort": 16,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "botania:mana_pool",
+        "count": 1
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:basic_control_circuit",
+        "count": 4
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:jump_boost",
+        "seconds": 300,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 80
       }
     ]
   },
@@ -74,194 +68,187 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:basic_control_circuit",
-        "count": 5
+        "item": "twilightforest:cooked_venison",
+        "count": 16
       },
       {
         "type": "justquests:xp",
-        "amount": 65
+        "amount": 95
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Blaze Rod Collector",
-    "description": "Gather 8 blaze rods. Found in Nether fortresses. Found in the Nether.",
+  "justquests:gen/1790510400_2": {
+    "title": "Redstone Duty",
+    "description": "Craft 6 note blocks and collect 48 redstone dust. Redstone ore drops dust. Needs an iron pickaxe or better. Found deep underground.",
     "category": "generated",
     "sort": 17,
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:blaze_rod",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:honeyed_apple",
-        "count": 3
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/nether_bridge"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 45
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Uranium Ore Miner",
-    "description": "Break 16 uranium ore. Needs a stone pickaxe or better. Found in caves.",
-    "category": "generated",
-    "sort": 18,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "mekanism:uranium_ore",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 2
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:water_breathing",
-        "seconds": 600,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 41
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Raw Zinc Stockpile",
-    "description": "Collect 24 raw zinc. Zinc ore drops raw zinc. Needs an iron pickaxe or better. Found in caves.",
-    "category": "generated",
-    "sort": 19,
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "create:raw_zinc",
-        "count": 24
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:cooked_porkchop",
-        "count": 16
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:invisibility",
-        "seconds": 300,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 220
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Winter Prep",
-    "description": "Get ready for the cold: craft 48 snow blocks and breed 10 sheep. Four snowballs. Look in snowy biomes. Sheep breed with wheat.",
-    "category": "generated",
-    "sort": 19,
     "mode": "all",
     "objectives": [
       {
         "type": "justquests:craft_item",
-        "item": "minecraft:snow_block",
+        "item": "minecraft:note_block",
+        "count": 6
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:redstone",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:raw_osmium",
+        "count": 29
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 85
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Winter Duty",
+    "description": "Mine 48 ice and craft 48 snow blocks. Look in snowy biomes. Four snowballs.",
+    "category": "generated",
+    "sort": 17,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:ice",
         "count": 48
       },
       {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:sheep",
-        "count": 10
+        "type": "justquests:craft_item",
+        "item": "minecraft:snow_block",
+        "count": 48
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
         "item": "minecraft:experience_bottle",
-        "count": 14
+        "count": 15
       },
       {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/jungle_temple"
+        "type": "justquests:effect",
+        "effect": "minecraft:night_vision",
+        "seconds": 600,
+        "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 75
+        "amount": 70
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Lumber Supplies",
-    "description": "Mine 64 cherry logs and break 64 jungle logs. Look in cherry groves. Look in jungles.",
+  "justquests:gen/1790510400_5": {
+    "title": "Zinc Ore Breaker",
+    "description": "Mine 24 zinc ore. Needs an iron pickaxe or better. Found in caves.",
     "category": "generated",
     "sort": 19,
-    "mode": "all",
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "minecraft:cherry_log",
-        "count": 64
-      },
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:jungle_log",
-        "count": 64
+        "block": "create:zinc_ore",
+        "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:hot_cocoa",
-        "count": 4
+        "item": "create:wrench",
+        "count": 1
       },
       {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/village/village_weaponsmith"
+        "type": "justquests:give_item",
+        "item": "botania:manasteel_ingot",
+        "count": 5
       },
       {
         "type": "justquests:xp",
-        "amount": 205
+        "amount": 95
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Lead Ore Shift",
+    "description": "Mine 24 lead ore. Needs a stone pickaxe or better. Found in caves.",
+    "category": "generated",
+    "sort": 19,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "mekanism:lead_ore",
+        "count": 24
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:ingot_tin",
+        "count": 25
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 90
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Nether Hunt Supplies",
+    "description": "Hunt 3 wither skeletons and hunt 5 blazes. Found in Nether fortresses. Found in the Nether.",
+    "category": "generated",
+    "sort": 24,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:wither_skeleton",
+        "count": 3
+      },
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:blaze",
+        "count": 5
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:emerald",
+        "count": 12
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 125
       }
     ]
   },
   "justquests:gen/1790510400_1": {
-    "title": "Construction Job",
-    "description": "The builders need material: craft 64 deepslate tiles and place 16 bricks. Found deep underground.",
+    "title": "Desert Trek",
+    "description": "Brave the desert: smelt 48 green dyes and defeat 12 husks. Smelt cactus. Look in deserts. They spawn at night and in dark caves.",
     "category": "generated",
-    "sort": 25,
+    "sort": 26,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:deepslate_tiles",
-        "count": 64
+        "type": "justquests:smelt_item",
+        "item": "minecraft:green_dye",
+        "count": 48
       },
       {
-        "type": "justquests:place_block",
-        "block": "minecraft:bricks",
-        "count": 16
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:husk",
+        "count": 12
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:obsidian",
-        "count": 16
+        "item": "minecraft:emerald",
+        "count": 11
       },
       {
         "type": "justquests:loot_table",
@@ -269,37 +256,31 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 220
+        "amount": 95
       }
     ]
   },
-  "justquests:gen/1790510400_2": {
-    "title": "Gem Errand",
-    "description": "Mine an emerald ore and collect 64 lapis lazuli. Needs an iron pickaxe or better. Look in the mountains. Rare, so take your time.",
+  "justquests:gen/1790510400_8": {
+    "title": "Iron Ingot Heat",
+    "description": "Smelt 48 iron ingots. Smelt raw iron in a furnace. Needs a stone pickaxe or better. Found in caves.",
     "category": "generated",
-    "sort": 29,
-    "mode": "all",
+    "sort": 26,
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:emerald_ore",
-        "count": 1
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:lapis_lazuli",
-        "count": 64
+        "type": "justquests:smelt_item",
+        "item": "minecraft:iron_ingot",
+        "count": 48
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:raw_osmium",
+        "item": "mekanism:ingot_osmium",
         "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 300
+        "amount": 130
       }
     ]
   }

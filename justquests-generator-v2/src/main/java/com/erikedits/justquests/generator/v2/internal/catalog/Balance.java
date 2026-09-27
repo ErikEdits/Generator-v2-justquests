@@ -73,6 +73,8 @@ public final class Balance {
     public boolean requireQuick = true;
     public double quickFraction = 1.0 / 3.0;
     public int minPerActiveModAt = 5;
+    /** Largest share of a set that the one-quest-per-active-mod guarantee may claim (many mods, small N). */
+    public double maxPerModShare = 0.5;
     public double typeRepeatPenalty = 0.45;
     public double themeChance = 0.85;
     public int calibrationMinSamples = 5;
@@ -159,6 +161,7 @@ public final class Balance {
             b.requireQuick = Json.bool(rules, "requireQuick", b.requireQuick);
             b.quickFraction = Json.dbl(rules, "quickFraction", b.quickFraction);
             b.minPerActiveModAt = Json.integer(rules, "minPerActiveModAt", b.minPerActiveModAt);
+            b.maxPerModShare = Math.max(0.0, Math.min(1.0, Json.dbl(rules, "maxPerModShare", b.maxPerModShare)));
             b.typeRepeatPenalty = Json.dbl(rules, "typeRepeatPenalty", b.typeRepeatPenalty);
             b.themeChance = Json.dbl(rules, "themeChance", b.themeChance);
             b.maxAttemptsPerSlot = Json.integer(rules, "maxAttemptsPerSlot", b.maxAttemptsPerSlot);

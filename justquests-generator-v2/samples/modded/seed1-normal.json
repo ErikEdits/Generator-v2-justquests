@@ -1,25 +1,29 @@
 {
   "justquests:gen/1790510400_7": {
-    "title": "Build with Cogwheel",
-    "description": "Place 32 cogwheels.",
+    "title": "Place Linear Chassis",
+    "description": "Place 12 linear chassis.",
     "category": "generated",
     "sort": 8,
     "objectives": [
       {
         "type": "justquests:place_block",
-        "block": "create:cogwheel",
-        "count": 32
+        "block": "create:linear_chassis",
+        "count": 12
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:arrow",
-        "count": 32
+        "item": "minecraft:phantom_membrane",
+        "count": 2
       },
       {
         "type": "justquests:xp",
-        "amount": 60
+        "amount": 40
+      },
+      {
+        "type": "justquests:message",
+        "message": "Another job well done."
       }
     ]
   },
@@ -38,7 +42,7 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:prismarine_crystals",
+        "item": "minecraft:glistering_melon_slice",
         "count": 5
       },
       {
@@ -62,13 +66,8 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:rope",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 4
+        "item": "farmersdelight:hamburger",
+        "count": 3
       },
       {
         "type": "justquests:xp",
@@ -76,27 +75,56 @@
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Deer Herd",
-    "description": "Breed 2 deer. Deer breed with wheat. Found in the Twilight Forest.",
+  "justquests:gen/1790510400_4": {
+    "title": "Wand of the Forest Job",
+    "description": "Craft a wand of the forest. A livingwood twig and two petals; livingwood comes from a Pure Daisy.",
     "category": "generated",
     "sort": 9,
     "objectives": [
       {
-        "type": "justquests:breed_animal",
-        "entity": "twilightforest:deer",
-        "count": 2
+        "type": "justquests:craft_item",
+        "item": "botania:twig_wand",
+        "count": 1
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "twilightforest:raven_feather",
-        "count": 8
+        "item": "minecraft:copper_ingot",
+        "count": 32
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:oak_sapling",
+        "count": 16
       },
       {
         "type": "justquests:xp",
-        "amount": 49
+        "amount": 43
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Taste Golden Carrot",
+    "description": "Eat 4 golden carrots.",
+    "category": "generated",
+    "sort": 9,
+    "objectives": [
+      {
+        "type": "justquests:consume_item",
+        "item": "minecraft:golden_carrot",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:linear_chassis",
+        "count": 13
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 33
       }
     ]
   },
@@ -121,12 +149,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:andesite_alloy_block",
-        "count": 3
+        "item": "create:zinc_block",
+        "count": 1
       },
       {
         "type": "justquests:xp",
-        "amount": 43
+        "amount": 65
       },
       {
         "type": "justquests:message",
@@ -134,80 +162,96 @@
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Packed Ice Shift",
-    "description": "Break 24 packed ice. Look in snowy biomes. Rare, so take your time.",
+  "justquests:gen/1790510400_5": {
+    "title": "Raw Salmon Haul",
+    "description": "Collect 8 raw salmon. Use a fishing rod.",
     "category": "generated",
-    "sort": 10,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:packed_ice",
-        "count": 24
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "farmersdelight:rope",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:lapis_lazuli",
-        "count": 32
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 36
-      }
-    ]
-  },
-  "justquests:gen/1790510400_4": {
-    "title": "Need Raw Porkchop",
-    "description": "Gather 40 raw porkchop.",
-    "category": "generated",
-    "sort": 12,
+    "sort": 11,
     "objectives": [
       {
         "type": "justquests:collect_item",
-        "item": "minecraft:porkchop",
-        "count": 40
+        "item": "minecraft:salmon",
+        "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
+        "item": "minecraft:experience_bottle",
         "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 48
+        "amount": 46
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Red Sandstone Workshop",
-    "description": "Craft 32 red sandstone. Four red sand. Look in badlands.",
+  "justquests:gen/1790510400_9": {
+    "title": "Gardening Duty",
+    "description": "Pick up 64 sugar cane and collect 32 vines. Look along rivers. Use shears. Look in jungles.",
     "category": "generated",
-    "sort": 15,
+    "sort": 12,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:red_sandstone",
+        "type": "justquests:collect_item",
+        "item": "minecraft:sugar_cane",
+        "count": 64
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:vine",
         "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:fluorite_gem",
-        "count": 32
+        "item": "create:zinc_ingot",
+        "count": 7
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/village/village_weaponsmith"
       },
       {
         "type": "justquests:xp",
-        "amount": 85
+        "amount": 27
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Twilight Timber Job",
+    "description": "Craft 64 twilight oak planks and break 48 canopy tree logs. One twilight oak log makes four planks. Found in the Twilight Forest.",
+    "category": "generated",
+    "sort": 14,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "twilightforest:twilight_oak_planks",
+        "count": 64
+      },
+      {
+        "type": "justquests:mine_block",
+        "block": "twilightforest:canopy_log",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:redstone",
+        "count": 32
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "twilightforest:ironwood_ingot",
+        "count": 3
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 65
       }
     ]
   },
@@ -226,47 +270,17 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:honey_bottle",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:leather",
-        "count": 16
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 65
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Pet Duty",
-    "description": "Breed 4 cats and tame 3 wolves. Tamed cats breed with raw fish. Villages often have them. Tame wolves with bones. Look in taigas.",
-    "category": "generated",
-    "sort": 20,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:cat",
+        "item": "minecraft:campfire",
         "count": 4
       },
       {
-        "type": "justquests:tame_animal",
-        "entity": "minecraft:wolf",
-        "count": 3
-      }
-    ],
-    "rewards": [
-      {
         "type": "justquests:give_item",
-        "item": "create:zinc_block",
-        "count": 2
+        "item": "minecraft:saddle",
+        "count": 1
       },
       {
         "type": "justquests:xp",
-        "amount": 140
+        "amount": 165
       }
     ]
   }

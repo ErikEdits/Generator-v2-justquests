@@ -14,8 +14,8 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 4
+        "item": "minecraft:honey_bottle",
+        "count": 3
       },
       {
         "type": "justquests:xp",
@@ -38,12 +38,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_osmium",
+        "item": "mekanism:ingot_lead",
         "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 11
+        "amount": 8
       }
     ]
   },
@@ -62,12 +62,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:hot_cocoa",
-        "count": 2
+        "item": "farmersdelight:rope",
+        "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 14
+        "amount": 22
       }
     ]
   },
@@ -86,36 +86,36 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_tin",
-        "count": 6
+        "item": "mekanism:raw_osmium",
+        "count": 7
       },
       {
         "type": "justquests:xp",
-        "amount": 16
+        "amount": 18
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Smelt Smooth Stone",
-    "description": "Smelt 40 smooth stone. Smelt stone a second time.",
+  "justquests:gen/1790510400_8": {
+    "title": "Need Mystical Purple Flowers",
+    "description": "Collect 16 mystical purple flowers. Mystical flowers grow in forests, plains and meadows.",
     "category": "generated",
     "sort": 6,
     "objectives": [
       {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:smooth_stone",
-        "count": 40
+        "type": "justquests:collect_item",
+        "item": "botania:purple_mystical_flower",
+        "count": 16
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:salt",
-        "count": 32
+        "item": "minecraft:cooked_beef",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 26
+        "amount": 19
       }
     ]
   },
@@ -162,36 +162,36 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 7
+        "item": "minecraft:honey_bottle",
+        "count": 5
       },
       {
         "type": "justquests:xp",
-        "amount": 25
+        "amount": 29
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Cooked Rice Break",
-    "description": "Eat 6 cooked rice. Cook rice in a Cooking Pot.",
+  "justquests:gen/1790510400_9": {
+    "title": "Creeper Bounty",
+    "description": "Hunt 8 creepers. They spawn at night and in dark caves.",
     "category": "generated",
     "sort": 8,
     "objectives": [
       {
-        "type": "justquests:consume_item",
-        "item": "farmersdelight:cooked_rice",
-        "count": 6
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:creeper",
+        "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_beef",
-        "count": 13
+        "item": "mekanism:raw_osmium",
+        "count": 9
       },
       {
         "type": "justquests:xp",
-        "amount": 23
+        "amount": 20
       }
     ]
   },
@@ -210,7 +210,7 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:lapis_block",
+        "item": "minecraft:redstone_block",
         "count": 4
       },
       {
@@ -234,12 +234,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:andesite_alloy_block",
-        "count": 2
+        "item": "mekanism:ingot_tin",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 38
+        "amount": 34
       }
     ]
   }

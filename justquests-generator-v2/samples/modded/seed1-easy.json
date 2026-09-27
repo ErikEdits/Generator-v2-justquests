@@ -14,40 +14,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:fried_rice",
-        "count": 1
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 25
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Make Cut Sandstone",
-    "description": "Craft 48 cut sandstone.",
-    "category": "generated",
-    "sort": 5,
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:cut_sandstone",
-        "count": 48
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:lapis_block",
+        "item": "farmersdelight:carrot_crate",
         "count": 2
       },
       {
         "type": "justquests:xp",
-        "amount": 14
-      },
-      {
-        "type": "justquests:message",
-        "message": "The traders are impressed."
+        "amount": 18
       }
     ]
   },
@@ -66,12 +38,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:book",
-        "count": 3
+        "item": "minecraft:cake",
+        "count": 1
       },
       {
         "type": "justquests:xp",
-        "amount": 24
+        "amount": 31
       }
     ]
   },
@@ -90,16 +62,40 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:apple_pie",
-        "count": 1
+        "item": "farmersdelight:beef_stew",
+        "count": 2
       },
       {
         "type": "justquests:xp",
-        "amount": 31
+        "amount": 14
       },
       {
         "type": "justquests:message",
         "message": "Good work. Rest a while."
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Mystical Purple Flower Collector",
+    "description": "Collect 16 mystical purple flowers. Mystical flowers grow in forests, plains and meadows.",
+    "category": "generated",
+    "sort": 6,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "botania:purple_mystical_flower",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:paper",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 21
       }
     ]
   },
@@ -118,12 +114,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:glow_berries",
-        "count": 16
+        "item": "minecraft:cooked_chicken",
+        "count": 11
       },
       {
         "type": "justquests:xp",
-        "amount": 38
+        "amount": 20
       }
     ]
   },
@@ -151,6 +147,30 @@
       }
     ]
   },
+  "justquests:gen/1790510400_9": {
+    "title": "Smelt Charcoal",
+    "description": "Smelt 48 charcoal. Smelt logs in a furnace.",
+    "category": "generated",
+    "sort": 7,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:charcoal",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:leather",
+        "count": 13
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 24
+      }
+    ]
+  },
   "justquests:gen/1790510400_3": {
     "title": "Deepslate Coal Ore Dig",
     "description": "Break 12 deepslate coal ore. Found deep underground.",
@@ -166,12 +186,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:carrot_crate",
-        "count": 4
+        "item": "create:andesite_alloy",
+        "count": 17
       },
       {
         "type": "justquests:xp",
-        "amount": 23
+        "amount": 24
       }
     ]
   },
@@ -190,36 +210,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:hot_cocoa",
+        "item": "farmersdelight:carrot_crate",
         "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 23
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Baked Cod Stew Feast",
-    "description": "Eat 3 baked cod stew. Cook it in a Cooking Pot.",
-    "category": "generated",
-    "sort": 8,
-    "objectives": [
-      {
-        "type": "justquests:consume_item",
-        "item": "farmersdelight:baked_cod_stew",
-        "count": 3
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:cookie",
-        "count": 32
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 48
+        "amount": 28
       }
     ]
   },
@@ -238,12 +234,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:bacon_sandwich",
-        "count": 4
+        "item": "farmersdelight:honey_cookie",
+        "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 29
+        "amount": 38
       }
     ]
   }

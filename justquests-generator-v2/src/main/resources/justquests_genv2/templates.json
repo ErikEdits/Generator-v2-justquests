@@ -294,7 +294,13 @@
     "tf_monsters": "Twilight Hunt",
     "tf_bosses": "Boss",
     "tf_ironwood": "Ironwood",
-    "tf_maps": "Cartographer"
+    "tf_maps": "Cartographer",
+    "bot_flowers": "Florist",
+    "bot_petals": "Petal",
+    "bot_start": "Botanist",
+    "bot_mushrooms": "Shimmering",
+    "bot_livingwood": "Livingwood",
+    "bot_mana": "Mana"
   },
   "tools": {
     "stone": "Needs a stone pickaxe or better",

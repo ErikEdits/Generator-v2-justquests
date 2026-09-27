@@ -441,7 +441,7 @@ BALANCE = {
                     "earlyWorld": [{"maxDay": 2, "tierWeights": [1.0, 0.6, 0.15, 0.05, 0.05]},
                                    {"maxDay": 6, "tierWeights": [1.0, 1.0, 0.6, 0.5, 0.3]}]},
     "setRules": {"minDistinctTypes": 3, "maxTypeShare": 0.4, "requireQuick": True, "quickFraction": 0.3333,
-                 "minPerActiveModAt": 5, "typeRepeatPenalty": 0.45, "themeChance": 0.85,
+                 "minPerActiveModAt": 5, "maxPerModShare": 0.5, "typeRepeatPenalty": 0.45, "themeChance": 0.85,
                  "maxAttemptsPerSlot": 40, "rangeSlack": 0.25, "minTargetFraction": 0.5},
     "calibration": {"minSamples": 5, "minMultiplier": 0.5, "maxMultiplier": 2.0, "maxStepPerCycle": 0.10},
 }
