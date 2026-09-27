@@ -1,0 +1,5 @@
+build/
+.gradle/
+*.class
+/justquests-generator-v2/build/
+/dist/tmp/
