@@ -16,7 +16,7 @@ Auto-resume routine: `trig_01VkvYQ75m7uPB1RPLGp5Diq` (every 2 h) — delete when
 - [x] 3 Data files (generated from tools/*.py: vanilla 291 targets, FD 98, Create 49)
 - [x] 4 Core engine — internal/{catalog,gen,state,stats,util}, Core.java, Generation.java, facade
 - [x] 5 Tests (17 groups + stats/calibration) — 70 tests green
-- [ ] 6 Docs, samples, reference adapter, ZIP
+- [x] 6 Docs, samples, reference adapter, ZIP (dist/justquests-generator-v2.zip)
 
 ## Log
 - 2026-09-27 ~09:00 UTC: started, spec read, mods chosen.
@@ -24,3 +24,8 @@ Auto-resume routine: `trig_01VkvYQ75m7uPB1RPLGp5Diq` (every 2 h) — delete when
 - 2026-09-27 ~10:45 UTC: data + tests done, build green. Next: review pass, samples (SampleWriter), docs, reference adapter, ZIP.
 - 2026-09-27 ~13:00 UTC: INTEGRATION.md, DESIGN.md, MODS.md written. Next: README.md, CHANGELOG-snippet.md, samples/README.md, reference adapter (reference-adapter/neoforge-1.21.1, REFERENCE ONLY), §19 checklist pass, ZIP (./gradlew deliverableZip), send ZIP, delete trigger trig_01VkvYQ75m7uPB1RPLGp5Diq, German summary.
 - User note (13:00): size of the deliverable/state does not matter ("20 MB, 300 MB egal").
+- 2026-09-27 ~13:10 UTC: §19 acceptance checklist complete:
+  build green on clean clone and from the unzipped ZIP (71 tests), --release 17, purity test green,
+  facade/api per §8 + javadoc (doclint:all clean), no forbidden types/commands/tags, 17 test groups,
+  vanilla 291 targets / FD 98 / Create 49, themes FD 7 / Create 5, v1-bug test, samples with explain,
+  all docs in English, no secrets/network, no copied code/assets. DONE.
