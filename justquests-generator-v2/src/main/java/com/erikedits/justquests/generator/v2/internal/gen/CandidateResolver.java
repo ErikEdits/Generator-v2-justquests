@@ -415,8 +415,8 @@ public final class CandidateResolver {
         if (t.name() != null && !t.name().isBlank()) {
             return t.name();
         }
-        String host = safe(() -> content.englishName(kind, target), null);
-        if (host != null && !host.isBlank()) {
+        String host = English.cleanHostName(safe(() -> content.englishName(kind, target), null));
+        if (host != null) {
             return host;
         }
         return Ids.prettify(target);

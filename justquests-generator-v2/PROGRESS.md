@@ -36,6 +36,6 @@ Routine: "Generator v2 extension auto-resume" (hourly) — delete when done.
 - [x] E2 Themes: vanilla 30, FD 12, Create 10 (+rewards 83 vanilla items, effects, messages)
 - [x] E3 Mod profiles: FD 121, Create 70 targets; tools/verify_mods.py (ids vs all lang files + recipe types) 0 problems
 - [x] E4 Tools: `./gradlew catalogReport` -> samples/catalog-report.md (every target: types, count range, minutes, difficulties); `./gradlew simulate` -> samples/simulation/ (14 days of rotations with claims, stats text)
-- [ ] E5 Robustness tests: host fuzz (random TriStates, missing ids, throwing host), claims property test (random op sequences + invariants), old-version test (1.18.2: ids with since > 1.18.2 missing)
+- [x] E5 Robustness tests: HostFuzzTest (random TriStates/ids/exceptions/hostile names, broken world/caps/validator), ClaimsPropertyTest (12 configs x 300 random ops vs a model, coverage-checked), OldVersionTest (11 versions 1.18.2..26.1, since-guard), StateFuzzTest (250 mutated state files, 3000 mutated quests, removed-mod restart). Fixes found: SchemaCheck NPE on reward without type; stored quests are now re-validated at start (dropped + reported dead + set topped up); host display names are cleaned (formatting codes, braces, untranslated keys, >40 chars)
 - [ ] E6 Reference adapters for other API eras (Fabric 1.21.1, Forge 1.20.1, Forge/Fabric 1.18.2, NeoForge 1.21.4+ notes) — REFERENCE ONLY, from the real mod trees in /home/user/erikedits/justquests
 - [ ] E7 Docs/samples refresh, README numbers, rebuild ZIP, send, delete routine, German summary

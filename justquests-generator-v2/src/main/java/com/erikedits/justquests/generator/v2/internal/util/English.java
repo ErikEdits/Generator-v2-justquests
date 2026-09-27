@@ -24,6 +24,34 @@ public final class English {
     private English() {
     }
 
+    /** Longest host-supplied display name that is used as is; longer names fall back to the id. */
+    public static final int MAX_HOST_NAME = 40;
+    private static final java.util.regex.Pattern TRANSLATION_KEY =
+        java.util.regex.Pattern.compile("[a-z0-9_]+(\\.[a-z0-9_]+){2,}");
+
+    /**
+     * Cleans a display name supplied by the host: strips legacy formatting codes, control
+     * characters and template braces and collapses whitespace. Returns null when nothing usable is
+     * left, when the name is too long, or when it is an untranslated key such as
+     * {@code item.examplemod.widget} (the caller then prettifies the id instead).
+     *
+     * @param raw name as reported by the host, may be null
+     * @return cleaned name or null
+     */
+    public static String cleanHostName(String raw) {
+        if (raw == null) {
+            return null;
+        }
+        String s = raw.replaceAll("\u00a7.?", "")
+            .replaceAll("[\\p{Cntrl}{}<>\\[\\]]", " ")
+            .replaceAll("\\s+", " ")
+            .trim();
+        if (s.isEmpty() || s.length() > MAX_HOST_NAME || TRANSLATION_KEY.matcher(s).matches()) {
+            return null;
+        }
+        return s;
+    }
+
     /** Plural of an item/block display name, keeping mass nouns unchanged. Works on the last word. */
     public static String plural(String name) {
         return plural(name, false);

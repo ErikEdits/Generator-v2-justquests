@@ -139,7 +139,7 @@ public final class SchemaCheck {
         }
         JsonObject o = e.getAsJsonObject();
         String type = str(o, "type");
-        if (!REWARD_TYPES.contains(type)) {
+        if (type == null || !REWARD_TYPES.contains(type)) {
             p.add("forbidden or unknown reward type " + type);
             return;
         }

@@ -9,6 +9,7 @@ import com.erikedits.justquests.generator.v2.api.ExpiredClaim;
 import com.erikedits.justquests.generator.v2.api.GenLog;
 import com.erikedits.justquests.generator.v2.api.GeneratorConfig;
 import com.erikedits.justquests.generator.v2.api.GeneratorHost;
+import com.erikedits.justquests.generator.v2.api.HostCapabilities;
 import com.erikedits.justquests.generator.v2.api.RotationResult;
 import com.erikedits.justquests.generator.v2.api.StartResult;
 import com.erikedits.justquests.generator.v2.api.StatsSummary;
@@ -20,6 +21,7 @@ import com.erikedits.justquests.generator.v2.internal.gen.CandidateResolver;
 import com.erikedits.justquests.generator.v2.internal.gen.Progression;
 import com.erikedits.justquests.generator.v2.internal.gen.QuestDraft;
 import com.erikedits.justquests.generator.v2.internal.gen.RewardBuilder;
+import com.erikedits.justquests.generator.v2.internal.gen.SchemaCheck;
 import com.erikedits.justquests.generator.v2.internal.gen.SetBuilder;
 import com.erikedits.justquests.generator.v2.internal.gen.TextBuilder;
 import com.erikedits.justquests.generator.v2.internal.state.ClaimRecord;
@@ -101,9 +103,11 @@ public final class Core {
         long loadMs = (System.nanoTime() - t0) / 1_000_000L;
         log.info(String.format(Locale.ROOT, "[GenV2] catalog loaded in %d ms: %d targets in %d profile(s), %d reward items, %d themes",
             loadMs, catalog.targetCount(null), catalog.profiles.size(), catalog.items.size(), catalog.themes.size()));
+        int dropped = 0;
         if (!started) {
             loadState();
             loadStats();
+            dropped = dropInvalidStored();
         }
         started = true;
         long now = now();
@@ -114,10 +118,86 @@ public final class Core {
         RotationResult rotation = noneResult;
         if (config.enabled()) {
             rotation = rotateIfDue(now, true);
+            if (!rotation.changed() && dropped > 0) {
+                topUp(now);
+            }
         }
         refreshTimers();
         save();
         return new StartResult(dead, released, rotation);
+    }
+
+    /**
+     * Re-checks the stored quest definitions: the state file may have been edited by hand, or a
+     * content mod may have been removed since the last run. Quests that no longer pass the schema
+     * check or the host validator are dropped; a player who still has one active gets it reported
+     * as dead by the reconciliation. When the check itself cannot run (the host fails), the quest
+     * is kept.
+     *
+     * @return number of dropped quests
+     */
+    private int dropInvalidStored() {
+        int dropped = 0;
+        for (QuestRecord r : new ArrayList<>(state.served())) {
+            String problem = storedProblem(r);
+            if (problem == null) {
+                continue;
+            }
+            log.warn("[GenV2] stored quest " + r.id + " is no longer valid (" + problem + "); dropping it");
+            state.current.remove(r.id);
+            state.retained.remove(r.id);
+            dropped++;
+        }
+        if (dropped > 0) {
+            servedRevision++;
+        }
+        return dropped;
+    }
+
+    private String storedProblem(QuestRecord r) {
+        if (r.json == null || r.claim == null) {
+            return "incomplete record";
+        }
+        if (!r.legacy) {
+            // quests imported from v1 were written by v1; only the host's codec judges those
+            HostCapabilities caps;
+            try {
+                caps = host.capabilities();
+            } catch (RuntimeException e) {
+                return null;
+            }
+            List<String> problems;
+            try {
+                problems = SchemaCheck.check(r.json, caps);
+            } catch (RuntimeException e) {
+                return "unreadable definition: " + e;
+            }
+            if (!problems.isEmpty()) {
+                return String.join("; ", problems);
+            }
+        }
+        ValidationResult vr;
+        try {
+            vr = host.validator().validate(r.id, r.json.deepCopy());
+        } catch (RuntimeException e) {
+            return null;
+        }
+        return vr == null || vr.ok() ? null : "host validator: " + vr.message();
+    }
+
+    /** Fills the current set back up to {@code questsPerCycle} after quests were dropped. */
+    private void topUp(long now) {
+        List<SetBuilder.Kept> kept = new ArrayList<>();
+        for (QuestRecord r : state.current.values()) {
+            kept.add(keptOf(r));
+        }
+        int n = Math.max(0, config.questsPerCycle() - kept.size());
+        if (n > 0 && state.cycleId > 0) {
+            updateProgression();
+            List<String> added = generateInto(n, kept, now, true);
+            servedRevision++;
+            log.info("[GenV2] topped the set up with " + added.size() + " new quest(s)");
+        }
     }
 
     private static Map<String, Set<UUID>> normalize(Map<String, ? extends Collection<UUID>> active) {
