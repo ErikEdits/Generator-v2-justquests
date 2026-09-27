@@ -85,4 +85,13 @@ tasks.register('deliverableZip', Zip) {
             exclude 'build/**', '.gradle/**', 'PROGRESS.md', '**/*.class', '.idea/**', 'out/**'
         }
     }
+    // the data scripts sit next to the project, so their relative paths work in the unpacked ZIP too
+    def toolsDir = file('../tools')
+    if (toolsDir.isDirectory()) {
+        into('tools') {
+            from(toolsDir) {
+                exclude '__pycache__/**', '*.pyc'
+            }
+        }
+    }
 }
