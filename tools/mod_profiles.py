@@ -4,7 +4,9 @@ FD = "farmersdelight:"
 NE = "minecraft:the_nether"
 
 FD_ENTRIES = [
-    E("fd_cabbage", "fd_crops", 0, [
+    E("fd_cabbage", "fd_crops", 0, exclusions=[
+        "craft_item farmersdelight:carrot_crate/potato_crate/beetroot_crate (recipes depend on the FD config option vanilla_crates_enabled)"],
+      targets=[
         T("collect_item", FD + "cabbage", 0.15, 8, 48, hint="Cabbage seeds come from wild cabbages on beaches."),
         T("craft_item", FD + "cabbage_crate", 1.5, 1, 6, hint="Nine cabbages fill a crate."),
         T("consume_item", FD + "cabbage", 0.35, 4, 8),
@@ -206,6 +208,12 @@ FD_THEMES = [
                {"types": ["craft_item"], "keys": ["baking", "fd_sweets"], "optional": True}]},
 ]
 
+from mod_more import (FD_MORE, FD_MORE_THEMES, FD_MORE_REWARDS, CREATE_MORE, CREATE_MORE_THEMES,  # noqa: E402
+                      CREATE_MORE_REWARDS)
+FD_ENTRIES = FD_ENTRIES + FD_MORE
+FD_THEMES = FD_THEMES + FD_MORE_THEMES
+FD_REWARDS = FD_REWARDS + FD_MORE_REWARDS
+
 FARMERS_DELIGHT = {
     "format": 1,
     "id": "farmersdelight",
@@ -344,6 +352,10 @@ CREATE_THEMES = [
      "slots": [{"types": ["smelt_item"], "keys": ["iron", "copper"], "profiles": ["vanilla"]},
                {"types": ["smelt_item", "collect_item"], "keys": ["create_zinc"]}]},
 ]
+
+CREATE_ENTRIES = CREATE_ENTRIES + CREATE_MORE
+CREATE_THEMES = CREATE_THEMES + CREATE_MORE_THEMES
+CREATE_REWARDS = CREATE_REWARDS + CREATE_MORE_REWARDS
 
 CREATE = {
     "format": 1,

@@ -381,6 +381,237 @@
       "tier": 4,
       "max": 4,
       "family": "end_prep"
+    },
+    {
+      "id": "minecraft:cooked_chicken",
+      "value": 0.5,
+      "tier": 0,
+      "max": 16,
+      "family": "livestock"
+    },
+    {
+      "id": "minecraft:cooked_salmon",
+      "value": 0.9,
+      "tier": 0,
+      "max": 16,
+      "family": "fishing"
+    },
+    {
+      "id": "minecraft:honey_bottle",
+      "value": 1.2,
+      "tier": 0,
+      "max": 8,
+      "stack": 16,
+      "family": "bees"
+    },
+    {
+      "id": "minecraft:honeycomb",
+      "value": 1.0,
+      "tier": 0,
+      "max": 8,
+      "family": "bees"
+    },
+    {
+      "id": "minecraft:lead",
+      "value": 1.8,
+      "tier": 1,
+      "max": 2,
+      "family": "transport"
+    },
+    {
+      "id": "minecraft:campfire",
+      "value": 0.5,
+      "tier": 0,
+      "max": 4,
+      "family": "lighting"
+    },
+    {
+      "id": "minecraft:bookshelf",
+      "value": 4.5,
+      "tier": 0,
+      "max": 4,
+      "family": "library"
+    },
+    {
+      "id": "minecraft:crossbow",
+      "value": 2.2,
+      "tier": 1,
+      "max": 1,
+      "stack": 1,
+      "family": "archery"
+    },
+    {
+      "id": "minecraft:flint_and_steel",
+      "value": 0.8,
+      "tier": 1,
+      "max": 1,
+      "stack": 1,
+      "family": "archery"
+    },
+    {
+      "id": "minecraft:glow_ink_sac",
+      "value": 1.0,
+      "tier": 1,
+      "max": 8,
+      "family": "ocean"
+    },
+    {
+      "id": "minecraft:iron_block",
+      "value": 5.4,
+      "tier": 1,
+      "max": 2,
+      "family": "metals",
+      "minDifficulty": "normal"
+    },
+    {
+      "id": "minecraft:lapis_block",
+      "value": 1.8,
+      "tier": 1,
+      "max": 4,
+      "family": "gems"
+    },
+    {
+      "id": "minecraft:redstone_block",
+      "value": 1.8,
+      "tier": 1,
+      "max": 4,
+      "family": "redstone"
+    },
+    {
+      "id": "minecraft:coal_block",
+      "value": 2.3,
+      "tier": 0,
+      "max": 4,
+      "family": "coal"
+    },
+    {
+      "id": "minecraft:gold_block",
+      "value": 11.7,
+      "tier": 2,
+      "max": 1,
+      "family": "metals",
+      "minDifficulty": "hard"
+    },
+    {
+      "id": "minecraft:emerald_block",
+      "value": 22.5,
+      "tier": 2,
+      "max": 1,
+      "family": "gems",
+      "minDifficulty": "hard"
+    },
+    {
+      "id": "minecraft:powered_rail",
+      "value": 1.6,
+      "tier": 2,
+      "max": 12,
+      "family": "transport"
+    },
+    {
+      "id": "minecraft:blaze_powder",
+      "value": 0.9,
+      "tier": 3,
+      "max": 16,
+      "family": "nether_mobs"
+    },
+    {
+      "id": "minecraft:magma_cream",
+      "value": 1.4,
+      "tier": 3,
+      "max": 8,
+      "family": "nether_mobs"
+    },
+    {
+      "id": "minecraft:phantom_membrane",
+      "value": 3.0,
+      "tier": 1,
+      "max": 4,
+      "family": "undead",
+      "minDifficulty": "normal"
+    },
+    {
+      "id": "minecraft:prismarine_crystals",
+      "value": 1.5,
+      "tier": 2,
+      "max": 8,
+      "family": "ocean"
+    },
+    {
+      "id": "minecraft:sea_lantern",
+      "value": 5.5,
+      "tier": 2,
+      "max": 2,
+      "family": "ocean",
+      "minDifficulty": "normal"
+    },
+    {
+      "id": "minecraft:glistering_melon_slice",
+      "value": 1.5,
+      "tier": 2,
+      "max": 8,
+      "family": "brewing"
+    },
+    {
+      "id": "minecraft:jukebox",
+      "value": 5.5,
+      "tier": 2,
+      "max": 1,
+      "family": "workstations"
+    },
+    {
+      "id": "minecraft:music_disc_13",
+      "value": 6.0,
+      "tier": 1,
+      "max": 1,
+      "stack": 1,
+      "family": "treasure",
+      "weight": 0.3
+    },
+    {
+      "id": "minecraft:music_disc_cat",
+      "value": 6.0,
+      "tier": 1,
+      "max": 1,
+      "stack": 1,
+      "family": "treasure",
+      "weight": 0.3
+    },
+    {
+      "id": "minecraft:rabbit_foot",
+      "value": 4.0,
+      "tier": 0,
+      "max": 2,
+      "family": "wild_animals",
+      "weight": 0.5
+    },
+    {
+      "id": "minecraft:sugar",
+      "value": 0.1,
+      "tier": 0,
+      "max": 32,
+      "family": "plants"
+    },
+    {
+      "id": "minecraft:white_wool",
+      "value": 0.25,
+      "tier": 0,
+      "max": 32,
+      "family": "wool"
+    },
+    {
+      "id": "minecraft:glass",
+      "value": 0.1,
+      "tier": 0,
+      "max": 32,
+      "family": "glass"
+    },
+    {
+      "id": "minecraft:mushroom_stew",
+      "value": 1.0,
+      "tier": 0,
+      "max": 1,
+      "stack": 1,
+      "family": "mushrooms"
     }
   ],
   "effects": [
@@ -432,6 +663,39 @@
       "valuePerMinute": 0.3,
       "minSeconds": 120,
       "maxSeconds": 600,
+      "weight": 0.5
+    },
+    {
+      "id": "minecraft:regeneration",
+      "valuePerMinute": 3.0,
+      "minSeconds": 30,
+      "maxSeconds": 90,
+      "minDifficulty": "hard"
+    },
+    {
+      "id": "minecraft:slow_falling",
+      "valuePerMinute": 0.4,
+      "minSeconds": 60,
+      "maxSeconds": 300
+    },
+    {
+      "id": "minecraft:invisibility",
+      "valuePerMinute": 0.5,
+      "minSeconds": 60,
+      "maxSeconds": 300
+    },
+    {
+      "id": "minecraft:dolphins_grace",
+      "valuePerMinute": 0.4,
+      "minSeconds": 60,
+      "maxSeconds": 300,
+      "weight": 0.5
+    },
+    {
+      "id": "minecraft:conduit_power",
+      "valuePerMinute": 0.6,
+      "minSeconds": 60,
+      "maxSeconds": 300,
       "weight": 0.5
     }
   ],
@@ -496,6 +760,9 @@
     "Word of your deeds spreads.",
     "Well done, adventurer.",
     "Another job well done.",
-    "The quest board has a new hero."
+    "The quest board has a new hero.",
+    "Someone will write songs about this.",
+    "The traders are impressed.",
+    "Good work. Rest a while."
   ]
 }

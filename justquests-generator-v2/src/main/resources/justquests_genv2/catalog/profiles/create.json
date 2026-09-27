@@ -546,6 +546,213 @@
           "hint": "Nether quartz and eight redstone dust."
         }
       ]
+    },
+    {
+      "key": "create_contraptions",
+      "family": "create_contraptions",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "create:linear_chassis",
+          "effort": 0.6,
+          "min": 2,
+          "max": 12,
+          "hint": "Andesite alloy and logs."
+        },
+        {
+          "type": "craft_item",
+          "id": "create:radial_chassis",
+          "effort": 0.6,
+          "min": 2,
+          "max": 12
+        },
+        {
+          "type": "craft_item",
+          "id": "create:mechanical_bearing",
+          "effort": 1.8,
+          "min": 1,
+          "max": 3
+        },
+        {
+          "type": "craft_item",
+          "id": "create:windmill_bearing",
+          "effort": 2.2,
+          "min": 1,
+          "max": 2
+        },
+        {
+          "type": "craft_item",
+          "id": "create:piston_extension_pole",
+          "effort": 0.3,
+          "min": 4,
+          "max": 16,
+          "hint": "Andesite alloy and planks."
+        },
+        {
+          "type": "craft_item",
+          "id": "create:mechanical_piston",
+          "effort": 3.2,
+          "min": 1,
+          "max": 2,
+          "minDifficulty": "normal"
+        },
+        {
+          "type": "craft_item",
+          "id": "create:sticker",
+          "effort": 1.4,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "place_block",
+          "id": "create:linear_chassis",
+          "effort": 0.65,
+          "min": 2,
+          "max": 12
+        }
+      ]
+    },
+    {
+      "key": "create_small_parts",
+      "family": "create_kinetics",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "create:encased_chain_drive",
+          "effort": 1.2,
+          "min": 1,
+          "max": 6
+        },
+        {
+          "type": "craft_item",
+          "id": "create:turntable",
+          "effort": 0.5,
+          "min": 1,
+          "max": 4
+        },
+        {
+          "type": "craft_item",
+          "id": "create:wooden_bracket",
+          "effort": 0.3,
+          "min": 2,
+          "max": 12
+        },
+        {
+          "type": "craft_item",
+          "id": "create:cart_assembler",
+          "effort": 1.8,
+          "min": 1,
+          "max": 3
+        }
+      ]
+    },
+    {
+      "key": "create_alloy_blocks",
+      "family": "create_alloy",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "create:andesite_alloy_block",
+          "effort": 3.1,
+          "min": 1,
+          "max": 4,
+          "hint": "Nine andesite alloy."
+        },
+        {
+          "type": "place_block",
+          "id": "create:andesite_alloy_block",
+          "effort": 3.2,
+          "min": 1,
+          "max": 4
+        }
+      ]
+    },
+    {
+      "key": "create_gadgets",
+      "family": "create_tools",
+      "tier": 2,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "targets": [
+        {
+          "type": "craft_item",
+          "id": "create:cuckoo_clock",
+          "effort": 5.5,
+          "min": 1,
+          "max": 1,
+          "hint": "A clock in an andesite casing.",
+          "minDifficulty": "normal"
+        },
+        {
+          "type": "craft_item",
+          "id": "create:item_vault",
+          "effort": 4.0,
+          "min": 1,
+          "max": 2,
+          "minDifficulty": "hard"
+        },
+        {
+          "type": "craft_item",
+          "id": "create:fluid_tank",
+          "effort": 3.5,
+          "min": 1,
+          "max": 2,
+          "minDifficulty": "normal"
+        },
+        {
+          "type": "craft_item",
+          "id": "create:empty_blaze_burner",
+          "effort": 4.5,
+          "min": 1,
+          "max": 1,
+          "tier": 3,
+          "hint": "Iron sheets and netherrack.",
+          "minDifficulty": "hard"
+        }
+      ]
+    },
+    {
+      "key": "create_polished",
+      "family": "create_masonry",
+      "tier": 1,
+      "dimension": "minecraft:overworld",
+      "tool": "none",
+      "hints": [
+        "layers"
+      ],
+      "targets": [
+        {
+          "type": "place_block",
+          "id": "create:polished_cut_limestone",
+          "effort": 0.16,
+          "min": 16,
+          "max": 64,
+          "hint": "Polish limestone on a stonecutter, then build."
+        },
+        {
+          "type": "place_block",
+          "id": "create:polished_cut_ochrum",
+          "effort": 0.16,
+          "min": 16,
+          "max": 64
+        },
+        {
+          "type": "place_block",
+          "id": "create:polished_cut_veridium",
+          "effort": 0.16,
+          "min": 16,
+          "max": 64
+        }
+      ]
     }
   ],
   "rewards": {
@@ -651,6 +858,28 @@
         "tier": 2,
         "max": 8,
         "family": "create_sweets"
+      },
+      {
+        "id": "create:linear_chassis",
+        "value": 0.6,
+        "tier": 1,
+        "max": 16,
+        "family": "create_contraptions"
+      },
+      {
+        "id": "create:andesite_alloy_block",
+        "value": 3.2,
+        "tier": 1,
+        "max": 4,
+        "family": "create_alloy"
+      },
+      {
+        "id": "create:zinc_block",
+        "value": 7.6,
+        "tier": 1,
+        "max": 2,
+        "family": "create_zinc",
+        "minDifficulty": "normal"
       }
     ]
   },
@@ -816,6 +1045,160 @@
           ],
           "keys": [
             "create_zinc"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "create_logistics_line",
+      "names": [
+        "Logistics Line",
+        "Conveyor Setup"
+      ],
+      "descriptions": [
+        "Move items automatically: {list}."
+      ],
+      "minDifficulty": "normal",
+      "slots": [
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "create_logistics"
+          ]
+        },
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "create_logistics",
+            "create_kinetics"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "create_contraption_crew",
+      "names": [
+        "Contraption Crew",
+        "Moving Parts"
+      ],
+      "descriptions": [
+        "Build something that moves: {list}."
+      ],
+      "minDifficulty": "normal",
+      "slots": [
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "create_contraptions"
+          ]
+        },
+        {
+          "types": [
+            "craft_item",
+            "place_block"
+          ],
+          "keys": [
+            "create_contraptions",
+            "create_small_parts"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "create_masonry_works",
+      "names": [
+        "Layered Masonry",
+        "Stone Workshop"
+      ],
+      "descriptions": [
+        "Decorate with Create stone: {list}."
+      ],
+      "minDifficulty": "normal",
+      "slots": [
+        {
+          "types": [
+            "mine_block"
+          ],
+          "keys": [
+            "create_layers"
+          ]
+        },
+        {
+          "types": [
+            "place_block"
+          ],
+          "keys": [
+            "create_masonry",
+            "create_polished"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "create_andesite_age",
+      "names": [
+        "Andesite Age",
+        "Alloy Foundry"
+      ],
+      "descriptions": [
+        "Everything starts with andesite: {list}."
+      ],
+      "minDifficulty": "normal",
+      "slots": [
+        {
+          "types": [
+            "mine_block"
+          ],
+          "keys": [
+            "andesite"
+          ],
+          "profiles": [
+            "vanilla"
+          ]
+        },
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "create_alloy",
+            "create_alloy_blocks"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "create_engineers_kit",
+      "names": [
+        "Engineer's Kit",
+        "Workshop Tools"
+      ],
+      "descriptions": [
+        "Every engineer needs gear: {list}."
+      ],
+      "minDifficulty": "hard",
+      "slots": [
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "create_tools",
+            "create_gadgets"
+          ]
+        },
+        {
+          "types": [
+            "craft_item"
+          ],
+          "keys": [
+            "create_machines"
           ]
         }
       ]
