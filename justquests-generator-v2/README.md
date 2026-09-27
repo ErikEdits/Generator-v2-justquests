@@ -16,7 +16,7 @@ What it does
 - **Effort-based counts and value-based rewards:** 725 targets (458 vanilla, 267 modded) with minutes
   per unit, biome/tool/dimension modifiers, nice round counts, rewards worth the time spent
   (139 reward items, 13 effects, 9 loot tables).
-- **Varied sets:** ten objective types, 62 themes (30 vanilla + 32 from mod profiles), at most one
+- **Varied sets:** ten objective types, 76 themes (44 vanilla + 32 from mod profiles), at most one
   quest per family, type share cap, a quick quest in every set, graceful rule relaxation, text
   checked over thousands of sets (articles, plurals, punctuation).
 - **Exclusive claiming** (first come, first served), **one active generated quest per player**,
@@ -36,7 +36,7 @@ What it does
 Requirements: JDK 17 or newer (the build emits Java 17 bytecode via `options.release = 17`).
 
 ```
-./gradlew build          # compile, run all 105 tests (~60 s), build the jar and sources jar
+./gradlew build          # compile, run all 111 tests (~75 s), build the jar and sources jar
 ./gradlew test           # tests only
 ./gradlew samples        # regenerate samples/ (vanilla, five mods, Minecraft 1.18.2; with explain output)
 ./gradlew catalogReport  # samples/catalog-report.md: every target, count range, minutes, difficulties
@@ -76,14 +76,16 @@ src/main/resources/justquests_genv2/
 
 src/test/java/com/erikedits/justquests/generator/v2/
   FakeHost.java                configurable fake host with a fixed clock
-  *Test.java                   24 test classes: the 17 groups of the specification, plus fuzzing
+  *Test.java                   28 test classes: the 17 groups of the specification, plus fuzzing
                                (host, state files), a claims property test, old versions, text quality,
-                               English plurals and statistics
+                               English plurals, coverage of every theme, reward and target, and the
+                               world-override examples
   SampleWriter, CatalogReport, Simulation   the three generators behind samples/
 
 reference-adapter/           REFERENCE ONLY — NOT COMPILED: host adapters for NeoForge 1.21.1,
                              Fabric 1.21.1, Forge 1.20.1 and Forge/Fabric 1.18.2, notes for 1.21.2+
-samples/                     generated example sets, catalog report and simulations (see samples/README.md)
+samples/                     generated example sets, catalog report, simulations and copy-ready world
+                             overrides (see samples/README.md)
 ```
 
 The data files are written by the Python scripts in `tools/` at the repository root

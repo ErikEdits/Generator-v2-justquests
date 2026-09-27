@@ -297,8 +297,10 @@ class HostFuzzTest {
     @Test
     void randomAnswersAndExceptionsNeverEscape() {
         for (int round = 0; round < 24; round++) {
-            FakeHost base = new FakeHost().withMods(round % 3 == 0 ? new String[]{"farmersdelight"}
-                : round % 3 == 1 ? new String[]{"create", "farmersdelight"} : new String[0]);
+            FakeHost base = new FakeHost().withMods(round % 3 == 0 ? new String[]{"farmersdelight", "botania"}
+                : round % 3 == 1 ? new String[]{"create", "farmersdelight", "mekanism", "twilightforest", "botania"}
+                : new String[0]);
+            base.content.dimensions.add("twilightforest:twilight_forest");
             FuzzContent content = new FuzzContent(base.content, 1000L + round, 5 + round % 4 * 10,
                 round % 2 == 0 ? 0.02 : 0.10);
             FuzzHost h = new FuzzHost(base, content);

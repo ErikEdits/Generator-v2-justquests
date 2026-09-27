@@ -160,6 +160,9 @@ Value units ≈ minutes of average play; e.g. iron ingot 0.6, emerald 2.5, diamo
      `maxPerModShare` of the set; with more mods, a rotating subset is covered and `per_mod` is
      counted);
    - no duplicate targets, signatures or titles (never relaxed).
+   - Themes are curated, so inside one themed quest two targets may come from the same entry ("mine
+     asurine and crimsite") and their tiers may differ by up to two (lapis and bookshelves); every
+     slot still has to come from the same dimension.
 4. **Relaxation order** when a slot cannot be filled: `family` → `type_share` → `modded_share` →
    `history`; a quick slot that cannot be quick retries as a normal slot (`quick`); a slot that still
    fails is skipped (`slot_skipped`, the set has fewer quests). Every relaxation is counted in the
@@ -482,6 +485,9 @@ Decisions taken where the specification left room:
   description says "Look in deserts."). The core has no biome API; hints and multipliers make such
   quests slower but not impossible to understand.
 - **`place_block` can be farmed** (place/break loops); it is weighted low and mostly on Easy.
+- **Cheap single crafts are rare.** A loom or a pair of iron boots is shorter than the time range of
+  any difficulty, so it fits only the quick slot or a theme (Workshop Setup, Adventurer's Kit), and
+  about 3 % of the usable targets did not appear in 18000 test quests.
 - **`consume_item` depends on hunger** — the counts are kept small, but a player with a full hunger
   bar must wait. Always-edible items (chorus fruit, milk) are unaffected.
 - **Wall-clock claim durations** include offline time; self-calibration therefore stays off by
@@ -518,7 +524,7 @@ Gradle tasks that write documentation from the real code:
 | `./gradlew catalogReport` | `samples/catalog-report.md`: every target with count range, minutes, E/N/H |
 | `./gradlew simulate` | `samples/simulation/*.md`: 14 simulated days per difficulty with the statistics text |
 
-The tests (24 classes, 105 tests, about a minute) cover the 17 groups of the specification plus:
+The tests (28 classes, 111 tests, a little over a minute) cover the 17 groups of the specification plus:
 
 | Test | What it proves |
 |---|---|
@@ -529,4 +535,6 @@ The tests (24 classes, 105 tests, about a minute) cover the 17 groups of the spe
 | `TextQualityTest` | 3600 quests with all profiles: spacing, punctuation, articles, repeated words or sentences, counts of one |
 | `EnglishTest` | plurals of the names the catalogs use, mass nouns, articles |
 | `ModProfilesTest` | each mod profile activates only with its mod, the per-mod guarantee (and its cap), readable modded names, dimension unlocks, Hard-only bosses and machines |
+| `ThemeCoverageTest`, `RewardCoverageTest`, `TargetCoverageTest` | over 18000 generated quests with all profiles: every theme is built and every reward handed out; at least 95 % of the usable targets are picked (cheap single crafts fit only the quick slot or a theme and stay rare) |
+| `WorldOverrideSamplesTest` | the copy-ready examples in `samples/world-overrides/` load without warnings and take effect |
 
