@@ -44,7 +44,7 @@ objective craft_item minecraft:bone_meal ×64
   effort 0.15 min/unit → 9.6 min (target 15.5, range 8–20 min)
   tier 0 (always available), family dyes, profile vanilla
 estimated 9.6 min (quick)
-reward give_item minecraft:redstone ×32 (value 6.4) + xp 60 (value 5.0)  → 11.4 / budget 11.5
+reward give_item minecraft:amethyst_shard ×16 (value 5.6) + xp 70 (value 5.8)  → 11.4 / budget 11.5
 state: AVAILABLE
 
 justquests:gen/1790510400_1  "Deepslate Diamond Ore Dig"  (NORMAL, cycle 1790510400, seed 0xEE71…)

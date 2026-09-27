@@ -110,12 +110,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:campfire",
-        "count": 4
+        "item": "minecraft:bookshelf",
+        "count": 1
       },
       {
         "type": "justquests:xp",
-        "amount": 39
+        "amount": 9
       }
     ]
   },

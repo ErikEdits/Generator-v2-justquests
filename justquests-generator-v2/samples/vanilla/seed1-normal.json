@@ -68,17 +68,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:campfire",
-        "count": 4
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:pumpkin_pie",
-        "count": 6
+        "item": "minecraft:bookshelf",
+        "count": 2
       },
       {
         "type": "justquests:xp",
-        "amount": 29
+        "amount": 17
       }
     ]
   },

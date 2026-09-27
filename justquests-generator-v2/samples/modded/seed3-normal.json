@@ -116,12 +116,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:redstone",
-        "count": 32
+        "item": "minecraft:amethyst_shard",
+        "count": 16
       },
       {
         "type": "justquests:xp",
-        "amount": 60
+        "amount": 70
       }
     ]
   },

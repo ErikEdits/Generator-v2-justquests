@@ -69,7 +69,7 @@ objective collect_item minecraft:ink_sac ×24
   effort 0.50 min/unit (×1.20 ocean) → 14.4 min (target 14.9, range 8–20 min)
   tier 0 (always available), family ocean, profile vanilla, hints ocean
 estimated 14.4 min
-reward give_item minecraft:bucket ×1 (value 1.6) + give_item minecraft:slime_ball ×8 (value 12.0) + xp 44 (value 3.7)  → 17.3 / budget 17.3
+reward give_item minecraft:shield ×1 (value 1.2) + give_item minecraft:slime_ball ×8 (value 12.0) + xp 49 (value 4.1)  → 17.3 / budget 17.3
 state: AVAILABLE
 
 justquests:gen/1790510400_7  "Raw Beef Run"  (NORMAL, cycle 1790510400, seed 0x2897…)

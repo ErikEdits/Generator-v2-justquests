@@ -193,7 +193,7 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:bucket",
+        "item": "minecraft:shield",
         "count": 1
       },
       {
@@ -203,7 +203,7 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 44
+        "amount": 49
       }
     ]
   },

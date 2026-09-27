@@ -38,12 +38,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
-        "count": 2
+        "item": "minecraft:ender_pearl",
+        "count": 1
       },
       {
         "type": "justquests:xp",
-        "amount": 12
+        "amount": 18
       }
     ]
   },
@@ -90,12 +90,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:white_wool",
-        "count": 16
+        "item": "minecraft:glass",
+        "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 17
+        "amount": 26
       }
     ]
   },

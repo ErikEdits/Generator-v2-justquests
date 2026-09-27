@@ -89,7 +89,7 @@ REWARDS = {
         {"id": "minecraft:sugar", "value": 0.1, "tier": 0, "max": 32, "family": "plants"},
         {"id": "minecraft:white_wool", "value": 0.25, "tier": 0, "max": 32, "family": "wool"},
         {"id": "minecraft:glass", "value": 0.1, "tier": 0, "max": 32, "family": "glass"},
-        {"id": "minecraft:mushroom_stew", "value": 1.0, "tier": 0, "max": 1, "stack": 1, "family": "mushrooms"},
+        {"id": "minecraft:mushroom_stew", "value": 2.0, "tier": 0, "max": 1, "stack": 1, "family": "mushrooms"},
     ],
     "effects": [
         {"id": "minecraft:speed", "valuePerMinute": 0.6, "minSeconds": 60, "maxSeconds": 480},
@@ -116,7 +116,7 @@ REWARDS = {
         {"id": "minecraft:chests/buried_treasure", "value": 14.0, "tier": 2, "minDifficulty": "hard"},
         {"id": "minecraft:chests/nether_bridge", "value": 12.0, "tier": 3, "minDifficulty": "hard"},
         {"id": "minecraft:chests/bastion_other", "value": 16.0, "tier": 3, "minDifficulty": "hard"},
-        {"id": "minecraft:chests/end_city_treasure", "value": 24.0, "tier": 4, "minDifficulty": "hard"},
+        {"id": "minecraft:chests/end_city_treasure", "value": 18.0, "tier": 4, "minDifficulty": "hard"},
     ],
     "messages": [
         "The village thanks you!",

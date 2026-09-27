@@ -40,7 +40,7 @@ objective craft_item botania:livingwood_planks ×16
   effort 1.00 min/unit → 16.0 min (target 20.8, range 15–35 min)
   tier 2 (always available), family bot_livingwood, profile botania
 estimated 16.0 min (quick)
-reward give_item mekanism:ingot_tin ×21 (value 17.8) + xp 75 (value 6.3) + message  → 24.1 / budget 24.0
+reward give_item mekanism:ingot_osmium ×20 (value 18.0) + xp 70 (value 5.8) + message  → 23.8 / budget 24.0
 rejected alternatives: collect_item botania:livingwood_log (a Pure Daisy converts logs in place; nothing is picked up)
 state: AVAILABLE
 

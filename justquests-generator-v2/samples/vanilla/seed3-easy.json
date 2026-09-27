@@ -86,12 +86,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:string",
-        "count": 11
+        "item": "minecraft:paper",
+        "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 16
+        "amount": 22
       }
     ]
   },
@@ -134,12 +134,17 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:lantern",
-        "count": 6
+        "item": "minecraft:bucket",
+        "count": 1
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:ender_pearl",
+        "count": 1
       },
       {
         "type": "justquests:xp",
-        "amount": 19
+        "amount": 28
       }
     ]
   },
@@ -158,12 +163,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:redstone_block",
-        "count": 3
+        "item": "minecraft:coal_block",
+        "count": 2
       },
       {
         "type": "justquests:xp",
-        "amount": 13
+        "amount": 23
       }
     ]
   },

@@ -15,7 +15,7 @@ objective craft_item minecraft:spyglass ×2
   effort 2.00 min/unit → 4.0 min (target 6.4, range 4–10 min)
   tier 1 (always available), family copper_works, profile vanilla
 estimated 4.0 min (quick)
-reward give_item minecraft:golden_carrot ×2 (value 3.0) + xp 12 (value 1.0)  → 4.0 / budget 4.0
+reward give_item minecraft:ender_pearl ×1 (value 2.5) + xp 18 (value 1.5)  → 4.0 / budget 4.0
 state: AVAILABLE
 
 justquests:gen/1790510400_3  "Birch Log Breaker"  (EASY, cycle 1790510400, seed 0x2897…)
@@ -31,7 +31,7 @@ objective craft_item minecraft:fermented_spider_eye ×3
   effort 1.80 min/unit → 5.4 min (target 6.2, range 4–10 min)
   tier 0 (always available), family brewing, profile vanilla
 estimated 5.4 min (quick)
-reward give_item minecraft:white_wool ×16 (value 4.0) + xp 17 (value 1.4)  → 5.4 / budget 5.4
+reward give_item minecraft:glass ×32 (value 3.2) + xp 26 (value 2.2)  → 5.4 / budget 5.4
 rejected alternatives: craft_item minecraft:glistering_melon_slice (tier 2 above EASY cap)
 state: AVAILABLE
 

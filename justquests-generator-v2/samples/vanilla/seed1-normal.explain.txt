@@ -28,7 +28,7 @@ objective place_block minecraft:hay_block ×6
   effort 1.45 min/unit → 8.7 min (target 9.3, range 8–20 min)
   tier 0 (always available), family crops, profile vanilla, hints farm
 estimated 8.7 min (quick)
-reward give_item minecraft:campfire ×4 (value 2.0) + give_item minecraft:pumpkin_pie ×6 (value 6.0) + xp 29 (value 2.4)  → 10.4 / budget 10.4
+reward give_item minecraft:bookshelf ×2 (value 9.0) + xp 17 (value 1.4)  → 10.4 / budget 10.4
 rejected alternatives: mine_block minecraft:wheat (breaking crops at any stage counts)
 state: AVAILABLE
 

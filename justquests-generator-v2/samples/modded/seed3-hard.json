@@ -108,12 +108,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_tin",
-        "count": 21
+        "item": "mekanism:ingot_osmium",
+        "count": 20
       },
       {
         "type": "justquests:xp",
-        "amount": 75
+        "amount": 70
       },
       {
         "type": "justquests:message",

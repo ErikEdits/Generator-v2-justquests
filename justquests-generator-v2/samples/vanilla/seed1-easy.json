@@ -23,30 +23,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Azure Bluet Delivery",
-    "description": "Collect 24 azure bluets.",
-    "category": "generated",
-    "sort": 5,
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:azure_bluet",
-        "count": 24
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glow_berries",
-        "count": 14
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 16
-      }
-    ]
-  },
   "justquests:gen/1790510400_0": {
     "title": "Copper Grate Request",
     "description": "Craft 4 copper grates.",
@@ -86,12 +62,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 5
+        "item": "minecraft:honey_bottle",
+        "count": 3
       },
       {
         "type": "justquests:xp",
-        "amount": 13
+        "amount": 24
       }
     ]
   },
@@ -230,16 +206,41 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:arrow",
+        "item": "minecraft:torch",
         "count": 32
       },
       {
-        "type": "justquests:xp",
-        "amount": 35
+        "type": "justquests:give_item",
+        "item": "minecraft:cooked_beef",
+        "count": 7
       },
       {
-        "type": "justquests:message",
-        "message": "Word of your deeds spreads."
+        "type": "justquests:xp",
+        "amount": 23
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Feather Run",
+    "description": "Gather 32 feathers.",
+    "category": "generated",
+    "sort": 10,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:feather",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:lapis_block",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 29
       }
     ]
   }

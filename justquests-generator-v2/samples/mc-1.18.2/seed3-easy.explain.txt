@@ -40,7 +40,7 @@ objective mine_block minecraft:deepslate_copper_ore ×12
   effort 0.40 min/unit (×1.10 deep) → 5.3 min (target 5.5, range 4–10 min)
   tier 1 (always available), family metals, profile vanilla, tool stone, hints deep
 estimated 5.3 min (quick)
-reward give_item minecraft:campfire ×4 (value 2.0) + xp 39 (value 3.3)  → 5.3 / budget 5.3
+reward give_item minecraft:bookshelf ×1 (value 4.5) + xp 9 (value 0.8)  → 5.3 / budget 5.3
 state: AVAILABLE
 
 justquests:gen/1790510400_0  "Raw Salmon Run"  (EASY, cycle 1790510400, seed 0xEE71…)

@@ -188,17 +188,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:sugar",
+        "item": "minecraft:white_wool",
         "count": 32
       },
       {
-        "type": "justquests:give_item",
-        "item": "minecraft:tnt",
-        "count": 4
-      },
-      {
         "type": "justquests:xp",
-        "amount": 43
+        "amount": 105
       }
     ]
   },

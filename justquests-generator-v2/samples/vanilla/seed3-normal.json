@@ -47,7 +47,7 @@
       },
       {
         "type": "justquests:give_item",
-        "item": "minecraft:lapis_lazuli",
+        "item": "minecraft:redstone",
         "count": 19
       },
       {

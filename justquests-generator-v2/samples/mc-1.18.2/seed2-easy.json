@@ -14,12 +14,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:copper_ingot",
-        "count": 22
+        "item": "minecraft:iron_ingot",
+        "count": 6
       },
       {
         "type": "justquests:xp",
-        "amount": 14
+        "amount": 11
       }
     ]
   },

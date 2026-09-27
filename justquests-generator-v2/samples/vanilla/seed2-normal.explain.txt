@@ -68,7 +68,7 @@ objective kill_mob minecraft:zombie ×20
   effort 0.70 min/unit → 14.0 min (target 13.6, range 8–20 min)
   tier 0 (always available), family undead, profile vanilla, hints night
 estimated 14.0 min
-reward give_item minecraft:sugar ×32 (value 3.2) + give_item minecraft:tnt ×4 (value 10.0) + xp 43 (value 3.6)  → 16.8 / budget 16.8
+reward give_item minecraft:white_wool ×32 (value 8.0) + xp 105 (value 8.8)  → 16.8 / budget 16.8
 state: AVAILABLE
 
 justquests:gen/1790510400_8  "Obsidian Excavation"  (NORMAL, cycle 1790510400, seed 0xDC9F…)

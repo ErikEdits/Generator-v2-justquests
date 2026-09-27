@@ -15,7 +15,7 @@ objective collect_item minecraft:ink_sac ×16
   effort 0.50 min/unit (×1.20 ocean) → 9.6 min (target 10.5, range 8–20 min)
   tier 0 (always available), family ocean, profile vanilla, hints ocean
 estimated 9.6 min (quick)
-reward give_item minecraft:arrow ×32 (value 4.8) + give_item minecraft:lapis_lazuli ×19 (value 3.8) + xp 35 (value 2.9)  → 11.5 / budget 11.5
+reward give_item minecraft:arrow ×32 (value 4.8) + give_item minecraft:redstone ×19 (value 3.8) + xp 35 (value 2.9)  → 11.5 / budget 11.5
 state: AVAILABLE
 
 justquests:gen/1790510400_9  "Supper Time"  (NORMAL, cycle 1790510400, seed 0xEE71…)

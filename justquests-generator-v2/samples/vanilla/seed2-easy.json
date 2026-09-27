@@ -14,12 +14,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:copper_ingot",
-        "count": 22
+        "item": "minecraft:iron_ingot",
+        "count": 6
       },
       {
         "type": "justquests:xp",
-        "amount": 14
+        "amount": 11
       }
     ]
   },
@@ -138,12 +138,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:amethyst_shard",
-        "count": 12
+        "item": "minecraft:experience_bottle",
+        "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 19
+        "amount": 12
       }
     ]
   },
