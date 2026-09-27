@@ -11,53 +11,77 @@ estimated 14.2 min (quick)
 reward give_item minecraft:ghast_tear ×4 (value 16.0) + effect minecraft:jump_boost 300s (value 1.5) + xp 46 (value 3.8)  → 21.3 / budget 21.3
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Redstone Dust Bundle"  (HARD, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:redstone ×64
-  effort 0.20 min/unit (×1.10 deep) → 14.1 min (target 18.3, range 15–35 min)
-  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
-estimated 14.1 min (quick)
-reward give_item minecraft:ender_pearl ×6 (value 15.0) + xp 75 (value 6.3) + message  → 21.3 / budget 21.1
+justquests:gen/1790510400_4  "Gold Ore Quarry"  (HARD, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:gold_ore ×12
+  effort 1.20 min/unit (×1.10 deep) → 15.8 min (target 16.5, range 15–35 min)
+  tier 2 (always available), family metals, profile vanilla, tool iron, hints deep
+estimated 15.8 min (quick)
+reward give_item minecraft:clock ×1 (value 5.0) + give_item minecraft:sea_lantern ×2 (value 11.0) + xp 95 (value 7.9)  → 23.9 / budget 23.8
+rejected alternatives: collect_item minecraft:gold_ore (drops raw_gold, needs Silk Touch)
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Wildlife Order"  (HARD, cycle 1790510400, seed 0x2897…)
-objective breed_animal minecraft:fox ×2
-  effort 4.00 min/unit (×1.20 taiga) → 9.6 min (target 17.8, range 15–35 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints taiga
-objective breed_animal minecraft:turtle ×2
-  effort 3.00 min/unit (×1.20 beach) → 7.2 min (target 17.8, range 15–35 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints beach
-combo within family wild_animals
-estimated 16.8 min (quick)
-reward give_item minecraft:iron_block ×2 (value 10.8) + effect minecraft:haste 480s (value 6.4) + xp 125 (value 10.4)  → 27.6 / budget 27.7
+justquests:gen/1790510400_2  "Supper Time"  (HARD, cycle 1790510400, seed 0x2897…)
+objective smelt_item minecraft:cooked_chicken ×24
+  effort 0.40 min/unit → 9.6 min (target 22.4, range 15–35 min)
+  tier 0 (always available), family livestock, profile vanilla, hints cook
+objective consume_item minecraft:cooked_beef ×6
+  effort 1.25 min/unit → 7.5 min (target 22.4, range 15–35 min)
+  tier 0 (always available), family livestock, profile vanilla, hints plains
+theme camp_cook
+estimated 17.1 min (quick)
+reward give_item minecraft:slime_ball ×8 (value 12.0) + give_item minecraft:arrow ×32 (value 4.8) + xp 135 (value 11.3)  → 28.1 / budget 28.2
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Glow Berries Supply"  (HARD, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:glow_berries ×48
-  effort 0.25 min/unit (×1.40 lush_caves) → 16.8 min (target 26.1, range 15–35 min)
-  tier 1 (always available), family lush, profile vanilla, hints lush_caves
-estimated 16.8 min (quick)
-reward give_item minecraft:iron_ingot ×24 (value 14.4) + xp 130 (value 10.8)  → 25.2 / budget 25.2
+justquests:gen/1790510400_3  "Lumber Order"  (HARD, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:cherry_log ×64
+  effort 0.10 min/unit (×1.50 cherry_grove) → 9.6 min (target 32.1, range 15–35 min)
+  tier 0 (always available), family wood, profile vanilla, hints cherry_grove
+objective collect_item minecraft:jungle_log ×64
+  effort 0.10 min/unit (×1.40 jungle) → 9.0 min (target 32.1, range 15–35 min)
+  tier 0 (always available), family wood, profile vanilla, hints jungle
+combo within family wood
+estimated 18.6 min (quick)
+reward give_item minecraft:leather ×16 (value 6.4) + give_item minecraft:phantom_membrane ×4 (value 12.0) + xp 145 (value 12.1)  → 30.5 / budget 30.6
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Cut Copper Assembly"  (HARD, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:cut_copper ×16
-  effort 1.40 min/unit → 22.4 min (target 22.3, range 15–35 min)
-  tier 1 (always available), family copper_works, profile vanilla
-estimated 22.4 min
-reward give_item minecraft:bookshelf ×4 (value 18.0) + xp 185 (value 15.4)  → 33.4 / budget 33.6
+justquests:gen/1790510400_8  "Tannery Order"  (HARD, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:rabbit_hide ×8
+  effort 1.00 min/unit (×1.30 desert) → 10.4 min (target 30.3, range 15–35 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints desert
+objective craft_item minecraft:book ×8
+  effort 1.20 min/unit → 9.6 min (target 30.3, range 15–35 min)
+  tier 0 (always available), family library, profile vanilla
+theme leatherworker
+estimated 20.0 min (quick)
+reward give_item minecraft:cooked_porkchop ×16 (value 8.0) + loot_table minecraft:chests/jungle_temple (value 9.0) + xp 190 (value 15.8)  → 32.8 / budget 33.0
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "Cave Survey"  (HARD, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:lapis_ore ×8
-  effort 1.20 min/unit (×1.10 deep) → 10.6 min (target 22.4, range 15–35 min)
-  tier 2 (always available), family gems, profile vanilla, tool stone, hints deep
-objective collect_item minecraft:raw_iron ×24
-  effort 0.50 min/unit → 12.0 min (target 22.4, range 15–35 min)
-  tier 1 (always available), family metals, profile vanilla, tool stone, hints caves
-theme mining_expedition
-estimated 22.6 min
-reward give_item minecraft:netherite_scrap ×1 (value 12.0) + give_item minecraft:book ×8 (value 9.6) + xp 185 (value 15.4)  → 37.0 / budget 37.2
-rejected alternatives: collect_item minecraft:iron_ore (drops raw_iron, needs Silk Touch)
+justquests:gen/1790510400_9  "Silverfish Slayer"  (HARD, cycle 1790510400, seed 0x2897…)
+objective kill_mob minecraft:silverfish ×10
+  effort 1.50 min/unit (×1.30 mountains) → 19.5 min (target 20.6, range 15–35 min)
+  tier 1 (always available), family arthropods, profile vanilla, hints mountains
+estimated 19.5 min (quick)
+reward give_item minecraft:emerald ×9 (value 22.5) + xp 80 (value 6.7)  → 29.2 / budget 29.3
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Village Fair"  (HARD, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:dried_kelp_block ×8
+  effort 1.00 min/unit (×1.20 ocean) → 9.6 min (target 28.3, range 15–35 min)
+  tier 0 (always available), family baking, profile vanilla, hints ocean
+objective breed_animal minecraft:sheep ×12
+  effort 1.00 min/unit → 12.0 min (target 28.3, range 15–35 min)
+  tier 0 (always available), family wool, profile vanilla
+theme village_fair
+estimated 21.6 min (quick)
+reward give_item minecraft:experience_bottle ×16 (value 19.2) + xp 195 (value 16.3)  → 35.5 / budget 35.6
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Breeze Slayer"  (HARD, cycle 1790510400, seed 0x2897…)
+objective kill_mob minecraft:breeze ×3
+  effort 5.00 min/unit (×1.50 trial_chambers) → 22.5 min (target 30.2, range 15–35 min)
+  tier 2 (always available), family trial, profile vanilla, hints trial_chambers
+estimated 22.5 min
+reward give_item minecraft:golden_apple ×2 (value 18.0) + xp 190 (value 15.8)  → 33.8 / budget 33.8
 state: AVAILABLE
 
 justquests:gen/1790510400_1  "Wither Skeleton Bounty"  (HARD, cycle 1790510400, seed 0x2897…)
@@ -69,40 +93,15 @@ estimated 26.4 min
 reward give_item minecraft:ender_pearl ×8 (value 20.0) + effect minecraft:luck 600s (value 3.0) + xp 200 (value 16.7)  → 39.7 / budget 39.6
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Track Crew"  (HARD, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:iron_bars ×32
-  effort 0.25 min/unit → 8.0 min (target 33.8, range 15–35 min)
-  tier 1 (always available), family iron_works, profile vanilla
-objective place_block minecraft:rail ×64
-  effort 0.30 min/unit → 19.2 min (target 33.8, range 15–35 min)
-  tier 1 (always available), family iron_works, profile vanilla
-theme railway_builder
-estimated 27.2 min
-reward give_item minecraft:emerald_block ×1 (value 22.5) + xp 270 (value 22.5)  → 45.0 / budget 44.9
-state: AVAILABLE
-
-justquests:gen/1790510400_3  "Night Watch"  (HARD, cycle 1790510400, seed 0x2897…)
-objective kill_mob minecraft:phantom ×6
-  effort 3.00 min/unit → 18.0 min (target 29.3, range 15–35 min)
-  tier 1 (always available), family undead, profile vanilla, hints night
-objective kill_mob minecraft:cave_spider ×8
-  effort 1.50 min/unit (×1.30 mineshaft) → 15.6 min (target 29.3, range 15–35 min)
-  tier 1 (always available), family arthropods, profile vanilla, hints mineshaft
-theme monster_patrol
-estimated 33.6 min
-reward give_item minecraft:golden_carrot ×16 (value 24.0) + loot_table minecraft:chests/buried_treasure (value 14.0) + xp 210 (value 17.5)  → 55.5 / budget 55.4
-rejected alternatives: hint: phantoms only spawn after three nights without sleep
-state: AVAILABLE
-
-justquests:gen/1790510400_7  "After Dark"  (HARD, cycle 1790510400, seed 0x2897…)
-objective kill_mob minecraft:witch ×2
-  effort 5.00 min/unit (×1.30 swamp ×1.60 rare) → 20.8 min (target 34.0, range 15–35 min)
-  tier 1 (always available), family monsters, profile vanilla, hints swamp/rare
-objective collect_item minecraft:gunpowder ×16
-  effort 1.00 min/unit → 16.0 min (target 34.0, range 15–35 min)
-  tier 0 (always available), family monsters, profile vanilla, hints night
-theme night_hunter
-estimated 36.8 min
-reward give_item minecraft:glistering_melon_slice ×8 (value 12.0) + give_item minecraft:experience_bottle ×16 (value 19.2) + xp 345 (value 28.8)  → 60.0 / budget 60.0
+justquests:gen/1790510400_5  "Silent Depths"  (HARD, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:sculk ×40
+  effort 0.20 min/unit (×1.60 deep_dark) → 12.8 min (target 27.8, range 15–35 min)
+  tier 2 (always available), family deep_dark, profile vanilla, hints deep_dark
+objective mine_block minecraft:deepslate_lapis_ore ×12
+  effort 1.20 min/unit (×1.10 deep) → 15.8 min (target 27.8, range 15–35 min)
+  tier 2 (always available), family gems, profile vanilla, tool stone, hints deep
+theme deep_dark_delve
+estimated 28.6 min
+reward give_item minecraft:tnt ×4 (value 10.0) + give_item minecraft:golden_carrot ×16 (value 24.0) + xp 160 (value 13.3)  → 47.3 / budget 47.3
 state: AVAILABLE
 

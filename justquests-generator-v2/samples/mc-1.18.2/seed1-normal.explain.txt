@@ -47,18 +47,6 @@ estimated 11.2 min (quick)
 reward give_item minecraft:iron_ingot ×17 (value 10.2) + xp 39 (value 3.3)  → 13.5 / budget 13.4
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Quarry Supplies"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:stone ×128
-  effort 0.05 min/unit → 5.8 min (target 17.2, range 8–20 min)
-  tier 0 (always available), family stone, profile vanilla, tool wood
-objective mine_block minecraft:tuff ×64
-  effort 0.08 min/unit (×1.10 deep) → 5.6 min (target 17.2, range 8–20 min)
-  tier 1 (always available), family stone, profile vanilla, tool wood, hints deep
-combo within family stone
-estimated 11.4 min (quick)
-reward give_item minecraft:golden_apple ×1 (value 9.0) + xp 70 (value 5.8)  → 14.8 / budget 15.0
-state: AVAILABLE
-
 justquests:gen/1790510400_2  "Break Gold Ore"  (NORMAL, cycle 1790510400, seed 0x2897…)
 objective mine_block minecraft:gold_ore ×10
   effort 1.20 min/unit (×1.10 deep) → 13.2 min (target 13.7, range 8–20 min)
@@ -90,5 +78,17 @@ objective collect_item minecraft:beef ×48
   tier 0 (always available), family livestock, profile vanilla, hints plains
 estimated 14.4 min
 reward give_item minecraft:experience_bottle ×11 (value 13.2) + xp 49 (value 4.1)  → 17.3 / budget 17.3
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Quarry Job"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:tuff ×64
+  effort 0.08 min/unit (×1.10 deep) → 5.6 min (target 15.3, range 8–20 min)
+  tier 1 (always available), family stone, profile vanilla, tool wood, hints deep
+objective mine_block minecraft:deepslate ×96
+  effort 0.08 min/unit (×1.10 deep) → 8.4 min (target 15.3, range 8–20 min)
+  tier 1 (always available), family stone, profile vanilla, tool wood, hints deep
+combo within family stone
+estimated 14.1 min
+reward give_item minecraft:gold_ingot ×11 (value 14.3) + xp 50 (value 4.2)  → 18.5 / budget 18.6
 state: AVAILABLE
 

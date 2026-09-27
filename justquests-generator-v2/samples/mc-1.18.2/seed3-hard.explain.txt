@@ -2,16 +2,48 @@
 
 Generator v2: enabled, difficulty hard, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.18.2 (forge)
 
-justquests:gen/1790510400_3  "Fisherman's Day"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:salmon ×6
-  effort 1.40 min/unit → 8.4 min (target 15.8, range 15–35 min)
-  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
-objective smelt_item minecraft:cooked_cod ×8
-  effort 0.90 min/unit → 7.2 min (target 15.8, range 15–35 min)
-  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod, hints cook
-theme fishermans_day
-estimated 15.6 min (quick)
-reward give_item minecraft:copper_ingot ×32 (value 4.8) + loot_table minecraft:chests/abandoned_mineshaft (value 7.0) + xp 165 (value 13.8)  → 25.6 / budget 25.7
+justquests:gen/1790510400_8  "Builder's Order"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective smelt_item minecraft:cracked_deepslate_bricks ×32
+  effort 0.20 min/unit (×1.10 deep) → 7.0 min (target 20.1, range 15–35 min)
+  tier 1 (always available), family stonework, profile vanilla, hints deep
+objective place_block minecraft:cobblestone ×128
+  effort 0.05 min/unit → 6.4 min (target 20.1, range 15–35 min)
+  tier 0 (always available), family stone, profile vanilla, tool wood
+theme builders_order
+estimated 13.4 min (quick)
+reward give_item minecraft:gold_ingot ×8 (value 10.4) + loot_table minecraft:chests/jungle_temple (value 9.0) + xp 33 (value 2.8)  → 22.2 / budget 22.2
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Build White Terracotta"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:white_terracotta ×32
+  effort 0.50 min/unit → 16.0 min (target 25.4, range 15–35 min)
+  tier 0 (always available), family badlands, profile vanilla
+estimated 16.0 min (quick)
+reward give_item minecraft:book ×8 (value 9.6) + loot_table minecraft:chests/village/village_weaponsmith (value 7.0) + xp 90 (value 7.5)  → 24.1 / budget 24.0
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Harvest Market"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:sugar ×64
+  effort 0.10 min/unit → 6.4 min (target 20.7, range 15–35 min)
+  tier 0 (always available), family baking, profile vanilla
+objective breed_animal minecraft:chicken ×12
+  effort 0.80 min/unit → 9.6 min (target 20.7, range 15–35 min)
+  tier 0 (always available), family livestock, profile vanilla
+theme village_fair
+estimated 16.0 min (quick)
+reward give_item minecraft:gold_ingot ×11 (value 14.3) + loot_table minecraft:chests/abandoned_mineshaft (value 7.0) + xp 60 (value 5.0)  → 26.3 / budget 26.4
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Deep Riches"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:lapis_lazuli ×40
+  effort 0.20 min/unit (×1.10 deep) → 8.8 min (target 18.6, range 15–35 min)
+  tier 2 (always available), family gems, profile vanilla, tool stone, hints deep
+objective mine_block minecraft:crying_obsidian ×3
+  effort 2.00 min/unit (×1.40 ruined_portal) → 8.4 min (target 18.6, range 15–35 min)
+  tier 2 (always available), family obsidian, profile vanilla, tool diamond, hints ruined_portal
+theme treasure_hunter
+estimated 17.2 min (quick)
+reward give_item minecraft:diamond_pickaxe ×1 (value 16.0) + xp 150 (value 12.5)  → 28.5 / budget 28.4
 state: AVAILABLE
 
 justquests:gen/1790510400_0  "Mine Ancient Debris"  (HARD, cycle 1790510400, seed 0xEE71…)
@@ -23,95 +55,62 @@ estimated 19.0 min (quick)
 reward give_item minecraft:prismarine_crystals ×8 (value 12.0) + give_item minecraft:experience_bottle ×8 (value 9.6) + xp 85 (value 7.1)  → 28.7 / budget 28.5
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Deep Dig"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective mine_block minecraft:lapis_ore ×6
-  effort 1.20 min/unit (×1.10 deep) → 7.9 min (target 19.7, range 15–35 min)
-  tier 2 (always available), family gems, profile vanilla, tool stone, hints deep
-objective mine_block minecraft:deepslate_diamond_ore ×2
-  effort 5.00 min/unit (×1.10 deep) → 11.0 min (target 19.7, range 15–35 min)
-  tier 2 (always available), family gems, profile vanilla, tool iron, hints deep
-theme mining_expedition
-estimated 18.9 min (quick)
-reward give_item minecraft:diamond_pickaxe ×1 (value 16.0) + xp 185 (value 15.4)  → 31.4 / budget 31.2
-rejected alternatives: mine_block minecraft:diamond_ore (rare above y=0; deepslate variant used)
+justquests:gen/1790510400_3  "Busy Bees"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:bee ×6
+  effort 1.50 min/unit (×1.20 bees) → 10.8 min (target 20.7, range 15–35 min)
+  tier 0 (always available), family bees, profile vanilla, hints bees
+objective craft_item minecraft:candle ×6
+  effort 1.20 min/unit (×1.20 bees) → 8.6 min (target 20.7, range 15–35 min)
+  tier 0 (always available), family bees, profile vanilla, hints bees
+theme beekeeper
+estimated 19.4 min (quick)
+reward give_item minecraft:gold_ingot ×16 (value 20.8) + xp 135 (value 11.3)  → 32.1 / budget 32.1
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Supper Time"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective smelt_item minecraft:cooked_beef ×32
-  effort 0.40 min/unit → 12.8 min (target 26.2, range 15–35 min)
-  tier 0 (always available), family livestock, profile vanilla, hints plains/cook
-objective consume_item minecraft:baked_potato ×8
-  effort 0.75 min/unit (×1.20 village) → 7.2 min (target 26.2, range 15–35 min)
+justquests:gen/1790510400_1  "Farm Duty"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:wheat ×64
+  effort 0.15 min/unit → 9.6 min (target 33.3, range 15–35 min)
+  tier 0 (always available), family crops, profile vanilla, hints farm
+objective collect_item minecraft:carrot ×64
+  effort 0.15 min/unit (×1.20 village) → 11.5 min (target 33.3, range 15–35 min)
   tier 0 (always available), family crops, profile vanilla, hints village/farm
-theme camp_cook
-estimated 20.0 min (quick)
-reward give_item minecraft:white_wool ×32 (value 8.0) + give_item minecraft:bread ×16 (value 7.2) + xp 215 (value 17.9)  → 33.1 / budget 33.0
+combo within family crops
+estimated 21.1 min (quick)
+reward give_item minecraft:cooked_porkchop ×16 (value 8.0) + give_item minecraft:iron_ingot ×24 (value 14.4) + xp 150 (value 12.5)  → 34.9 / budget 34.8
+rejected alternatives: mine_block minecraft:wheat (breaking crops at any stage counts); consume_item minecraft:carrot (max count takes only 4.3 min)
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Ocelot Farm"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective breed_animal minecraft:ocelot ×4
-  effort 4.00 min/unit (×1.40 jungle) → 22.4 min (target 25.4, range 15–35 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints jungle
-estimated 22.4 min
-reward give_item minecraft:hay_block ×8 (value 11.2) + loot_table minecraft:chests/village/village_weaponsmith (value 7.0) + xp 185 (value 15.4)  → 33.6 / budget 33.6
-state: AVAILABLE
-
-justquests:gen/1790510400_7  "Hoglin Breeder"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective breed_animal minecraft:hoglin ×4
-  effort 4.00 min/unit (×1.20 crimson_forest) → 19.2 min (target 21.8, range 15–35 min)
-  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_animals, profile vanilla, hints crimson_forest, minecraft:the_nether
-travel overhead 3.0 min
-estimated 22.2 min
-reward give_item minecraft:obsidian ×16 (value 16.0) + xp 210 (value 17.5)  → 33.5 / budget 33.3
-state: AVAILABLE
-
-justquests:gen/1790510400_8  "Nether Hunt Chores"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective kill_mob minecraft:ghast ×3
-  effort 3.00 min/unit (×1.20 soul_sand_valley) → 10.8 min (target 25.0, range 15–35 min)
-  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_mobs, profile vanilla, hints soul_sand_valley, minecraft:the_nether
-objective kill_mob minecraft:wither_skeleton ×2
-  effort 3.00 min/unit (×1.30 fortress) → 7.8 min (target 25.0, range 15–35 min)
-  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_mobs, profile vanilla, hints fortress, minecraft:the_nether
-travel overhead 3.0 min
-combo within family nether_mobs
-estimated 21.6 min (quick)
-reward give_item minecraft:hay_block ×8 (value 11.2) + give_item minecraft:glistering_melon_slice ×8 (value 12.0) + xp 150 (value 12.5)  → 35.7 / budget 35.6
-state: AVAILABLE
-
-justquests:gen/1790510400_1  "Circuit Builder"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:redstone ×64
-  effort 0.20 min/unit (×1.10 deep) → 14.1 min (target 33.3, range 15–35 min)
-  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
-objective craft_item minecraft:piston ×8
-  effort 1.20 min/unit → 9.6 min (target 33.3, range 15–35 min)
-  tier 2 (always available), family redstone, profile vanilla
-theme redstone_workshop
-estimated 23.7 min
-reward give_item minecraft:tnt ×4 (value 10.0) + give_item minecraft:gold_ingot ×15 (value 19.5) + xp 115 (value 9.6)  → 39.1 / budget 39.1
-rejected alternatives: craft_item minecraft:compass (max count takes only 2.4 min)
-state: AVAILABLE
-
-justquests:gen/1790510400_2  "After Dark"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective kill_mob minecraft:witch ×1
-  effort 5.00 min/unit (×1.30 swamp ×1.60 rare) → 10.4 min (target 30.6, range 15–35 min)
+justquests:gen/1790510400_7  "Witch Hunt"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:witch ×2
+  effort 5.00 min/unit (×1.30 swamp ×1.60 rare) → 20.8 min (target 24.5, range 15–35 min)
   tier 1 (always available), family monsters, profile vanilla, hints swamp/rare
-objective collect_item minecraft:rotten_flesh ×32
-  effort 0.50 min/unit → 16.0 min (target 30.6, range 15–35 min)
-  tier 0 (always available), family undead, profile vanilla, hints night
-theme night_hunter
-estimated 26.4 min
-reward give_item minecraft:white_wool ×32 (value 8.0) + effect minecraft:slow_falling 300s (value 2.0) + xp 405 (value 33.8)  → 43.8 / budget 43.6
+estimated 20.8 min (quick)
+reward give_item minecraft:obsidian ×16 (value 16.0) + effect minecraft:jump_boost 300s (value 1.5) + xp 165 (value 13.8)  → 31.3 / budget 31.2
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Diamond Errand"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective craft_item minecraft:diamond_pickaxe ×1
-  effort 16.00 min/unit → 16.0 min (target 19.6, range 15–35 min)
-  tier 2 (always available), family diamond_gear, profile vanilla
-objective craft_item minecraft:diamond_helmet ×1
-  effort 25.00 min/unit → 25.0 min (target 19.6, range 15–35 min)
-  tier 2 (always available), family diamond_gear, profile vanilla
-combo within family diamond_gear
-estimated 41.0 min
-reward give_item minecraft:golden_apple ×2 (value 18.0) + give_item minecraft:powered_rail ×12 (value 19.2) + xp 275 (value 22.9)  → 60.1 / budget 60.0
+justquests:gen/1790510400_4  "Beyond the Void"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:purpur_block ×48
+  effort 0.12 min/unit (×1.50 end_city) → 8.6 min (target 27.3, range 15–35 min)
+  tier 4 (unlocked: 50% online have minecraft:story/enter_the_end), family end_blocks, profile vanilla, tool wood, hints end_city, minecraft:the_end
+objective kill_mob minecraft:enderman ×24
+  effort 0.40 min/unit → 9.6 min (target 27.3, range 15–35 min)
+  tier 4 (unlocked: 50% online have minecraft:story/enter_the_end), family end_mobs, profile vanilla, minecraft:the_end
+travel overhead 5.0 min
+theme end_expedition
+estimated 23.2 min
+reward give_item minecraft:diamond ×6 (value 30.0) + xp 100 (value 8.3)  → 38.3 / budget 38.3
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Critter Care"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:cat ×4
+  effort 2.00 min/unit (×1.20 village) → 9.6 min (target 27.8, range 15–35 min)
+  tier 0 (always available), family pets, profile vanilla, hints village
+objective breed_animal minecraft:axolotl ×3
+  effort 3.50 min/unit (×1.40 lush_caves) → 14.7 min (target 27.8, range 15–35 min)
+  tier 1 (always available), family wild_animals, profile vanilla, hints lush_caves
+theme pet_shop
+estimated 24.3 min
+reward give_item minecraft:white_wool ×32 (value 8.0) + give_item minecraft:bookshelf ×4 (value 18.0) + xp 170 (value 14.2)  → 40.2 / budget 40.1
+rejected alternatives: tame_animal minecraft:ocelot (ocelots only trust players; not a TamableAnimal)
 state: AVAILABLE
 

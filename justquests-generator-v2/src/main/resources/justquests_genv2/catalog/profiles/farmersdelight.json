@@ -1583,9 +1583,8 @@
         "New Kitchen"
       ],
       "descriptions": [
-        "Every cook needs tools. {list}."
+        "Every cook needs tools: {list}."
       ],
-      "minDifficulty": "normal",
       "slots": [
         {
           "types": [
@@ -1597,11 +1596,13 @@
         },
         {
           "types": [
-            "craft_item"
+            "craft_item",
+            "place_block"
           ],
           "keys": [
             "fd_knives",
-            "fd_kitchen"
+            "fd_kitchen",
+            "fd_cabinets"
           ]
         }
       ]

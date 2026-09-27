@@ -23,36 +23,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Quarry Order",
-    "description": "Smelt 64 stone and collect 32 pointed dripstones. Smelt cobblestone in a furnace. Look in dripstone caves.",
-    "category": "generated",
-    "sort": 13,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:stone",
-        "count": 64
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:pointed_dripstone",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:ender_pearl",
-        "count": 7
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 55
-      }
-    ]
-  },
   "justquests:gen/1790510400_1": {
     "title": "Dinner Order",
     "description": "Eat 3 steak and potatoes and craft 4 stuffed potatoes.",
@@ -84,8 +54,8 @@
     ]
   },
   "justquests:gen/1790510400_7": {
-    "title": "Mana Pool Order",
-    "description": "Make a mana pool. Five livingrock; a Pure Daisy turns stone into livingrock.",
+    "title": "Mana Pool Batch",
+    "description": "Craft a mana pool. Five livingrock; a Pure Daisy turns stone into livingrock.",
     "category": "generated",
     "sort": 16,
     "objectives": [
@@ -98,66 +68,100 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:ghast_tear",
-        "count": 4
+        "item": "create:large_cogwheel",
+        "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:slime_ball",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 95
+        "amount": 75
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "Kinetics Order",
-    "description": "Make 48 cogwheels and make 6 encased chain drives. A shaft and wooden planks.",
+  "justquests:gen/1790510400_5": {
+    "title": "Raw Tin Supply",
+    "description": "Pick up 24 raw tin. Tin ore drops raw tin. Needs a stone pickaxe or better. Found in caves.",
     "category": "generated",
     "sort": 17,
-    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "create:cogwheel",
-        "count": 48
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "create:encased_chain_drive",
-        "count": 6
+        "type": "justquests:collect_item",
+        "item": "mekanism:raw_tin",
+        "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:builders_tea",
-        "count": 4
+        "item": "mekanism:ingot_steel",
+        "count": 5
       },
       {
         "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/simple_dungeon"
+        "loot_table": "minecraft:chests/abandoned_mineshaft"
       },
       {
         "type": "justquests:xp",
-        "amount": 45
+        "amount": 38
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Sculk Miner",
-    "description": "Break 64 sculk. Move quietly: the warden listens. Found in the deep dark.",
+  "justquests:gen/1790510400_4": {
+    "title": "Library Project",
+    "description": "The librarian needs books: gather 64 sugar cane and make 3 bookshelves. Look along rivers. Each shelf needs three books.",
     "category": "generated",
     "sort": 20,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:sculk",
+        "type": "justquests:collect_item",
+        "item": "minecraft:sugar_cane",
         "count": 64
+      },
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:bookshelf",
+        "count": 3
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:bar_of_chocolate",
+        "item": "minecraft:cooked_salmon",
+        "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:emerald",
         "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 100
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Lapis Ore Miner",
+    "description": "Mine 16 lapis ore. Needs a stone pickaxe or better. Found deep underground.",
+    "category": "generated",
+    "sort": 21,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:lapis_ore",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "twilightforest:torchberries",
+        "count": 16
       },
       {
         "type": "justquests:loot_table",
@@ -165,85 +169,60 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 33
+        "amount": 90
       }
     ]
   },
   "justquests:gen/1790510400_8": {
-    "title": "Hunt the Nagas",
-    "description": "Slay a naga. The Naga coils in a stone courtyard in the forest. Found in the Twilight Forest.",
+    "title": "Naga Scale Delivery",
+    "description": "Collect 8 naga scales. Dropped by the Naga. Found in the Twilight Forest.",
     "category": "generated",
-    "sort": 23,
+    "sort": 26,
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "twilightforest:naga",
-        "count": 1
+        "type": "justquests:collect_item",
+        "item": "twilightforest:naga_scale",
+        "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:basic_control_circuit",
-        "count": 6
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 125
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Breeze Cleanup",
-    "description": "Hunt 3 breezes. Found in trial chambers.",
-    "category": "generated",
-    "sort": 23,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:breeze",
-        "count": 3
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:alloy_infused",
-        "count": 7
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 110
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Osmium Chores",
-    "description": "Mine 16 deepslate osmium ore and craft 2 blocks of osmium. Needs a stone pickaxe or better. Found in caves. Found deep underground.",
-    "category": "generated",
-    "sort": 28,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "mekanism:deepslate_osmium_ore",
+        "item": "create:belt_connector",
         "count": 16
       },
       {
-        "type": "justquests:craft_item",
-        "item": "mekanism:block_osmium",
+        "type": "justquests:give_item",
+        "item": "farmersdelight:honey_glazed_ham",
         "count": 2
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 160
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Fire Up Zinc Ingots",
+    "description": "Smelt 32 zinc ingots. Smelt raw zinc in a furnace. Any zinc ingot counts. Needs an iron pickaxe or better. Found in caves.",
+    "category": "generated",
+    "sort": 27,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "#c:ingots/zinc",
+        "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:brass_ingot",
-        "count": 14
+        "item": "mekanism:ingot_steel",
+        "count": 8
       },
       {
         "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/desert_pyramid"
+        "loot_table": "minecraft:chests/simple_dungeon"
       },
       {
         "type": "justquests:xp",
@@ -252,30 +231,56 @@
     ]
   },
   "justquests:gen/1790510400_2": {
-    "title": "Turtle Scute Supply",
-    "description": "Pick up 2 turtle scutes. Baby turtles drop a scute when they grow up. Look along beaches.",
+    "title": "Wildlife Errand",
+    "description": "Breed 5 frogs and cook 8 rabbit. Frogs breed with slimeballs. Look in swamps. Look in deserts.",
     "category": "generated",
-    "sort": 29,
+    "sort": 28,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:turtle_scute",
-        "count": 2
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:frog",
+        "count": 5
+      },
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:cooked_rabbit",
+        "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_osmium",
-        "count": 28
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/jungle_temple"
+        "item": "create:brass_ingot",
+        "count": 16
       },
       {
         "type": "justquests:xp",
-        "amount": 110
+        "amount": 165
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Witch Slayer",
+    "description": "Defeat 3 witches. Look in swamps. Rare, so take your time.",
+    "category": "generated",
+    "sort": 31,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:witch",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:zinc_ingot",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 215
       }
     ]
   }

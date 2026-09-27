@@ -1,33 +1,4 @@
 {
-  "justquests:gen/1790510400_9": {
-    "title": "Mystical Red Petal Job",
-    "description": "Craft 32 mystical red petals. One mystical flower makes two petals.",
-    "category": "generated",
-    "sort": 6,
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "botania:red_petal",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glass",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:phantom_membrane",
-        "count": 1
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 22
-      }
-    ]
-  },
   "justquests:gen/1790510400_3": {
     "title": "Earthworks Chores",
     "description": "Smelt 32 bricks and make 8 packed mud. Smelt clay balls. Look along rivers. Mud and wheat. Look in mangrove swamps.",
@@ -210,6 +181,30 @@
       {
         "type": "justquests:xp",
         "amount": 49
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Make Livingwood Planks",
+    "description": "Make 16 livingwood planks. A Pure Daisy turns logs placed around it into livingwood.",
+    "category": "generated",
+    "sort": 16,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "botania:livingwood_planks",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:ingot_osmium",
+        "count": 16
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 60
       }
     ]
   },

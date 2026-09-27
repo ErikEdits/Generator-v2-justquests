@@ -23,76 +23,23 @@
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "Dig Zinc Ore",
-    "description": "Break 12 zinc ore. Needs an iron pickaxe or better. Found in caves.",
-    "category": "generated",
-    "sort": 10,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "create:zinc_ore",
-        "count": 12
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:ingot_tin",
-        "count": 10
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 36
-      }
-    ]
-  },
-  "justquests:gen/1790510400_2": {
-    "title": "Craft Lapis Blocks",
-    "description": "Make 6 lapis blocks.",
+  "justquests:gen/1790510400_9": {
+    "title": "Red Mushroom Haul",
+    "description": "Pick up 24 red mushrooms. Dark forests have plenty.",
     "category": "generated",
     "sort": 11,
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:lapis_block",
-        "count": 6
+        "type": "justquests:collect_item",
+        "item": "minecraft:red_mushroom",
+        "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:alloy_infused",
-        "count": 3
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 30
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Tame a Wolf",
-    "description": "Tame 3 wolves. Tame wolves with bones. Look in taigas.",
-    "category": "generated",
-    "sort": 11,
-    "objectives": [
-      {
-        "type": "justquests:tame_animal",
-        "entity": "minecraft:wolf",
-        "count": 3
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "farmersdelight:onion",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
-        "count": 8
+        "item": "mekanism:raw_osmium",
+        "count": 14
       },
       {
         "type": "justquests:xp",
@@ -100,23 +47,93 @@
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Breed Boars",
-    "description": "Breed 4 boars. Boars breed like pigs: carrots, potatoes or beetroots. Found in the Twilight Forest.",
+  "justquests:gen/1790510400_1": {
+    "title": "Bakery Chores",
+    "description": "Craft 8 pie crusts and cook 24 bread. Bake wheat dough in a furnace.",
     "category": "generated",
-    "sort": 13,
+    "sort": 12,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:breed_animal",
-        "entity": "twilightforest:boar",
-        "count": 4
+        "type": "justquests:craft_item",
+        "item": "farmersdelight:pie_crust",
+        "count": 8
+      },
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:bread",
+        "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 13
+        "item": "farmersdelight:tomato",
+        "count": 32
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:speed",
+        "seconds": 420,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 90
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Cut Limestone Works",
+    "description": "Place 64 cut limestone. Cut limestone on a stonecutter, then build. Found in thick stone layers underground.",
+    "category": "generated",
+    "sort": 12,
+    "objectives": [
+      {
+        "type": "justquests:place_block",
+        "block": "create:cut_limestone",
+        "count": 64
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:ingot_tin",
+        "count": 12
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 45
+      },
+      {
+        "type": "justquests:message",
+        "message": "Someone will write songs about this."
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Masonry Duty",
+    "description": "Make 64 polished andesite and craft 64 stone bricks. Craft from smelted stone.",
+    "category": "generated",
+    "sort": 13,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:polished_andesite",
+        "count": 64
+      },
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:stone_bricks",
+        "count": 64
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:gold_ingot",
+        "count": 10
       },
       {
         "type": "justquests:xp",
@@ -124,66 +141,27 @@
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Mine Deepslate Osmium Ore",
-    "description": "Mine 16 deepslate osmium ore. Needs a stone pickaxe or better. Found in caves. Found deep underground.",
+  "justquests:gen/1790510400_2": {
+    "title": "Deepslate Copper Ore Breaker",
+    "description": "Break 32 deepslate copper ore. Needs a stone pickaxe or better. Found deep underground.",
     "category": "generated",
     "sort": 14,
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "mekanism:deepslate_osmium_ore",
-        "count": 16
+        "block": "minecraft:deepslate_copper_ore",
+        "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:phantom_membrane",
-        "count": 2
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/simple_dungeon"
+        "item": "minecraft:obsidian",
+        "count": 13
       },
       {
         "type": "justquests:xp",
-        "amount": 35
-      }
-    ]
-  },
-  "justquests:gen/1790510400_4": {
-    "title": "Lighting Duty",
-    "description": "Craft 128 torches and make 8 lanterns. Coal or charcoal on a stick.",
-    "category": "generated",
-    "sort": 15,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:torch",
-        "count": 128
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:lantern",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:rabbit_foot",
-        "count": 2
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "botania:manasteel_ingot",
-        "count": 2
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 65
+        "amount": 47
       }
     ]
   },
@@ -202,71 +180,94 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_lead",
-        "count": 15
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 60
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Hay Block Builder",
-    "description": "Place 12 hay blocks. Grow them on a farm.",
-    "category": "generated",
-    "sort": 17,
-    "objectives": [
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:hay_block",
-        "count": 12
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:cogwheel",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
-        "count": 13
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 60
-      }
-    ]
-  },
-  "justquests:gen/1790510400_1": {
-    "title": "Butcher's Order",
-    "description": "The butcher needs help: pick up 40 raw beef and cook 16 mutton chops. Common in plains. Cut mutton on a cutting board, then cook.",
-    "category": "generated",
-    "sort": 20,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:beef",
-        "count": 40
-      },
-      {
-        "type": "justquests:smelt_item",
-        "item": "farmersdelight:cooked_mutton_chops",
+        "item": "create:large_cogwheel",
         "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "farmersdelight:cooking_pot",
+        "count": 1
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 105
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Deepslate Osmium Ore Breaker",
+    "description": "Break 20 deepslate osmium ore. Needs a stone pickaxe or better. Found in caves. Found deep underground.",
+    "category": "generated",
+    "sort": 18,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "mekanism:deepslate_osmium_ore",
+        "count": 20
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:bacon_sandwich",
-        "count": 8
+        "item": "minecraft:coal_block",
+        "count": 4
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "farmersdelight:barbecue_stick",
+        "count": 5
       },
       {
         "type": "justquests:xp",
-        "amount": 145
+        "amount": 65
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Deer Breeder",
+    "description": "Breed 6 deer. Deer breed with wheat. Found in the Twilight Forest.",
+    "category": "generated",
+    "sort": 18,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "twilightforest:deer",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:zinc_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 80
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Breed Foxes",
+    "description": "Breed 4 foxes. Sneak up on foxes with sweet berries. Look in taigas.",
+    "category": "generated",
+    "sort": 19,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:fox",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:experience_bottle",
+        "count": 14
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 75
       }
     ]
   }

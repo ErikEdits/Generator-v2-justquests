@@ -130,36 +130,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Quarry Supplies",
-    "description": "Mine 128 stone and mine 64 tuff. Found deep underground.",
-    "category": "generated",
-    "sort": 11,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:stone",
-        "count": 128
-      },
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:tuff",
-        "count": 64
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 1
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 70
-      }
-    ]
-  },
   "justquests:gen/1790510400_2": {
     "title": "Break Gold Ore",
     "description": "Mine 10 gold ore. Needs an iron pickaxe or better. Found deep underground.",
@@ -258,6 +228,36 @@
       {
         "type": "justquests:xp",
         "amount": 49
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Quarry Job",
+    "description": "Break 64 tuff and break 96 deepslate. Found deep underground.",
+    "category": "generated",
+    "sort": 14,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:tuff",
+        "count": 64
+      },
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:deepslate",
+        "count": 96
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:gold_ingot",
+        "count": 11
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 50
       }
     ]
   }

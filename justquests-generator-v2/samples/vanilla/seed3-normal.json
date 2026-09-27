@@ -1,85 +1,88 @@
 {
   "justquests:gen/1790510400_4": {
-    "title": "Lily Pad Collector",
-    "description": "Gather 32 lily pads. Look in swamps.",
+    "title": "Hopper Crafter",
+    "description": "Craft 2 hoppers.",
     "category": "generated",
-    "sort": 8,
+    "sort": 7,
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:lily_pad",
-        "count": 32
+        "type": "justquests:craft_item",
+        "item": "minecraft:hopper",
+        "count": 2
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:white_wool",
-        "count": 30
+        "item": "minecraft:golden_carrot",
+        "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 30
+        "amount": 29
+      },
+      {
+        "type": "justquests:message",
+        "message": "The village thanks you!"
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Sea Harvest",
-    "description": "Head out to sea: gather 8 ink sacs and cook 32 dried kelp. Squid drop ink sacs. Look in and near oceans. Smelt kelp.",
-    "category": "generated",
-    "sort": 9,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:ink_sac",
-        "count": 8
-      },
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:dried_kelp",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:cooked_beef",
-        "count": 16
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 41
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Cave Spider Bounty",
-    "description": "Slay 5 cave spiders. Found in abandoned mineshafts.",
+  "justquests:gen/1790510400_8": {
+    "title": "Ink Sac Haul",
+    "description": "Collect 16 ink sacs. Squid drop ink sacs. Look in and near oceans.",
     "category": "generated",
     "sort": 10,
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:cave_spider",
-        "count": 5
+        "type": "justquests:collect_item",
+        "item": "minecraft:ink_sac",
+        "count": 16
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:lapis_lazuli",
+        "item": "minecraft:arrow",
         "count": 32
       },
       {
-        "type": "justquests:effect",
-        "effect": "minecraft:slow_falling",
-        "seconds": 300,
-        "amplifier": 0
+        "type": "justquests:give_item",
+        "item": "minecraft:lapis_lazuli",
+        "count": 19
       },
       {
         "type": "justquests:xp",
-        "amount": 40
+        "amount": 35
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Supper Time",
+    "description": "Feed the camp: cook 4 salmon and eat 8 carrots. Use a fishing rod. Villages often have them. Grow them on a farm.",
+    "category": "generated",
+    "sort": 10,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:cooked_salmon",
+        "count": 4
+      },
+      {
+        "type": "justquests:consume_item",
+        "item": "minecraft:carrot",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:tnt",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 43
       }
     ]
   },
@@ -104,54 +107,6 @@
       {
         "type": "justquests:xp",
         "amount": 45
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Lapis Block Commission",
-    "description": "Craft 6 lapis blocks.",
-    "category": "generated",
-    "sort": 11,
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:lapis_block",
-        "count": 6
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:diamond",
-        "count": 2
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 36
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Cook Cooked Rabbit",
-    "description": "Cook 8 rabbit. Look in deserts.",
-    "category": "generated",
-    "sort": 11,
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_rabbit",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
-        "count": 17
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 42
       }
     ]
   },
@@ -183,22 +138,86 @@
       }
     ]
   },
+  "justquests:gen/1790510400_3": {
+    "title": "Woodcutter",
+    "description": "The sawmill is waiting: mine 48 spruce logs and build with 32 oak saplings. Look in taigas. Plant saplings to regrow the forest.",
+    "category": "generated",
+    "sort": 12,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:spruce_log",
+        "count": 48
+      },
+      {
+        "type": "justquests:place_block",
+        "block": "minecraft:oak_sapling",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:book",
+        "count": 8
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:slow_falling",
+        "seconds": 300,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 43
+      }
+    ]
+  },
   "justquests:gen/1790510400_2": {
-    "title": "Rail Line",
-    "description": "Lay down a new line: make 2 hoppers and place 20 rails. Build a railway.",
+    "title": "Flower Market",
+    "description": "Fresh flowers for the market: collect 24 azure bluets and pick up 16 lily of the valleys. Flower forests have the most.",
     "category": "generated",
     "sort": 13,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:hopper",
-        "count": 2
+        "type": "justquests:collect_item",
+        "item": "minecraft:azure_bluet",
+        "count": 24
       },
       {
-        "type": "justquests:place_block",
-        "block": "minecraft:rail",
-        "count": 20
+        "type": "justquests:collect_item",
+        "item": "minecraft:lily_of_the_valley",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:honeycomb",
+        "count": 8
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 105
+      },
+      {
+        "type": "justquests:message",
+        "message": "The village thanks you!"
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Armadillo Family",
+    "description": "Breed 4 armadillos. Armadillos breed with spider eyes. Look in savannas.",
+    "category": "generated",
+    "sort": 14,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:armadillo",
+        "count": 4
       }
     ],
     "rewards": [
@@ -209,74 +228,55 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 44
-      },
-      {
-        "type": "justquests:message",
-        "message": "The village thanks you!"
+        "amount": 45
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Crying Obsidian Dig",
-    "description": "Mine 5 crying obsidian. Needs a diamond pickaxe. Look around ruined portals.",
+  "justquests:gen/1790510400_7": {
+    "title": "Dig Deepslate Copper Ore",
+    "description": "Break 32 deepslate copper ore. Needs a stone pickaxe or better. Found deep underground.",
     "category": "generated",
     "sort": 14,
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "minecraft:crying_obsidian",
-        "count": 5
+        "block": "minecraft:deepslate_copper_ore",
+        "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:blaze_rod",
-        "count": 7
+        "item": "minecraft:hay_block",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 50
-      },
-      {
-        "type": "justquests:message",
-        "message": "The village thanks you!"
+        "amount": 70
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "Badlands Order",
-    "description": "Mine 64 terracotta and craft 16 white terracotta. Look in badlands. Terracotta around white dye.",
+  "justquests:gen/1790510400_6": {
+    "title": "Cave Spider Slayer",
+    "description": "Defeat 10 cave spiders. Found in abandoned mineshafts.",
     "category": "generated",
-    "sort": 15,
-    "mode": "all",
+    "sort": 20,
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:terracotta",
-        "count": 64
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:white_terracotta",
-        "count": 16
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:cave_spider",
+        "count": 10
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:coal",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glow_ink_sac",
-        "count": 7
+        "item": "minecraft:golden_apple",
+        "count": 2
       },
       {
         "type": "justquests:xp",
-        "amount": 60
+        "amount": 65
       }
     ]
   }

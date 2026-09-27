@@ -27,85 +27,16 @@
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Nether Mason Order",
-    "description": "Smelt 5 smooth quartz and craft 6 red Nether bricks. Found in the Nether. Nether bricks and Nether wart.",
-    "category": "generated",
-    "sort": 16,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:smooth_quartz",
-        "count": 5
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:red_nether_bricks",
-        "count": 6
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:experience_bottle",
-        "count": 10
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/jungle_temple"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 55
-      }
-    ]
-  },
   "justquests:gen/1790510400_4": {
-    "title": "Need Blaze Rods",
-    "description": "Gather 8 blaze rods. Found in Nether fortresses. Found in the Nether.",
+    "title": "Need Chorus Fruit",
+    "description": "Gather 64 chorus fruit. Grows on the outer End islands. Found in the End.",
     "category": "generated",
     "sort": 17,
     "objectives": [
       {
         "type": "justquests:collect_item",
-        "item": "minecraft:blaze_rod",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:honeycomb",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:pumpkin_pie",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 105
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Supper Time",
-    "description": "Feed the camp: cook 24 mutton and eat 3 beetroot soup. Six beetroots make a soup. Villages often have them. Grow them on a farm.",
-    "category": "generated",
-    "sort": 18,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_mutton",
-        "count": 24
-      },
-      {
-        "type": "justquests:consume_item",
-        "item": "minecraft:beetroot_soup",
-        "count": 3
+        "item": "minecraft:chorus_fruit",
+        "count": 64
       }
     ],
     "rewards": [
@@ -116,67 +47,32 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 140
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Stable Hand",
-    "description": "The stable needs work: breed 4 llamas and make 8 detector rails. Llamas breed with hay bales. Look in savannas.",
-    "category": "generated",
-    "sort": 20,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:llama",
-        "count": 4
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:detector_rail",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:phantom_membrane",
-        "count": 4
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:pumpkin_pie",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 155
+        "amount": 100
       }
     ]
   },
   "justquests:gen/1790510400_2": {
-    "title": "Ocean Voyage",
-    "description": "Head out to sea: pick up 8 glow ink sacs and gather 6 prismarine shards. Glow squid live in dark water. Look in and near oceans.",
+    "title": "Sand and Sun",
+    "description": "Brave the desert: gather 128 sand and slay 12 husks. Dig sand with a shovel. Look along beaches. Look in deserts.",
     "category": "generated",
-    "sort": 24,
+    "sort": 22,
     "mode": "all",
     "objectives": [
       {
         "type": "justquests:collect_item",
-        "item": "minecraft:glow_ink_sac",
-        "count": 8
+        "item": "minecraft:sand",
+        "count": 128
       },
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:prismarine_shard",
-        "count": 6
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:husk",
+        "count": 12
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:coal_block",
+        "item": "minecraft:bookshelf",
         "count": 4
       },
       {
@@ -187,20 +83,56 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 340
+        "amount": 190
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Dig Gold Ore",
-    "description": "Break 20 gold ore. Needs an iron pickaxe or better. Found deep underground.",
+  "justquests:gen/1790510400_3": {
+    "title": "Catch of the Day",
+    "description": "A day by the water: gather 16 raw cod and eat 6 cooked cod. Use a fishing rod.",
     "category": "generated",
-    "sort": 26,
+    "sort": 22,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:gold_ore",
-        "count": 20
+        "type": "justquests:collect_item",
+        "item": "minecraft:cod",
+        "count": 16
+      },
+      {
+        "type": "justquests:consume_item",
+        "item": "minecraft:cooked_cod",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:emerald",
+        "count": 10
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:conduit_power",
+        "seconds": 300,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 95
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Cave Spider Hunt",
+    "description": "Slay 12 cave spiders. Found in abandoned mineshafts.",
+    "category": "generated",
+    "sort": 23,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:cave_spider",
+        "count": 12
       }
     ],
     "rewards": [
@@ -210,14 +142,42 @@
         "count": 1
       },
       {
-        "type": "justquests:effect",
-        "effect": "minecraft:invisibility",
-        "seconds": 300,
-        "amplifier": 0
+        "type": "justquests:xp",
+        "amount": 150
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Mushroom Supplies",
+    "description": "Mine 48 red mushroom blocks and gather 32 red mushrooms. Dark forests have plenty.",
+    "category": "generated",
+    "sort": 24,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:red_mushroom_block",
+        "count": 48
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:red_mushroom",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:iron_ingot",
+        "count": 24
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/village/village_weaponsmith"
       },
       {
         "type": "justquests:xp",
-        "amount": 175
+        "amount": 215
       }
     ]
   },
@@ -245,29 +205,82 @@
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "Night Watch",
-    "description": "Keep the roads safe: defeat 6 phantoms and hunt 8 silverfish. They spawn at night and in dark caves. Look in the mountains.",
+  "justquests:gen/1790510400_5": {
+    "title": "Ironworks Order",
+    "description": "Make 64 rails and build with 16 iron chains.",
     "category": "generated",
-    "sort": 34,
+    "sort": 28,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:phantom",
-        "count": 6
+        "type": "justquests:craft_item",
+        "item": "minecraft:rail",
+        "count": 64
       },
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:silverfish",
-        "count": 8
+        "type": "justquests:place_block",
+        "block": "minecraft:iron_chain",
+        "count": 16
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
+        "item": "minecraft:cooked_salmon",
         "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:amethyst_shard",
+        "count": 16
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 315
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Hot Gold Ingots",
+    "description": "Smelt 24 gold ingots. Smelt raw gold in a furnace. Needs an iron pickaxe or better. Found deep underground.",
+    "category": "generated",
+    "sort": 34,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:gold_ingot",
+        "count": 24
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:diamond",
+        "count": 8
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 140
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Netherite Scrap Batch",
+    "description": "Smelt 2 netherite scrap. Needs a diamond pickaxe. Rare, so take your time. Found in the Nether.",
+    "category": "generated",
+    "sort": 38,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:netherite_scrap",
+        "count": 2
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:honey_bottle",
+        "count": 8
       },
       {
         "type": "justquests:loot_table",
@@ -275,41 +288,7 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 210
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Sea Harvest",
-    "description": "Head out to sea: collect 24 raw cod and cook 16 cod. Use a fishing rod.",
-    "category": "generated",
-    "sort": 34,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:cod",
-        "count": 24
-      },
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_cod",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 16
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/jungle_temple"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 310
+        "amount": 405
       }
     ]
   }

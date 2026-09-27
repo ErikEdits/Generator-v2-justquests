@@ -66,7 +66,6 @@ BOT_REWARDS = [
 BOT_THEMES = [
     {"key": "bot_first_steps", "names": ["Botanist's Start", "Garden Magic", "Flower Power"],
      "descriptions": ["Every botanist starts in a meadow: {list}."],
-     "minDifficulty": "normal",
      "slots": [{"types": ["collect_item"], "keys": ["bot_flowers"]},
                {"types": ["craft_item"], "keys": ["bot_start"]}]},
     {"key": "bot_florist", "names": ["Florist", "Bouquet", "Petal Picker"],

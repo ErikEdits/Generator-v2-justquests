@@ -38,6 +38,8 @@ public final class SetBuilder {
 
     /** Relaxation levels in order. */
     public static final String[] RELAX_NAMES = {"none", "family", "type_share", "modded_share", "history"};
+    /** Largest tier difference between the objectives of one themed quest. */
+    static final int THEME_TIER_SPAN = 2;
 
     private enum Mode { ANY, VANILLA, ANY_MOD, PROFILE }
 
@@ -514,9 +516,11 @@ public final class SetBuilder {
                 if (!matches(s, c) || !setEligible(c, lvl) || (lvl < 4 && history.contains(c.signaturePart()))) {
                     continue;
                 }
+                // a theme may ask for two targets of one entry ("mine two stone layers"); only the
+                // same target twice is a duplicate
                 boolean dup = false;
                 for (Candidate x : chosen) {
-                    if (x.target().equals(c.target()) || x.entry() == c.entry() && x.type() == c.type()) {
+                    if (x.target().equals(c.target())) {
                         dup = true;
                         break;
                     }
@@ -528,7 +532,8 @@ public final class SetBuilder {
                 if (dimension != null && !dimension.equals(dim)) {
                     continue;
                 }
-                if (firstTier >= 0 && Math.abs(c.tier() - firstTier) > 1) {
+                // themes are curated combinations, so they may span two tiers (lapis and bookshelves)
+                if (firstTier >= 0 && Math.abs(c.tier() - firstTier) > THEME_TIER_SPAN) {
                     continue;
                 }
                 options.add(c);

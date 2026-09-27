@@ -23,29 +23,35 @@
       }
     ]
   },
-  "justquests:gen/1790510400_1": {
-    "title": "Library Project",
-    "description": "The librarian needs books: craft 64 paper and craft 2 bookshelves. Three sugar cane make three paper. Look along rivers.",
+  "justquests:gen/1790510400_4": {
+    "title": "Forestry Order",
+    "description": "Build with 16 cherry saplings and place 32 birch saplings. Look in cherry groves. Plant saplings to regrow the forest.",
     "category": "generated",
-    "sort": 15,
+    "sort": 14,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:paper",
-        "count": 64
+        "type": "justquests:place_block",
+        "block": "minecraft:cherry_sapling",
+        "count": 16
       },
       {
-        "type": "justquests:craft_item",
-        "item": "minecraft:bookshelf",
-        "count": 2
+        "type": "justquests:place_block",
+        "block": "minecraft:birch_sapling",
+        "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
-        "count": 24
+        "item": "minecraft:leather",
+        "count": 16
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:haste",
+        "seconds": 450,
+        "amplifier": 0
       },
       {
         "type": "justquests:xp",
@@ -53,9 +59,73 @@
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Rail Workshop",
-    "description": "Craft 64 rails.",
+  "justquests:gen/1790510400_5": {
+    "title": "Sweet Tooth",
+    "description": "The village bake sale needs you: make 2 cakes and collect 96 melon slices. Needs milk, sugar, wheat and an egg. Look in jungles.",
+    "category": "generated",
+    "sort": 14,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:cake",
+        "count": 2
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:melon_slice",
+        "count": 96
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:golden_carrot",
+        "count": 8
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/abandoned_mineshaft"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 50
+      }
+    ]
+  },
+  "justquests:gen/1790510400_1": {
+    "title": "Treasure Hunter",
+    "description": "Riches lie deep underground: break 6 deepslate lapis ore and mine 3 crying obsidian. Found deep underground. Needs a diamond pickaxe.",
+    "category": "generated",
+    "sort": 16,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:deepslate_lapis_ore",
+        "count": 6
+      },
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:crying_obsidian",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:experience_bottle",
+        "count": 16
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 95
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Rail Order",
+    "description": "Make 64 rails.",
     "category": "generated",
     "sort": 16,
     "objectives": [
@@ -68,18 +138,46 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 16
+        "item": "minecraft:ender_pearl",
+        "count": 7
       },
       {
         "type": "justquests:xp",
-        "amount": 115
+        "amount": 80
       }
     ]
   },
-  "justquests:gen/1790510400_7": {
-    "title": "Enderman Patrol",
-    "description": "Hunt 8 endermen. They spawn at night and in dark caves.",
+  "justquests:gen/1790510400_9": {
+    "title": "Llama Breeder",
+    "description": "Breed 6 llamas. Llamas breed with hay bales. Look in savannas.",
+    "category": "generated",
+    "sort": 18,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:llama",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:coal_block",
+        "count": 4
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/jungle_temple"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 105
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Enderman Cleanup",
+    "description": "Slay 8 endermen. They spawn at night and in dark caves.",
     "category": "generated",
     "sort": 20,
     "objectives": [
@@ -92,212 +190,103 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:quartz",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:ghast_tear",
-        "count": 3
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 100
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Silverfish Patrol",
-    "description": "Defeat 10 silverfish. They hide in infested stone in mountains and strongholds. Look in the mountains.",
-    "category": "generated",
-    "sort": 20,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:silverfish",
-        "count": 10
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 2
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 135
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Wildlife Duty",
-    "description": "Breed 4 armadillos and eat 4 cooked rabbit. Armadillos breed with spider eyes. Look in savannas. Look in deserts.",
-    "category": "generated",
-    "sort": 23,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:armadillo",
-        "count": 4
-      },
-      {
-        "type": "justquests:consume_item",
-        "item": "minecraft:cooked_rabbit",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
+        "item": "minecraft:experience_bottle",
         "count": 16
       },
       {
-        "type": "justquests:give_item",
-        "item": "minecraft:lapis_lazuli",
-        "count": 32
-      },
-      {
         "type": "justquests:xp",
-        "amount": 200
+        "amount": 130
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Ranch Hand",
-    "description": "The ranch needs a hand: breed 12 cows and breed 12 sheep. Cows breed with wheat. Common in plains. Sheep breed with wheat.",
+  "justquests:gen/1790510400_3": {
+    "title": "Bogged Hunt",
+    "description": "Slay 8 bogged. Look in swamps.",
     "category": "generated",
-    "sort": 24,
-    "mode": "all",
+    "sort": 21,
     "objectives": [
       {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:cow",
-        "count": 12
-      },
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:sheep",
-        "count": 12
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:bogged",
+        "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:baked_potato",
-        "count": 32
+        "item": "minecraft:cooked_beef",
+        "count": 16
       },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/buried_treasure"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 110
+      }
+    ]
+  },
+  "justquests:gen/1790510400_2": {
+    "title": "Metal Duty",
+    "description": "Collect 96 raw copper and collect 16 raw gold. Copper ore drops raw copper. Found in caves. Gold ore drops raw gold. Found deep underground.",
+    "category": "generated",
+    "sort": 31,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:raw_copper",
+        "count": 96
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:raw_gold",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:blaze_powder",
+        "count": 16
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/village/village_weaponsmith"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 350
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Smelt Netherite Scrap",
+    "description": "Smelt 2 netherite scrap. Needs a diamond pickaxe. Rare, so take your time. Found in the Nether.",
+    "category": "generated",
+    "sort": 38,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:netherite_scrap",
+        "count": 2
+      }
+    ],
+    "rewards": [
       {
         "type": "justquests:give_item",
         "item": "minecraft:redstone_block",
         "count": 4
       },
       {
-        "type": "justquests:xp",
-        "amount": 295
-      }
-    ]
-  },
-  "justquests:gen/1790510400_3": {
-    "title": "Nether Mining Order",
-    "description": "Mine an ancient debris and collect 40 Nether quartz. Needs a diamond pickaxe. Rare, so take your time. Found in the Nether.",
-    "category": "generated",
-    "sort": 31,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:ancient_debris",
-        "count": 1
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:quartz",
-        "count": 40
-      }
-    ],
-    "rewards": [
-      {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 16
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:speed",
-        "seconds": 480,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 385
-      }
-    ]
-  },
-  "justquests:gen/1790510400_2": {
-    "title": "Nether Mason Supplies",
-    "description": "Smelt 16 smooth quartz and make 16 blaze powder. Found in the Nether. One blaze rod makes two powder.",
-    "category": "generated",
-    "sort": 37,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:smooth_quartz",
-        "count": 16
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:blaze_powder",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:lapis_block",
+        "item": "minecraft:ghast_tear",
         "count": 4
       },
       {
-        "type": "justquests:give_item",
-        "item": "minecraft:arrow",
-        "count": 32
-      },
-      {
         "type": "justquests:xp",
-        "amount": 500
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Prismarine Shard Run",
-    "description": "Pick up 16 prismarine shards. Needs an iron pickaxe or better. Found at ocean monuments.",
-    "category": "generated",
-    "sort": 38,
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:prismarine_shard",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:emerald",
-        "count": 16
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:speed",
-        "seconds": 480,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 155
+        "amount": 410
       }
     ]
   }

@@ -2,14 +2,6 @@
 
 Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest, botania], Minecraft 1.21.1 (neoforge)
 
-justquests:gen/1790510400_9  "Mystical Red Petal Job"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective craft_item botania:red_petal ×32
-  effort 0.20 min/unit → 6.4 min (target 12.2, range 8–20 min)
-  tier 1 (always available), family bot_petals, profile botania
-estimated 6.4 min (quick)
-reward give_item minecraft:glass ×32 (value 3.2) + give_item minecraft:phantom_membrane ×1 (value 3.0) + xp 22 (value 1.8)  → 8.0 / budget 8.0
-state: AVAILABLE
-
 justquests:gen/1790510400_3  "Earthworks Chores"  (NORMAL, cycle 1790510400, seed 0xEE71…)
 objective smelt_item minecraft:brick ×32
   effort 0.12 min/unit → 3.8 min (target 8.5, range 8–20 min)
@@ -74,6 +66,15 @@ objective collect_item minecraft:coal ×24
 combo within family coal
 estimated 11.3 min (quick)
 reward give_item minecraft:experience_bottle ×9 (value 10.8) + xp 49 (value 4.1)  → 14.9 / budget 14.9
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Make Livingwood Planks"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective craft_item botania:livingwood_planks ×16
+  effort 1.00 min/unit → 16.0 min (target 18.9, range 8–20 min)
+  tier 2 (always available), family bot_livingwood, profile botania
+estimated 16.0 min
+reward give_item mekanism:ingot_osmium ×16 (value 14.4) + xp 60 (value 5.0)  → 19.4 / budget 19.2
+rejected alternatives: collect_item botania:livingwood_log (a Pure Daisy converts logs in place; nothing is picked up)
 state: AVAILABLE
 
 justquests:gen/1790510400_6  "Tin Ingot Supply"  (NORMAL, cycle 1790510400, seed 0xEE71…)

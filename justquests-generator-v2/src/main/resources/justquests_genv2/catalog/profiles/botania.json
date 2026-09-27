@@ -271,7 +271,6 @@
       "descriptions": [
         "Every botanist starts in a meadow: {list}."
       ],
-      "minDifficulty": "normal",
       "slots": [
         {
           "types": [

@@ -1,4 +1,34 @@
 {
+  "justquests:gen/1790510400_9": {
+    "title": "Deep Dig",
+    "description": "Head underground: mine 12 deepslate coal ore and break 96 andesite. Found deep underground.",
+    "category": "generated",
+    "sort": 13,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:deepslate_coal_ore",
+        "count": 12
+      },
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:andesite",
+        "count": 96
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:ingot_lead",
+        "count": 17
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 60
+      }
+    ]
+  },
   "justquests:gen/1790510400_0": {
     "title": "Mine Nether Gold Ore",
     "description": "Mine 32 Nether gold ore. Found in the Nether.",
@@ -30,8 +60,8 @@
     ]
   },
   "justquests:gen/1790510400_4": {
-    "title": "Mana Pool Commission",
-    "description": "Craft a mana pool. Five livingrock; a Pure Daisy turns stone into livingrock.",
+    "title": "Mana Pool Workshop",
+    "description": "Make a mana pool. Five livingrock; a Pure Daisy turns stone into livingrock.",
     "category": "generated",
     "sort": 16,
     "objectives": [
@@ -44,36 +74,18 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:honeyed_apple",
-        "count": 6
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 70
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Breed Deer",
-    "description": "Breed 6 deer. Deer breed with wheat. Found in the Twilight Forest.",
-    "category": "generated",
-    "sort": 18,
-    "objectives": [
-      {
-        "type": "justquests:breed_animal",
-        "entity": "twilightforest:deer",
-        "count": 6
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "twilightforest:ironwood_ingot",
+        "item": "minecraft:slime_ball",
         "count": 8
       },
       {
+        "type": "justquests:effect",
+        "effect": "minecraft:resistance",
+        "seconds": 300,
+        "amplifier": 0
+      },
+      {
         "type": "justquests:xp",
-        "amount": 115
+        "amount": 85
       }
     ]
   },
@@ -108,185 +120,207 @@
     ]
   },
   "justquests:gen/1790510400_2": {
-    "title": "Picnic Basket",
-    "description": "Pack the picnic basket: make 6 mixed salad and make 64 honey cookies. Cabbage, tomato and beetroot in a bowl. Needs bees and flowers.",
-    "category": "generated",
-    "sort": 19,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "farmersdelight:mixed_salad",
-        "count": 6
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "farmersdelight:honey_cookie",
-        "count": 64
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:leather",
-        "count": 16
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:ingot_osmium",
-        "count": 19
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 100
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Dig Deepslate Zinc Ore",
-    "description": "Mine 20 deepslate zinc ore. Needs an iron pickaxe or better. Found in caves. Found deep underground.",
-    "category": "generated",
-    "sort": 20,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "create:deepslate_zinc_ore",
-        "count": 20
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
-        "count": 15
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 85
-      }
-    ]
-  },
-  "justquests:gen/1790510400_3": {
-    "title": "Undead Errand",
-    "description": "Collect 3 phantom membranes and hunt 4 phantoms. They spawn at night and in dark caves.",
-    "category": "generated",
-    "sort": 23,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:phantom_membrane",
-        "count": 3
-      },
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:phantom",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:alloy_infused",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 110
-      }
-    ]
-  },
-  "justquests:gen/1790510400_6": {
-    "title": "Stop the Breezes",
-    "description": "Defeat 3 breezes. Found in trial chambers.",
-    "category": "generated",
-    "sort": 23,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:breeze",
-        "count": 3
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glistering_melon_slice",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:sea_lantern",
-        "count": 2
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 130
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Gem Duty",
-    "description": "Pick up 48 lapis lazuli and break an emerald ore. Lapis ore drops several pieces. Found deep underground. Needs an iron pickaxe or better.",
+    "title": "Butcher's Order",
+    "description": "The butcher needs help: gather 32 leather and cook 24 bacon. Common in plains. Cut porkchops on a cutting board, then cook.",
     "category": "generated",
     "sort": 25,
     "mode": "all",
     "objectives": [
       {
         "type": "justquests:collect_item",
-        "item": "minecraft:lapis_lazuli",
-        "count": 48
+        "item": "minecraft:leather",
+        "count": 32
       },
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:emerald_ore",
-        "count": 1
+        "type": "justquests:smelt_item",
+        "item": "farmersdelight:cooked_bacon",
+        "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
-        "count": 16
+        "item": "minecraft:pumpkin_pie",
+        "count": 8
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:ingot_tin",
+        "count": 27
       },
       {
         "type": "justquests:xp",
-        "amount": 210
+        "amount": 120
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Tidal Work",
-    "description": "Head out to sea: collect 6 prismarine shards and slay 3 guardians. Needs an iron pickaxe or better. Found at ocean monuments.",
+  "justquests:gen/1790510400_5": {
+    "title": "Wildlife Supplies",
+    "description": "Pick up a turtle scute and breed 3 turtles. Baby turtles drop a scute when they grow up. Look along beaches. Turtles breed with seagrass.",
     "category": "generated",
-    "sort": 26,
+    "sort": 25,
     "mode": "all",
     "objectives": [
       {
         "type": "justquests:collect_item",
-        "item": "minecraft:prismarine_shard",
-        "count": 6
+        "item": "minecraft:turtle_scute",
+        "count": 1
       },
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:guardian",
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:turtle",
         "count": 3
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:blaze_rod",
+        "item": "farmersdelight:beef_stew",
+        "count": 4
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:phantom_membrane",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 250
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Zinc Supplies",
+    "description": "Mine 16 zinc ore and craft 2 zinc blocks. Needs an iron pickaxe or better. Found in caves.",
+    "category": "generated",
+    "sort": 28,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "create:zinc_ore",
+        "count": 16
+      },
+      {
+        "type": "justquests:craft_item",
+        "item": "create:zinc_block",
+        "count": 2
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:golden_apple",
+        "count": 2
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:resistance",
+        "seconds": 300,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 275
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Raw Gold Delivery",
+    "description": "Collect 24 raw gold. Gold ore drops raw gold. Needs an iron pickaxe or better. Found deep underground.",
+    "category": "generated",
+    "sort": 32,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:raw_gold",
+        "count": 24
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "twilightforest:ironwood_ingot",
         "count": 8
       },
       {
         "type": "justquests:give_item",
-        "item": "mekanism:raw_osmium",
-        "count": 26
+        "item": "farmersdelight:hamburger",
+        "count": 6
       },
       {
         "type": "justquests:xp",
-        "amount": 130
+        "amount": 170
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Monster Supplies",
+    "description": "Slay 2 witches and hunt 6 endermen. Look in swamps. Rare, so take your time. They spawn at night and in dark caves.",
+    "category": "generated",
+    "sort": 36,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:witch",
+        "count": 2
+      },
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:enderman",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:diamond_pickaxe",
+        "count": 1
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:iron_ingot",
+        "count": 24
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 345
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Boss Duty",
+    "description": "Slay a naga and collect 6 naga scales. The Naga coils in a stone courtyard in the forest. Found in the Twilight Forest. Dropped by the Naga.",
+    "category": "generated",
+    "sort": 39,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "twilightforest:naga",
+        "count": 1
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "twilightforest:naga_scale",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:experience_bottle",
+        "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "create:brass_ingot",
+        "count": 13
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 180
       }
     ]
   }

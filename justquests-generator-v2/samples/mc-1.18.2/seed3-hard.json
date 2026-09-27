@@ -1,27 +1,89 @@
 {
-  "justquests:gen/1790510400_3": {
-    "title": "Fisherman's Day",
-    "description": "A day by the water: collect 6 raw salmon and cook 8 cod. Use a fishing rod.",
+  "justquests:gen/1790510400_8": {
+    "title": "Builder's Order",
+    "description": "The builders need material: smelt 32 cracked deepslate bricks and place 128 cobblestone. Found deep underground. Build something with it.",
     "category": "generated",
-    "sort": 16,
+    "sort": 13,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:salmon",
-        "count": 6
+        "type": "justquests:smelt_item",
+        "item": "minecraft:cracked_deepslate_bricks",
+        "count": 32
       },
       {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_cod",
-        "count": 8
+        "type": "justquests:place_block",
+        "block": "minecraft:cobblestone",
+        "count": 128
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:copper_ingot",
+        "item": "minecraft:gold_ingot",
+        "count": 8
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/jungle_temple"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 33
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Build White Terracotta",
+    "description": "Craft 32 white terracotta. Terracotta around white dye.",
+    "category": "generated",
+    "sort": 16,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:white_terracotta",
         "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:book",
+        "count": 8
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/village/village_weaponsmith"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 90
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Harvest Market",
+    "description": "The fair opens soon: craft 64 sugar and breed 12 chickens. Crafted from sugar cane. Chickens breed with seeds.",
+    "category": "generated",
+    "sort": 16,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:sugar",
+        "count": 64
+      },
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:chicken",
+        "count": 12
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:gold_ingot",
+        "count": 11
       },
       {
         "type": "justquests:loot_table",
@@ -29,7 +91,37 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 165
+        "amount": 60
+      }
+    ]
+  },
+  "justquests:gen/1790510400_2": {
+    "title": "Deep Riches",
+    "description": "Riches lie deep underground: collect 40 lapis lazuli and break 3 crying obsidian. Lapis ore drops several pieces. Found deep underground.",
+    "category": "generated",
+    "sort": 17,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:lapis_lazuli",
+        "count": 40
+      },
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:crying_obsidian",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:diamond_pickaxe",
+        "count": 1
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 150
       }
     ]
   },
@@ -62,109 +154,81 @@
       }
     ]
   },
-  "justquests:gen/1790510400_5": {
-    "title": "Deep Dig",
-    "description": "Head underground: mine 6 lapis ore and mine 2 deepslate diamond ore. Found deep underground. Needs an iron pickaxe or better.",
+  "justquests:gen/1790510400_3": {
+    "title": "Busy Bees",
+    "description": "Tend the hives: breed 6 bees and make 6 candles. Bees breed with flowers. Needs bees and flowers.",
     "category": "generated",
     "sort": 19,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:lapis_ore",
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:bee",
         "count": 6
       },
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:deepslate_diamond_ore",
-        "count": 2
+        "type": "justquests:craft_item",
+        "item": "minecraft:candle",
+        "count": 6
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:diamond_pickaxe",
-        "count": 1
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 185
-      }
-    ]
-  },
-  "justquests:gen/1790510400_4": {
-    "title": "Supper Time",
-    "description": "Feed the camp: cook 32 steak and eat 8 baked potatoes. Cook raw beef. Common in plains. Villages often have them. Grow them on a farm.",
-    "category": "generated",
-    "sort": 20,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_beef",
-        "count": 32
-      },
-      {
-        "type": "justquests:consume_item",
-        "item": "minecraft:baked_potato",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:white_wool",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:bread",
+        "item": "minecraft:gold_ingot",
         "count": 16
       },
       {
         "type": "justquests:xp",
-        "amount": 215
+        "amount": 135
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Ocelot Farm",
-    "description": "Breed 4 ocelots. Ocelots breed with raw cod or salmon. Look in jungles.",
+  "justquests:gen/1790510400_1": {
+    "title": "Farm Duty",
+    "description": "Pick up 64 wheat and collect 64 carrots. Harvest fully grown wheat. Grow them on a farm. Villages often have them.",
     "category": "generated",
-    "sort": 22,
+    "sort": 21,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:ocelot",
-        "count": 4
+        "type": "justquests:collect_item",
+        "item": "minecraft:wheat",
+        "count": 64
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:carrot",
+        "count": 64
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:hay_block",
-        "count": 8
+        "item": "minecraft:cooked_porkchop",
+        "count": 16
       },
       {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/village/village_weaponsmith"
+        "type": "justquests:give_item",
+        "item": "minecraft:iron_ingot",
+        "count": 24
       },
       {
         "type": "justquests:xp",
-        "amount": 185
+        "amount": 150
       }
     ]
   },
   "justquests:gen/1790510400_7": {
-    "title": "Hoglin Breeder",
-    "description": "Breed 4 hoglins. Hoglins breed with crimson fungus; they fight back. Found in crimson forests. Found in the Nether.",
+    "title": "Witch Hunt",
+    "description": "Defeat 2 witches. Look in swamps. Rare, so take your time.",
     "category": "generated",
-    "sort": 22,
+    "sort": 21,
     "objectives": [
       {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:hoglin",
-        "count": 4
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:witch",
+        "count": 2
       }
     ],
     "rewards": [
@@ -174,97 +238,63 @@
         "count": 16
       },
       {
+        "type": "justquests:effect",
+        "effect": "minecraft:jump_boost",
+        "seconds": 300,
+        "amplifier": 0
+      },
+      {
         "type": "justquests:xp",
-        "amount": 210
+        "amount": 165
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Nether Hunt Chores",
-    "description": "Hunt 3 ghasts and slay 2 wither skeletons. Found in soul sand valleys. Found in the Nether. Found in Nether fortresses.",
+  "justquests:gen/1790510400_4": {
+    "title": "Beyond the Void",
+    "description": "Explore the End: mine 48 purpur blocks and slay 24 endermen. Found in End cities. Found in the End.",
     "category": "generated",
-    "sort": 22,
+    "sort": 23,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:ghast",
-        "count": 3
+        "type": "justquests:mine_block",
+        "block": "minecraft:purpur_block",
+        "count": 48
       },
       {
         "type": "justquests:kill_mob",
-        "entity": "minecraft:wither_skeleton",
-        "count": 2
+        "entity": "minecraft:enderman",
+        "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:hay_block",
-        "count": 8
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glistering_melon_slice",
-        "count": 8
+        "item": "minecraft:diamond",
+        "count": 6
       },
       {
         "type": "justquests:xp",
-        "amount": 150
+        "amount": 100
       }
     ]
   },
-  "justquests:gen/1790510400_1": {
-    "title": "Circuit Builder",
-    "description": "Wire up the workshop: collect 64 redstone dust and make 8 pistons. Redstone ore drops dust. Needs an iron pickaxe or better.",
+  "justquests:gen/1790510400_5": {
+    "title": "Critter Care",
+    "description": "The pet shop needs new friends: breed 4 cats and breed 3 axolotls. Tamed cats breed with raw fish. Villages often have them.",
     "category": "generated",
     "sort": 24,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:redstone",
-        "count": 64
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:piston",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:tnt",
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:cat",
         "count": 4
       },
       {
-        "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 15
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 115
-      }
-    ]
-  },
-  "justquests:gen/1790510400_2": {
-    "title": "After Dark",
-    "description": "When the sun sets: defeat a witch and collect 32 rotten flesh. Look in swamps. Rare, so take your time.",
-    "category": "generated",
-    "sort": 26,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:witch",
-        "count": 1
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:rotten_flesh",
-        "count": 32
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:axolotl",
+        "count": 3
       }
     ],
     "rewards": [
@@ -274,49 +304,13 @@
         "count": 32
       },
       {
-        "type": "justquests:effect",
-        "effect": "minecraft:slow_falling",
-        "seconds": 300,
-        "amplifier": 0
+        "type": "justquests:give_item",
+        "item": "minecraft:bookshelf",
+        "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 405
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Diamond Errand",
-    "description": "Make a diamond pickaxe and craft a diamond helmet.",
-    "category": "generated",
-    "sort": 41,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:diamond_pickaxe",
-        "count": 1
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:diamond_helmet",
-        "count": 1
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_apple",
-        "count": 2
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:powered_rail",
-        "count": 12
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 275
+        "amount": 170
       }
     ]
   }

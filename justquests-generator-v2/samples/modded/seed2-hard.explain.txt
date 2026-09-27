@@ -10,18 +10,6 @@ estimated 8.1 min (quick)
 reward give_item create:brass_ingot ×7 (value 14.0) + xp 48 (value 4.0)  → 18.0 / budget 18.0
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Quarry Order"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective smelt_item minecraft:stone ×64
-  effort 0.08 min/unit → 5.1 min (target 17.6, range 15–35 min)
-  tier 0 (always available), family stone, profile vanilla
-objective collect_item minecraft:pointed_dripstone ×32
-  effort 0.20 min/unit (×1.30 dripstone_caves) → 8.3 min (target 17.6, range 15–35 min)
-  tier 1 (always available), family stone, profile vanilla, hints dripstone_caves
-combo within family stone
-estimated 13.4 min (quick)
-reward give_item minecraft:ender_pearl ×7 (value 17.5) + xp 55 (value 4.6)  → 22.1 / budget 22.2
-state: AVAILABLE
-
 justquests:gen/1790510400_1  "Dinner Order"  (HARD, cycle 1790510400, seed 0xDC9F…)
 objective consume_item farmersdelight:steak_and_potatoes ×3
   effort 2.20 min/unit → 6.6 min (target 16.6, range 15–35 min)
@@ -34,71 +22,78 @@ estimated 13.8 min (quick)
 reward give_item mekanism:ingot_tin ×20 (value 17.0) + xp 70 (value 5.8)  → 22.8 / budget 22.8
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "Mana Pool Order"  (HARD, cycle 1790510400, seed 0xDC9F…)
+justquests:gen/1790510400_7  "Mana Pool Batch"  (HARD, cycle 1790510400, seed 0xDC9F…)
 objective craft_item botania:mana_pool ×1
-  effort 16.00 min/unit → 16.0 min (target 24.7, range 15–35 min)
+  effort 16.00 min/unit → 16.0 min (target 30.0, range 15–35 min)
   tier 2 (always available), family bot_mana, profile botania
 estimated 16.0 min (quick)
-reward give_item minecraft:ghast_tear ×4 (value 16.0) + xp 95 (value 7.9)  → 23.9 / budget 24.0
+reward give_item create:large_cogwheel ×16 (value 5.6) + give_item minecraft:slime_ball ×8 (value 12.0) + xp 75 (value 6.3)  → 23.9 / budget 24.0
 rejected alternatives: craft_item botania:mana_spreader (its grid recipe varies between versions)
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Kinetics Order"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective craft_item create:cogwheel ×48
-  effort 0.20 min/unit → 9.6 min (target 31.6, range 15–35 min)
-  tier 1 (always available), family create_kinetics, profile create
-objective craft_item create:encased_chain_drive ×6
-  effort 1.20 min/unit → 7.2 min (target 31.6, range 15–35 min)
-  tier 1 (always available), family create_kinetics, profile create
-combo within family create_kinetics
+justquests:gen/1790510400_5  "Raw Tin Supply"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective collect_item mekanism:raw_tin ×24
+  effort 0.70 min/unit → 16.8 min (target 17.5, range 15–35 min)
+  tier 1 (always available), family mek_tin, profile mekanism, tool stone, hints caves
 estimated 16.8 min (quick)
-reward give_item create:builders_tea ×4 (value 16.0) + loot_table minecraft:chests/simple_dungeon (value 8.0) + xp 45 (value 3.8)  → 27.8 / budget 27.7
-rejected alternatives: craft_item create:shaft (max count takes only 3.8 min); craft_item create:hand_crank (max count takes only 2.0 min); craft_item create:turntable (max count takes only 2.0 min)
+reward give_item mekanism:ingot_steel ×5 (value 15.0) + loot_table minecraft:chests/abandoned_mineshaft (value 7.0) + xp 38 (value 3.2)  → 25.2 / budget 25.2
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Sculk Miner"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective mine_block minecraft:sculk ×64
-  effort 0.20 min/unit (×1.60 deep_dark) → 20.5 min (target 26.5, range 15–35 min)
-  tier 2 (always available), family deep_dark, profile vanilla, hints deep_dark
-estimated 20.5 min (quick)
-reward give_item create:bar_of_chocolate ×4 (value 12.0) + loot_table minecraft:chests/bastion_other (value 16.0) + xp 33 (value 2.8)  → 30.8 / budget 30.7
+justquests:gen/1790510400_4  "Library Project"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:sugar_cane ×64
+  effort 0.10 min/unit → 6.4 min (target 21.6, range 15–35 min)
+  tier 0 (always available), family plants, profile vanilla, hints river
+objective craft_item minecraft:bookshelf ×3
+  effort 4.50 min/unit → 13.5 min (target 21.6, range 15–35 min)
+  tier 0 (always available), family library, profile vanilla
+theme library_project
+estimated 19.9 min (quick)
+reward give_item minecraft:cooked_salmon ×16 (value 14.4) + give_item minecraft:emerald ×4 (value 10.0) + xp 100 (value 8.3)  → 32.7 / budget 32.8
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Hunt the Nagas"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective kill_mob twilightforest:naga ×1
-  effort 18.00 min/unit → 18.0 min (target 25.7, range 15–35 min)
+justquests:gen/1790510400_9  "Lapis Ore Miner"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:lapis_ore ×16
+  effort 1.20 min/unit (×1.10 deep) → 21.1 min (target 27.0, range 15–35 min)
+  tier 2 (always available), family gems, profile vanilla, tool stone, hints deep
+estimated 21.1 min (quick)
+reward give_item twilightforest:torchberries ×16 (value 8.0) + loot_table minecraft:chests/bastion_other (value 16.0) + xp 90 (value 7.5)  → 31.5 / budget 31.7
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Naga Scale Delivery"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective collect_item twilightforest:naga_scale ×8
+  effort 2.60 min/unit → 20.8 min (target 29.7, range 15–35 min)
   tier 4 (unlocked: 50% online have minecraft:story/enter_the_end), family tf_bosses, profile twilightforest, twilightforest:twilight_forest
 travel overhead 5.0 min
-estimated 23.0 min
-reward give_item mekanism:basic_control_circuit ×6 (value 24.0) + xp 125 (value 10.4)  → 34.4 / budget 34.5
+estimated 25.8 min
+reward give_item create:belt_connector ×16 (value 11.2) + give_item farmersdelight:honey_glazed_ham ×2 (value 14.0) + xp 160 (value 13.3)  → 38.5 / budget 38.7
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Breeze Cleanup"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective kill_mob minecraft:breeze ×3
-  effort 5.00 min/unit (×1.50 trial_chambers) → 22.5 min (target 34.9, range 15–35 min)
-  tier 2 (always available), family trial, profile vanilla, hints trial_chambers
-estimated 22.5 min
-reward give_item mekanism:alloy_infused ×7 (value 24.5) + xp 110 (value 9.2)  → 33.7 / budget 33.8
+justquests:gen/1790510400_3  "Fire Up Zinc Ingots"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item #c:ingots/zinc ×32
+  effort 0.85 min/unit → 27.2 min (target 30.7, range 15–35 min)
+  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves
+estimated 27.2 min
+reward give_item mekanism:ingot_steel ×8 (value 24.0) + loot_table minecraft:chests/simple_dungeon (value 8.0) + xp 105 (value 8.8)  → 40.8 / budget 40.8
+rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch)
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Osmium Chores"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective mine_block mekanism:deepslate_osmium_ore ×16
-  effort 0.80 min/unit (×1.10 deep) → 14.1 min (target 29.2, range 15–35 min)
-  tier 1 (always available), family mek_osmium, profile mekanism, tool stone, hints caves/deep
-objective craft_item mekanism:block_osmium ×2
-  effort 6.80 min/unit → 13.6 min (target 29.2, range 15–35 min)
-  tier 1 (always available), family mek_osmium, profile mekanism, tool stone, hints caves
-combo within family mek_osmium
+justquests:gen/1790510400_2  "Wildlife Errand"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective breed_animal minecraft:frog ×5
+  effort 2.50 min/unit (×1.30 swamp) → 16.3 min (target 28.8, range 15–35 min)
+  tier 1 (always available), family wild_animals, profile vanilla, hints swamp
+objective smelt_item minecraft:cooked_rabbit ×8
+  effort 1.10 min/unit (×1.30 desert) → 11.4 min (target 28.8, range 15–35 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints desert/cook
+combo within family wild_animals
 estimated 27.7 min
-reward give_item create:brass_ingot ×14 (value 28.0) + loot_table minecraft:chests/desert_pyramid (value 9.0) + xp 105 (value 8.8)  → 45.8 / budget 45.7
-rejected alternatives: collect_item mekanism:osmium_ore (drops raw osmium, needs Silk Touch)
+reward give_item create:brass_ingot ×16 (value 32.0) + xp 165 (value 13.8)  → 45.8 / budget 45.7
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "Turtle Scute Supply"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective collect_item minecraft:turtle_scute ×2
-  effort 12.00 min/unit (×1.20 beach) → 28.8 min (target 28.8, range 15–35 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints beach
-estimated 28.8 min
-reward give_item mekanism:ingot_osmium ×28 (value 25.2) + loot_table minecraft:chests/jungle_temple (value 9.0) + xp 110 (value 9.2)  → 43.4 / budget 43.2
+justquests:gen/1790510400_6  "Witch Slayer"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective kill_mob minecraft:witch ×3
+  effort 5.00 min/unit (×1.30 swamp ×1.60 rare) → 31.2 min (target 28.6, range 15–35 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp/rare
+estimated 31.2 min
+reward give_item create:zinc_ingot ×32 (value 28.8) + xp 215 (value 17.9)  → 46.7 / budget 46.8
 state: AVAILABLE
 

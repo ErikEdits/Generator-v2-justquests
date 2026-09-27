@@ -1,4 +1,34 @@
 {
+  "justquests:gen/1790510400_9": {
+    "title": "Fletcher Job",
+    "description": "Make 2 crossbows and make 3 bows.",
+    "category": "generated",
+    "sort": 7,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:crossbow",
+        "count": 2
+      },
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:bow",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:glistering_melon_slice",
+        "count": 5
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 27
+      }
+    ]
+  },
   "justquests:gen/1790510400_0": {
     "title": "Dig Deepslate Copper Ore",
     "description": "Mine 20 deepslate copper ore. Needs a stone pickaxe or better. Found deep underground.",
@@ -158,33 +188,38 @@
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Night Hunter",
-    "description": "When the sun sets: hunt 4 cave spiders and gather 16 string. Found in abandoned mineshafts. They spawn at night and in dark caves.",
+  "justquests:gen/1790510400_8": {
+    "title": "Bakery Supplies",
+    "description": "Craft 6 mushroom stew and craft 16 bread. Dark forests have plenty. Three wheat make a loaf.",
     "category": "generated",
-    "sort": 16,
+    "sort": 15,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:cave_spider",
-        "count": 4
+        "type": "justquests:craft_item",
+        "item": "minecraft:mushroom_stew",
+        "count": 6
       },
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:string",
+        "type": "justquests:craft_item",
+        "item": "minecraft:bread",
         "count": 16
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:prismarine_crystals",
-        "count": 8
+        "item": "minecraft:glow_berries",
+        "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:phantom_membrane",
+        "count": 4
       },
       {
         "type": "justquests:xp",
-        "amount": 105
+        "amount": 46
       }
     ]
   },
@@ -249,36 +284,6 @@
       {
         "type": "justquests:xp",
         "amount": 60
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Gem Errand",
-    "description": "Break 6 lapis ore and pick up 2 diamonds. Found deep underground. Dig deep, around y=-58. Needs an iron pickaxe or better.",
-    "category": "generated",
-    "sort": 19,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:lapis_ore",
-        "count": 6
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:diamond",
-        "count": 2
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:prismarine_crystals",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 155
       }
     ]
   }

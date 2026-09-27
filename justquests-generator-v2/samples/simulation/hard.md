@@ -7,523 +7,521 @@
 - quests generated: 290
 - signature repeats within 6 days: 0
 - distinct signatures: 242
-- completed 280, abandoned 46, claims denied (race/one-active) 0
-- objective types: {breed_animal=17, collect_item=77, consume_item=25, craft_item=89, kill_mob=48, mine_block=74, place_block=14, smelt_item=41, tame_animal=1}
-- profiles: {botania=18, create=37, farmersdelight=38, mekanism=42, twilightforest=33, vanilla=218}
-- top families: {metals=18, nether_mobs=17, ocean=16, fd_feasts=15, redstone=13, mek_fluorite=12, undead=12, create_zinc=11, crops=11, mek_lead=11, tf_game=11, end_mobs=10, nether_crafts=10, stonework=10, create_alloy=9}
+- completed 280, abandoned 50, claims denied (race/one-active) 0
+- objective types: {breed_animal=23, collect_item=80, consume_item=25, craft_item=76, kill_mob=42, mine_block=78, place_block=11, smelt_item=45, tame_animal=1, visit_dimension=1}
+- profiles: {botania=14, create=35, farmersdelight=37, mekanism=39, twilightforest=32, vanilla=225}
+- top families: {mek_fluorite=15, wild_animals=14, nether_mobs=13, nether_ores=12, create_zinc=11, gems=11, metals=11, nether_plants=10, tf_wood=10, create_masonry=9, crops=9, fd_butchery=9, fd_meals=9, fishing=9, flowers=9}
 
 ## Statistics (`stats().toText()`)
 
 ```
-Generated 290, claimed 326, completed 280, abandoned 46, expired 0
-Abandon rate 14%; median claim->complete 30.00 min vs estimate 17.90 min; calibration 1.67
+Generated 290, claimed 332, completed 280, abandoned 50, expired 0
+Abandon rate 15%; median claim->complete 30.00 min vs estimate 17.70 min; calibration 1.72
 By objective type:
-  breed_animal     gen   16  claimed   15  done   15  abandoned   0  expired   0  completion 100%
-  collect_item     gen   69  claimed   80  done   66  abandoned  14  expired   0  completion  83%
-  consume_item     gen   25  claimed   32  done   25  abandoned   7  expired   0  completion  78%
-  craft_item       gen   84  claimed   96  done   80  abandoned  16  expired   0  completion  83%
-  kill_mob         gen   45  claimed   51  done   42  abandoned   9  expired   0  completion  82%
-  mine_block       gen   70  claimed   76  done   69  abandoned   7  expired   0  completion  91%
-  place_block      gen   11  claimed   11  done   10  abandoned   1  expired   0  completion  91%
-  smelt_item       gen   41  claimed   48  done   40  abandoned   8  expired   0  completion  83%
+  breed_animal     gen   22  claimed   22  done   22  abandoned   0  expired   0  completion 100%
+  collect_item     gen   72  claimed   80  done   68  abandoned  11  expired   0  completion  85%
+  consume_item     gen   25  claimed   31  done   24  abandoned   7  expired   0  completion  77%
+  craft_item       gen   73  claimed   83  done   70  abandoned  12  expired   0  completion  84%
+  kill_mob         gen   39  claimed   49  done   38  abandoned  10  expired   0  completion  78%
+  mine_block       gen   73  claimed   85  done   71  abandoned  13  expired   0  completion  84%
+  place_block      gen    8  claimed   10  done    8  abandoned   2  expired   0  completion  80%
+  smelt_item       gen   45  claimed   51  done   43  abandoned   8  expired   0  completion  84%
   tame_animal      gen    1  claimed    1  done    1  abandoned   0  expired   0  completion 100%
+  visit_dimension  gen    1  claimed    1  done    1  abandoned   0  expired   0  completion 100%
 By tier:
-  0                gen   51  claimed   62  done   49  abandoned  13  expired   0  completion  79%
-  1                gen  100  claimed  107  done   97  abandoned  10  expired   0  completion  91%
-  2                gen   84  claimed   89  done   82  abandoned   7  expired   0  completion  92%
-  3                gen   45  claimed   56  done   43  abandoned  13  expired   0  completion  77%
-  4                gen   10  claimed   12  done    9  abandoned   3  expired   0  completion  75%
+  0                gen   63  claimed   72  done   59  abandoned  13  expired   0  completion  82%
+  1                gen   92  claimed  108  done   89  abandoned  18  expired   0  completion  82%
+  2                gen   79  claimed   92  done   77  abandoned  14  expired   0  completion  84%
+  3                gen   44  claimed   48  done   43  abandoned   5  expired   0  completion  90%
+  4                gen   12  claimed   12  done   12  abandoned   0  expired   0  completion 100%
 By difficulty:
-  HARD             gen  290  claimed  326  done  280  abandoned  46  expired   0  completion  86%
+  HARD             gen  290  claimed  332  done  280  abandoned  50  expired   0  completion  84%
 By profile:
-  botania          gen   13  claimed   15  done   12  abandoned   3  expired   0  completion  80%
-  create           gen   30  claimed   30  done   29  abandoned   1  expired   0  completion  97%
-  farmersdelight   gen   29  claimed   37  done   28  abandoned   9  expired   0  completion  76%
-  mekanism         gen   31  claimed   30  done   30  abandoned   0  expired   0  completion 100%
-  twilightforest   gen   29  claimed   31  done   28  abandoned   3  expired   0  completion  90%
-  vanilla          gen  160  claimed  186  done  155  abandoned  31  expired   0  completion  83%
+  botania          gen   11  claimed   11  done   10  abandoned   1  expired   0  completion  91%
+  create           gen   29  claimed   34  done   28  abandoned   6  expired   0  completion  82%
+  farmersdelight   gen   30  claimed   34  done   29  abandoned   5  expired   0  completion  85%
+  mekanism         gen   31  claimed   34  done   30  abandoned   4  expired   0  completion  88%
+  twilightforest   gen   29  claimed   34  done   28  abandoned   5  expired   0  completion  82%
+  vanilla          gen  163  claimed  188  done  158  abandoned  29  expired   0  completion  84%
 Calibration (observed/estimated) by family|type:
-  arthropods|collect_item 1.56
-  arthropods|kill_mob 2.14
-  arthropods|mine_block 1.60
-  baking|craft_item 1.39
-  bees|collect_item 2.34
+  arthropods|kill_mob 1.58
+  badlands|craft_item 0.94
+  baking|craft_item 2.08
   bot_livingwood|craft_item 2.03
-  bot_mana|craft_item 2.19
-  bot_petals|craft_item 2.34
-  coal|mine_block 1.58
-  create_alloy|craft_item 1.20
-  create_alloy|place_block 1.04
-  create_masonry|place_block 1.20
-  create_quartz|craft_item 2.08
-  create_stone|mine_block 2.67
-  create_sweets|consume_item 1.88
-  create_tools|craft_item 2.73
-  create_zinc|collect_item 2.34
+  bot_mana|craft_item 0.94
+  bot_petals|craft_item 1.56
+  coal|mine_block 2.21
+  copper_works|craft_item 0.89
+  create_alloy|craft_item 2.00
+  create_kinetics|craft_item 1.98
+  create_masonry|place_block 1.62
+  create_quartz|craft_item 2.21
+  create_sweets|consume_item 1.56
+  create_tools|craft_item 2.13
+  create_zinc|collect_item 1.82
   create_zinc|craft_item 1.67
-  create_zinc|mine_block 1.89
-  create_zinc|smelt_item 1.87
-  crops|collect_item 1.66
-  deep_dark|mine_block 1.63
-  diamond_gear|craft_item 1.25
-  end_mobs|collect_item 2.34
-  end_mobs|kill_mob 1.75
-  end_prep|craft_item 1.25
+  create_zinc|mine_block 1.56
+  create_zinc|smelt_item 1.78
+  crops|collect_item 1.30
+  deep_dark|mine_block 1.99
+  diamond_gear|craft_item 1.22
+  end_blocks|mine_block 1.97
+  end_mobs|collect_item 2.05
+  end_mobs|kill_mob 2.04
+  end_plants|smelt_item 1.11
   fd_breakfast|smelt_item 2.34
-  fd_butchery|smelt_item 1.88
-  fd_feasts|consume_item 1.54
-  fd_meals|craft_item 2.08
-  fd_seafood|craft_item 2.60
-  fd_seafood|smelt_item 1.74
-  fd_sweets|craft_item 1.30
-  fd_wild|mine_block 2.31
+  fd_butchery|smelt_item 1.81
+  fd_feasts|consume_item 1.15
+  fd_meals|craft_item 1.92
+  fd_seafood|smelt_item 1.91
+  fd_sweets|craft_item 1.74
+  fd_wild|mine_block 2.50
   fishing|collect_item 1.56
-  fishing|smelt_item 0.83
-  flowers|collect_item 2.13
-  fruit|collect_item 2.39
-  gems|collect_item 1.24
-  gems|mine_block 2.03
-  golden_food|craft_item 1.25
-  horses|breed_animal 0.94
-  illagers|kill_mob 1.73
-  iron_works|craft_item 1.56
-  iron_works|place_block 2.08
-  lighting|craft_item 1.70
-  livestock|collect_item 1.39
-  mek_fluorite|craft_item 1.56
-  mek_fluorite|mine_block 2.00
-  mek_lead|collect_item 1.04
-  mek_lead|mine_block 2.02
-  mek_lead|smelt_item 1.47
-  mek_machines|craft_item 1.56
-  mek_osmium|smelt_item 2.29
-  mek_tin|mine_block 1.46
-  mek_tin|smelt_item 1.25
-  mek_uranium|mine_block 2.07
+  flowers|collect_item 2.06
+  gems|collect_item 1.96
+  gems|mine_block 1.42
+  golden_food|craft_item 1.04
+  illagers|kill_mob 2.31
+  library|craft_item 1.11
+  library|place_block 1.36
+  lighting|craft_item 1.61
+  livestock|collect_item 1.04
+  livestock|smelt_item 2.08
+  mek_fluorite|collect_item 1.63
+  mek_fluorite|mine_block 1.12
+  mek_lead|collect_item 1.82
+  mek_lead|mine_block 1.88
+  mek_lead|smelt_item 1.65
+  mek_machines|craft_item 1.84
+  mek_osmium|mine_block 1.60
+  mek_osmium|smelt_item 1.81
+  mek_tin|collect_item 2.38
+  mek_tin|mine_block 2.34
+  mek_tin|smelt_item 1.04
+  mek_uranium|mine_block 1.64
   mek_uranium|smelt_item 1.56
-  metals|collect_item 2.05
-  metals|mine_block 1.67
-  metals|smelt_item 1.89
-  monsters|kill_mob 0.99
-  mushrooms|collect_item 2.06
-  nether_animals|breed_animal 1.70
-  nether_blocks|mine_block 1.82
-  nether_crafts|craft_item 1.96
-  nether_crafts|smelt_item 2.52
-  nether_mobs|collect_item 1.61
-  nether_mobs|kill_mob 1.59
-  nether_ores|collect_item 0.86
-  nether_ores|mine_block 1.59
-  nether_ores|smelt_item 0.97
-  nether_plants|collect_item 1.63
-  obsidian|mine_block 2.44
-  ocean|collect_item 2.21
-  ocean|smelt_item 2.15
-  plants|collect_item 1.49
-  redstone|collect_item 1.07
-  redstone|craft_item 2.27
-  redstone|mine_block 1.68
-  stonework|craft_item 1.36
-  stonework|place_block 1.78
-  stone|mine_block 1.55
-  storage_blocks|craft_item 1.67
-  tf_bosses|collect_item 1.94
-  tf_bosses|kill_mob 1.30
-  tf_forage|collect_item 1.45
-  tf_game|collect_item 2.05
-  tf_game|smelt_item 1.92
-  tf_ironwood|craft_item 2.11
-  tf_ironwood|smelt_item 1.29
+  metals|collect_item 1.87
+  metals|mine_block 2.09
+  metals|smelt_item 2.33
+  monsters|collect_item 1.92
+  monsters|kill_mob 1.63
+  nether_animals|breed_animal 2.67
+  nether_blocks|mine_block 2.78
+  nether_crafts|craft_item 1.09
+  nether_crafts|smelt_item 2.00
+  nether_mobs|collect_item 1.93
+  nether_mobs|kill_mob 1.29
+  nether_ores|collect_item 2.00
+  nether_ores|mine_block 1.36
+  nether_ores|smelt_item 0.79
+  nether_plants|collect_item 2.18
+  nether_plants|mine_block 2.10
+  obsidian|mine_block 2.14
+  ocean|collect_item 1.17
+  ocean|kill_mob 2.03
+  ocean|mine_block 0.84
+  ocean|smelt_item 1.46
+  redstone|craft_item 1.70
+  redstone|mine_block 1.58
+  soil|collect_item 1.56
+  stonework|craft_item 2.84
+  tf_bosses|kill_mob 1.52
+  tf_forage|collect_item 2.11
+  tf_game|collect_item 1.64
+  tf_game|consume_item 2.16
+  tf_ironwood|craft_item 1.12
+  tf_ironwood|smelt_item 2.19
   tf_maps|craft_item 2.22
-  tf_monsters|kill_mob 1.71
-  tf_ranch|breed_animal 2.13
-  tf_wood|craft_item 1.40
-  tf_wood|mine_block 2.28
-  transport|craft_item 1.17
-  trial|kill_mob 1.44
+  tf_monsters|kill_mob 1.47
+  tf_ranch|breed_animal 1.76
+  tf_wood|craft_item 2.25
+  tf_wood|mine_block 2.37
+  trial|kill_mob 2.44
   undead|collect_item 1.04
-  undead|kill_mob 1.94
-  wild_animals|breed_animal 1.87
-  workstations|craft_item 1.47
-Relaxations: {family=17, modded_share=16, type_share=16}
-Rejected candidates by step: {3_missing_id=58, 5_effort_range=2523, 6_history=1715}
+  undead|kill_mob 2.22
+  wild_animals|breed_animal 1.20
+  wild_animals|smelt_item 1.31
+  wool|breed_animal 2.08
+  wool|collect_item 1.25
+Relaxations: {family=22, modded_share=18, type_share=19}
+Rejected candidates by step: {3_missing_id=58, 5_effort_range=2523, 6_history=1803}
 ```
 
 ## New quests per rotation
 
 ### Sun 27 12:00
 
-- **Shepherds Pie Snack** (13 min) — consume_item farmersdelight:shepherds_pie ×2
+- **Hot Beef Patties** (12 min) — smelt_item farmersdelight:beef_patty ×24
 - **Lead Ingot Batch** (14 min) — smelt_item mekanism:ingot_lead ×16
 - **Mine Sculk Sensors** (15 min) — mine_block minecraft:sculk_sensor ×8
 - **Mana Pool Commission** (16 min) — craft_item botania:mana_pool ×1
-- **Craft Diamond Pickaxes** (16 min) — craft_item minecraft:diamond_pickaxe ×1
+- **Taste Sweet Roll** (16 min) — consume_item create:sweet_roll ×4
 - **Shroomlight Stockpile** (18 min) — collect_item minecraft:shroomlight ×16
-- **Skeleton Slayer** (18 min) — kill_mob minecraft:skeleton ×20
 - **Camel Herd** (19 min) — breed_animal minecraft:camel ×3
-- **Smelt Ironwood Ingots** (19 min) — smelt_item twilightforest:ironwood_ingot ×8
-- **Rose Quartz Crafter** (19 min) — craft_item create:rose_quartz ×16
+- **Raw Gold Run** (21 min) — collect_item minecraft:raw_gold ×16
+- **Naga Bounty** (23 min) — kill_mob twilightforest:naga ×1
+- **Wither Skeleton Hunt** (26 min) — kill_mob minecraft:wither_skeleton ×6
 
 ### Mon 28 00:00
 
 - **Zinc Ingot Batch** (20 min) — smelt_item #c:ingots/zinc ×24
 - **Venison Chores** (19 min) — consume_item twilightforest:cooked_venison ×6; collect_item twilightforest:raw_venison ×8
-- **Beyond the Void** (18 min) — mine_block minecraft:end_stone ×128; kill_mob minecraft:shulker ×2
-- **Lumber Order** (16 min) — mine_block minecraft:mangrove_log ×64; collect_item minecraft:birch_log ×64
-- **Sea Lantern Assembly** (26 min) — craft_item minecraft:sea_lantern ×3
-- **Frog Ranch** (20 min) — breed_animal minecraft:frog ×6
-- **Sandwich Supplies** (18 min) — craft_item farmersdelight:hamburger ×4; consume_item farmersdelight:bacon_sandwich ×4
-- **Uranium Order** (32 min) — smelt_item mekanism:ingot_uranium ×16; mine_block mekanism:deepslate_uranium_ore ×10
-- **Snowbound** (16 min) — mine_block minecraft:packed_ice ×20; breed_animal minecraft:sheep ×8
+- **Snowbound** (16 min) — mine_block minecraft:ice ×48; collect_item minecraft:mutton ×24
+- **Fisherman's Day** (20 min) — collect_item minecraft:salmon ×8; consume_item minecraft:cooked_cod ×6
+- **Sponge Supply** (26 min) — smelt_item minecraft:sponge ×4
+- **Copper Grate Workshop** (22 min) — craft_item minecraft:copper_grate ×16
+- **Harvest Market** (19 min) — craft_item farmersdelight:wheat_dough ×48; breed_animal minecraft:chicken ×12
+- **Ore Survey** (22 min) — mine_block mekanism:tin_ore ×16; mine_block mekanism:osmium_ore ×16
+- **End Hunt Supplies** (22 min) — kill_mob minecraft:shulker ×2; collect_item minecraft:ender_pearl ×16
 - **Make Livingwood Planks** (16 min) — craft_item botania:livingwood_planks ×16
 
 ### Mon 28 12:00
 
 - **Wand of the Forest Job** (9 min) — craft_item botania:twig_wand ×1
 - **Cooked Mutton Chops Batch** (16 min) — smelt_item farmersdelight:cooked_mutton_chops ×32
-- **Bar Of Chocolate Lunch** (16 min) — consume_item create:bar_of_chocolate ×4
-- **Hunt the Breezes** (23 min) — kill_mob minecraft:breeze ×3
-- **Lapis Lazuli Collector** (14 min) — collect_item minecraft:lapis_lazuli ×64
-- **Wither Skeleton Slayer** (26 min) — kill_mob minecraft:wither_skeleton ×6
-- **Twilight Expedition** (21 min) — collect_item twilightforest:liveroot ×16; mine_block twilightforest:twilight_oak_log ×64
-- **Diamond Helmet Request** (25 min) — craft_item minecraft:diamond_helmet ×1
-- **Cold Snap** (18 min) — craft_item minecraft:snow_block ×48; collect_item minecraft:mutton ×24
+- **Zinc Supplies** (31 min) — mine_block create:deepslate_zinc_ore ×12; collect_item create:raw_zinc ×24
+- **Break Purpur Blocks** (17 min) — mine_block minecraft:purpur_block ×64
+- **Bring Arrows** (19 min) — collect_item minecraft:arrow ×32
+- **Bring Nether Quartz** (17 min) — collect_item minecraft:quartz ×48
+- **Kobold Menace** (15 min) — kill_mob twilightforest:kobold ×12
+- **Make Sea Lanterns** (26 min) — craft_item minecraft:sea_lantern ×3
+- **More Rabbits** (21 min) — breed_animal minecraft:rabbit ×8
 - **Osmium Chores** (13 min) — smelt_item mekanism:ingot_osmium ×8; mine_block mekanism:osmium_ore ×10
 
 ### Tue 29 00:00
 
-- **Anvil Order** (17 min) — craft_item minecraft:anvil ×1
+- **Diamond Boots Order** (20 min) — craft_item minecraft:diamond_boots ×1
 - **Break Iron Ore** (24 min) — mine_block minecraft:iron_ore ×48
-- **Golden Carrot Assembly** (12 min) — craft_item minecraft:golden_carrot ×8
+- **Bookshelf Commission** (18 min) — craft_item minecraft:bookshelf ×4
 - **Fluorite Supplies** (21 min) — craft_item mekanism:block_fluorite ×2; mine_block mekanism:fluorite_ore ×16
-- **Lich Bounty** (37 min) — kill_mob twilightforest:lich ×1
-- **Sponge Batch** (26 min) — smelt_item minecraft:sponge ×4
-- **Hamburger Batch** (16 min) — craft_item farmersdelight:hamburger ×6
-- **Harvest Time** (21 min) — collect_item minecraft:beetroot ×48; collect_item minecraft:wheat ×64
-- **Cave Spider Menace** (23 min) — kill_mob minecraft:cave_spider ×12
-- **Stone Workshop** (16 min) — mine_block create:veridium ×64; place_block create:cut_crimsite ×48
+- **Ironwood Ingot Supply** (19 min) — smelt_item twilightforest:ironwood_ingot ×8
+- **Cook Steak** (19 min) — smelt_item minecraft:cooked_beef ×48
+- **Shepherds Pie Feast** (13 min) — consume_item farmersdelight:shepherds_pie ×2
+- **Flower Supplies** (16 min) — collect_item minecraft:allium ×16; collect_item minecraft:cornflower ×24
+- **Flint Collector** (13 min) — collect_item minecraft:flint ×32
+- **Bar Of Chocolate Break** (16 min) — consume_item create:bar_of_chocolate ×4
 
 ### Tue 29 12:00
 
 - **Raw Ironwood Crafting** (18 min) — craft_item twilightforest:raw_ironwood ×8
-- **Cooked Salmon Slice Kitchen** (14 min) — smelt_item farmersdelight:cooked_salmon_slice ×16
-- **Magma Cube Bounty** (22 min) — kill_mob minecraft:magma_cube ×16
-- **Wildlife Supplies** (24 min) — collect_item minecraft:turtle_scute ×1; breed_animal minecraft:axolotl ×2
-- **Zinc Errand** (16 min) — mine_block create:zinc_ore ×12; collect_item create:raw_zinc ×8
-- **Raw Lead Supply** (19 min) — collect_item mekanism:raw_lead ×24
-- **Dig Deepslate Iron Ore** (16 min) — mine_block minecraft:deepslate_iron_ore ×24
-- **Prismarine Shard Run** (38 min) — collect_item minecraft:prismarine_shard ×16
-- **Mine Ancient Debris** (35 min) — mine_block minecraft:ancient_debris ×2
-- **Make Powered Rails** (26 min) — craft_item minecraft:powered_rail ×16
+- **Hamburger Assembly** (16 min) — craft_item farmersdelight:hamburger ×6
+- **Blaze Trouble** (26 min) — kill_mob minecraft:blaze ×12
+- **Nether Garden Chores** (20 min) — mine_block minecraft:warped_wart_block ×48; collect_item minecraft:nether_wart ×16
+- **Dig Zinc Ore** (19 min) — mine_block create:zinc_ore ×24
+- **Osmium Ingot Supply** (18 min) — smelt_item mekanism:ingot_osmium ×24
+- **Ender Pearl Run** (15 min) — collect_item minecraft:ender_pearl ×16
+- **Gold Ingot Smeltery** (34 min) — smelt_item minecraft:gold_ingot ×24
+- **More Frogs** (16 min) — breed_animal minecraft:frog ×5
+- **Enderman Hunt** (15 min) — kill_mob minecraft:enderman ×24
 
 ### Wed 30 00:00
 
-- **Slime Cleanup** (20 min) — kill_mob minecraft:slime ×10
-- **Dig Deepslate Zinc Ore** (24 min) — mine_block create:deepslate_zinc_ore ×24
-- **Arrow Haul** (19 min) — collect_item minecraft:arrow ×32
-- **Steel Casing Crafting** (22 min) — craft_item mekanism:steel_casing ×1
-- **Boar Breeder** (15 min) — breed_animal twilightforest:boar ×5
-- **Pillager Patrol** (26 min) — kill_mob minecraft:pillager ×8
-- **Honey Glazed Ham Snack** (15 min) — consume_item farmersdelight:honey_glazed_ham ×2
-- **Lead Ore Dig** (19 min) — mine_block mekanism:lead_ore ×24
-- **Redstone Supplies** (21 min) — craft_item minecraft:piston ×8; mine_block minecraft:deepslate_redstone_ore ×12
-- **Gold Ingot Supply** (34 min) — smelt_item minecraft:gold_ingot ×24
+- **Witch Cleanup** (21 min) — kill_mob minecraft:witch ×2
+- **Raw Zinc Collector** (19 min) — collect_item create:raw_zinc ×24
+- **Deepslate Gold Ore Dig** (32 min) — mine_block minecraft:deepslate_gold_ore ×24
+- **Raw Tin Collector** (17 min) — collect_item mekanism:raw_tin ×24
+- **Canopy Tree Log Quarry** (14 min) — mine_block twilightforest:canopy_log ×64
+- **Golden Carrot Workshop** (12 min) — craft_item minecraft:golden_carrot ×8
+- **Cook Cooked Salmon Slices** (14 min) — smelt_item farmersdelight:cooked_salmon_slice ×16
+- **Hunt the Bogged** (16 min) — kill_mob minecraft:bogged ×6
+- **Cave Survey** (22 min) — mine_block minecraft:deepslate_diamond_ore ×3; mine_block minecraft:tuff ×64
+- **Cut Copper Request** (22 min) — craft_item minecraft:cut_copper ×16
 
 ### Wed 30 12:00
 
 - **Cuckoo Clock Assembly** (6 min) — craft_item create:cuckoo_clock ×1
-- **Cobweb Excavation** (16 min) — mine_block minecraft:cobweb ×24
-- **Leatherworker** (28 min) — collect_item minecraft:rabbit_hide ×8; craft_item minecraft:bookshelf ×4
-- **Cull the Shulkers** (20 min) — kill_mob minecraft:shulker ×4
-- **Tin Ingot Heat** (24 min) — smelt_item mekanism:ingot_tin ×32
-- **Feast Job** (16 min) — craft_item farmersdelight:roast_chicken_block ×1; consume_item farmersdelight:roast_chicken ×2
-- **Orchard Supplies** (15 min) — collect_item minecraft:melon_slice ×96; consume_item minecraft:sweet_berries ×16
-- **Mine Twilight Oak Logs** (13 min) — mine_block twilightforest:twilight_oak_log ×64
-- **Need Raw Cod** (19 min) — collect_item minecraft:cod ×24
-- **Masonry Order** (17 min) — craft_item minecraft:mossy_cobblestone ×48; craft_item minecraft:deepslate_tiles ×64
+- **Sculk Excavation** (20 min) — mine_block minecraft:sculk ×64
+- **Lamplighter** (22 min) — collect_item minecraft:coal ×64; craft_item minecraft:lantern ×8
+- **Goat Nursery** (21 min) — breed_animal minecraft:goat ×8
+- **Lead Ore Excavation** (16 min) — mine_block mekanism:lead_ore ×20
+- **Breakfast Duty** (16 min) — consume_item farmersdelight:bacon_and_eggs ×4; smelt_item farmersdelight:fried_egg ×8
+- **Glassblower** (13 min) — collect_item minecraft:sand ×128; smelt_item minecraft:glass ×64
+- **Redcap Patrol** (17 min) — kill_mob twilightforest:redcap ×12
+- **Stray Hunt** (19 min) — kill_mob minecraft:stray ×12
+- **Redstone Chores** (18 min) — craft_item minecraft:piston ×8; craft_item minecraft:repeater ×8
 
 ### Thu 01 00:00
 
-- **Sculk Breaker** (20 min) — mine_block minecraft:sculk ×64
-- **Cook Fried Eggs** (13 min) — smelt_item farmersdelight:fried_egg ×16
-- **Horse Breeder** (16 min) — breed_animal minecraft:horse ×4
-- **Kobold Patrol** (15 min) — kill_mob twilightforest:kobold ×12
-- **Uranium Ore Dig** (18 min) — mine_block mekanism:uranium_ore ×16
-- **Gather Cocoa Beans** (13 min) — collect_item minecraft:cocoa_beans ×32
-- **Nether Hunt Duty** (22 min) — kill_mob minecraft:piglin ×5; collect_item minecraft:blaze_rod ×6
-- **Farm Job** (19 min) — consume_item minecraft:beetroot_soup ×3; collect_item minecraft:carrot ×64
-- **Rail Design** (19 min) — place_block minecraft:rail ×64
-- **Craft Andesite Alloy** (17 min) — craft_item create:andesite_alloy ×48
+- **Polished Deepslate Job** (7 min) — craft_item minecraft:polished_deepslate ×64
+- **Cook Cooked Cod Slices** (14 min) — smelt_item farmersdelight:cooked_cod_slice ×24
+- **Need Raw Beef** (14 min) — collect_item minecraft:beef ×48
+- **Deer Family** (18 min) — breed_animal twilightforest:deer ×6
+- **Deepslate Fluorite Ore Shift** (18 min) — mine_block mekanism:deepslate_fluorite_ore ×16
+- **Hoglin Hunt** (17 min) — kill_mob minecraft:hoglin ×6
+- **Night Hunter** (32 min) — kill_mob minecraft:silverfish ×8; collect_item minecraft:gunpowder ×16
+- **Winter Job** (23 min) — mine_block minecraft:packed_ice ×32; craft_item minecraft:snow_block ×48
+- **Dig Warped Wart Blocks** (12 min) — mine_block minecraft:warped_wart_block ×48
+- **Taste Honeyed Apple** (16 min) — consume_item create:honeyed_apple ×4
 
 ### Thu 01 12:00
 
 - **Mystical Red Petal Job** (6 min) — craft_item botania:red_petal ×32
-- **Cook Cooked Bacon** (16 min) — smelt_item farmersdelight:cooked_bacon ×32
-- **Ironworks Supplies** (24 min) — craft_item minecraft:rail ×48; place_block minecraft:iron_chain ×16
-- **Seafaring Errand** (19 min) — kill_mob minecraft:guardian ×2; mine_block minecraft:prismarine ×20
-- **Naga Watch** (23 min) — kill_mob twilightforest:naga ×1
-- **Sweet Roll Break** (16 min) — consume_item create:sweet_roll ×4
-- **Fluorite Supplies** (16 min) — mine_block mekanism:deepslate_fluorite_ore ×8; collect_item mekanism:fluorite_gem ×24
-- **Lapis Ore Quarry** (21 min) — mine_block minecraft:lapis_ore ×16
-- **Deepslate Redstone Ore Quarry** (24 min) — mine_block minecraft:deepslate_redstone_ore ×24
-- **Nether Ranch Job** (29 min) — breed_animal minecraft:hoglin ×3; breed_animal minecraft:strider ×4
+- **Honey Cookie Request** (12 min) — craft_item farmersdelight:honey_cookie ×64
+- **Nether Builder** (20 min) — mine_block minecraft:bone_block ×8; smelt_item minecraft:smooth_quartz ×6
+- **Copper Age** (20 min) — collect_item minecraft:raw_copper ×96; craft_item minecraft:copper_block ×8
+- **Breed Boars** (17 min) — breed_animal twilightforest:boar ×6
+- **Taste Chocolate Glazed Berries** (16 min) — consume_item create:chocolate_glazed_berries ×4
+- **Deepslate Tin Ore Dig** (21 min) — mine_block mekanism:deepslate_tin_ore ×24
+- **Spider Duty** (23 min) — kill_mob minecraft:cave_spider ×5; kill_mob minecraft:spider ×16
+- **Gather Glowstone Dust** (15 min) — collect_item minecraft:glowstone_dust ×48
+- **Break Lapis Ore** (21 min) — mine_block minecraft:lapis_ore ×16
 
 ### Fri 02 00:00
 
-- **Wild Tomatoes Quarry** (9 min) — mine_block farmersdelight:wild_tomatoes ×12
-- **Liveroot Pickup** (14 min) — collect_item twilightforest:liveroot ×16
-- **Nether Bricks Batch** (14 min) — craft_item minecraft:nether_bricks ×32
-- **Metal Supplies** (17 min) — mine_block minecraft:deepslate_copper_ore ×20; collect_item minecraft:raw_iron ×16
-- **Shulker Shell Run** (32 min) — collect_item minecraft:shulker_shell ×6
-- **Zinc Block Crafting** (15 min) — craft_item create:zinc_block ×2
-- **Petal Picker** (12 min) — collect_item botania:purple_mystical_flower ×16; craft_item botania:white_petal ×32
-- **Undead Errand** (21 min) — kill_mob minecraft:stray ×6; kill_mob minecraft:drowned ×8
-- **Craft Configurators** (16 min) — craft_item mekanism:configurator ×1
-- **Blaze Cleanup** (26 min) — kill_mob minecraft:blaze ×12
+- **Wild Onions Quarry** (6 min) — mine_block farmersdelight:wild_onions ×12
+- **Torchberries Pickup** (12 min) — collect_item twilightforest:torchberries ×16
+- **Gem Seeker** (22 min) — collect_item minecraft:diamond ×2; mine_block minecraft:crying_obsidian ×4
+- **Pet Shop** (29 min) — breed_animal minecraft:wolf ×6; breed_animal minecraft:llama ×6
+- **Nether Mining Order** (19 min) — mine_block minecraft:nether_quartz_ore ×32; collect_item minecraft:gold_nugget ×64
+- **Deepslate Zinc Ore Dig** (24 min) — mine_block create:deepslate_zinc_ore ×24
+- **Florist** (12 min) — collect_item botania:red_mystical_flower ×16; craft_item botania:white_petal ×32
+- **Horse Ranch** (15 min) — breed_animal minecraft:horse ×2; craft_item minecraft:lead ×4
+- **Hot Uranium Ingots** (19 min) — smelt_item mekanism:ingot_uranium ×16
+- **Phantom Hunt** (18 min) — kill_mob minecraft:phantom ×6
 
 ### Fri 02 12:00
 
-- **Scoria Breaker** (7 min) — mine_block create:scoria ×64
-- **Canopy Bookshelf Order** (18 min) — craft_item twilightforest:canopy_bookshelf ×4
-- **Bogged Slayer** (21 min) — kill_mob minecraft:bogged ×8
-- **Smooth Quartz Supply** (24 min) — smelt_item minecraft:smooth_quartz ×16
-- **Gather Prismarine Crystals** (26 min) — collect_item minecraft:prismarine_crystals ×8
-- **Florist** (13 min) — collect_item minecraft:cornflower ×24; collect_item minecraft:sunflower ×16
-- **Leatherworker** (24 min) — collect_item minecraft:beef ×48; craft_item minecraft:book ×8
-- **Deepslate Lead Ore Dig** (20 min) — mine_block mekanism:deepslate_lead_ore ×20
-- **Cooked Chicken Cuts Order** (14 min) — smelt_item farmersdelight:cooked_chicken_cuts ×32
-- **Pet Order** (28 min) — tame_animal minecraft:parrot ×2; breed_animal minecraft:wolf ×6
+- **Andesite Alloy Order** (17 min) — craft_item create:andesite_alloy ×48
+- **Lich Cleanup** (37 min) — kill_mob twilightforest:lich ×1
+- **Gather Diamonds** (22 min) — collect_item minecraft:diamond ×4
+- **Redstone Ore Quarry** (16 min) — mine_block minecraft:redstone_ore ×16
+- **Smooth Quartz Batch** (24 min) — smelt_item minecraft:smooth_quartz ×16
+- **Undead Job** (17 min) — kill_mob minecraft:skeleton ×10; kill_mob minecraft:zombie ×12
+- **Flower Supplies** (15 min) — collect_item minecraft:lily_of_the_valley ×16; collect_item minecraft:red_tulip ×16
+- **Raw Lead Pickup** (19 min) — collect_item mekanism:raw_lead ×24
+- **Cook Cooked Chicken Cuts** (14 min) — smelt_item farmersdelight:cooked_chicken_cuts ×32
+- **Badlands Duty** (23 min) — mine_block minecraft:terracotta ×64; craft_item minecraft:white_terracotta ×32
 
 ### Sat 03 00:00
 
-- **Block of Fluorite Work** (6 min) — craft_item mekanism:block_fluorite ×2
-- **Masonry Errand** (16 min) — craft_item minecraft:polished_deepslate ×64; craft_item minecraft:blast_furnace ×3
-- **Farm Order** (19 min) — collect_item minecraft:potato ×64; consume_item minecraft:beetroot_soup ×3
-- **Netherite Scrap Supply** (21 min) — smelt_item minecraft:netherite_scrap ×1
-- **Honeyed Apple Tasting** (16 min) — consume_item create:honeyed_apple ×4
-- **Cull the Piglins** (23 min) — kill_mob minecraft:piglin ×12
-- **Honey Cookie Crafter** (12 min) — craft_item farmersdelight:honey_cookie ×64
-- **Emerald Ore Excavation** (29 min) — mine_block minecraft:emerald_ore ×2
-- **Nether Wart Bundle** (20 min) — collect_item minecraft:nether_wart ×32
-- **Hedge Spider Hunt** (13 min) — kill_mob twilightforest:hedge_spider ×8
+- **Configurator Crafting** (16 min) — craft_item mekanism:configurator ×1
+- **Earthworks Errand** (16 min) — craft_item minecraft:mud_bricks ×24; collect_item minecraft:clay_ball ×64
+- **Emerald Ore Shift** (29 min) — mine_block minecraft:emerald_ore ×2
+- **Stop the Shulkers** (24 min) — kill_mob minecraft:shulker ×5
+- **Builders Tea Break** (14 min) — consume_item create:builders_tea ×3
+- **Wool Pickup** (16 min) — collect_item #minecraft:wool ×64
+- **Hot Fried Eggs** (13 min) — smelt_item farmersdelight:fried_egg ×16
+- **Obsidian Excavation** (16 min) — mine_block minecraft:obsidian ×16
+- **Popped Chorus Fruit Supply** (18 min) — smelt_item minecraft:popped_chorus_fruit ×40
+- **Twilight Oak Log Shift** (13 min) — mine_block twilightforest:twilight_oak_log ×64
 
 ### Sat 03 12:00
 
 - **Craft Blank Magic Maps** (9 min) — craft_item twilightforest:magic_map ×1
-- **Gear Up** (14 min) — craft_item create:basin ×4; craft_item create:gearbox ×4
-- **Zombified Piglin Hunt** (13 min) — kill_mob minecraft:zombified_piglin ×16
-- **Eye of Ender Request** (20 min) — craft_item minecraft:ender_eye ×4
-- **Gold Ore Miner** (21 min) — mine_block minecraft:gold_ore ×16
-- **Hot Cooked Cod Slices** (14 min) — smelt_item farmersdelight:cooked_cod_slice ×24
+- **Rose Quartz Commission** (19 min) — craft_item create:rose_quartz ×16
+- **Breed Sheep** (12 min) — breed_animal minecraft:sheep ×12
+- **Hunt the Guardians** (16 min) — kill_mob minecraft:guardian ×4
+- **Mine Ancient Debris** (35 min) — mine_block minecraft:ancient_debris ×2
+- **Hot Cooked Bacon** (16 min) — smelt_item farmersdelight:cooked_bacon ×32
 - **Craft Mana Pools** (16 min) — craft_item botania:mana_pool ×1
-- **Tin Order** (28 min) — collect_item mekanism:raw_tin ×16; mine_block mekanism:tin_ore ×24
-- **Silverfish Trouble** (23 min) — kill_mob minecraft:silverfish ×12
-- **Deepslate Tiles Design** (11 min) — place_block minecraft:deepslate_tiles ×64
+- **Fluorite Duty** (26 min) — mine_block mekanism:fluorite_ore ×12; collect_item mekanism:fluorite_gem ×48
+- **Raw Cod Run** (19 min) — collect_item minecraft:cod ×24
+- **Stop the Pillagers** (26 min) — kill_mob minecraft:pillager ×8
 
 ### Sun 04 00:00
 
 - **Make Livingwood Planks** (16 min) — craft_item botania:livingwood_planks ×16
-- **Sea Lantern Batch** (35 min) — craft_item minecraft:sea_lantern ×4
-- **Break Darkwood Logs** (12 min) — mine_block twilightforest:dark_log ×32
-- **Nether Builder** (15 min) — mine_block minecraft:soul_soil ×64; craft_item minecraft:red_nether_bricks ×8
-- **Bring Raw Gold** (32 min) — collect_item minecraft:raw_gold ×24
-- **Tin Duty** (22 min) — mine_block mekanism:deepslate_tin_ore ×12; collect_item mekanism:raw_tin ×16
-- **Monster Errand** (23 min) — kill_mob minecraft:witch ×1; kill_mob minecraft:enderman ×5
-- **Feast Chores** (17 min) — consume_item farmersdelight:roast_chicken ×2; craft_item farmersdelight:shepherds_pie_block ×1
-- **Alloy Chores** (19 min) — place_block create:andesite_alloy_block ×3; place_block create:andesite_casing ×16
-- **Nether Hunt Chores** (17 min) — kill_mob minecraft:hoglin ×3; collect_item minecraft:blaze_rod ×4
+- **Hunt the Breezes** (23 min) — kill_mob minecraft:breeze ×3
+- **Twilight Timber Chores** (25 min) — craft_item twilightforest:canopy_bookshelf ×4; mine_block twilightforest:dark_log ×32
+- **Potter's Wheel** (20 min) — collect_item minecraft:clay_ball ×64; smelt_item minecraft:white_glazed_terracotta ×24
+- **Furnace: Iron Ingot** (26 min) — smelt_item minecraft:iron_ingot ×48
+- **Dig Deepslate Lead Ore** (24 min) — mine_block mekanism:deepslate_lead_ore ×24
+- **Gem Seeker** (25 min) — mine_block minecraft:deepslate_diamond_ore ×2; mine_block minecraft:crying_obsidian ×5
+- **Dinner Job** (16 min) — consume_item farmersdelight:steak_and_potatoes ×4; craft_item farmersdelight:stuffed_potato ×4
+- **Masonry Job** (15 min) — place_block create:cut_crimsite ×48; place_block create:polished_cut_limestone ×32
+- **Prismarine Shard Haul** (38 min) — collect_item minecraft:prismarine_shard ×16
 
 ### Sun 04 12:00
 
-- **Mine Fluorite Ore** (14 min) — mine_block mekanism:fluorite_ore ×16
-- **String Run** (16 min) — collect_item minecraft:string ×32
-- **Stop the Phantoms** (18 min) — kill_mob minecraft:phantom ×6
-- **Build Magma Cream** (16 min) — craft_item minecraft:magma_cream ×8
-- **Zinc Ore Excavation** (16 min) — mine_block create:zinc_ore ×20
-- **Metal Chores** (24 min) — smelt_item minecraft:copper_ingot ×64; mine_block minecraft:deepslate_gold_ore ×12
-- **Venison Supplies** (16 min) — smelt_item twilightforest:cooked_venison ×6; collect_item twilightforest:raw_venison ×6
-- **Sandwich Job** (21 min) — craft_item farmersdelight:chicken_sandwich ×6; consume_item farmersdelight:hamburger ×4
-- **Breeze Watch** (23 min) — kill_mob minecraft:breeze ×3
-- **Raw Beef Supply** (14 min) — collect_item minecraft:beef ×48
+- **Mine Deepslate Uranium Ore** (16 min) — mine_block mekanism:deepslate_uranium_ore ×12
+- **Slimeball Run** (16 min) — collect_item minecraft:slime_ball ×8
+- **Make Red Nether Bricks** (19 min) — craft_item minecraft:red_nether_bricks ×16
+- **Nether Hunt Errand** (24 min) — kill_mob minecraft:wither_skeleton ×3; collect_item minecraft:ghast_tear ×2
+- **Alloy Job** (22 min) — craft_item create:andesite_alloy_block ×4; place_block create:andesite_casing ×16
+- **Smelt Sponges** (26 min) — smelt_item minecraft:sponge ×4
+- **Naga Cleanup** (23 min) — kill_mob twilightforest:naga ×1
+- **Harvest Festival** (18 min) — collect_item minecraft:carrot ×48; collect_item farmersdelight:rice ×48
+- **Gold Ore Excavation** (16 min) — mine_block minecraft:gold_ore ×12
+- **Breed Pandas** (22 min) — breed_animal minecraft:panda ×2
 
 ### Mon 05 00:00
 
-- **Nether Gold Ore Shift** (14 min) — mine_block minecraft:nether_gold_ore ×32
-- **Metal Errand** (18 min) — collect_item minecraft:raw_copper ×80; mine_block minecraft:copper_ore ×32
-- **Masonry Job** (17 min) — craft_item minecraft:polished_deepslate ×64; place_block minecraft:stone_bricks ×64
-- **Redstone Workshop** (24 min) — collect_item minecraft:redstone ×64; craft_item minecraft:piston ×8
-- **Woodcutter** (15 min) — mine_block minecraft:acacia_log ×64; place_block minecraft:spruce_sapling ×32
-- **Conveyor Setup** (15 min) — craft_item create:belt_connector ×8; craft_item create:cogwheel ×48
-- **Deer Herd** (18 min) — breed_animal twilightforest:deer ×6
-- **Uranium Job** (18 min) — smelt_item mekanism:ingot_uranium ×6; mine_block mekanism:deepslate_uranium_ore ×8
-- **Harvest Festival** (19 min) — collect_item minecraft:beetroot ×48; collect_item farmersdelight:tomato ×48
-- **Seafaring Job** (21 min) — smelt_item minecraft:sponge ×2; kill_mob minecraft:guardian ×2
+- **Ghast Tear Stockpile** (17 min) — collect_item minecraft:ghast_tear ×3
+- **Nether Quartz Ore Dig** (17 min) — mine_block minecraft:nether_quartz_ore ×48
+- **Earthworks Job** (14 min) — mine_block minecraft:mud ×64; collect_item minecraft:flint ×24
+- **Bake Sale** (14 min) — consume_item minecraft:cookie ×16; collect_item minecraft:sweet_berries ×64
+- **Cave Garden** (14 min) — mine_block minecraft:moss_block ×48; consume_item minecraft:glow_berries ×8
+- **Engineer Duty** (13 min) — craft_item create:super_glue ×2; craft_item create:fluid_tank ×2
+- **Hot Ironwood Ingots** (19 min) — smelt_item twilightforest:ironwood_ingot ×8
+- **Fluorite Job** (15 min) — craft_item mekanism:block_fluorite ×2; mine_block mekanism:fluorite_ore ×10
+- **Breakfast Supplies** (20 min) — craft_item farmersdelight:egg_sandwich ×6; consume_item farmersdelight:bacon_and_eggs ×4
+- **Redstone Workshop** (19 min) — collect_item minecraft:redstone ×64; craft_item minecraft:clock ×1
 
 ### Mon 05 12:00
 
-- **Dig Deepslate Lapis Ore** (21 min) — mine_block minecraft:deepslate_lapis_ore ×16
-- **Hoglin Menace** (17 min) — kill_mob minecraft:hoglin ×6
-- **Gather Raw Zinc** (19 min) — collect_item create:raw_zinc ×24
-- **Hamburger Crafter** (16 min) — craft_item farmersdelight:hamburger ×6
-- **Redstone Order** (26 min) — mine_block minecraft:redstone_ore ×20; craft_item minecraft:dispenser ×4
-- **Golden Apple Order** (20 min) — craft_item minecraft:golden_apple ×2
-- **Bread Order** (14 min) — craft_item minecraft:bread ×32
-- **Hot Cooked Salmon** (12 min) — smelt_item minecraft:cooked_salmon ×8
-- **Venison Job** (19 min) — consume_item twilightforest:cooked_venison ×6; collect_item twilightforest:raw_venison ×8
-- **Osmium Errand** (32 min) — mine_block mekanism:deepslate_osmium_ore ×16; smelt_item mekanism:ingot_osmium ×24
+- **White Terracotta Order** (16 min) — craft_item minecraft:white_terracotta ×32
+- **Bring Lapis Lazuli** (14 min) — collect_item minecraft:lapis_lazuli ×64
+- **Sweet Roll Tasting** (16 min) — consume_item create:sweet_roll ×4
+- **Mutton Wrap Request** (11 min) — craft_item farmersdelight:mutton_wrap ×6
+- **Seafaring Chores** (21 min) — mine_block minecraft:prismarine ×20; collect_item minecraft:glow_ink_sac ×8
+- **Lead Ingot Supply** (14 min) — smelt_item mekanism:ingot_lead ×16
+- **Diamond Pickaxe Order** (16 min) — craft_item minecraft:diamond_pickaxe ×1
+- **Wither Skeleton Bounty** (23 min) — kill_mob minecraft:wither_skeleton ×5
+- **Raw Venison Run** (12 min) — collect_item twilightforest:raw_venison ×8
+- **Tin Job** (26 min) — smelt_item mekanism:ingot_tin ×16; mine_block mekanism:tin_ore ×20
 
 ### Tue 06 00:00
 
-- **Dig Deepslate Uranium Ore** (16 min) — mine_block mekanism:deepslate_uranium_ore ×12
-- **Fortress Mason** (20 min) — mine_block minecraft:blackstone ×64; craft_item minecraft:blaze_powder ×16
-- **Dig Deepslate Coal Ore** (16 min) — mine_block minecraft:deepslate_coal_ore ×24
-- **Rose Quartz Workshop** (19 min) — craft_item create:rose_quartz ×16
+- **Dig Uranium Ore** (18 min) — mine_block mekanism:uranium_ore ×16
+- **Animal Friends** (26 min) — tame_animal minecraft:cat ×2; breed_animal minecraft:ocelot ×3
+- **Magma Cream Run** (16 min) — collect_item minecraft:magma_cream ×8
+- **Andesite Alloy Block Commission** (12 min) — craft_item create:andesite_alloy_block ×4
 - **Honey Glazed Ham Meal** (15 min) — consume_item farmersdelight:honey_glazed_ham ×2
-- **Orchard Duty** (19 min) — collect_item minecraft:sweet_berries ×64; collect_item minecraft:pumpkin ×24
-- **Furnace: Sponge** (26 min) — smelt_item minecraft:sponge ×4
-- **Slime Patrol** (31 min) — kill_mob minecraft:slime ×16
-- **Redstone Duty** (18 min) — craft_item minecraft:repeater ×8; craft_item minecraft:piston ×8
-- **Naga Scale Pickup** (26 min) — collect_item twilightforest:naga_scale ×8
+- **Beekeeping Duty** (23 min) — breed_animal minecraft:bee ×8; consume_item minecraft:honey_bottle ×4
+- **Purpur Block Quarry** (17 min) — mine_block minecraft:purpur_block ×64
+- **Deepslate Osmium Ore Shift** (18 min) — mine_block mekanism:deepslate_osmium_ore ×20
+- **End Expedition** (24 min) — mine_block minecraft:chorus_plant ×48; kill_mob minecraft:enderman ×16; visit_dimension minecraft:the_end
+- **Canopy Bookshelf Order** (18 min) — craft_item twilightforest:canopy_bookshelf ×4
 
 ### Tue 06 12:00
 
+- **Cooked Rabbit Kitchen** (11 min) — smelt_item minecraft:cooked_rabbit ×8
+- **Make Zinc Blocks** (15 min) — craft_item create:zinc_block ×2
+- **Shepherds Pie Snack** (13 min) — consume_item farmersdelight:shepherds_pie ×2
+- **After Dark** (25 min) — kill_mob minecraft:enderman ×6; collect_item minecraft:spider_eye ×8
+- **Hunt the Magma Cubes** (22 min) — kill_mob minecraft:magma_cube ×16
+- **Tin Ingot Supply** (24 min) — smelt_item mekanism:ingot_tin ×32
+- **Bighorn Sheep Ranch** (17 min) — breed_animal twilightforest:bighorn_sheep ×6
 - **Crying Obsidian Quarry** (17 min) — mine_block minecraft:crying_obsidian ×6
-- **Deepslate Zinc Ore Dig** (24 min) — mine_block create:deepslate_zinc_ore ×24
-- **Cooked Mutton Chops Batch** (16 min) — smelt_item farmersdelight:cooked_mutton_chops ×32
-- **Iron Block Crafter** (15 min) — craft_item minecraft:iron_block ×3
-- **Red Mushroom Pickup** (15 min) — collect_item minecraft:red_mushroom ×32
-- **Steel Casing Workshop** (22 min) — craft_item mekanism:steel_casing ×1
-- **Lich Menace** (37 min) — kill_mob twilightforest:lich ×1
-- **Armadillo Family** (22 min) — breed_animal minecraft:armadillo ×6
-- **Honeycomb Stockpile** (19 min) — collect_item minecraft:honeycomb ×16
-- **Florist** (12 min) — collect_item botania:pink_mystical_flower ×16; craft_item botania:white_petal ×32
+- **Gather Raw Iron** (24 min) — collect_item minecraft:raw_iron ×48
+- **Harvest Festival** (19 min) — collect_item minecraft:carrot ×64; collect_item farmersdelight:onion ×48
 
 ### Wed 07 00:00
 
-- **Build Rails** (16 min) — craft_item minecraft:rail ×64
-- **Shroomlight Haul** (18 min) — collect_item minecraft:shroomlight ×16
-- **Fire Up Osmium Ingots** (24 min) — smelt_item mekanism:ingot_osmium ×32
-- **Florist** (12 min) — collect_item botania:blue_mystical_flower ×16; craft_item botania:yellow_petal ×32
-- **Breed Boars** (17 min) — breed_animal twilightforest:boar ×6
-- **Dinner Job** (17 min) — consume_item farmersdelight:fried_rice ×4; craft_item farmersdelight:stuffed_potato ×4
-- **Nether Stone Supplies** (16 min) — mine_block minecraft:basalt ×64; mine_block minecraft:bone_block ×8
-- **Ghast Slayer** (17 min) — kill_mob minecraft:ghast ×4
-- **Masonry Supplies** (25 min) — place_block create:cut_limestone ×64; place_block create:polished_cut_ochrum ×64
-- **Witch Slayer** (31 min) — kill_mob minecraft:witch ×3
+- **Nether Quartz Supply** (17 min) — collect_item minecraft:quartz ×48
+- **Quarry Errand** (15 min) — mine_block minecraft:deepslate ×80; collect_item minecraft:cobbled_deepslate ×96
+- **Dig Lead Ore** (16 min) — mine_block mekanism:lead_ore ×20
+- **Petal Picker** (12 min) — collect_item botania:purple_mystical_flower ×16; craft_item botania:yellow_petal ×32
+- **Hunt the Kobolds** (15 min) — kill_mob twilightforest:kobold ×12
+- **Sandwich Errand** (21 min) — craft_item farmersdelight:bacon_sandwich ×6; consume_item farmersdelight:hamburger ×4
+- **Nether Garden Supplies** (17 min) — collect_item minecraft:warped_fungus ×16; mine_block minecraft:warped_wart_block ×48
+- **Deepslate Lapis Ore Excavation** (21 min) — mine_block minecraft:deepslate_lapis_ore ×16
+- **Masonry Duty** (17 min) — place_block create:cut_limestone ×48; place_block create:polished_cut_veridium ×40
+- **Sea Lantern Commission** (26 min) — craft_item minecraft:sea_lantern ×3
 
 ### Wed 07 12:00
 
-- **Bighorn Sheep Ranch** (17 min) — breed_animal twilightforest:bighorn_sheep ×6
+- **Deer Ranch** (18 min) — breed_animal twilightforest:deer ×6
 - **Break Tin Ore** (17 min) — mine_block mekanism:tin_ore ×24
-- **Gather Lapis Lazuli** (14 min) — collect_item minecraft:lapis_lazuli ×64
-- **Camp Cook** (22 min) — smelt_item minecraft:cooked_mutton ×32; consume_item minecraft:beetroot_soup ×3
-- **Builders Tea Break** (14 min) — consume_item create:builders_tea ×3
-- **Winter Job** (17 min) — mine_block minecraft:ice ×48; craft_item minecraft:snow_block ×48
-- **Feast Duty** (20 min) — craft_item farmersdelight:honey_glazed_ham_block ×1; consume_item farmersdelight:shepherds_pie ×2
-- **Bouquet** (12 min) — collect_item botania:yellow_mystical_flower ×16; craft_item botania:white_petal ×32
-- **Pillager Bounty** (26 min) — kill_mob minecraft:pillager ×8
-- **Magma Cream Collector** (16 min) — collect_item minecraft:magma_cream ×8
+- **Dig Deepslate Diamond Ore** (17 min) — mine_block minecraft:deepslate_diamond_ore ×3
+- **Campfire Dinner** (19 min) — smelt_item minecraft:cooked_salmon ×8; consume_item minecraft:baked_potato ×8
+- **Masonry Errand** (25 min) — place_block create:polished_cut_ochrum ×64; place_block create:cut_asurine ×64
+- **Netherite Scrap Heat** (38 min) — smelt_item minecraft:netherite_scrap ×2
+- **Sandwich Errand** (17 min) — consume_item farmersdelight:hamburger ×3; craft_item farmersdelight:chicken_sandwich ×5
+- **Catch of the Day** (37 min) — collect_item minecraft:salmon ×16; smelt_item minecraft:cooked_cod ×16
+- **Slime Patrol** (31 min) — kill_mob minecraft:slime ×16
+- **Place Bookshelves** (18 min) — place_block minecraft:bookshelf ×4
 
 ### Thu 08 00:00
 
-- **Redstone Dust Supply** (14 min) — collect_item minecraft:redstone ×64
-- **Undead Supplies** (37 min) — kill_mob minecraft:skeleton ×20; kill_mob minecraft:stray ×12
-- **Market Fair** (23 min) — craft_item minecraft:honey_block ×2; breed_animal minecraft:sheep ×12
-- **Fire Up Gold Ingots** (34 min) — smelt_item minecraft:gold_ingot ×24
-- **Andesite Alloy Block Crafting** (12 min) — craft_item create:andesite_alloy_block ×4
-- **Seafood Errand** (19 min) — smelt_item farmersdelight:cooked_salmon_slice ×16; consume_item farmersdelight:kelp_roll_slice ×8
-- **Deepslate Fluorite Ore Shift** (18 min) — mine_block mekanism:deepslate_fluorite_ore ×16
-- **Blaze Bounty** (19 min) — kill_mob minecraft:blaze ×8
-- **Flower Order** (15 min) — collect_item minecraft:blue_orchid ×16; collect_item minecraft:lily_of_the_valley ×16
-- **Build Raw Ironwood** (18 min) — craft_item twilightforest:raw_ironwood ×8
+- **Potato Supply** (12 min) — collect_item minecraft:potato ×64
+- **Monster Supplies** (36 min) — kill_mob minecraft:witch ×2; kill_mob minecraft:enderman ×6
+- **Leatherworker** (18 min) — breed_animal minecraft:rabbit ×5; craft_item minecraft:painting ×8
+- **Prismarine Breaker** (18 min) — mine_block minecraft:prismarine ×32
+- **Zinc Ingot Smeltery** (27 min) — smelt_item #c:ingots/zinc ×32
+- **Feast Chores** (17 min) — craft_item farmersdelight:shepherds_pie_block ×1; consume_item farmersdelight:roast_chicken ×2
+- **Osmium Ingot Smeltery** (18 min) — smelt_item mekanism:ingot_osmium ×24
+- **Silverfish Patrol** (20 min) — kill_mob minecraft:silverfish ×10
+- **Camel Family** (19 min) — breed_animal minecraft:camel ×3
+- **Venison Steak Feast** (12 min) — consume_item twilightforest:cooked_venison ×6
 
 ### Thu 08 12:00
 
-- **Make Red Nether Bricks** (19 min) — craft_item minecraft:red_nether_bricks ×16
-- **Mine Deepslate Tin Ore** (18 min) — mine_block mekanism:deepslate_tin_ore ×20
-- **Zinc Block Crafting** (15 min) — craft_item create:zinc_block ×2
-- **Nether Mining Errand** (32 min) — collect_item minecraft:quartz ×48; mine_block minecraft:nether_quartz_ore ×48
-- **Venison Steak Heat** (13 min) — smelt_item twilightforest:cooked_venison ×8
-- **Iron Ingot Supply** (26 min) — smelt_item minecraft:iron_ingot ×48
-- **End Hunt Job** (33 min) — kill_mob minecraft:enderman ×24; collect_item minecraft:shulker_shell ×4
-- **Drowned Watch** (14 min) — kill_mob minecraft:drowned ×10
-- **Quarry Duty** (16 min) — mine_block minecraft:stone ×128; mine_block minecraft:calcite ×32
-- **Butcher Errand** (26 min) — smelt_item farmersdelight:cooked_bacon ×32; collect_item farmersdelight:ham ×8
+- **Golden Apple Batch** (20 min) — craft_item minecraft:golden_apple ×2
+- **Energized Smelter Duty** (34 min) — craft_item mekanism:energized_smelter ×1
+- **Zinc Ore Dig** (19 min) — mine_block create:zinc_ore ×24
+- **Bright Nights** (14 min) — collect_item minecraft:coal ×32; craft_item minecraft:lantern ×8
+- **Liveroot Bundle** (14 min) — collect_item twilightforest:liveroot ×16
+- **Lapis Ore Dig** (21 min) — mine_block minecraft:lapis_ore ×16
+- **Blaze Hunt** (26 min) — kill_mob minecraft:blaze ×12
+- **Ocelot Ranch** (22 min) — breed_animal minecraft:ocelot ×4
+- **Wool Errand** (21 min) — place_block minecraft:white_wool ×32; collect_item minecraft:mutton ×32
+- **Butcher Errand** (22 min) — smelt_item farmersdelight:beef_patty ×24; collect_item farmersdelight:ham ×8
 
 ### Fri 09 00:00
 
-- **Salmon Roll Request** (10 min) — craft_item farmersdelight:salmon_roll ×6
-- **Night Hunter** (28 min) — kill_mob minecraft:cave_spider ×6; collect_item minecraft:gunpowder ×16
-- **Raw Lead Gathering** (19 min) — collect_item mekanism:raw_lead ×24
-- **Canopy Bookshelf Batch** (18 min) — craft_item twilightforest:canopy_bookshelf ×4
-- **Dig Deepslate Iron Ore** (21 min) — mine_block minecraft:deepslate_iron_ore ×32
-- **Seafaring Supplies** (19 min) — mine_block minecraft:prismarine ×20; kill_mob minecraft:guardian ×2
-- **Stone Workshop** (19 min) — mine_block create:scoria ×64; place_block create:cut_asurine ×64
-- **Honeyed Apple Break** (16 min) — consume_item create:honeyed_apple ×4
-- **Axolotl Ranch** (20 min) — breed_animal minecraft:axolotl ×4
-- **Golden Carrot Assembly** (12 min) — craft_item minecraft:golden_carrot ×8
+- **Wheat Dough Request** (10 min) — craft_item farmersdelight:wheat_dough ×48
+- **Stonemason** (18 min) — collect_item minecraft:cobbled_deepslate ×96; smelt_item minecraft:cracked_stone_bricks ×48
+- **Fluorite Ore Shift** (14 min) — mine_block mekanism:fluorite_ore ×16
+- **Raw Ironwood Assembly** (18 min) — craft_item twilightforest:raw_ironwood ×8
+- **Dig Deepslate Coal Ore** (16 min) — mine_block minecraft:deepslate_coal_ore ×24
+- **Stable Hand** (20 min) — breed_animal minecraft:donkey ×3; craft_item minecraft:detector_rail ×8
+- **Bumper Crop** (30 min) — collect_item minecraft:carrot ×64; collect_item minecraft:wheat ×64; collect_item minecraft:sweet_berries ×64
+- **Deepslate Zinc Ore Dig** (24 min) — mine_block create:deepslate_zinc_ore ×24
+- **Lumber Duty** (17 min) — mine_block minecraft:acacia_log ×64; collect_item minecraft:jungle_log ×64
+- **Hunt the Phantoms** (18 min) — kill_mob minecraft:phantom ×6
 
 ### Fri 09 12:00
 
 - **Twilight Oak Log Miner** (13 min) — mine_block twilightforest:twilight_oak_log ×64
-- **Uranium Ingot Supply** (19 min) — smelt_item mekanism:ingot_uranium ×16
-- **Harvest Time** (19 min) — collect_item minecraft:potato ×64; collect_item farmersdelight:cabbage ×48
-- **Obsidian Quarry** (16 min) — mine_block minecraft:obsidian ×16
-- **Masonry Duty** (25 min) — place_block create:polished_cut_limestone ×64; place_block create:cut_crimsite ×64
-- **Quartz Block Request** (22 min) — craft_item minecraft:quartz_block ×16
-- **Make Mana Pools** (16 min) — craft_item botania:mana_pool ×1
-- **Camp Cook** (22 min) — smelt_item minecraft:cooked_cod ×16; consume_item minecraft:bread ×8
-- **Gem Duty** (24 min) — mine_block minecraft:lapis_ore ×10; mine_block minecraft:deepslate_diamond_ore ×2
-- **Cave Spider Menace** (23 min) — kill_mob minecraft:cave_spider ×12
+- **Fluorite Haul** (15 min) — collect_item mekanism:fluorite_gem ×48
+- **Hamburger Crafter** (16 min) — craft_item farmersdelight:hamburger ×6
+- **Construction Job** (21 min) — smelt_item minecraft:cracked_stone_bricks ×48; place_block minecraft:deepslate_tiles ×64
+- **Contraption Order** (14 min) — craft_item create:mechanical_piston ×2; place_block create:linear_chassis ×12
+- **Hoglin Watch** (17 min) — kill_mob minecraft:hoglin ×6
+- **Mana Pool Crafting** (16 min) — craft_item botania:mana_pool ×1
+- **Flower Supplies** (13 min) — collect_item minecraft:peony ×16; collect_item minecraft:lily_of_the_valley ×16
+- **Camp Setup** (15 min) — mine_block minecraft:oak_log ×64; craft_item minecraft:torch ×128
+- **Smooth Quartz Smeltery** (24 min) — smelt_item minecraft:smooth_quartz ×16
 
 ### Sat 10 00:00
 
-- **Gold Ore Shift** (16 min) — mine_block minecraft:gold_ore ×12
-- **Beyond the Void** (27 min) — collect_item minecraft:chorus_fruit ×64; collect_item minecraft:ender_pearl ×16
-- **Sea Lantern Batch** (35 min) — craft_item minecraft:sea_lantern ×4
-- **Nether Quartz Bundle** (17 min) — collect_item minecraft:quartz ×48
-- **Cooked Chicken Cuts Batch** (14 min) — smelt_item farmersdelight:cooked_chicken_cuts ×32
-- **Sweet Roll Lunch** (16 min) — consume_item create:sweet_roll ×4
-- **Make Diamond Pickaxes** (16 min) — craft_item minecraft:diamond_pickaxe ×1
-- **Dig Deepslate Lead Ore** (20 min) — mine_block mekanism:deepslate_lead_ore ×20
+- **Smelt Iron Ingots** (18 min) — smelt_item minecraft:iron_ingot ×32
+- **Piglin Trouble** (23 min) — kill_mob minecraft:piglin ×12
+- **Bone Block Shift** (13 min) — mine_block minecraft:bone_block ×8
+- **Quarry Job** (18 min) — mine_block minecraft:dripstone_block ×48; collect_item minecraft:cobbled_deepslate ×96
+- **Cooked Mutton Chops Batch** (16 min) — smelt_item farmersdelight:cooked_mutton_chops ×32
+- **Kinetics Chores** (13 min) — craft_item create:large_cogwheel ×24; craft_item create:cart_assembler ×3
+- **Potion Ingredients** (14 min) — collect_item minecraft:nether_wart ×8; craft_item minecraft:magma_cream ×4
+- **Break Osmium Ore** (17 min) — mine_block mekanism:osmium_ore ×24
 - **Make Livingwood Planks** (16 min) — craft_item botania:livingwood_planks ×16
-- **Skeleton Druid Hunt** (15 min) — kill_mob twilightforest:skeleton_druid ×8
+- **Breed Boars** (17 min) — breed_animal twilightforest:boar ×6
 
 ### Sat 10 12:00
 
-- **Ghast Tear Supply** (17 min) — collect_item minecraft:ghast_tear ×3
-- **Feast Job** (12 min) — craft_item farmersdelight:rice_roll_medley_block ×1; consume_item farmersdelight:shepherds_pie ×1
-- **Nether Stone Supplies** (16 min) — mine_block minecraft:glowstone ×32; mine_block minecraft:netherrack ×128
-- **Zinc Ingot Supply** (27 min) — smelt_item #c:ingots/zinc ×32
-- **Lead Duty** (26 min) — smelt_item mekanism:ingot_lead ×16; mine_block mekanism:lead_ore ×16
-- **Nether Mason Errand** (16 min) — craft_item minecraft:polished_blackstone ×64; smelt_item minecraft:smooth_quartz ×5
-- **Stray Bounty** (19 min) — kill_mob minecraft:stray ×12
-- **Break Canopy Tree Logs** (14 min) — mine_block twilightforest:canopy_log ×64
-- **Raw Cod Pickup** (19 min) — collect_item minecraft:cod ×24
-- **Llama Nursery** (18 min) — breed_animal minecraft:llama ×6
+- **Mine Crimson Stems** (12 min) — mine_block minecraft:crimson_stem ×64
+- **Cook Cooked Chicken Cuts** (14 min) — smelt_item farmersdelight:cooked_chicken_cuts ×32
+- **Witch Trouble** (21 min) — kill_mob minecraft:witch ×2
+- **Rose Quartz Workshop** (19 min) — craft_item create:rose_quartz ×16
+- **Fluorite Duty** (15 min) — craft_item mekanism:block_fluorite ×2; mine_block mekanism:deepslate_fluorite_ore ×8
+- **Wildlife Job** (24 min) — collect_item minecraft:turtle_scute ×1; breed_animal minecraft:frog ×3
+- **Make Quartz Blocks** (22 min) — craft_item minecraft:quartz_block ×16
+- **Redcap Patrol** (17 min) — kill_mob twilightforest:redcap ×12
+- **Dig Deepslate Gold Ore** (32 min) — mine_block minecraft:deepslate_gold_ore ×24
+- **Make Cut Copper** (22 min) — craft_item minecraft:cut_copper ×16
 
 ### Sun 11 00:00
 
-- **Eye of Ender Request** (20 min) — craft_item minecraft:ender_eye ×4
-- **Hot Fried Eggs** (13 min) — smelt_item farmersdelight:fried_egg ×16
-- **Fluorite Chores** (21 min) — craft_item mekanism:block_fluorite ×2; mine_block mekanism:fluorite_ore ×16
-- **Catch of the Day** (26 min) — collect_item minecraft:salmon ×8; smelt_item minecraft:cooked_cod ×16
-- **Chocolate Glazed Berries Lunch** (16 min) — consume_item create:chocolate_glazed_berries ×4
-- **Seafaring Errand** (23 min) — collect_item minecraft:ink_sac ×24; collect_item minecraft:sea_pickle ×16
-- **Lush Cave Supplies** (22 min) — collect_item minecraft:glow_berries ×40; mine_block minecraft:moss_block ×48
-- **Lead Shielding** (18 min) — smelt_item mekanism:ingot_lead ×16; craft_item mekanism:hazmat_mask ×1
-- **Zombified Piglin Watch** (13 min) — kill_mob minecraft:zombified_piglin ×16
-- **Raw Venison Pickup** (12 min) — collect_item twilightforest:raw_venison ×8
+- **Ender Pearl Haul** (15 min) — collect_item minecraft:ender_pearl ×16
+- **Make Honey Cookies** (12 min) — craft_item farmersdelight:honey_cookie ×64
+- **Uranium Duty** (35 min) — mine_block mekanism:deepslate_uranium_ore ×12; smelt_item mekanism:ingot_uranium ×16
+- **Master Smith** (22 min) — collect_item minecraft:diamond ×2; craft_item minecraft:diamond_sword ×1
+- **Bar Of Chocolate Feast** (16 min) — consume_item create:bar_of_chocolate ×4
+- **Deep Dark Delve** (29 min) — mine_block minecraft:sculk_sensor ×8; mine_block minecraft:deepslate_copper_ore ×32
+- **Strider Ranch** (15 min) — breed_animal minecraft:strider ×4
+- **Fishing Order** (21 min) — smelt_item minecraft:cooked_salmon ×8; consume_item minecraft:cooked_cod ×6
+- **Guardian Trouble** (32 min) — kill_mob minecraft:guardian ×8
+- **Skeleton Druid Bounty** (15 min) — kill_mob twilightforest:skeleton_druid ×8
 
 ### Sun 11 12:00
 
-- **Glistering Melon Slice Crafting** (12 min) — craft_item minecraft:glistering_melon_slice ×8
-- **Gardening Order** (13 min) — craft_item minecraft:paper ×64; collect_item minecraft:glow_lichen ×32
-- **Alloy Duty** (20 min) — craft_item create:basin ×4; place_block create:andesite_alloy_block ×4
-- **Hot Cooked Salmon Slices** (14 min) — smelt_item farmersdelight:cooked_salmon_slice ×16
-- **Lead Ore Breaker** (19 min) — mine_block mekanism:lead_ore ×24
-- **Redcap Cleanup** (17 min) — kill_mob twilightforest:redcap ×12
-- **End Hunt Order** (24 min) — collect_item minecraft:ender_pearl ×16; kill_mob minecraft:enderman ×24
-- **Breeze Bounty** (23 min) — kill_mob minecraft:breeze ×3
-- **Florist** (12 min) — collect_item botania:purple_mystical_flower ×16; craft_item botania:yellow_petal ×32
-- **Hoglin Herd** (22 min) — breed_animal minecraft:hoglin ×4
+- **Rabbit Stew Crafting** (12 min) — craft_item minecraft:rabbit_stew ×3
+- **Farm Order** (13 min) — collect_item minecraft:beetroot ×32; collect_item minecraft:beetroot_seeds ×32
+- **Taste Honeyed Apple** (16 min) — consume_item create:honeyed_apple ×4
+- **Cook Cooked Cod Slices** (14 min) — smelt_item farmersdelight:cooked_cod_slice ×24
+- **Raw Tin Pickup** (17 min) — collect_item mekanism:raw_tin ×24
+- **Twilight Timber Chores** (16 min) — mine_block twilightforest:canopy_log ×64; craft_item twilightforest:twilight_oak_planks ×64
+- **Nether Mining Job** (27 min) — mine_block minecraft:nether_gold_ore ×24; mine_block minecraft:ancient_debris ×1
+- **Night Hunter** (17 min) — kill_mob minecraft:cave_spider ×4; collect_item minecraft:bone ×16
+- **Florist** (12 min) — collect_item botania:pink_mystical_flower ×16; craft_item botania:white_petal ×32
+- **Cooked Porkchop Order** (16 min) — smelt_item minecraft:cooked_porkchop ×40

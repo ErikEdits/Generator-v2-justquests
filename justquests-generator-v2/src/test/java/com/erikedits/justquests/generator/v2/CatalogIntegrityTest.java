@@ -255,7 +255,8 @@ class CatalogIntegrityTest {
 
     @Test
     void loaderAcceptsEverythingAndCoverageTargetsAreMet() {
-        FakeHost host = new FakeHost().withMods("farmersdelight", "create");
+        FakeHost host = new FakeHost().withMods("farmersdelight", "create", "mekanism", "twilightforest", "botania");
+        host.content.dimensions.add("twilightforest:twilight_forest");
         var catalog = new CatalogLoader(host.log, host.store).load();
         assertEquals(List.of(), catalog.loadWarnings, "bundled data must load without warnings");
         var r = Generation.run(catalog, host, TestSupport.config(Difficulty.HARD, 1), TestSupport.unlockedProgression(host),
@@ -269,6 +270,10 @@ class CatalogIntegrityTest {
         assertTrue(vanilla >= 150, "usable vanilla targets " + vanilla);
         assertTrue(fd >= 40, "usable Farmer's Delight targets " + fd);
         assertTrue(create >= 40, "usable Create targets " + create);
+        for (String[] m : new String[][]{{"mekanism", "25"}, {"twilightforest", "25"}, {"botania", "12"}}) {
+            long usable = r.pool().candidates().stream().filter(c -> c.profile().equals(m[0])).count();
+            assertTrue(usable >= Long.parseLong(m[1]), "usable " + m[0] + " targets " + usable);
+        }
         long fdThemes = catalog.themes.stream().filter(t -> t.profile().equals("farmersdelight")).count();
         long createThemes = catalog.themes.stream().filter(t -> t.profile().equals("create")).count();
         assertTrue(fdThemes >= 3 && createThemes >= 3, "mod themes " + fdThemes + "/" + createThemes);

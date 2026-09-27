@@ -1,4 +1,68 @@
 {
+  "justquests:gen/1790510400_7": {
+    "title": "Make Mutton Wraps",
+    "description": "Craft 6 mutton wraps.",
+    "category": "generated",
+    "sort": 11,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "farmersdelight:mutton_wrap",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:lantern",
+        "count": 8
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/abandoned_mineshaft"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 55
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Woodcutter",
+    "description": "The sawmill is waiting: mine 64 spruce logs and place 16 dark oak saplings. Look in taigas. Dark forests have plenty.",
+    "category": "generated",
+    "sort": 14,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:spruce_log",
+        "count": 64
+      },
+      {
+        "type": "justquests:place_block",
+        "block": "minecraft:dark_oak_sapling",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:phantom_membrane",
+        "count": 4
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:fire_resistance",
+        "seconds": 480,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 65
+      }
+    ]
+  },
   "justquests:gen/1790510400_1": {
     "title": "Masonry Duty",
     "description": "Make 64 polished deepslate and make 40 mossy stone bricks. Found deep underground. Stone bricks with vines or moss.",
@@ -29,67 +93,9 @@
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Bouquet",
-    "description": "Fresh flowers for the market: gather 16 red tulips and pick up 16 lily of the valleys. Flower forests have the most.",
-    "category": "generated",
-    "sort": 15,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:red_tulip",
-        "count": 16
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:lily_of_the_valley",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:coal_block",
-        "count": 4
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/abandoned_mineshaft"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 95
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Taste Honey Glazed Ham",
-    "description": "Eat 2 honey glazed ham. Place a glazed ham and serve it into a bowl.",
-    "category": "generated",
-    "sort": 15,
-    "objectives": [
-      {
-        "type": "justquests:consume_item",
-        "item": "farmersdelight:honey_glazed_ham",
-        "count": 2
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:zinc_ingot",
-        "count": 19
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 65
-      }
-    ]
-  },
   "justquests:gen/1790510400_9": {
     "title": "Make Livingwood Planks",
-    "description": "Make 16 livingwood planks. A Pure Daisy turns logs placed around it into livingwood.",
+    "description": "Craft 16 livingwood planks. A Pure Daisy turns logs placed around it into livingwood.",
     "category": "generated",
     "sort": 16,
     "objectives": [
@@ -102,12 +108,16 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
-        "count": 12
+        "item": "mekanism:ingot_tin",
+        "count": 21
       },
       {
         "type": "justquests:xp",
-        "amount": 70
+        "amount": 75
+      },
+      {
+        "type": "justquests:message",
+        "message": "The quest board has a new hero."
       }
     ]
   },
@@ -135,58 +145,97 @@
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "After Dark",
-    "description": "When the sun sets: defeat 6 slimes and collect 3 phantom membranes. Look in swamps. They spawn at night and in dark caves.",
+  "justquests:gen/1790510400_6": {
+    "title": "Tin Ore Shift",
+    "description": "Break 24 tin ore. Needs a stone pickaxe or better. Found in caves.",
     "category": "generated",
-    "sort": 22,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:slime",
-        "count": 6
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:phantom_membrane",
-        "count": 3
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 16
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glistering_melon_slice",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 125
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Deepslate Zinc Ore Dig",
-    "description": "Mine 24 deepslate zinc ore. Needs an iron pickaxe or better. Found in caves. Found deep underground.",
-    "category": "generated",
-    "sort": 24,
+    "sort": 17,
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "create:deepslate_zinc_ore",
+        "block": "mekanism:tin_ore",
         "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:honeyed_apple",
+        "item": "minecraft:cooked_salmon",
+        "count": 13
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/jungle_temple"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 55
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Undead Chores",
+    "description": "Slay 10 skeletons and hunt 6 drowned. They spawn at night and in dark caves. Look in and near oceans.",
+    "category": "generated",
+    "sort": 18,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:skeleton",
+        "count": 10
+      },
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:drowned",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "farmersdelight:barbecue_stick",
         "count": 8
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "farmersdelight:cabbage",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 165
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Harvest Market",
+    "description": "The fair opens soon: make 3 rabbit stew and breed 10 sheep. Look in deserts. Sheep breed with wheat.",
+    "category": "generated",
+    "sort": 22,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:rabbit_stew",
+        "count": 3
+      },
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:sheep",
+        "count": 10
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:slime_ball",
+        "count": 8
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:phantom_membrane",
+        "count": 4
       },
       {
         "type": "justquests:xp",
@@ -194,62 +243,27 @@
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Dig Deepslate Lead Ore",
-    "description": "Mine 24 deepslate lead ore. Needs a stone pickaxe or better. Found in caves. Found deep underground.",
+  "justquests:gen/1790510400_5": {
+    "title": "Zinc Ingot Batch",
+    "description": "Smelt 32 zinc ingots. Smelt raw zinc in a furnace. Any zinc ingot counts. Needs an iron pickaxe or better. Found in caves.",
     "category": "generated",
-    "sort": 24,
+    "sort": 27,
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "mekanism:deepslate_lead_ore",
-        "count": 24
+        "type": "justquests:smelt_item",
+        "item": "#c:ingots/zinc",
+        "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:raw_osmium",
+        "item": "mekanism:ingot_lead",
         "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 160
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Ironworks Supplies",
-    "description": "Craft 64 rails and place 16 iron chains.",
-    "category": "generated",
-    "sort": 28,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:rail",
-        "count": 64
-      },
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:iron_chain",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "farmersdelight:honey_glazed_ham",
-        "count": 2
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "create:andesite_alloy_block",
-        "count": 4
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 235
+        "amount": 125
       }
     ]
   },
