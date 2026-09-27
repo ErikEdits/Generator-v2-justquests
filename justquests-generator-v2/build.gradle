@@ -56,6 +56,24 @@ tasks.register('samples', JavaExec) {
     args project.file('samples').absolutePath
 }
 
+// Writes samples/catalog-report.md (every target with minutes, counts and difficulties).
+tasks.register('catalogReport', JavaExec) {
+    group = 'documentation'
+    description = 'Writes samples/catalog-report.md.'
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.erikedits.justquests.generator.v2.CatalogReport'
+    args project.file('samples/catalog-report.md').absolutePath
+}
+
+// Writes samples/simulation/ (14 simulated days per difficulty with stats).
+tasks.register('simulate', JavaExec) {
+    group = 'documentation'
+    description = 'Writes samples/simulation/<difficulty>.md.'
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'com.erikedits.justquests.generator.v2.Simulation'
+    args project.file('samples/simulation').absolutePath
+}
+
 // Packs the deliverable ZIP (project sources, docs, samples) into build/dist.
 tasks.register('deliverableZip', Zip) {
     group = 'distribution'

@@ -42,7 +42,6 @@ FD_ENTRIES = [
         T("place_block", FD + "rope", 0.1, 8, 48, hint="Hang rope down a cliff or well."),
     ], tool="knife"),
     E("fd_knives", "fd_tools", 0, [
-        T("craft_item", FD + "flint_knife", 0.5, 1, 2),
         T("craft_item", FD + "iron_knife", 0.7, 1, 2, tier=1),
         T("craft_item", FD + "diamond_knife", 5.5, 1, 1, tier=2, minDifficulty="hard"),
     ]),

@@ -5119,50 +5119,6 @@
       ]
     },
     {
-      "key": "stone_tools",
-      "family": "stone_tools",
-      "tier": 0,
-      "dimension": "minecraft:overworld",
-      "tool": "none",
-      "targets": [
-        {
-          "type": "craft_item",
-          "id": "minecraft:stone_pickaxe",
-          "effort": 0.3,
-          "min": 1,
-          "max": 4
-        },
-        {
-          "type": "craft_item",
-          "id": "minecraft:stone_axe",
-          "effort": 0.3,
-          "min": 1,
-          "max": 4
-        },
-        {
-          "type": "craft_item",
-          "id": "minecraft:stone_sword",
-          "effort": 0.25,
-          "min": 1,
-          "max": 4
-        },
-        {
-          "type": "craft_item",
-          "id": "minecraft:stone_shovel",
-          "effort": 0.15,
-          "min": 2,
-          "max": 6
-        },
-        {
-          "type": "craft_item",
-          "id": "minecraft:stone_hoe",
-          "effort": 0.25,
-          "min": 1,
-          "max": 4
-        }
-      ]
-    },
-    {
       "key": "leather_armor",
       "family": "leather_armor",
       "tier": 0,
@@ -5316,10 +5272,11 @@
         {
           "type": "craft_item",
           "id": "minecraft:brewing_stand",
-          "effort": 2.0,
+          "effort": 4.0,
           "min": 1,
           "max": 2,
-          "tier": 3
+          "tier": 3,
+          "hint": "Needs a blaze rod from a Nether fortress."
         },
         {
           "type": "craft_item",

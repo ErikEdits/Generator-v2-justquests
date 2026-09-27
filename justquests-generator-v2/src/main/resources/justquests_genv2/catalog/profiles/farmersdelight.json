@@ -281,13 +281,6 @@
       "targets": [
         {
           "type": "craft_item",
-          "id": "farmersdelight:flint_knife",
-          "effort": 0.5,
-          "min": 1,
-          "max": 2
-        },
-        {
-          "type": "craft_item",
           "id": "farmersdelight:iron_knife",
           "effort": 0.7,
           "min": 1,

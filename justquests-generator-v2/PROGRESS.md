@@ -32,10 +32,10 @@ Auto-resume routine: `trig_01VkvYQ75m7uPB1RPLGp5Diq` (every 2 h) — delete when
 
 ## Extension phase (user: ">= 3 more hours, ZIP up to 5 MB") — started 2026-09-27 13:36 UTC, work until >= 16:40 UTC
 Routine: "Generator v2 extension auto-resume" (hourly) — delete when done.
-- [~] E1 Content: vanilla catalog 463 targets DONE (verified by tools/verify_vanilla.py vs misode/mcmeta registries+recipes); rewards/titles pending — (more ores/blocks/mobs/crafts/foods/smelts/places/breeds), more reward items/effects, more title/hint variety
+- [x] E1 Content: vanilla catalog 458 targets (verified by tools/verify_vanilla.py vs misode/mcmeta registries+recipes across 17 MC versions; since-guard for experimental leaks), 83 reward items, title/hint variety (wording variants, family nouns)
 - [x] E2 Themes: vanilla 30, FD 12, Create 10 (+rewards 83 vanilla items, effects, messages)
-- [x] E3 Mod profiles: FD 122, Create 70 targets; tools/verify_mods.py (ids vs all lang files + recipe types) 0 problems
-- [ ] E4 Tools: `./gradlew catalogReport` -> samples/catalog-report.md (every target: types, count range, minutes, difficulties); `./gradlew simulate` -> samples/simulation/ (14 days of rotations with claims, stats text)
+- [x] E3 Mod profiles: FD 121, Create 70 targets; tools/verify_mods.py (ids vs all lang files + recipe types) 0 problems
+- [x] E4 Tools: `./gradlew catalogReport` -> samples/catalog-report.md (every target: types, count range, minutes, difficulties); `./gradlew simulate` -> samples/simulation/ (14 days of rotations with claims, stats text)
 - [ ] E5 Robustness tests: host fuzz (random TriStates, missing ids, throwing host), claims property test (random op sequences + invariants), old-version test (1.18.2: ids with since > 1.18.2 missing)
 - [ ] E6 Reference adapters for other API eras (Fabric 1.21.1, Forge 1.20.1, Forge/Fabric 1.18.2, NeoForge 1.21.4+ notes) — REFERENCE ONLY, from the real mod trees in /home/user/erikedits/justquests
 - [ ] E7 Docs/samples refresh, README numbers, rebuild ZIP, send, delete routine, German summary

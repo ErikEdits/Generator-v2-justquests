@@ -173,13 +173,6 @@ MORE = [
     E("chorus_plants", "end_plants", 4, [T("mine_block", "minecraft:chorus_plant", 0.1, 16, 64)], dim=EN,
       hints=["outer_islands"]),
     # ------------------------------------------------------------ tools, armor, workstations
-    E("stone_tools", "stone_tools", 0, [
-        T("craft_item", "minecraft:stone_pickaxe", 0.3, 1, 4),
-        T("craft_item", "minecraft:stone_axe", 0.3, 1, 4),
-        T("craft_item", "minecraft:stone_sword", 0.25, 1, 4),
-        T("craft_item", "minecraft:stone_shovel", 0.15, 2, 6),
-        T("craft_item", "minecraft:stone_hoe", 0.25, 1, 4),
-    ]),
     E("leather_armor", "leather_armor", 0, [
         T("craft_item", "minecraft:leather_helmet", 2.2, 1, 1),
         T("craft_item", "minecraft:leather_chestplate", 3.4, 1, 1),
@@ -201,7 +194,7 @@ MORE = [
         T("craft_item", "minecraft:lectern", 5.0, 1, 1),
         T("craft_item", "minecraft:anvil", 17.0, 1, 1, tier=1, minDifficulty="hard", hint="31 iron ingots."),
         T("craft_item", "minecraft:enchanting_table", 16.0, 1, 1, tier=2, minDifficulty="hard"),
-        T("craft_item", "minecraft:brewing_stand", 2.0, 1, 2, tier=3),
+        T("craft_item", "minecraft:brewing_stand", 4.0, 1, 2, tier=3, hint="Needs a blaze rod from a Nether fortress."),
         T("craft_item", "minecraft:jukebox", 5.5, 1, 1, tier=2, minDifficulty="normal"),
     ]),
     E("redstone_parts", "redstone", 2, [

@@ -3,3 +3,5 @@ build/
 *.class
 /justquests-generator-v2/build/
 /dist/tmp/
+__pycache__/
+*.pyc
