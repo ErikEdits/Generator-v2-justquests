@@ -2,7 +2,33 @@
 
 Generator v2: enabled, difficulty hard, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest, botania], Minecraft 1.21.1 (neoforge)
 
-justquests:gen/1790510400_7  "Honey Glazed Ham Lunch"  (HARD, cycle 1790510400, seed 0xEE71…)
+justquests:gen/1790510400_1  "Masonry Duty"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:polished_deepslate ×64
+  effort 0.10 min/unit (×1.10 deep) → 7.0 min (target 18.3, range 15–35 min)
+  tier 1 (always available), family stonework, profile vanilla, hints deep
+objective craft_item minecraft:mossy_stone_bricks ×40
+  effort 0.20 min/unit → 8.0 min (target 18.3, range 15–35 min)
+  tier 0 (always available), family stonework, profile vanilla
+combo within family stonework
+estimated 15.0 min (quick)
+reward give_item minecraft:experience_bottle ×16 (value 19.2) + xp 65 (value 5.4)  → 24.6 / budget 24.8
+rejected alternatives: craft_item minecraft:polished_andesite (max count takes only 4.5 min); craft_item minecraft:polished_granite (max count takes only 4.5 min); craft_item minecraft:polished_diorite (max count takes only 4.5 min)
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Bouquet"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:red_tulip ×16
+  effort 0.30 min/unit (×1.40 flower_forest) → 6.7 min (target 19.7, range 15–35 min)
+  tier 0 (always available), family flowers, profile vanilla, hints flower_forest
+objective collect_item minecraft:lily_of_the_valley ×16
+  effort 0.35 min/unit (×1.40 flower_forest) → 7.8 min (target 19.7, range 15–35 min)
+  tier 0 (always available), family flowers, profile vanilla, hints flower_forest
+theme florist
+estimated 14.6 min (quick)
+reward give_item minecraft:coal_block ×4 (value 9.2) + loot_table minecraft:chests/abandoned_mineshaft (value 7.0) + xp 95 (value 7.9)  → 24.1 / budget 24.0
+rejected alternatives: collect_item minecraft:dandelion (max count takes only 3.2 min); collect_item minecraft:poppy (max count takes only 3.2 min)
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Taste Honey Glazed Ham"  (HARD, cycle 1790510400, seed 0xEE71…)
 objective consume_item farmersdelight:honey_glazed_ham ×2
   effort 7.50 min/unit → 15.0 min (target 22.6, range 15–35 min)
   tier 1 (always available), family fd_feasts, profile farmersdelight
@@ -10,16 +36,16 @@ estimated 15.0 min (quick)
 reward give_item create:zinc_ingot ×19 (value 17.1) + xp 65 (value 5.4)  → 22.5 / budget 22.5
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Mana Pool Request"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective craft_item botania:mana_pool ×1
-  effort 16.00 min/unit → 16.0 min (target 23.8, range 15–35 min)
-  tier 2 (always available), family bot_mana, profile botania
+justquests:gen/1790510400_9  "Make Livingwood Planks"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item botania:livingwood_planks ×16
+  effort 1.00 min/unit → 16.0 min (target 29.1, range 15–35 min)
+  tier 2 (always available), family bot_livingwood, profile botania
 estimated 16.0 min (quick)
-reward give_item mekanism:basic_control_circuit ×4 (value 16.0) + effect minecraft:jump_boost 300s (value 1.5) + xp 80 (value 6.7)  → 24.2 / budget 24.0
-rejected alternatives: craft_item botania:mana_spreader (its grid recipe varies between versions)
+reward give_item minecraft:golden_carrot ×12 (value 18.0) + xp 70 (value 5.8)  → 23.8 / budget 24.0
+rejected alternatives: collect_item botania:livingwood_log (a Pure Daisy converts logs in place; nothing is picked up)
 state: AVAILABLE
 
-justquests:gen/1790510400_0  "Breed Bighorn Sheep"  (HARD, cycle 1790510400, seed 0xEE71…)
+justquests:gen/1790510400_0  "More Bighorn Sheep"  (HARD, cycle 1790510400, seed 0xEE71…)
 objective breed_animal twilightforest:bighorn_sheep ×6
   effort 2.00 min/unit → 12.0 min (target 19.8, range 15–35 min)
   tier 2 (always available), family tf_ranch, profile twilightforest, twilightforest:twilight_forest
@@ -28,80 +54,58 @@ estimated 17.0 min (quick)
 reward give_item twilightforest:cooked_venison ×16 (value 17.6) + xp 95 (value 7.9)  → 25.5 / budget 25.5
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "Redstone Duty"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective craft_item minecraft:note_block ×6
-  effort 1.00 min/unit → 6.0 min (target 21.3, range 15–35 min)
-  tier 2 (always available), family redstone, profile vanilla
-objective collect_item minecraft:redstone ×48
-  effort 0.20 min/unit (×1.10 deep) → 10.6 min (target 21.3, range 15–35 min)
-  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
-combo within family redstone
-estimated 16.6 min (quick)
-reward give_item mekanism:raw_osmium ×29 (value 20.3) + xp 85 (value 7.1)  → 27.4 / budget 27.3
-rejected alternatives: craft_item minecraft:dropper (max count takes only 3.6 min)
+justquests:gen/1790510400_3  "After Dark"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:slime ×6
+  effort 1.50 min/unit (×1.30 swamp) → 11.7 min (target 20.7, range 15–35 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp
+objective collect_item minecraft:phantom_membrane ×3
+  effort 3.50 min/unit → 10.5 min (target 20.7, range 15–35 min)
+  tier 1 (always available), family undead, profile vanilla, hints night
+theme night_hunter
+estimated 22.2 min
+reward give_item minecraft:cooked_salmon ×16 (value 14.4) + give_item minecraft:glistering_melon_slice ×8 (value 12.0) + xp 125 (value 10.4)  → 36.8 / budget 36.6
+rejected alternatives: hint: phantoms only spawn after three nights without sleep
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Winter Duty"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective mine_block minecraft:ice ×48
-  effort 0.12 min/unit (×1.30 snowy) → 7.5 min (target 21.7, range 15–35 min)
-  tier 0 (always available), family snow, profile vanilla, hints snowy
-objective craft_item minecraft:snow_block ×48
-  effort 0.15 min/unit (×1.30 snowy) → 9.4 min (target 21.7, range 15–35 min)
-  tier 0 (always available), family snow, profile vanilla, hints snowy
-combo within family snow
-estimated 16.8 min (quick)
-reward give_item minecraft:experience_bottle ×15 (value 18.0) + effect minecraft:night_vision 600s (value 4.0) + xp 70 (value 5.8)  → 27.8 / budget 27.8
-rejected alternatives: collect_item minecraft:snowball (max count takes only 2.5 min)
-state: AVAILABLE
-
-justquests:gen/1790510400_5  "Zinc Ore Breaker"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective mine_block create:zinc_ore ×24
-  effort 0.80 min/unit → 19.2 min (target 32.0, range 15–35 min)
-  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves
-estimated 19.2 min (quick)
-reward give_item create:wrench ×1 (value 3.5) + give_item botania:manasteel_ingot ×5 (value 17.5) + xp 95 (value 7.9)  → 28.9 / budget 28.8
+justquests:gen/1790510400_5  "Deepslate Zinc Ore Dig"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective mine_block create:deepslate_zinc_ore ×24
+  effort 0.90 min/unit (×1.10 deep) → 23.8 min (target 32.0, range 15–35 min)
+  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves/deep
+estimated 23.8 min
+reward give_item create:honeyed_apple ×8 (value 24.0) + xp 140 (value 11.7)  → 35.7 / budget 35.6
 rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch)
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Lead Ore Shift"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective mine_block mekanism:lead_ore ×24
-  effort 0.80 min/unit → 19.2 min (target 29.8, range 15–35 min)
-  tier 1 (always available), family mek_lead, profile mekanism, tool stone, hints caves
-estimated 19.2 min (quick)
-reward give_item mekanism:ingot_tin ×25 (value 21.3) + xp 90 (value 7.5)  → 28.8 / budget 28.8
+justquests:gen/1790510400_6  "Dig Deepslate Lead Ore"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective mine_block mekanism:deepslate_lead_ore ×24
+  effort 0.90 min/unit (×1.10 deep) → 23.8 min (target 29.8, range 15–35 min)
+  tier 1 (always available), family mek_lead, profile mekanism, tool stone, hints caves/deep
+estimated 23.8 min
+reward give_item mekanism:raw_osmium ×32 (value 22.4) + xp 160 (value 13.3)  → 35.7 / budget 35.6
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Nether Hunt Supplies"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective kill_mob minecraft:wither_skeleton ×3
-  effort 3.00 min/unit (×1.30 fortress) → 11.7 min (target 24.1, range 15–35 min)
-  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_mobs, profile vanilla, hints fortress, minecraft:the_nether
-objective kill_mob minecraft:blaze ×5
-  effort 1.50 min/unit (×1.30 fortress) → 9.8 min (target 24.1, range 15–35 min)
-  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_mobs, profile vanilla, hints fortress, minecraft:the_nether
-travel overhead 3.0 min
-combo within family nether_mobs
-estimated 24.5 min
-reward give_item minecraft:emerald ×12 (value 30.0) + xp 125 (value 10.4)  → 40.4 / budget 40.3
+justquests:gen/1790510400_8  "Ironworks Supplies"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:rail ×64
+  effort 0.25 min/unit → 16.0 min (target 34.5, range 15–35 min)
+  tier 1 (always available), family iron_works, profile vanilla
+objective place_block minecraft:iron_chain ×16
+  effort 0.75 min/unit → 12.0 min (target 34.5, range 15–35 min)
+  tier 1 (always available), family iron_works, profile vanilla
+combo within family iron_works
+estimated 28.0 min
+reward give_item farmersdelight:honey_glazed_ham ×2 (value 14.0) + give_item create:andesite_alloy_block ×4 (value 12.8) + xp 235 (value 19.6)  → 46.4 / budget 46.2
 state: AVAILABLE
 
-justquests:gen/1790510400_1  "Desert Trek"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective smelt_item minecraft:green_dye ×48
-  effort 0.16 min/unit (×1.30 desert) → 10.0 min (target 28.6, range 15–35 min)
-  tier 0 (always available), family plants, profile vanilla, hints desert
-objective kill_mob minecraft:husk ×12
-  effort 1.00 min/unit (×1.30 desert) → 15.6 min (target 28.6, range 15–35 min)
-  tier 0 (always available), family undead, profile vanilla, hints desert/night
-theme desert_trek
-estimated 25.6 min
-reward give_item minecraft:emerald ×11 (value 27.5) + loot_table minecraft:chests/abandoned_mineshaft (value 7.0) + xp 95 (value 7.9)  → 42.4 / budget 42.2
-state: AVAILABLE
-
-justquests:gen/1790510400_8  "Iron Ingot Heat"  (HARD, cycle 1790510400, seed 0xEE71…)
-objective smelt_item minecraft:iron_ingot ×48
-  effort 0.55 min/unit → 26.4 min (target 24.9, range 15–35 min)
-  tier 1 (always available), family metals, profile vanilla, tool stone, hints caves
-estimated 26.4 min
-reward give_item mekanism:ingot_osmium ×32 (value 28.8) + xp 130 (value 10.8)  → 39.6 / budget 39.6
-rejected alternatives: collect_item minecraft:iron_ore (drops raw_iron, needs Silk Touch)
+justquests:gen/1790510400_2  "Gem Duty"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:lapis_lazuli ×64
+  effort 0.20 min/unit (×1.10 deep) → 14.1 min (target 28.5, range 15–35 min)
+  tier 2 (always available), family gems, profile vanilla, tool stone, hints deep
+objective mine_block minecraft:emerald_ore ×1
+  effort 7.00 min/unit (×1.30 mountains ×1.60 rare) → 14.6 min (target 28.5, range 15–35 min)
+  tier 2 (always available), family gems, profile vanilla, tool iron, hints mountains/rare
+combo within family gems
+estimated 28.6 min
+reward give_item mekanism:ingot_steel ×11 (value 33.0) + effect minecraft:speed 480s (value 4.8) + xp 115 (value 9.6)  → 47.4 / budget 47.3
+rejected alternatives: collect_item minecraft:emerald (villager trades do not count as pickups)
 state: AVAILABLE
 

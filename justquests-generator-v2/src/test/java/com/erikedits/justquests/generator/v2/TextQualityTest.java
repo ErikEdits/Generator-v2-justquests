@@ -114,4 +114,24 @@ class TextQualityTest {
         assertTrue(problems("Iron Run", "Found in caves. Found in caves.").stream().anyMatch(s -> s.startsWith("sentence")));
         assertTrue(problems("Iron Run", "Craft a useful bucket. An hour of work.").isEmpty());
     }
+
+    @Test
+    void travelQuestTitlesStartUpperCase() {
+        // only visit_dimension allowed: the sets consist of the Nether, End and Twilight Forest trips
+        FakeHost host = new FakeHost().withMods("twilightforest");
+        host.content.dimensions.add("twilightforest:twilight_forest");
+        host.caps.objectiveTypes.clear();
+        host.caps.objectiveTypes.add("justquests:visit_dimension");
+        Progression p = TestSupport.unlockedProgression(host);
+        int seen = 0;
+        for (long seed = 1; seed <= 40; seed++) {
+            for (QuestDraft q : TestSupport.generate(host, TestSupport.config(Difficulty.HARD, 3).withModdedShare(0.34), p,
+                seed, 3).drafts()) {
+                String title = Json.str(q.json, "title", "");
+                assertTrue(Character.isUpperCase(title.charAt(0)), "title '" + title + "'");
+                seen++;
+            }
+        }
+        assertTrue(seen >= 40, "travel quests generated: " + seen);
+    }
 }

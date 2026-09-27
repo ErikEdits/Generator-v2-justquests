@@ -23,51 +23,51 @@
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Campfire Builder",
-    "description": "Place 8 campfires.",
-    "category": "generated",
-    "sort": 4,
-    "objectives": [
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:campfire",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:book",
-        "count": 3
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 10
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Break Melons",
-    "description": "Break 8 melons. Look in jungles.",
+  "justquests:gen/1790510400_6": {
+    "title": "Deepslate Iron Ore Dig",
+    "description": "Break 6 deepslate iron ore. Needs a stone pickaxe or better. Found in caves. Found deep underground.",
     "category": "generated",
     "sort": 4,
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "minecraft:melon",
-        "count": 8
+        "block": "minecraft:deepslate_iron_ore",
+        "count": 6
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:baked_potato",
-        "count": 13
+        "item": "minecraft:apple",
+        "count": 7
       },
       {
         "type": "justquests:xp",
-        "amount": 15
+        "amount": 14
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Coal Stockpile",
+    "description": "Pick up 16 coal. Mine coal ore. Found in caves.",
+    "category": "generated",
+    "sort": 4,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:coal",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:paper",
+        "count": 25
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 12
       }
     ]
   },
@@ -96,8 +96,8 @@
     ]
   },
   "justquests:gen/1790510400_3": {
-    "title": "Trapped Chest Batch",
-    "description": "Craft 8 trapped chests.",
+    "title": "Trapped Chest Crafter",
+    "description": "Make 8 trapped chests.",
     "category": "generated",
     "sort": 5,
     "objectives": [
@@ -119,16 +119,16 @@
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Bring Sand",
-    "description": "Pick up 96 sand. Dig sand with a shovel. Look along beaches.",
+  "justquests:gen/1790510400_7": {
+    "title": "Stone Bricks Design",
+    "description": "Place 32 stone bricks.",
     "category": "generated",
     "sort": 5,
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:sand",
-        "count": 96
+        "type": "justquests:place_block",
+        "block": "minecraft:stone_bricks",
+        "count": 32
       }
     ],
     "rewards": [
@@ -139,7 +139,7 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 12
+        "amount": 14
       }
     ]
   },
@@ -167,80 +167,75 @@
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Cooked Chicken Batch",
-    "description": "Cook 16 chicken. Cook raw chicken.",
-    "category": "generated",
-    "sort": 6,
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_chicken",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
-        "count": 5
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 23
-      }
-    ]
-  },
   "justquests:gen/1790510400_5": {
-    "title": "Taste Beetroot Soup",
-    "description": "Eat 3 beetroot soup. Six beetroots make a soup. Villages often have them. Grow them on a farm.",
+    "title": "Stop the Drowned",
+    "description": "Hunt 5 drowned. Look in and near oceans. They spawn at night and in dark caves.",
     "category": "generated",
     "sort": 7,
     "objectives": [
       {
-        "type": "justquests:consume_item",
-        "item": "minecraft:beetroot_soup",
-        "count": 3
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:arrow",
-        "count": 32
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 29
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Slime Cleanup",
-    "description": "Defeat 5 slimes. Look in swamps.",
-    "category": "generated",
-    "sort": 10,
-    "objectives": [
-      {
         "type": "justquests:kill_mob",
-        "entity": "minecraft:slime",
+        "entity": "minecraft:drowned",
         "count": 5
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cake",
-        "count": 1
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:coal",
-        "count": 17
+        "item": "minecraft:leather",
+        "count": 13
       },
       {
         "type": "justquests:xp",
-        "amount": 30
+        "amount": 24
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Fermented Spider Eye Request",
+    "description": "Make 5 fermented spider eyes. Spider eye, sugar and a brown mushroom.",
+    "category": "generated",
+    "sort": 9,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:fermented_spider_eye",
+        "count": 5
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:redstone",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 31
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Leather Pickup",
+    "description": "Pick up 24 leather. Common in plains.",
+    "category": "generated",
+    "sort": 10,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:leather",
+        "count": 24
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:bread",
+        "count": 16
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 29
       }
     ]
   }

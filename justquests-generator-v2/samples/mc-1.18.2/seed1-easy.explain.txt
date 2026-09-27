@@ -10,7 +10,7 @@ estimated 4.4 min (quick)
 reward give_item minecraft:arrow ×22 (value 3.3) + xp 13 (value 1.1)  → 4.4 / budget 4.4
 state: AVAILABLE
 
-justquests:gen/1790510400_1  "Build Spyglasses"  (EASY, cycle 1790510400, seed 0x2897…)
+justquests:gen/1790510400_1  "Craft Spyglasses"  (EASY, cycle 1790510400, seed 0x2897…)
 objective craft_item minecraft:spyglass ×2
   effort 2.00 min/unit → 4.0 min (target 6.4, range 4–10 min)
   tier 1 (always available), family copper_works, profile vanilla
@@ -18,68 +18,69 @@ estimated 4.0 min (quick)
 reward give_item minecraft:golden_carrot ×2 (value 3.0) + xp 12 (value 1.0)  → 4.0 / budget 4.0
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Gunpowder Gathering"  (EASY, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:gunpowder ×4
-  effort 1.00 min/unit → 4.0 min (target 4.3, range 4–10 min)
-  tier 0 (always available), family monsters, profile vanilla, hints night
-estimated 4.0 min (quick)
-reward give_item minecraft:hay_block ×2 (value 2.8) + xp 14 (value 1.2)  → 4.0 / budget 4.0
-state: AVAILABLE
-
-justquests:gen/1790510400_4  "Make White Carpets"  (EASY, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:white_carpet ×32
-  effort 0.15 min/unit → 4.8 min (target 4.6, range 4–10 min)
-  tier 0 (always available), family decor, profile vanilla
+justquests:gen/1790510400_3  "Birch Log Breaker"  (EASY, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:birch_log ×48
+  effort 0.10 min/unit → 4.8 min (target 5.0, range 4–10 min)
+  tier 0 (always available), family wood, profile vanilla
 estimated 4.8 min (quick)
-reward give_item minecraft:glow_ink_sac ×4 (value 4.0) + xp 10 (value 0.8)  → 4.8 / budget 4.8
-rejected alternatives: craft_item minecraft:chiseled_bookshelf (released in 1.20, running 1.18.2); craft_item minecraft:decorated_pot (released in 1.20, running 1.18.2)
+reward give_item minecraft:slime_ball ×2 (value 3.0) + xp 22 (value 1.8) + message  → 4.8 / budget 4.8
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Brick Batch"  (EASY, cycle 1790510400, seed 0x2897…)
-objective smelt_item minecraft:brick ×48
-  effort 0.12 min/unit → 5.8 min (target 6.2, range 4–10 min)
-  tier 0 (always available), family soil, profile vanilla, hints river
-estimated 5.8 min (quick)
-reward give_item minecraft:coal ×17 (value 4.3) + xp 18 (value 1.5)  → 5.8 / budget 5.8
+justquests:gen/1790510400_6  "Fermented Spider Eye Workshop"  (EASY, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:fermented_spider_eye ×3
+  effort 1.80 min/unit → 5.4 min (target 6.2, range 4–10 min)
+  tier 0 (always available), family brewing, profile vanilla
+estimated 5.4 min (quick)
+reward give_item minecraft:white_wool ×16 (value 4.0) + xp 17 (value 1.4)  → 5.4 / budget 5.4
+rejected alternatives: craft_item minecraft:glistering_melon_slice (tier 2 above EASY cap)
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Drowned Bounty"  (EASY, cycle 1790510400, seed 0x2897…)
-objective kill_mob minecraft:drowned ×4
-  effort 1.20 min/unit (×1.20 ocean) → 5.8 min (target 4.5, range 4–10 min)
-  tier 0 (always available), family undead, profile vanilla, hints ocean/night
-estimated 5.8 min (quick)
-reward give_item minecraft:string ×11 (value 4.4) + xp 16 (value 1.3) + message  → 5.7 / budget 5.8
-state: AVAILABLE
-
-justquests:gen/1790510400_7  "Stone Bricks Builder"  (EASY, cycle 1790510400, seed 0x2897…)
-objective place_block minecraft:stone_bricks ×40
-  effort 0.15 min/unit → 6.0 min (target 5.6, range 4–10 min)
-  tier 0 (always available), family stonework, profile vanilla
-estimated 6.0 min
-reward give_item minecraft:cookie ×32 (value 3.8) + xp 26 (value 2.2)  → 6.0 / budget 6.0
-state: AVAILABLE
-
-justquests:gen/1790510400_9  "Chest Workshop"  (EASY, cycle 1790510400, seed 0x2897…)
-objective craft_item minecraft:chest ×16
-  effort 0.35 min/unit → 5.6 min (target 8.3, range 4–10 min)
-  tier 0 (always available), family woodwork, profile vanilla
+justquests:gen/1790510400_2  "Cobbled Deepslate Run"  (EASY, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:cobbled_deepslate ×64
+  effort 0.08 min/unit (×1.10 deep) → 5.6 min (target 6.0, range 4–10 min)
+  tier 1 (always available), family stone, profile vanilla, tool wood, hints deep
 estimated 5.6 min (quick)
-reward give_item minecraft:arrow ×28 (value 4.2) + xp 17 (value 1.4)  → 5.6 / budget 5.6
+reward give_item minecraft:nautilus_shell ×1 (value 5.0) + xp 8 (value 0.7)  → 5.7 / budget 5.6
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Moss Block Shift"  (EASY, cycle 1790510400, seed 0x2897…)
-objective mine_block minecraft:moss_block ×40
-  effort 0.12 min/unit (×1.40 lush_caves) → 6.7 min (target 7.0, range 4–10 min)
-  tier 1 (always available), family lush, profile vanilla, hints lush_caves
-estimated 6.7 min
-reward give_item minecraft:bookshelf ×1 (value 4.5) + xp 27 (value 2.3)  → 6.8 / budget 6.7
+justquests:gen/1790510400_4  "Smelt Glass"  (EASY, cycle 1790510400, seed 0x2897…)
+objective smelt_item minecraft:glass ×64
+  effort 0.10 min/unit → 6.4 min (target 5.7, range 4–10 min)
+  tier 0 (always available), family glass, profile vanilla
+estimated 6.4 min
+reward give_item minecraft:white_wool ×19 (value 4.8) + xp 20 (value 1.7)  → 6.4 / budget 6.4
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "Cocoa Beans Pickup"  (EASY, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:cocoa_beans ×24
-  effort 0.30 min/unit (×1.40 jungle) → 10.1 min (target 9.8, range 4–10 min)
-  tier 0 (always available), family plants, profile vanilla, hints jungle
-estimated 10.1 min
-reward give_item minecraft:cooked_porkchop ×15 (value 7.5) + xp 31 (value 2.6)  → 10.1 / budget 10.1
+justquests:gen/1790510400_5  "Flint Haul"  (EASY, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:flint ×16
+  effort 0.40 min/unit → 6.4 min (target 5.6, range 4–10 min)
+  tier 0 (always available), family soil, profile vanilla
+estimated 6.4 min
+reward give_item minecraft:amethyst_shard ×14 (value 4.9) + xp 18 (value 1.5)  → 6.4 / budget 6.4
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Hopper Order"  (EASY, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:hopper ×2
+  effort 3.50 min/unit → 7.0 min (target 5.8, range 4–10 min)
+  tier 1 (always available), family iron_works, profile vanilla
+estimated 7.0 min
+reward give_item minecraft:hay_block ×4 (value 5.6) + xp 17 (value 1.4)  → 7.0 / budget 7.0
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Coal Ore Shift"  (EASY, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:coal_ore ×32
+  effort 0.25 min/unit → 8.0 min (target 8.1, range 4–10 min)
+  tier 0 (always available), family coal, profile vanilla, tool wood, hints caves
+estimated 8.0 min
+reward give_item minecraft:leather ×15 (value 6.0) + xp 24 (value 2.0) + message  → 8.0 / budget 8.0
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "More Llamas"  (EASY, cycle 1790510400, seed 0x2897…)
+objective breed_animal minecraft:llama ×3
+  effort 2.50 min/unit (×1.20 savanna) → 9.0 min (target 8.0, range 4–10 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints savanna
+estimated 9.0 min
+reward give_item minecraft:redstone ×32 (value 6.4) + xp 31 (value 2.6)  → 9.0 / budget 9.0
+rejected alternatives: tame_animal minecraft:llama (not counted on Fabric)
 state: AVAILABLE
 

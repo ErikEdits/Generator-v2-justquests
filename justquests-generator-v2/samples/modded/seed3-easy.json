@@ -1,25 +1,25 @@
 {
   "justquests:gen/1790510400_7": {
-    "title": "Stuffed Potato Tasting",
-    "description": "Eat 2 stuffed potatoes.",
+    "title": "Hot Cooked Bacon",
+    "description": "Cook 8 bacon. Cut porkchops on a cutting board, then cook. Use a Farmer's Delight knife.",
     "category": "generated",
     "sort": 4,
     "objectives": [
       {
-        "type": "justquests:consume_item",
-        "item": "farmersdelight:stuffed_potato",
-        "count": 2
+        "type": "justquests:smelt_item",
+        "item": "farmersdelight:cooked_bacon",
+        "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:bread",
-        "count": 7
+        "item": "minecraft:copper_ingot",
+        "count": 20
       },
       {
         "type": "justquests:xp",
-        "amount": 10
+        "amount": 12
       }
     ]
   },
@@ -47,44 +47,16 @@
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "Barrel Order",
-    "description": "Craft 16 barrels.",
-    "category": "generated",
-    "sort": 6,
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:barrel",
-        "count": 16
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:string",
-        "count": 10
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 19
-      },
-      {
-        "type": "justquests:message",
-        "message": "The village thanks you!"
-      }
-    ]
-  },
   "justquests:gen/1790510400_4": {
-    "title": "Acacia Log Shift",
-    "description": "Break 48 acacia logs. Look in savannas.",
+    "title": "Jungle Log Shift",
+    "description": "Break 40 jungle logs. Look in jungles.",
     "category": "generated",
     "sort": 6,
     "objectives": [
       {
         "type": "justquests:mine_block",
-        "block": "minecraft:acacia_log",
-        "count": 48
+        "block": "minecraft:jungle_log",
+        "count": 40
       }
     ],
     "rewards": [
@@ -95,65 +67,109 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 18
+        "amount": 16
       }
     ]
   },
   "justquests:gen/1790510400_6": {
-    "title": "Mine Tin Ore",
-    "description": "Break 10 tin ore. Needs a stone pickaxe or better. Found in caves.",
+    "title": "Raw Lead Gathering",
+    "description": "Collect 8 raw lead. Lead ore drops raw lead. Needs a stone pickaxe or better. Found in caves.",
     "category": "generated",
-    "sort": 7,
+    "sort": 6,
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "mekanism:tin_ore",
-        "count": 10
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:lantern",
-        "count": 7
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 17
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Hot Cooked Cod",
-    "description": "Cook 8 cod. Use a fishing rod.",
-    "category": "generated",
-    "sort": 7,
-    "objectives": [
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_cod",
+        "type": "justquests:collect_item",
+        "item": "mekanism:raw_lead",
         "count": 8
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:honey_cookie",
-        "count": 27
+        "item": "minecraft:lantern",
+        "count": 6
       },
       {
         "type": "justquests:xp",
-        "amount": 22
+        "amount": 19
+      }
+    ]
+  },
+  "justquests:gen/1790510400_2": {
+    "title": "Cooked Mutton Feast",
+    "description": "Eat 6 cooked mutton.",
+    "category": "generated",
+    "sort": 7,
+    "objectives": [
+      {
+        "type": "justquests:consume_item",
+        "item": "minecraft:cooked_mutton",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:copper_ingot",
+        "count": 32
       },
       {
-        "type": "justquests:message",
-        "message": "Well done, adventurer."
+        "type": "justquests:xp",
+        "amount": 29
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Scoria Breaker",
+    "description": "Break 64 scoria. Found in thick stone layers underground.",
+    "category": "generated",
+    "sort": 7,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "create:scoria",
+        "count": 64
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:coal_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 35
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Stone Bricks Design",
+    "description": "Build with 48 stone bricks.",
+    "category": "generated",
+    "sort": 7,
+    "objectives": [
+      {
+        "type": "justquests:place_block",
+        "block": "minecraft:stone_bricks",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:bookshelf",
+        "count": 1
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 32
       }
     ]
   },
   "justquests:gen/1790510400_1": {
-    "title": "Cave Spider Slayer",
-    "description": "Hunt 4 cave spiders. Found in abandoned mineshafts.",
+    "title": "Cave Spider Bounty",
+    "description": "Slay 4 cave spiders. Found in abandoned mineshafts.",
     "category": "generated",
     "sort": 8,
     "objectives": [
@@ -179,75 +195,51 @@
       }
     ]
   },
-  "justquests:gen/1790510400_2": {
-    "title": "Bamboo Run",
-    "description": "Pick up 128 bamboo. Look in jungles.",
+  "justquests:gen/1790510400_3": {
+    "title": "Coal Block Workshop",
+    "description": "Make 4 coal blocks.",
     "category": "generated",
     "sort": 9,
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:bamboo",
-        "count": 128
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:linear_chassis",
-        "count": 11
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 28
-      }
-    ]
-  },
-  "justquests:gen/1790510400_5": {
-    "title": "Cut Limestone Project",
-    "description": "Place 48 cut limestone. Cut limestone on a stonecutter, then build. Found in thick stone layers underground.",
-    "category": "generated",
-    "sort": 9,
-    "objectives": [
-      {
-        "type": "justquests:place_block",
-        "block": "create:cut_limestone",
-        "count": 48
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
+        "type": "justquests:craft_item",
         "item": "minecraft:coal_block",
-        "count": 3
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:gold_ingot",
+        "count": 5
       },
       {
         "type": "justquests:xp",
-        "amount": 22
+        "amount": 32
       }
     ]
   },
   "justquests:gen/1790510400_8": {
-    "title": "Stray Slayer",
-    "description": "Hunt 6 strays. Look in snowy biomes. They spawn at night and in dark caves.",
+    "title": "TNT Request",
+    "description": "Make 3 TNT. Five gunpowder and four sand. They spawn at night and in dark caves.",
     "category": "generated",
     "sort": 9,
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:stray",
-        "count": 6
+        "type": "justquests:craft_item",
+        "item": "minecraft:tnt",
+        "count": 3
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "botania:manasteel_ingot",
-        "count": 2
+        "item": "botania:white_petal",
+        "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 28
+        "amount": 31
       }
     ]
   }

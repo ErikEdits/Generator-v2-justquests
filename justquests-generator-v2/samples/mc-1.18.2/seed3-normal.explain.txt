@@ -2,27 +2,36 @@
 
 Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla], Minecraft 1.18.2 (forge)
 
-justquests:gen/1790510400_2  "Supper Time"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective smelt_item minecraft:cooked_mutton ×8
-  effort 0.45 min/unit → 3.6 min (target 8.1, range 8–20 min)
-  tier 0 (always available), family wool, profile vanilla, hints cook
-objective consume_item minecraft:beetroot_soup ×2
-  effort 2.00 min/unit (×1.20 village) → 4.8 min (target 8.1, range 8–20 min)
-  tier 0 (always available), family crops, profile vanilla, hints village/farm
-theme camp_cook
-estimated 8.4 min (quick)
-reward give_item minecraft:experience_bottle ×7 (value 8.4) + xp 32 (value 2.7)  → 11.1 / budget 11.1
+justquests:gen/1790510400_3  "Flower Market"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:allium ×8
+  effort 0.35 min/unit (×1.40 flower_forest) → 3.9 min (target 11.7, range 8–20 min)
+  tier 0 (always available), family flowers, profile vanilla, hints flower_forest
+objective collect_item #minecraft:small_flowers ×32
+  effort 0.10 min/unit → 3.2 min (target 11.7, range 8–20 min)
+  tier 0 (always available), family flowers, profile vanilla
+theme florist
+estimated 7.1 min (quick)
+reward give_item minecraft:phantom_membrane ×2 (value 6.0) + effect minecraft:luck 480s (value 2.4) + xp 12 (value 1.0)  → 9.4 / budget 9.4
 state: AVAILABLE
 
-justquests:gen/1790510400_4  "Repeater Commission"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective craft_item minecraft:repeater ×8
-  effort 1.00 min/unit → 8.0 min (target 14.8, range 8–20 min)
-  tier 2 (always available), family redstone, profile vanilla
-estimated 8.0 min (quick)
-reward give_item minecraft:quartz ×24 (value 7.2) + xp 29 (value 2.4)  → 9.6 / budget 9.6
+justquests:gen/1790510400_4  "Breed Cats"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:cat ×4
+  effort 2.00 min/unit (×1.20 village) → 9.6 min (target 8.5, range 8–20 min)
+  tier 0 (always available), family pets, profile vanilla, hints village
+estimated 9.6 min (quick)
+reward give_item minecraft:slime_ball ×6 (value 9.0) + xp 30 (value 2.5) + message  → 11.5 / budget 11.5
+rejected alternatives: tame_animal minecraft:ocelot (ocelots only trust players; not a TamableAnimal)
 state: AVAILABLE
 
-justquests:gen/1790510400_0  "Zombie Patrol"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+justquests:gen/1790510400_6  "Make Deepslate Tiles"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:deepslate_tiles ×64
+  effort 0.14 min/unit (×1.10 deep) → 9.9 min (target 15.6, range 8–20 min)
+  tier 1 (always available), family stonework, profile vanilla, hints deep
+estimated 9.9 min (quick)
+reward give_item minecraft:phantom_membrane ×3 (value 9.0) + xp 34 (value 2.8)  → 11.8 / budget 11.8
+state: AVAILABLE
+
+justquests:gen/1790510400_0  "Zombie Watch"  (NORMAL, cycle 1790510400, seed 0xEE71…)
 objective kill_mob minecraft:zombie ×16
   effort 0.70 min/unit → 11.2 min (target 10.9, range 8–20 min)
   tier 0 (always available), family undead, profile vanilla, hints night
@@ -30,69 +39,60 @@ estimated 11.2 min (quick)
 reward give_item minecraft:coal_block ×4 (value 9.2) + xp 50 (value 4.2)  → 13.4 / budget 13.4
 state: AVAILABLE
 
-justquests:gen/1790510400_3  "Gem Order"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:diamond ×1
-  effort 5.00 min/unit (×1.10 deep) → 5.5 min (target 17.2, range 8–20 min)
-  tier 2 (always available), family gems, profile vanilla, tool iron, hints deep
-objective mine_block minecraft:deepslate_diamond_ore ×1
-  effort 5.00 min/unit (×1.10 deep) → 5.5 min (target 17.2, range 8–20 min)
-  tier 2 (always available), family gems, profile vanilla, tool iron, hints deep
-combo within family gems
-estimated 11.0 min (quick)
-reward give_item minecraft:quartz ×32 (value 9.6) + xp 60 (value 5.0)  → 14.6 / budget 14.5
-rejected alternatives: mine_block minecraft:diamond_ore (rare above y=0; deepslate variant used)
+justquests:gen/1790510400_5  "Redstone Block Order"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:redstone_block ×6
+  effort 1.80 min/unit → 10.8 min (target 12.5, range 8–20 min)
+  tier 2 (always available), family storage_blocks, profile vanilla
+estimated 10.8 min (quick)
+reward give_item minecraft:lantern ×6 (value 4.8) + loot_table minecraft:chests/abandoned_mineshaft (value 7.0) + xp 14 (value 1.2)  → 13.0 / budget 13.0
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Gather Amethyst Shards"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective collect_item minecraft:amethyst_shard ×24
-  effort 0.35 min/unit (×1.30 geode) → 10.9 min (target 11.0, range 8–20 min)
-  tier 1 (always available), family amethyst, profile vanilla, tool wood, hints geode
-estimated 10.9 min (quick)
-reward give_item minecraft:golden_carrot ×7 (value 10.5) + xp 31 (value 2.6)  → 13.1 / budget 13.1
+justquests:gen/1790510400_1  "TNT Crafting"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:tnt ×4
+  effort 3.00 min/unit → 12.0 min (target 14.5, range 8–20 min)
+  tier 0 (always available), family monsters, profile vanilla, hints night
+estimated 12.0 min
+reward give_item minecraft:leather ×12 (value 4.8) + loot_table minecraft:chests/simple_dungeon (value 8.0) + xp 19 (value 1.6)  → 14.4 / budget 14.4
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Cobweb Shift"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective mine_block minecraft:cobweb ×20
-  effort 0.50 min/unit (×1.30 mineshaft) → 13.0 min (target 12.6, range 8–20 min)
-  tier 1 (always available), family arthropods, profile vanilla, hints mineshaft
-estimated 13.0 min
-reward give_item minecraft:powered_rail ×7 (value 11.2) + xp 55 (value 4.6)  → 15.8 / budget 15.6
+justquests:gen/1790510400_8  "Donkey Breeder"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:donkey ×3
+  effort 4.00 min/unit → 12.0 min (target 12.1, range 8–20 min)
+  tier 1 (always available), family horses, profile vanilla, hints plains
+estimated 12.0 min
+reward give_item minecraft:experience_bottle ×9 (value 10.8) + xp 43 (value 3.6)  → 14.4 / budget 14.4
+rejected alternatives: tame_animal minecraft:horse (horses/donkeys/llamas are not counted on Fabric)
 state: AVAILABLE
 
-justquests:gen/1790510400_7  "Coal Block Batch"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective craft_item minecraft:coal_block ×6
-  effort 2.30 min/unit → 13.8 min (target 15.8, range 8–20 min)
-  tier 0 (always available), family storage_blocks, profile vanilla
-estimated 13.8 min
-reward give_item minecraft:hay_block ×8 (value 11.2) + xp 65 (value 5.4)  → 16.6 / budget 16.6
+justquests:gen/1790510400_9  "Timber!"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:birch_log ×64
+  effort 0.10 min/unit → 6.4 min (target 14.0, range 8–20 min)
+  tier 0 (always available), family wood, profile vanilla
+objective place_block minecraft:oak_sapling ×32
+  effort 0.18 min/unit → 5.8 min (target 14.0, range 8–20 min)
+  tier 0 (always available), family forestry, profile vanilla
+theme lumberjack
+estimated 12.2 min
+reward give_item minecraft:phantom_membrane ×4 (value 12.0) + xp 49 (value 4.1) + message  → 16.1 / budget 16.1
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Enderman Cleanup"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective kill_mob minecraft:enderman ×6
-  effort 2.50 min/unit → 15.0 min (target 15.4, range 8–20 min)
-  tier 2 (always available), family monsters, profile vanilla, hints night
-estimated 15.0 min
-reward give_item minecraft:emerald ×5 (value 12.5) + xp 65 (value 5.4)  → 17.9 / budget 18.0
+justquests:gen/1790510400_7  "Bee Farm"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:bee ×8
+  effort 1.50 min/unit (×1.20 bees) → 14.4 min (target 18.4, range 8–20 min)
+  tier 0 (always available), family bees, profile vanilla, hints bees
+estimated 14.4 min
+reward give_item minecraft:string ×16 (value 6.4) + effect minecraft:fire_resistance 360s (value 4.2) + xp 80 (value 6.7)  → 17.3 / budget 17.3
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Horse Ranch"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective breed_animal minecraft:llama ×3
-  effort 2.50 min/unit (×1.20 savanna) → 9.0 min (target 15.2, range 8–20 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints savanna
-objective craft_item minecraft:detector_rail ×8
-  effort 1.00 min/unit → 8.0 min (target 15.2, range 8–20 min)
-  tier 1 (always available), family transport, profile vanilla
-theme stable_hand
-estimated 17.0 min
-reward give_item minecraft:gold_ingot ×13 (value 16.9) + xp 65 (value 5.4) + message  → 22.3 / budget 22.4
-rejected alternatives: tame_animal minecraft:llama (not counted on Fabric); craft_item minecraft:oak_boat (max count takes only 1.2 min)
-state: AVAILABLE
-
-justquests:gen/1790510400_1  "Bookshelf Project"  (NORMAL, cycle 1790510400, seed 0xEE71…)
-objective place_block minecraft:bookshelf ×4
-  effort 4.60 min/unit → 18.4 min (target 19.0, range 8–20 min)
-  tier 0 (always available), family library, profile vanilla
-estimated 18.4 min
-reward give_item minecraft:bread ×16 (value 7.2) + give_item minecraft:cookie ×32 (value 3.8) + xp 130 (value 10.8)  → 21.9 / budget 22.1
+justquests:gen/1790510400_2  "Sea Harvest"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:glow_ink_sac ×8
+  effort 1.00 min/unit (×1.20 ocean) → 9.6 min (target 18.6, range 8–20 min)
+  tier 1 (always available), family ocean, profile vanilla, hints ocean
+objective smelt_item minecraft:cooked_salmon ×6
+  effort 1.50 min/unit → 9.0 min (target 18.6, range 8–20 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod, hints cook
+theme ocean_voyage
+estimated 18.6 min
+reward give_item minecraft:golden_apple ×2 (value 18.0) + xp 80 (value 6.7)  → 24.7 / budget 24.6
 state: AVAILABLE
 

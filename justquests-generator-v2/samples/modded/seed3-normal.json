@@ -1,31 +1,36 @@
 {
-  "justquests:gen/1790510400_5": {
-    "title": "Andesite Tunnel Batch",
-    "description": "Craft 8 andesite tunnels.",
+  "justquests:gen/1790510400_9": {
+    "title": "Mystical Red Petal Job",
+    "description": "Craft 32 mystical red petals. One mystical flower makes two petals.",
     "category": "generated",
     "sort": 6,
     "objectives": [
       {
         "type": "justquests:craft_item",
-        "item": "create:andesite_tunnel",
-        "count": 8
+        "item": "botania:red_petal",
+        "count": 32
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:bread",
-        "count": 13
+        "item": "minecraft:glass",
+        "count": 32
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:phantom_membrane",
+        "count": 1
       },
       {
         "type": "justquests:xp",
-        "amount": 26
+        "amount": 22
       }
     ]
   },
   "justquests:gen/1790510400_3": {
     "title": "Earthworks Chores",
-    "description": "Smelt 32 bricks and craft 8 packed mud. Smelt clay balls. Look along rivers. Mud and wheat. Look in mangrove swamps.",
+    "description": "Smelt 32 bricks and make 8 packed mud. Smelt clay balls. Look along rivers. Mud and wheat. Look in mangrove swamps.",
     "category": "generated",
     "sort": 7,
     "mode": "all",
@@ -53,6 +58,54 @@
       }
     ]
   },
+  "justquests:gen/1790510400_7": {
+    "title": "Grilled Salmon Lunch",
+    "description": "Eat 3 grilled salmon.",
+    "category": "generated",
+    "sort": 8,
+    "objectives": [
+      {
+        "type": "justquests:consume_item",
+        "item": "farmersdelight:grilled_salmon",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:honeycomb",
+        "count": 7
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 28
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Repeater Request",
+    "description": "Make 8 repeaters.",
+    "category": "generated",
+    "sort": 8,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:repeater",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:honeycomb",
+        "count": 7
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 31
+      }
+    ]
+  },
   "justquests:gen/1790510400_0": {
     "title": "Liveroot Delivery",
     "description": "Collect 8 liveroot. Liveroot grows in the root tangles underground; break it without Silk Touch. Found in the Twilight Forest.",
@@ -77,55 +130,27 @@
       }
     ]
   },
-  "justquests:gen/1790510400_7": {
-    "title": "Wild Cabbages Quarry",
-    "description": "Mine 12 wild cabbages. Wild cabbages grow on beaches. Look along beaches.",
+  "justquests:gen/1790510400_4": {
+    "title": "Bone Meal Crafting",
+    "description": "Craft 64 bone meal. One bone makes three bone meal.",
     "category": "generated",
-    "sort": 9,
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "farmersdelight:wild_cabbages",
-        "count": 12
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "farmersdelight:hot_cocoa",
-        "count": 4
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 48
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Wand of the Forest Job",
-    "description": "Craft a wand of the forest. A livingwood twig and two petals; livingwood comes from a Pure Daisy.",
-    "category": "generated",
-    "sort": 9,
+    "sort": 10,
     "objectives": [
       {
         "type": "justquests:craft_item",
-        "item": "botania:twig_wand",
-        "count": 1
+        "item": "minecraft:bone_meal",
+        "count": 64
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:phantom_membrane",
-        "count": 3
+        "item": "minecraft:redstone",
+        "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 22
-      },
-      {
-        "type": "justquests:message",
-        "message": "The village thanks you!"
+        "amount": 60
       }
     ]
   },
@@ -188,85 +213,51 @@
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "More Frogs",
-    "description": "Breed 4 frogs. Frogs breed with slimeballs. Look in swamps.",
-    "category": "generated",
-    "sort": 13,
-    "objectives": [
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:frog",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glistering_melon_slice",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 43
-      }
-    ]
-  },
-  "justquests:gen/1790510400_4": {
-    "title": "Pillager Menace",
-    "description": "Defeat 6 pillagers. Found at pillager outposts.",
-    "category": "generated",
-    "sort": 20,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:pillager",
-        "count": 6
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "farmersdelight:hot_cocoa",
-        "count": 4
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
-        "count": 7
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 80
-      }
-    ]
-  },
   "justquests:gen/1790510400_6": {
-    "title": "Smelt Lead Ingots",
-    "description": "Smelt 24 lead ingots. Smelt raw lead in a furnace. Needs a stone pickaxe or better. Found in caves.",
+    "title": "Tin Ingot Supply",
+    "description": "Smelt 24 tin ingots. Smelt raw tin in a furnace. Needs a stone pickaxe or better. Found in caves.",
     "category": "generated",
-    "sort": 20,
+    "sort": 18,
     "objectives": [
       {
         "type": "justquests:smelt_item",
-        "item": "mekanism:ingot_lead",
+        "item": "mekanism:ingot_tin",
         "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:fried_rice",
-        "count": 4
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:coal_block",
-        "count": 4
+        "item": "minecraft:obsidian",
+        "count": 16
       },
       {
         "type": "justquests:xp",
-        "amount": 70
+        "amount": 65
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Zinc Ore Shift",
+    "description": "Break 24 zinc ore. Needs an iron pickaxe or better. Found in caves.",
+    "category": "generated",
+    "sort": 19,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "create:zinc_ore",
+        "count": 24
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "farmersdelight:hamburger",
+        "count": 6
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 90
       }
     ]
   }

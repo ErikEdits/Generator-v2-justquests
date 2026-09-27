@@ -29,90 +29,51 @@
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Build with Mud Bricks",
-    "description": "Place 32 mud bricks. Look in mangrove swamps.",
-    "category": "generated",
-    "sort": 15,
-    "objectives": [
-      {
-        "type": "justquests:place_block",
-        "block": "minecraft:mud_bricks",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:zinc_block",
-        "count": 2
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 95
-      }
-    ]
-  },
   "justquests:gen/1790510400_4": {
-    "title": "Make Livingwood Planks",
-    "description": "Craft 16 livingwood planks. A Pure Daisy turns logs placed around it into livingwood.",
+    "title": "Mana Pool Commission",
+    "description": "Craft a mana pool. Five livingrock; a Pure Daisy turns stone into livingrock.",
     "category": "generated",
     "sort": 16,
     "objectives": [
       {
         "type": "justquests:craft_item",
-        "item": "botania:livingwood_planks",
-        "count": 16
+        "item": "botania:mana_pool",
+        "count": 1
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:basic_control_circuit",
-        "count": 3
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/simple_dungeon"
+        "item": "create:honeyed_apple",
+        "count": 6
       },
       {
         "type": "justquests:xp",
-        "amount": 48
+        "amount": 70
       }
     ]
   },
-  "justquests:gen/1790510400_7": {
-    "title": "Gear Up",
-    "description": "Every machine starts small: craft 32 andesite alloy and craft 24 large cogwheels. Two andesite and two iron nuggets.",
+  "justquests:gen/1790510400_8": {
+    "title": "Breed Deer",
+    "description": "Breed 6 deer. Deer breed with wheat. Found in the Twilight Forest.",
     "category": "generated",
     "sort": 18,
-    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "create:andesite_alloy",
-        "count": 32
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "create:large_cogwheel",
-        "count": 24
+        "type": "justquests:breed_animal",
+        "entity": "twilightforest:deer",
+        "count": 6
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:prismarine_crystals",
+        "item": "twilightforest:ironwood_ingot",
         "count": 8
       },
       {
-        "type": "justquests:give_item",
-        "item": "create:zinc_block",
-        "count": 1
-      },
-      {
         "type": "justquests:xp",
-        "amount": 130
+        "amount": 115
       }
     ]
   },
@@ -148,7 +109,7 @@
   },
   "justquests:gen/1790510400_2": {
     "title": "Picnic Basket",
-    "description": "Pack the picnic basket: craft 6 mixed salad and craft 64 honey cookies. Cabbage, tomato and beetroot in a bowl. Needs bees and flowers.",
+    "description": "Pack the picnic basket: make 6 mixed salad and make 64 honey cookies. Cabbage, tomato and beetroot in a bowl. Needs bees and flowers.",
     "category": "generated",
     "sort": 19,
     "mode": "all",
@@ -181,22 +142,70 @@
       }
     ]
   },
-  "justquests:gen/1790510400_3": {
-    "title": "Nether Garden Supplies",
-    "description": "Gather 8 shroomlights and mine 64 crimson stems. Found in crimson forests. Found in the Nether.",
+  "justquests:gen/1790510400_7": {
+    "title": "Dig Deepslate Zinc Ore",
+    "description": "Mine 20 deepslate zinc ore. Needs an iron pickaxe or better. Found in caves. Found deep underground.",
     "category": "generated",
     "sort": 20,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "create:deepslate_zinc_ore",
+        "count": 20
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:golden_carrot",
+        "count": 15
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 85
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Undead Errand",
+    "description": "Collect 3 phantom membranes and hunt 4 phantoms. They spawn at night and in dark caves.",
+    "category": "generated",
+    "sort": 23,
     "mode": "all",
     "objectives": [
       {
         "type": "justquests:collect_item",
-        "item": "minecraft:shroomlight",
+        "item": "minecraft:phantom_membrane",
+        "count": 3
+      },
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:phantom",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:alloy_infused",
         "count": 8
       },
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:crimson_stem",
-        "count": 64
+        "type": "justquests:xp",
+        "amount": 110
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Stop the Breezes",
+    "description": "Defeat 3 breezes. Found in trial chambers.",
+    "category": "generated",
+    "sort": 23,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:breeze",
+        "count": 3
       }
     ],
     "rewards": [
@@ -207,112 +216,77 @@
       },
       {
         "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
-        "count": 21
+        "item": "minecraft:sea_lantern",
+        "count": 2
       },
       {
         "type": "justquests:xp",
-        "amount": 100
-      }
-    ]
-  },
-  "justquests:gen/1790510400_9": {
-    "title": "Beekeeping Duty",
-    "description": "Craft 6 candles and breed 8 bees. Needs bees and flowers. Bees breed with flowers.",
-    "category": "generated",
-    "sort": 23,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "minecraft:candle",
-        "count": 6
-      },
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:bee",
-        "count": 8
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:ingot_osmium",
-        "count": 24
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/jungle_temple"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 90
+        "amount": 130
       }
     ]
   },
   "justquests:gen/1790510400_5": {
-    "title": "Metal Chores",
-    "description": "Mine 32 deepslate copper ore and mine 12 deepslate gold ore. Found deep underground. Needs an iron pickaxe or better.",
+    "title": "Gem Duty",
+    "description": "Pick up 48 lapis lazuli and break an emerald ore. Lapis ore drops several pieces. Found deep underground. Needs an iron pickaxe or better.",
     "category": "generated",
-    "sort": 30,
+    "sort": 25,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "minecraft:deepslate_copper_ore",
-        "count": 32
+        "type": "justquests:collect_item",
+        "item": "minecraft:lapis_lazuli",
+        "count": 48
       },
       {
         "type": "justquests:mine_block",
-        "block": "minecraft:deepslate_gold_ore",
-        "count": 12
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:diamond",
-        "count": 7
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:resistance",
-        "seconds": 300,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 110
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Lich Hunt",
-    "description": "Defeat a lich. The Lich rules the tallest tower. Found in the Twilight Forest.",
-    "category": "generated",
-    "sort": 37,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "twilightforest:lich",
+        "block": "minecraft:emerald_ore",
         "count": 1
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:cooked_salmon",
+        "item": "minecraft:golden_carrot",
         "count": 16
       },
       {
-        "type": "justquests:effect",
-        "effect": "minecraft:dolphins_grace",
-        "seconds": 300,
-        "amplifier": 0
+        "type": "justquests:xp",
+        "amount": 210
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Tidal Work",
+    "description": "Head out to sea: collect 6 prismarine shards and slay 3 guardians. Needs an iron pickaxe or better. Found at ocean monuments.",
+    "category": "generated",
+    "sort": 26,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:prismarine_shard",
+        "count": 6
+      },
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:guardian",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:blaze_rod",
+        "count": 8
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:raw_osmium",
+        "count": 26
       },
       {
         "type": "justquests:xp",
-        "amount": 470
+        "amount": 130
       }
     ]
   }

@@ -2,14 +2,6 @@
 
 Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest, botania], Minecraft 1.21.1 (neoforge)
 
-justquests:gen/1790510400_7  "Place Linear Chassis"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective place_block create:linear_chassis ×12
-  effort 0.65 min/unit → 7.8 min (target 15.5, range 8–20 min)
-  tier 1 (always available), family create_contraptions, profile create
-estimated 7.8 min (quick)
-reward give_item minecraft:phantom_membrane ×2 (value 6.0) + xp 40 (value 3.3) + message  → 9.3 / budget 9.4
-state: AVAILABLE
-
 justquests:gen/1790510400_0  "Dig Deepslate Copper Ore"  (NORMAL, cycle 1790510400, seed 0x2897…)
 objective mine_block minecraft:deepslate_copper_ore ×20
   effort 0.40 min/unit (×1.10 deep) → 8.8 min (target 9.4, range 8–20 min)
@@ -35,15 +27,6 @@ reward give_item minecraft:copper_ingot ×32 (value 4.8) + give_item minecraft:o
 rejected alternatives: collect_item botania:livingwood_log (a Pure Daisy converts logs in place; nothing is picked up)
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Taste Golden Carrot"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective consume_item minecraft:golden_carrot ×4
-  effort 2.20 min/unit → 8.8 min (target 9.7, range 8–20 min)
-  tier 2 (always available), family golden_food, profile vanilla
-estimated 8.8 min (quick)
-reward give_item create:linear_chassis ×13 (value 7.8) + xp 33 (value 2.8)  → 10.6 / budget 10.6
-rejected alternatives: craft_item minecraft:golden_apple (tier 2 above NORMAL cap)
-state: AVAILABLE
-
 justquests:gen/1790510400_3  "Decorator Order"  (NORMAL, cycle 1790510400, seed 0x2897…)
 objective craft_item #minecraft:beds ×4
   effort 1.00 min/unit → 4.0 min (target 12.4, range 8–20 min)
@@ -56,37 +39,49 @@ estimated 10.0 min (quick)
 reward give_item create:zinc_block ×1 (value 7.6) + xp 65 (value 5.4) + message  → 13.0 / budget 13.2
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Raw Salmon Haul"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:salmon ×8
-  effort 1.40 min/unit → 11.2 min (target 9.9, range 8–20 min)
-  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
-estimated 11.2 min (quick)
-reward give_item minecraft:experience_bottle ×8 (value 9.6) + xp 46 (value 3.8)  → 13.4 / budget 13.4
+justquests:gen/1790510400_5  "Witch Watch"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective kill_mob minecraft:witch ×1
+  effort 5.00 min/unit (×1.30 swamp ×1.60 rare) → 10.4 min (target 12.2, range 8–20 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp/rare
+estimated 10.4 min (quick)
+reward give_item mekanism:ingot_osmium ×10 (value 9.0) + xp 42 (value 3.5)  → 12.5 / budget 12.5
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Gardening Duty"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective collect_item minecraft:sugar_cane ×64
-  effort 0.10 min/unit → 6.4 min (target 19.0, range 8–20 min)
-  tier 0 (always available), family plants, profile vanilla, hints river
-objective collect_item minecraft:vine ×32
-  effort 0.12 min/unit (×1.40 jungle) → 5.4 min (target 19.0, range 8–20 min)
-  tier 0 (always available), family plants, profile vanilla, tool shears, hints jungle
-combo within family plants
-estimated 11.8 min (quick)
-reward give_item create:zinc_ingot ×7 (value 6.3) + loot_table minecraft:chests/village/village_weaponsmith (value 7.0) + xp 27 (value 2.3)  → 15.6 / budget 15.5
+justquests:gen/1790510400_6  "Rabbit Nursery"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective breed_animal minecraft:rabbit ×4
+  effort 2.00 min/unit (×1.30 desert) → 10.4 min (target 10.8, range 8–20 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints desert
+estimated 10.4 min (quick)
+reward give_item minecraft:arrow ×32 (value 4.8) + give_item minecraft:cookie ×32 (value 3.8) + xp 46 (value 3.8)  → 12.5 / budget 12.5
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Twilight Timber Job"  (NORMAL, cycle 1790510400, seed 0x2897…)
-objective craft_item twilightforest:twilight_oak_planks ×64
-  effort 0.04 min/unit → 2.2 min (target 19.4, range 8–20 min)
-  tier 2 (always available), family tf_wood, profile twilightforest, twilightforest:twilight_forest
-objective mine_block twilightforest:canopy_log ×48
-  effort 0.14 min/unit → 6.7 min (target 19.4, range 8–20 min)
+justquests:gen/1790510400_7  "Andesite Casing Design"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective place_block create:andesite_casing ×16
+  effort 0.60 min/unit → 9.6 min (target 13.4, range 8–20 min)
+  tier 1 (always available), family create_alloy, profile create
+estimated 9.6 min (quick)
+reward give_item create:honeyed_apple ×3 (value 9.0) + xp 30 (value 2.5)  → 11.5 / budget 11.5
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Undead Errand"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:rotten_flesh ×8
+  effort 0.50 min/unit → 4.0 min (target 10.8, range 8–20 min)
+  tier 0 (always available), family undead, profile vanilla, hints night
+objective kill_mob minecraft:stray ×4
+  effort 1.20 min/unit (×1.30 snowy) → 6.2 min (target 10.8, range 8–20 min)
+  tier 1 (always available), family undead, profile vanilla, hints snowy/night
+combo within family undead
+estimated 10.2 min (quick)
+reward give_item mekanism:basic_control_circuit ×3 (value 12.0) + xp 18 (value 1.5)  → 13.5 / budget 13.5
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Mine Twilight Oak Logs"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block twilightforest:twilight_oak_log ×64
+  effort 0.12 min/unit → 7.7 min (target 19.5, range 8–20 min)
   tier 2 (always available), family tf_wood, profile twilightforest, twilightforest:twilight_forest
 travel overhead 5.0 min
-combo within family tf_wood
-estimated 14.0 min
-reward give_item minecraft:redstone ×32 (value 6.4) + give_item twilightforest:ironwood_ingot ×3 (value 6.6) + xp 65 (value 5.4)  → 18.4 / budget 18.4
+estimated 12.7 min
+reward give_item twilightforest:liveroot ×16 (value 9.6) + xp 65 (value 5.4)  → 15.0 / budget 15.2
 state: AVAILABLE
 
 justquests:gen/1790510400_1  "Tin Ingot Batch"  (NORMAL, cycle 1790510400, seed 0x2897…)

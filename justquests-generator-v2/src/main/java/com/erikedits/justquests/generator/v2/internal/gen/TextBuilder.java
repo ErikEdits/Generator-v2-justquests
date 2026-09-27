@@ -89,11 +89,12 @@ public final class TextBuilder {
         return out;
     }
 
+    /** Fills a title template; a title always starts upper case ("{Dimension} Trip" → "The Nether Trip"). */
     private String fill(String tpl, QuestDraft.Objective o) {
         Candidate c = o.c();
-        return tpl.replace("{Name}", c.name())
+        return English.capitalize(tpl.replace("{Name}", c.name())
             .replace("{Names}", c.plural())
-            .replace("{Dimension}", dimensionName(c.target()));
+            .replace("{Dimension}", dimensionName(c.target())));
     }
 
     public String familyName(String family) {

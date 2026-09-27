@@ -11,13 +11,17 @@ reward give_item minecraft:honey_bottle ×8 (value 9.6) + xp 100 (value 8.3)  �
 rejected alternatives: collect_item minecraft:snowball (max count takes only 2.5 min)
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Phantom Membrane Haul"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective collect_item minecraft:phantom_membrane ×4
-  effort 3.50 min/unit → 14.0 min (target 19.5, range 15–35 min)
-  tier 1 (always available), family undead, profile vanilla, hints night
-estimated 14.0 min (quick)
-reward give_item minecraft:sea_lantern ×2 (value 11.0) + xp 120 (value 10.0)  → 21.0 / budget 21.0
-rejected alternatives: hint: phantoms only spawn after three nights without sleep
+justquests:gen/1790510400_5  "Iron Age"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item minecraft:iron_ingot ×16
+  effort 0.55 min/unit → 8.8 min (target 23.7, range 15–35 min)
+  tier 1 (always available), family metals, profile vanilla, tool stone, hints caves
+objective craft_item minecraft:iron_chestplate ×1
+  effort 4.50 min/unit → 4.5 min (target 23.7, range 15–35 min)
+  tier 1 (always available), family iron_armor, profile vanilla
+theme tool_upgrade
+estimated 13.3 min (quick)
+reward give_item minecraft:coal ×32 (value 8.0) + give_item minecraft:ender_pearl ×3 (value 7.5) + xp 75 (value 6.3)  → 21.8 / budget 21.9
+rejected alternatives: collect_item minecraft:iron_ore (drops raw_iron, needs Silk Touch); craft_item minecraft:iron_helmet (max count takes only 2.9 min); craft_item minecraft:iron_leggings (max count takes only 4.0 min)
 state: AVAILABLE
 
 justquests:gen/1790510400_1  "Library Project"  (HARD, cycle 1790510400, seed 0xDC9F…)
@@ -32,72 +36,75 @@ estimated 15.4 min (quick)
 reward give_item minecraft:iron_ingot ×24 (value 14.4) + xp 130 (value 10.8)  → 25.2 / budget 25.4
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "Obsidian Errand"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective mine_block minecraft:crying_obsidian ×3
-  effort 2.00 min/unit (×1.40 ruined_portal) → 8.4 min (target 16.6, range 15–35 min)
-  tier 2 (always available), family obsidian, profile vanilla, tool diamond, hints ruined_portal
-objective mine_block minecraft:obsidian ×8
-  effort 1.00 min/unit → 8.0 min (target 16.6, range 15–35 min)
-  tier 2 (always available), family obsidian, profile vanilla, tool diamond
-combo within family obsidian
-estimated 16.4 min (quick)
-reward give_item minecraft:music_disc_cat ×1 (value 6.0) + give_item minecraft:book ×8 (value 9.6) + xp 140 (value 11.7)  → 27.3 / budget 27.1
+justquests:gen/1790510400_4  "Gem Supplies"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:deepslate_diamond_ore ×2
+  effort 5.00 min/unit (×1.10 deep) → 11.0 min (target 17.3, range 15–35 min)
+  tier 2 (always available), family gems, profile vanilla, tool iron, hints deep
+objective collect_item minecraft:diamond ×1
+  effort 5.00 min/unit (×1.10 deep) → 5.5 min (target 17.3, range 15–35 min)
+  tier 2 (always available), family gems, profile vanilla, tool iron, hints deep
+combo within family gems
+estimated 16.5 min (quick)
+reward give_item minecraft:magma_cream ×8 (value 11.2) + give_item minecraft:sea_lantern ×2 (value 11.0) + xp 60 (value 5.0)  → 27.2 / budget 27.2
+rejected alternatives: mine_block minecraft:diamond_ore (rare above y=0; deepslate variant used)
 state: AVAILABLE
 
-justquests:gen/1790510400_6  "Ghast Tear Delivery"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective collect_item minecraft:ghast_tear ×3
-  effort 4.00 min/unit (×1.20 soul_sand_valley) → 14.4 min (target 26.0, range 15–35 min)
-  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_mobs, profile vanilla, hints soul_sand_valley, minecraft:the_nether
-travel overhead 3.0 min
-estimated 17.4 min (quick)
-reward give_item minecraft:diamond ×3 (value 15.0) + effect minecraft:regeneration 90s (value 4.5) + xp 80 (value 6.7)  → 26.2 / budget 26.1
-state: AVAILABLE
-
-justquests:gen/1790510400_4  "Wool Errand"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective collect_item minecraft:mutton ×24
-  effort 0.35 min/unit → 8.4 min (target 18.7, range 15–35 min)
-  tier 0 (always available), family wool, profile vanilla
-objective smelt_item minecraft:cooked_mutton ×24
-  effort 0.45 min/unit → 10.8 min (target 18.7, range 15–35 min)
-  tier 0 (always available), family wool, profile vanilla, hints cook
-combo within family wool
-estimated 19.2 min (quick)
-reward give_item minecraft:cookie ×32 (value 3.8) + give_item minecraft:coal_block ×4 (value 9.2) + xp 225 (value 18.8)  → 31.8 / budget 31.7
-state: AVAILABLE
-
-justquests:gen/1790510400_7  "Eye of Ender Workshop"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective craft_item minecraft:ender_eye ×4
-  effort 5.00 min/unit → 20.0 min (target 34.1, range 15–35 min)
-  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family end_prep, profile vanilla
-estimated 20.0 min (quick)
-reward give_item minecraft:shulker_shell ×2 (value 10.0) + give_item minecraft:cooked_salmon ×14 (value 12.6) + xp 90 (value 7.5)  → 30.1 / budget 30.0
-state: AVAILABLE
-
-justquests:gen/1790510400_3  "Ocelot Ranch"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective breed_animal minecraft:ocelot ×4
-  effort 4.00 min/unit (×1.40 jungle) → 22.4 min (target 29.9, range 15–35 min)
-  tier 0 (always available), family wild_animals, profile vanilla, hints jungle
-estimated 22.4 min
-reward give_item minecraft:experience_bottle ×16 (value 19.2) + xp 175 (value 14.6)  → 33.8 / budget 33.6
-state: AVAILABLE
-
-justquests:gen/1790510400_8  "Sponge Smeltery"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective smelt_item minecraft:sponge ×4
-  effort 4.00 min/unit (×1.60 monument) → 25.6 min (target 24.2, range 15–35 min)
+justquests:gen/1790510400_8  "Sponge Supply"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item minecraft:sponge ×3
+  effort 4.00 min/unit (×1.60 monument) → 19.2 min (target 18.4, range 15–35 min)
   tier 2 (always available), family ocean, profile vanilla, hints monument
-estimated 25.6 min
-reward give_item minecraft:blaze_rod ×8 (value 14.4) + give_item minecraft:bookshelf ×3 (value 13.5) + xp 125 (value 10.4)  → 38.3 / budget 38.4
+estimated 19.2 min (quick)
+reward give_item minecraft:emerald ×9 (value 22.5) + xp 75 (value 6.3)  → 28.8 / budget 28.8
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Track Crew"  (HARD, cycle 1790510400, seed 0xDC9F…)
-objective craft_item minecraft:iron_chain ×16
-  effort 0.70 min/unit → 11.2 min (target 34.8, range 15–35 min)
-  tier 1 (always available), family iron_works, profile vanilla
-objective place_block minecraft:rail ×64
-  effort 0.30 min/unit → 19.2 min (target 34.8, range 15–35 min)
-  tier 1 (always available), family iron_works, profile vanilla
-theme railway_builder
-estimated 30.4 min
-reward give_item minecraft:leather ×16 (value 6.4) + give_item minecraft:powered_rail ×12 (value 19.2) + xp 295 (value 24.6)  → 50.2 / budget 50.2
+justquests:gen/1790510400_2  "Nether Mason Order"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:polished_blackstone ×64
+  effort 0.08 min/unit (×1.20 basalt_deltas) → 6.1 min (target 32.5, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_crafts, profile vanilla, hints basalt_deltas, minecraft:the_nether
+objective smelt_item minecraft:smooth_quartz ×8
+  effort 1.30 min/unit → 10.4 min (target 32.5, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_crafts, profile vanilla, minecraft:the_nether
+travel overhead 3.0 min
+combo within family nether_crafts
+estimated 19.5 min (quick)
+reward give_item minecraft:emerald_block ×1 (value 22.5) + xp 115 (value 9.6) + message  → 32.1 / budget 32.2
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Need Nether Wart"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:nether_wart ×32
+  effort 0.40 min/unit (×1.30 fortress) → 16.6 min (target 25.6, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_plants, profile vanilla, hints fortress, minecraft:the_nether
+travel overhead 3.0 min
+estimated 19.6 min (quick)
+reward give_item minecraft:emerald_block ×1 (value 22.5) + xp 85 (value 7.1)  → 29.6 / budget 29.5
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Stop the Husks"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective kill_mob minecraft:husk ×16
+  effort 1.00 min/unit (×1.30 desert) → 20.8 min (target 20.1, range 15–35 min)
+  tier 0 (always available), family undead, profile vanilla, hints desert/night
+estimated 20.8 min (quick)
+reward give_item minecraft:bookshelf ×4 (value 18.0) + xp 160 (value 13.3)  → 31.3 / budget 31.2
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Nether Expedition"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:quartz ×32
+  effort 0.30 min/unit → 9.6 min (target 26.2, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_ores, profile vanilla, tool wood, minecraft:the_nether
+objective kill_mob minecraft:hoglin ×4
+  effort 2.00 min/unit (×1.20 crimson_forest) → 9.6 min (target 26.2, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family nether_mobs, profile vanilla, hints crimson_forest, minecraft:the_nether
+travel overhead 3.0 min
+theme nether_expedition
+estimated 22.2 min
+reward give_item minecraft:diamond ×5 (value 25.0) + xp 140 (value 11.7)  → 36.7 / budget 36.6
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Break Deepslate Redstone Ore"  (HARD, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:deepslate_redstone_ore ×24
+  effort 0.90 min/unit (×1.10 deep) → 23.8 min (target 32.4, range 15–35 min)
+  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
+estimated 23.8 min
+reward give_item minecraft:diamond ×5 (value 25.0) + xp 130 (value 10.8)  → 35.8 / budget 35.6
 state: AVAILABLE
 

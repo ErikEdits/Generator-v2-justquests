@@ -1,32 +1,4 @@
 {
-  "justquests:gen/1790510400_7": {
-    "title": "Place Linear Chassis",
-    "description": "Place 12 linear chassis.",
-    "category": "generated",
-    "sort": 8,
-    "objectives": [
-      {
-        "type": "justquests:place_block",
-        "block": "create:linear_chassis",
-        "count": 12
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:phantom_membrane",
-        "count": 2
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 40
-      },
-      {
-        "type": "justquests:message",
-        "message": "Another job well done."
-      }
-    ]
-  },
   "justquests:gen/1790510400_0": {
     "title": "Dig Deepslate Copper Ore",
     "description": "Mine 20 deepslate copper ore. Needs a stone pickaxe or better. Found deep underground.",
@@ -77,7 +49,7 @@
   },
   "justquests:gen/1790510400_4": {
     "title": "Wand of the Forest Job",
-    "description": "Craft a wand of the forest. A livingwood twig and two petals; livingwood comes from a Pure Daisy.",
+    "description": "Make a wand of the forest. A livingwood twig and two petals; livingwood comes from a Pure Daisy.",
     "category": "generated",
     "sort": 9,
     "objectives": [
@@ -104,33 +76,9 @@
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Taste Golden Carrot",
-    "description": "Eat 4 golden carrots.",
-    "category": "generated",
-    "sort": 9,
-    "objectives": [
-      {
-        "type": "justquests:consume_item",
-        "item": "minecraft:golden_carrot",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:linear_chassis",
-        "count": 13
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 33
-      }
-    ]
-  },
   "justquests:gen/1790510400_3": {
     "title": "Decorator Order",
-    "description": "Craft 4 beds and craft 40 white carpets. Three wool and three planks. Any bed counts. Two wool make three carpets.",
+    "description": "Make 4 beds and make 40 white carpets. Three wool and three planks. Any bed counts. Two wool make three carpets.",
     "category": "generated",
     "sort": 10,
     "mode": "all",
@@ -163,22 +111,51 @@
     ]
   },
   "justquests:gen/1790510400_5": {
-    "title": "Raw Salmon Haul",
-    "description": "Collect 8 raw salmon. Use a fishing rod.",
+    "title": "Witch Watch",
+    "description": "Defeat a witch. Look in swamps. Rare, so take your time.",
     "category": "generated",
-    "sort": 11,
+    "sort": 10,
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:salmon",
-        "count": 8
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:witch",
+        "count": 1
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:experience_bottle",
-        "count": 8
+        "item": "mekanism:ingot_osmium",
+        "count": 10
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 42
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Rabbit Nursery",
+    "description": "Breed 4 rabbits. Rabbits breed with carrots or dandelions. Look in deserts.",
+    "category": "generated",
+    "sort": 10,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:rabbit",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:arrow",
+        "count": 32
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:cookie",
+        "count": 32
       },
       {
         "type": "justquests:xp",
@@ -186,68 +163,77 @@
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Gardening Duty",
-    "description": "Pick up 64 sugar cane and collect 32 vines. Look along rivers. Use shears. Look in jungles.",
+  "justquests:gen/1790510400_7": {
+    "title": "Andesite Casing Design",
+    "description": "Build with 16 andesite casings. Use andesite alloy on stripped logs to make casings.",
     "category": "generated",
-    "sort": 12,
-    "mode": "all",
+    "sort": 10,
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:sugar_cane",
-        "count": 64
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:vine",
-        "count": 32
+        "type": "justquests:place_block",
+        "block": "create:andesite_casing",
+        "count": 16
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "create:zinc_ingot",
-        "count": 7
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/village/village_weaponsmith"
+        "item": "create:honeyed_apple",
+        "count": 3
       },
       {
         "type": "justquests:xp",
-        "amount": 27
+        "amount": 30
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Undead Errand",
+    "description": "Pick up 8 rotten flesh and hunt 4 strays. They spawn at night and in dark caves. Look in snowy biomes.",
+    "category": "generated",
+    "sort": 10,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:rotten_flesh",
+        "count": 8
+      },
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:stray",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:basic_control_circuit",
+        "count": 3
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 18
       }
     ]
   },
   "justquests:gen/1790510400_8": {
-    "title": "Twilight Timber Job",
-    "description": "Craft 64 twilight oak planks and break 48 canopy tree logs. One twilight oak log makes four planks. Found in the Twilight Forest.",
+    "title": "Mine Twilight Oak Logs",
+    "description": "Break 64 twilight oak logs. Found in the Twilight Forest.",
     "category": "generated",
-    "sort": 14,
-    "mode": "all",
+    "sort": 13,
     "objectives": [
       {
-        "type": "justquests:craft_item",
-        "item": "twilightforest:twilight_oak_planks",
-        "count": 64
-      },
-      {
         "type": "justquests:mine_block",
-        "block": "twilightforest:canopy_log",
-        "count": 48
+        "block": "twilightforest:twilight_oak_log",
+        "count": 64
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:redstone",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "twilightforest:ironwood_ingot",
-        "count": 3
+        "item": "twilightforest:liveroot",
+        "count": 16
       },
       {
         "type": "justquests:xp",
