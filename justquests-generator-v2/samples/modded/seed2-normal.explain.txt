@@ -1,15 +1,6 @@
 # modded | world seed 2 | NORMAL | 10 quests | day 30, Nether and End unlocked
 
-Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism], Minecraft 1.21.1 (neoforge)
-
-justquests:gen/1790510400_3  "Scoria Breaker"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective mine_block create:scoria ×64
-  effort 0.09 min/unit (×1.30 layers) → 7.5 min (target 13.4, range 8–20 min)
-  tier 1 (always available), family create_stone, profile create, tool wood, hints layers
-estimated 7.5 min (quick)
-reward give_item create:zinc_ingot ×7 (value 6.3) + xp 32 (value 2.7)  → 9.0 / budget 9.0
-rejected alternatives: craft_item create:cut_limestone (made on a stonecutter, which does not count as crafting)
-state: AVAILABLE
+Generator v2: enabled, difficulty normal, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest], Minecraft 1.21.1 (neoforge)
 
 justquests:gen/1790510400_0  "Bring Dark Oak Logs"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
 objective collect_item minecraft:dark_oak_log ×64
@@ -19,77 +10,87 @@ estimated 8.3 min (quick)
 reward give_item farmersdelight:fried_rice ×3 (value 7.2) + xp 33 (value 2.8)  → 10.0 / budget 10.0
 state: AVAILABLE
 
-justquests:gen/1790510400_2  "More Pigs"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective breed_animal minecraft:pig ×8
-  effort 1.00 min/unit → 8.0 min (target 8.9, range 8–20 min)
-  tier 0 (always available), family livestock, profile vanilla
-estimated 8.0 min (quick)
-reward give_item minecraft:coal_block ×3 (value 6.9) + xp 32 (value 2.7)  → 9.6 / budget 9.6
-state: AVAILABLE
-
-justquests:gen/1790510400_6  "Make Candles"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective craft_item minecraft:candle ×6
-  effort 1.20 min/unit (×1.20 bees) → 8.6 min (target 9.3, range 8–20 min)
-  tier 0 (always available), family bees, profile vanilla, hints bees
-estimated 8.6 min (quick)
-reward give_item minecraft:lantern ×8 (value 6.4) + xp 48 (value 4.0)  → 10.4 / budget 10.4
-state: AVAILABLE
-
-justquests:gen/1790510400_7  "Stone Brick Stairs Job"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective craft_item minecraft:stone_brick_stairs ×48
-  effort 0.20 min/unit → 9.6 min (target 9.5, range 8–20 min)
-  tier 0 (always available), family stonework, profile vanilla
-estimated 9.6 min (quick)
-reward give_item minecraft:slime_ball ×6 (value 9.0) + xp 30 (value 2.5)  → 11.5 / budget 11.5
-state: AVAILABLE
-
-justquests:gen/1790510400_4  "Undead Supplies"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective kill_mob minecraft:husk ×4
-  effort 1.00 min/unit (×1.30 desert) → 5.2 min (target 8.3, range 8–20 min)
+justquests:gen/1790510400_6  "Husk Menace"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective kill_mob minecraft:husk ×6
+  effort 1.00 min/unit (×1.30 desert) → 7.8 min (target 8.9, range 8–20 min)
   tier 0 (always available), family undead, profile vanilla, hints desert/night
-objective kill_mob minecraft:stray ×4
-  effort 1.20 min/unit (×1.30 snowy) → 6.2 min (target 8.3, range 8–20 min)
-  tier 1 (always available), family undead, profile vanilla, hints snowy/night
-combo within family undead
-estimated 11.4 min (quick)
-reward give_item minecraft:golden_carrot ×8 (value 12.0) + xp 37 (value 3.1)  → 15.1 / budget 15.1
+estimated 7.8 min (quick)
+reward give_item farmersdelight:fried_rice ×3 (value 7.2) + xp 26 (value 2.2)  → 9.4 / budget 9.4
 state: AVAILABLE
 
-justquests:gen/1790510400_8  "Dig Deepslate Tin Ore"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective mine_block mekanism:deepslate_tin_ore ×16
-  effort 0.80 min/unit (×1.10 deep) → 14.1 min (target 14.9, range 8–20 min)
-  tier 1 (always available), family mek_tin, profile mekanism, tool stone, hints caves/deep
-estimated 14.1 min
-reward give_item create:brass_ingot ×6 (value 12.0) + xp 60 (value 5.0)  → 17.0 / budget 16.9
+justquests:gen/1790510400_7  "Bread Feast"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective consume_item minecraft:bread ×8
+  effort 1.00 min/unit → 8.0 min (target 11.9, range 8–20 min)
+  tier 0 (always available), family baking, profile vanilla
+estimated 8.0 min (quick)
+reward give_item farmersdelight:carrot_crate ×4 (value 6.0) + xp 43 (value 3.6)  → 9.6 / budget 9.6
+rejected alternatives: consume_item minecraft:cake (cake is eaten as a placed block, not a use action)
 state: AVAILABLE
 
-justquests:gen/1790510400_1  "Farmer's Market"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective collect_item farmersdelight:cabbage ×48
-  effort 0.15 min/unit → 7.2 min (target 19.2, range 8–20 min)
-  tier 0 (always available), family fd_crops, profile farmersdelight, hints farm
-objective collect_item farmersdelight:rice ×48
-  effort 0.15 min/unit (×1.30 swamp) → 9.4 min (target 19.2, range 8–20 min)
-  tier 0 (always available), family fd_crops, profile farmersdelight, hints swamp
-theme fd_farmers_market
-estimated 16.6 min
-reward give_item minecraft:white_wool ×32 (value 8.0) + give_item mekanism:raw_osmium ×12 (value 8.4) + xp 65 (value 5.4)  → 21.8 / budget 21.9
-rejected alternatives: craft_item farmersdelight:carrot_crate/potato_crate/beetroot_crate (recipes depend on the FD config option vanilla_crates_enabled)
+justquests:gen/1790510400_8  "More Bighorn Sheep"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective breed_animal twilightforest:bighorn_sheep ×2
+  effort 2.00 min/unit → 4.0 min (target 9.4, range 8–20 min)
+  tier 2 (always available), family tf_ranch, profile twilightforest, twilightforest:twilight_forest
+travel overhead 5.0 min
+estimated 9.0 min (quick)
+reward give_item minecraft:nautilus_shell ×2 (value 10.0) + xp 10 (value 0.8)  → 10.8 / budget 10.8
 state: AVAILABLE
 
-justquests:gen/1790510400_5  "Dig Osmium Ore"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective mine_block mekanism:osmium_ore ×24
-  effort 0.70 min/unit → 16.8 min (target 17.7, range 8–20 min)
-  tier 1 (always available), family mek_osmium, profile mekanism, tool stone, hints caves
-estimated 16.8 min
-reward give_item mekanism:ingot_lead ×16 (value 15.2) + xp 60 (value 5.0)  → 20.2 / budget 20.2
-rejected alternatives: collect_item mekanism:osmium_ore (drops raw osmium, needs Silk Touch); craft_item mekanism:block_osmium (tier 1 above NORMAL cap)
+justquests:gen/1790510400_5  "Deepslate Fluorite Ore Shift"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective mine_block mekanism:deepslate_fluorite_ore ×10
+  effort 1.00 min/unit (×1.10 deep) → 11.0 min (target 11.1, range 8–20 min)
+  tier 1 (always available), family mek_fluorite, profile mekanism, tool stone, hints caves/deep
+estimated 11.0 min (quick)
+reward give_item minecraft:obsidian ×10 (value 10.0) + xp 38 (value 3.2)  → 13.2 / budget 13.2
+rejected alternatives: craft_item mekanism:block_fluorite (tier 1 above NORMAL cap)
 state: AVAILABLE
 
-justquests:gen/1790510400_9  "Smooth Red Sandstone Batch"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
-objective smelt_item minecraft:smooth_red_sandstone ×32
-  effort 0.35 min/unit (×1.60 badlands) → 17.9 min (target 17.9, range 8–20 min)
-  tier 0 (always available), family sand, profile vanilla, hints badlands
-estimated 17.9 min
-reward give_item minecraft:redstone_block ×4 (value 7.2) + give_item mekanism:fluorite_gem ×26 (value 9.1) + xp 60 (value 5.0)  → 21.3 / budget 21.5
+justquests:gen/1790510400_4  "Ranch Order"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item minecraft:cooked_porkchop ×16
+  effort 0.40 min/unit → 6.4 min (target 15.2, range 8–20 min)
+  tier 0 (always available), family livestock, profile vanilla, hints cook
+objective breed_animal minecraft:chicken ×8
+  effort 0.80 min/unit → 6.4 min (target 15.2, range 8–20 min)
+  tier 0 (always available), family livestock, profile vanilla
+combo within family livestock
+estimated 12.8 min
+reward give_item mekanism:fluorite_gem ×32 (value 11.2) + xp 70 (value 5.8)  → 17.0 / budget 16.9
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Coal Pickup"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:coal ×64
+  effort 0.25 min/unit → 16.0 min (target 18.5, range 8–20 min)
+  tier 0 (always available), family coal, profile vanilla, tool wood, hints caves
+estimated 16.0 min
+reward give_item mekanism:fluorite_gem ×32 (value 11.2) + xp 95 (value 7.9) + message  → 19.1 / budget 19.2
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Gather Prismarine Crystals"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:prismarine_crystals ×5
+  effort 2.00 min/unit (×1.60 monument) → 16.0 min (target 17.4, range 8–20 min)
+  tier 2 (always available), family ocean, profile vanilla, tool iron, hints monument
+estimated 16.0 min
+reward give_item twilightforest:ironwood_ingot ×7 (value 15.4) + xp 46 (value 3.8)  → 19.2 / budget 19.2
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Chef's Special"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective craft_item farmersdelight:egg_sandwich ×6
+  effort 1.80 min/unit → 10.8 min (target 19.2, range 8–20 min)
+  tier 0 (always available), family fd_breakfast, profile farmersdelight
+objective consume_item farmersdelight:glow_berry_custard ×4
+  effort 2.00 min/unit → 8.0 min (target 19.2, range 8–20 min)
+  tier 1 (always available), family fd_drinks, profile farmersdelight
+theme fd_chefs_special
+estimated 18.8 min
+reward give_item farmersdelight:hamburger ×6 (value 15.6) + xp 110 (value 9.2)  → 24.8 / budget 24.8
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Raw Zinc Delivery"  (NORMAL, cycle 1790510400, seed 0xDC9F…)
+objective collect_item create:raw_zinc ×24
+  effort 0.80 min/unit → 19.2 min (target 19.8, range 8–20 min)
+  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves
+estimated 19.2 min
+reward give_item minecraft:prismarine_crystals ×8 (value 12.0) + xp 130 (value 10.8)  → 22.8 / budget 23.0
+rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch); craft_item create:zinc_block (tier 1 above NORMAL cap)
 state: AVAILABLE
 

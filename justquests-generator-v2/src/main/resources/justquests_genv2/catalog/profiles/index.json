@@ -3,6 +3,7 @@
   "profiles": [
     "farmersdelight.json",
     "create.json",
-    "mekanism.json"
+    "mekanism.json",
+    "twilightforest.json"
   ]
 }

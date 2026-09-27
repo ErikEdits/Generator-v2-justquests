@@ -32,7 +32,8 @@ MEK_ENTRIES = [
     E("mek_lead", "mek_lead", 1, [
         T("mine_block", M + "lead_ore", 0.8, 4, 24),
         T("mine_block", M + "deepslate_lead_ore", 0.9, 4, 24, hints=["deep"]),
-        T("collect_item", M + "raw_lead", 0.8, 4, 24, hint="Lead ore drops raw lead."),
+        T("collect_item", M + "raw_lead", 0.8, 4, 24, name="Raw Lead", plural="Raw Lead",
+          hint="Lead ore drops raw lead."),
         T("smelt_item", M + "ingot_lead", 0.85, 4, 32, tag="lead_ingots", name="Lead Ingot",
           hint="Smelt raw lead in a furnace."),
     ], tool="stone", hints=["caves"]),

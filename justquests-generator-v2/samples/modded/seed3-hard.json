@@ -1,111 +1,27 @@
 {
-  "justquests:gen/1790510400_5": {
-    "title": "Conveyor Setup",
-    "description": "Move items automatically: craft 4 depots and craft 48 cogwheels. A shaft and wooden planks.",
+  "justquests:gen/1790510400_3": {
+    "title": "Iron Age",
+    "description": "Time for better tools: smelt 16 iron ingots and craft an iron chestplate. Smelt raw iron in a furnace. Needs a stone pickaxe or better.",
     "category": "generated",
-    "sort": 14,
+    "sort": 13,
     "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:craft_item",
-        "item": "create:depot",
-        "count": 4
-      },
-      {
-        "type": "justquests:craft_item",
-        "item": "create:cogwheel",
-        "count": 48
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:obsidian",
-        "count": 15
-      },
-      {
-        "type": "justquests:effect",
-        "effect": "minecraft:night_vision",
-        "seconds": 600,
-        "amplifier": 0
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 55
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Cooked Cod Slice Order",
-    "description": "Cook 24 cod slices. Slice cod on a cutting board, then cook. Use a fishing rod.",
-    "category": "generated",
-    "sort": 14,
     "objectives": [
       {
         "type": "justquests:smelt_item",
-        "item": "farmersdelight:cooked_cod_slice",
-        "count": 24
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:gold_ingot",
-        "count": 12
+        "item": "minecraft:iron_ingot",
+        "count": 16
       },
-      {
-        "type": "justquests:xp",
-        "amount": 70
-      }
-    ]
-  },
-  "justquests:gen/1790510400_0": {
-    "title": "Honeyed Apple Break",
-    "description": "Eat 4 honeyed apples. Fill apples with honey using a spout.",
-    "category": "generated",
-    "sort": 16,
-    "objectives": [
-      {
-        "type": "justquests:consume_item",
-        "item": "create:honeyed_apple",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:ingot_steel",
-        "count": 6
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 70
-      }
-    ]
-  },
-  "justquests:gen/1790510400_3": {
-    "title": "Cold Snap",
-    "description": "Get ready for the cold: craft 40 snow blocks and collect 32 wool. Four snowballs. Look in snowy biomes. Shear sheep. Any wool counts.",
-    "category": "generated",
-    "sort": 16,
-    "mode": "all",
-    "objectives": [
       {
         "type": "justquests:craft_item",
-        "item": "minecraft:snow_block",
-        "count": 40
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "#minecraft:wool",
-        "count": 32
+        "item": "minecraft:iron_chestplate",
+        "count": 1
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "farmersdelight:honey_glazed_ham",
-        "count": 2
+        "item": "create:zinc_ingot",
+        "count": 14
       },
       {
         "type": "justquests:effect",
@@ -115,96 +31,211 @@
       },
       {
         "type": "justquests:xp",
-        "amount": 85
+        "amount": 55
       }
     ]
   },
-  "justquests:gen/1790510400_8": {
-    "title": "Brewer's Supplies",
-    "description": "The brewer needs Nether goods: collect 16 Nether wart and gather 4 magma cream. Found in Nether fortresses. Found in the Nether.",
+  "justquests:gen/1790510400_7": {
+    "title": "Honey Glazed Ham Feast",
+    "description": "Eat 2 honey glazed ham. Place a glazed ham and serve it into a bowl.",
     "category": "generated",
-    "sort": 18,
-    "mode": "all",
+    "sort": 15,
     "objectives": [
       {
-        "type": "justquests:collect_item",
-        "item": "minecraft:nether_wart",
-        "count": 16
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:magma_cream",
-        "count": 4
+        "type": "justquests:consume_item",
+        "item": "farmersdelight:honey_glazed_ham",
+        "count": 2
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:alloy_infused",
-        "count": 6
+        "item": "minecraft:cooked_salmon",
+        "count": 16
       },
       {
         "type": "justquests:xp",
-        "amount": 105
+        "amount": 95
+      }
+    ]
+  },
+  "justquests:gen/1790510400_0": {
+    "title": "Breed Bighorn Sheep",
+    "description": "Breed 6 bighorn sheep. Bighorn sheep breed with wheat. Found in the Twilight Forest.",
+    "category": "generated",
+    "sort": 17,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "twilightforest:bighorn_sheep",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:basic_control_circuit",
+        "count": 5
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 65
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Blaze Rod Collector",
+    "description": "Gather 8 blaze rods. Found in Nether fortresses. Found in the Nether.",
+    "category": "generated",
+    "sort": 17,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:blaze_rod",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:honeyed_apple",
+        "count": 3
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/nether_bridge"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 45
       }
     ]
   },
   "justquests:gen/1790510400_6": {
-    "title": "Lead Ore Quarry",
-    "description": "Break 24 lead ore. Needs a stone pickaxe or better. Found in caves.",
+    "title": "Uranium Ore Miner",
+    "description": "Break 16 uranium ore. Needs a stone pickaxe or better. Found in caves.",
+    "category": "generated",
+    "sort": 18,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "mekanism:uranium_ore",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:golden_apple",
+        "count": 2
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:water_breathing",
+        "seconds": 600,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 41
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Raw Zinc Stockpile",
+    "description": "Collect 24 raw zinc. Zinc ore drops raw zinc. Needs an iron pickaxe or better. Found in caves.",
     "category": "generated",
     "sort": 19,
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "mekanism:lead_ore",
+        "type": "justquests:collect_item",
+        "item": "create:raw_zinc",
         "count": 24
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:tnt",
-        "count": 4
+        "item": "minecraft:cooked_porkchop",
+        "count": 16
       },
       {
-        "type": "justquests:give_item",
-        "item": "minecraft:golden_carrot",
-        "count": 8
+        "type": "justquests:effect",
+        "effect": "minecraft:invisibility",
+        "seconds": 300,
+        "amplifier": 0
       },
       {
         "type": "justquests:xp",
-        "amount": 80
+        "amount": 220
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Ranch Duty",
-    "description": "Cook 32 chicken and eat 6 steak. Cook raw chicken. Common in plains.",
+  "justquests:gen/1790510400_8": {
+    "title": "Winter Prep",
+    "description": "Get ready for the cold: craft 48 snow blocks and breed 10 sheep. Four snowballs. Look in snowy biomes. Sheep breed with wheat.",
     "category": "generated",
-    "sort": 20,
+    "sort": 19,
     "mode": "all",
     "objectives": [
       {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cooked_chicken",
-        "count": 32
+        "type": "justquests:craft_item",
+        "item": "minecraft:snow_block",
+        "count": 48
       },
       {
-        "type": "justquests:consume_item",
-        "item": "minecraft:cooked_beef",
-        "count": 6
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:sheep",
+        "count": 10
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_lead",
-        "count": 26
+        "item": "minecraft:experience_bottle",
+        "count": 14
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/jungle_temple"
       },
       {
         "type": "justquests:xp",
-        "amount": 105
+        "amount": 75
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Lumber Supplies",
+    "description": "Mine 64 cherry logs and break 64 jungle logs. Look in cherry groves. Look in jungles.",
+    "category": "generated",
+    "sort": 19,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:cherry_log",
+        "count": 64
+      },
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:jungle_log",
+        "count": 64
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "farmersdelight:hot_cocoa",
+        "count": 4
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/village/village_weaponsmith"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 205
       }
     ]
   },
@@ -242,36 +273,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Nether Mining Chores",
-    "description": "Pick up 24 glowstone dust and break an ancient debris. Found in the Nether. Needs a diamond pickaxe. Rare, so take your time.",
-    "category": "generated",
-    "sort": 25,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:glowstone_dust",
-        "count": 24
-      },
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:ancient_debris",
-        "count": 1
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "mekanism:basic_control_circuit",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 110
-      }
-    ]
-  },
   "justquests:gen/1790510400_2": {
     "title": "Gem Errand",
     "description": "Mine an emerald ore and collect 64 lapis lazuli. Needs an iron pickaxe or better. Look in the mountains. Rare, so take your time.",
@@ -293,12 +294,12 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:ingot_lead",
+        "item": "mekanism:raw_osmium",
         "count": 32
       },
       {
         "type": "justquests:xp",
-        "amount": 200
+        "amount": 300
       }
     ]
   }

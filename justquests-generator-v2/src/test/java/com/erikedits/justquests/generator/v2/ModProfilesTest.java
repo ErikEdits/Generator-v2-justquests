@@ -31,7 +31,8 @@ class ModProfilesTest {
             for (long seed = 1; seed <= 100; seed++) {
                 for (QuestDraft q : TestSupport.generate(host, TestSupport.config(d, 10), TestSupport.unlockedProgression(host), seed, 10).drafts()) {
                     String t = Json.compact(q.json);
-                    assertFalse(t.contains("farmersdelight:") || t.contains("create:") || t.contains("mekanism:"), t);
+                    assertFalse(t.contains("farmersdelight:") || t.contains("create:") || t.contains("mekanism:")
+                        || t.contains("twilightforest:"), t);
                     assertEquals(Set.of("vanilla"), q.profiles());
                 }
             }
@@ -153,6 +154,61 @@ class ModProfilesTest {
                 String t = Json.compact(q.json);
                 for (String machine : List.of("steel_casing", "enrichment_chamber", "energized_smelter", "configurator")) {
                     assertFalse(t.contains("mekanism:" + machine), "EASY set uses " + machine + ": " + t);
+                }
+            }
+        }
+    }
+
+    @Test
+    void twilightForestWaitsForItsDimension() {
+        FakeHost host = new FakeHost().withMods("twilightforest");
+        host.content.dimensions.add("twilightforest:twilight_forest");
+        GeneratorConfig cfg = TestSupport.config(Difficulty.NORMAL, 10).withModdedShare(1.0);
+        // fresh world: nobody has been there and it is day 0, so nothing from the dimension
+        Progression fresh = TestSupport.freshProgression();
+        for (long seed = 1; seed <= 40; seed++) {
+            for (QuestDraft q : TestSupport.generate(host, cfg, fresh, seed, 10).drafts()) {
+                String objectives = q.json.getAsJsonArray("objectives").toString();
+                assertFalse(objectives.contains("twilightforest:"), Json.compact(q.json));
+            }
+        }
+        // day 100: unlocked by day; Twilight Forest quests appear, with readable names
+        Progression unlocked = TestSupport.unlockedProgression(host);
+        assertTrue(unlocked.dimensionUnlocked("twilightforest:twilight_forest"));
+        int tf = 0;
+        for (long seed = 1; seed <= 40; seed++) {
+            for (QuestDraft q : TestSupport.generate(host, cfg, unlocked, seed, 10).drafts()) {
+                String t = Json.compact(q.json);
+                if (t.contains("twilightforest:")) {
+                    tf++;
+                    assertFalse(t.contains("Dark Log") || t.contains("Cooked Venison") || t.contains("Twilight Forest}"), t);
+                }
+            }
+        }
+        assertTrue(tf > 40, "Twilight Forest quests: " + tf);
+        // the dimension itself missing (mod data pack off): nothing, silently
+        FakeHost noDim = new FakeHost().withMods("twilightforest");
+        Progression p2 = TestSupport.unlockedProgression(noDim);
+        for (long seed = 1; seed <= 20; seed++) {
+            for (QuestDraft q : TestSupport.generate(noDim, cfg, p2, seed, 10).drafts()) {
+                String objectives = q.json.getAsJsonArray("objectives").toString();
+                assertFalse(objectives.contains("twilightforest:"), Json.compact(q.json));
+            }
+        }
+    }
+
+    @Test
+    void twilightBossesOnlyOnHard() {
+        FakeHost host = new FakeHost().withMods("twilightforest");
+        host.content.dimensions.add("twilightforest:twilight_forest");
+        Progression p = TestSupport.unlockedProgression(host);
+        for (Difficulty d : new Difficulty[]{Difficulty.EASY, Difficulty.NORMAL}) {
+            GeneratorConfig cfg = TestSupport.config(d, 10).withModdedShare(1.0);
+            for (long seed = 1; seed <= 60; seed++) {
+                for (QuestDraft q : TestSupport.generate(host, cfg, p, seed, 10).drafts()) {
+                    String t = Json.compact(q.json);
+                    assertFalse(t.contains("twilightforest:naga\"") || t.contains("twilightforest:lich\"")
+                        || t.contains("naga_scale"), d + ": " + t);
                 }
             }
         }

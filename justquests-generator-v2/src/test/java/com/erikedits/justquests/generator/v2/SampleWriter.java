@@ -33,7 +33,8 @@ public final class SampleWriter {
                 for (Difficulty d : Difficulty.values()) {
                     FakeHost host = new FakeHost();
                     if (kind.equals("modded")) {
-                        host.withMods("farmersdelight", "create", "mekanism");
+                        host.withMods("farmersdelight", "create", "mekanism", "twilightforest");
+                        host.content.dimensions.add("twilightforest:twilight_forest");
                     }
                     if (kind.equals("mc-1.18.2")) {
                         // an old version: content released later (mangrove, cherry, armadillo, ...) never appears

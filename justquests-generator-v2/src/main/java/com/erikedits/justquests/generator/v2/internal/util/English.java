@@ -16,7 +16,8 @@ public final class English {
         "crimsite", "ochrum", "veridium", "scoria", "scorchia", "zinc", "brass", "cabbage", "chicken", "rabbit", "squid",
         "cheesecake", "compost", "soil", "grass", "purpur", "prismarine", "shrub", "cactus", "seagrass", "coral",
         "firewood", "flesh", "ink", "wood", "alloy", "meat", "sulfur", "paper", "flint", "charcoal", "fruit", "cream",
-        "scaffolding", "tnt", "lava", "water", "netherite", "ratatouille"));
+        "scaffolding", "tnt", "lava", "water", "netherite", "ratatouille", "osmium", "tin", "uranium", "venison",
+        "liveroot", "ironwood", "meef", "sculk", "nylium", "lichen", "steel"));
     /** Invariant entity plurals ("8 sheep"). */
     private static final Set<String> INVARIANT_ENTITY = Set.of("sheep", "fish", "cod", "salmon", "squid", "silverfish",
         "bison", "deer", "moose", "drowned", "bogged");

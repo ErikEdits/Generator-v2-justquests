@@ -77,32 +77,26 @@
     ]
   },
   "justquests:gen/1790510400_8": {
-    "title": "New Metals",
-    "description": "Chart the new ores underground: mine 6 lead ore and mine 4 deepslate fluorite ore. Needs a stone pickaxe or better. Found in caves.",
+    "title": "Deer Herd",
+    "description": "Breed 2 deer. Deer breed with wheat. Found in the Twilight Forest.",
     "category": "generated",
     "sort": 9,
-    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:mine_block",
-        "block": "mekanism:lead_ore",
-        "count": 6
-      },
-      {
-        "type": "justquests:mine_block",
-        "block": "mekanism:deepslate_fluorite_ore",
-        "count": 4
+        "type": "justquests:breed_animal",
+        "entity": "twilightforest:deer",
+        "count": 2
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:hay_block",
-        "count": 7
+        "item": "twilightforest:raven_feather",
+        "count": 8
       },
       {
         "type": "justquests:xp",
-        "amount": 28
+        "amount": 49
       }
     ]
   },
@@ -217,40 +211,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Bumper Crop",
-    "description": "Bring in the harvest: pick up 32 beetroots and gather 48 wheat. Villages often have them. Grow them on a farm. Harvest fully grown wheat.",
-    "category": "generated",
-    "sort": 15,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:beetroot",
-        "count": 32
-      },
-      {
-        "type": "justquests:collect_item",
-        "item": "minecraft:wheat",
-        "count": 48
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "farmersdelight:bacon_sandwich",
-        "count": 8
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 65
-      },
-      {
-        "type": "justquests:message",
-        "message": "Another job well done."
-      }
-    ]
-  },
   "justquests:gen/1790510400_1": {
     "title": "Tin Ingot Batch",
     "description": "Smelt 24 tin ingots. Smelt raw tin in a furnace. Needs a stone pickaxe or better. Found in caves.",
@@ -277,6 +237,36 @@
       {
         "type": "justquests:xp",
         "amount": 65
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Pet Duty",
+    "description": "Breed 4 cats and tame 3 wolves. Tamed cats breed with raw fish. Villages often have them. Tame wolves with bones. Look in taigas.",
+    "category": "generated",
+    "sort": 20,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:cat",
+        "count": 4
+      },
+      {
+        "type": "justquests:tame_animal",
+        "entity": "minecraft:wolf",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:zinc_block",
+        "count": 2
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 140
       }
     ]
   }

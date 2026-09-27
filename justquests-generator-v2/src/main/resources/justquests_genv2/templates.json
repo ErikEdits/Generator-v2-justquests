@@ -285,7 +285,16 @@
     "mek_salt": "Salt",
     "mek_gear": "Workshop",
     "mek_radiation": "Hazmat",
-    "mek_machines": "Machine"
+    "mek_machines": "Machine",
+    "tf_travel": "Twilight",
+    "tf_wood": "Twilight Timber",
+    "tf_forage": "Twilight Forager",
+    "tf_game": "Venison",
+    "tf_ranch": "Twilight Ranch",
+    "tf_monsters": "Twilight Hunt",
+    "tf_bosses": "Boss",
+    "tf_ironwood": "Ironwood",
+    "tf_maps": "Cartographer"
   },
   "tools": {
     "stone": "Needs a stone pickaxe or better",
@@ -351,6 +360,7 @@
   "dimensionNames": {
     "minecraft:overworld": "the Overworld",
     "minecraft:the_nether": "the Nether",
-    "minecraft:the_end": "the End"
+    "minecraft:the_end": "the End",
+    "twilightforest:twilight_forest": "the Twilight Forest"
   }
 }

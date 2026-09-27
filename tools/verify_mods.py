@@ -1,6 +1,6 @@
 """Verifies the mod profiles: every id against the en_us files of all studied mod versions, and every
 craft_item/smelt_item target against the mod's own recipe data (Farmer's Delight 1.20, Create mc1.20.1 and
-Mekanism 1.20.x/1.21.x generated data, sparse clones in the research dir).
+Mekanism 1.20.x/1.21.x, Twilight Forest 1.20.1/1.21.1 generated data, sparse clones in the research dir).
 Usage: python3 tools/verify_mods.py [research_dir]"""
 import json, os, sys, glob
 R = sys.argv[1] if len(sys.argv) > 1 else '/home/user/research'
@@ -8,9 +8,11 @@ RES = os.path.join(os.path.dirname(__file__), '..', 'justquests-generator-v2', '
 LANGS = {'farmersdelight': ['fd-1.18.2.json', 'fd-1.19.json', 'fd-1.20.json', 'fd-1.20.4.json', 'fd-1.21.json', 'fd-26.1.json'],
          'create': ['create-0.5.1-1.18.json', 'createfabric-1.18.json', 'create-0.5.1-1.19.json', 'create-1.20.1.json',
                     'createfabric-1.20.1.json', 'create-1.21.1.json', 'createfabric-1.21.1.json'],
-         'mekanism': ['mek-1.18.x.json', 'mek-1.19.x.json', 'mek-1.20.x.json', 'mek-1.21.x.json']}
+         'mekanism': ['mek-1.18.x.json', 'mek-1.19.x.json', 'mek-1.20.x.json', 'mek-1.21.x.json'],
+         'twilightforest': ['tf-1.18.x.json', 'tf-1.19.x.json', 'tf-1.20.1.json', 'tf-1.21.1.json']}
 SRC = {'farmersdelight': ['fd-1.20/src'], 'create': ['create-1.20.1/src'],
-       'mekanism': ['mek-1.20.x/src/datagen/generated', 'mek-1.21.x/src/datagen/generated']}
+       'mekanism': ['mek-1.20.x/src/datagen/generated', 'mek-1.21.x/src/datagen/generated'],
+       'twilightforest': ['tf-1.20.1/src/generated/resources/data', 'tf-1.21.1/src/generated/resources/data']}
 # grid recipes with a mod-specific serializer (the result still comes out of a crafting grid)
 GRID_TYPES = ('minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'mekanism:mek_data')
 
@@ -48,7 +50,7 @@ def recipes_one(src):
     return out
 
 problems = []
-for pid in ('farmersdelight', 'create', 'mekanism'):
+for pid in ('farmersdelight', 'create', 'mekanism', 'twilightforest'):
     prof = json.load(open(f'{RES}/catalog/profiles/{pid}.json'))
     langs = {f: lang_ids(f) for f in LANGS[pid]}
     rec = recipes(SRC[pid])
@@ -57,6 +59,11 @@ for pid in ('farmersdelight', 'create', 'mekanism'):
     for e in prof['entries']:
         for t in e['targets']:
             n += 1
+            if t['type'] == 'visit_dimension':
+                ns, path = t['id'].split(':', 1)
+                if not any(glob.glob(f'{R}/{src}/**/{ns}/dimension/{path}.json', recursive=True) for src in SRC[pid]):
+                    problems.append(f"{pid} {t['id']}: no dimension file in the mod data")
+                continue
             ids.append(t['id'])
             if t['type'] in ('craft_item', 'smelt_item'):
                 key = 'craft' if t['type'] == 'craft_item' else 'smelt'

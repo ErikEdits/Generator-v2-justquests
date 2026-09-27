@@ -1,6 +1,6 @@
 # modded | world seed 1 | EASY | 10 quests | day 30, Nether and End unlocked
 
-Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism], Minecraft 1.21.1 (neoforge)
+Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest], Minecraft 1.21.1 (neoforge)
 
 justquests:gen/1790510400_1  "Smelt Tin Ingots"  (EASY, cycle 1790510400, seed 0x2897…)
 objective smelt_item mekanism:ingot_tin ×6

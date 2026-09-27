@@ -1,6 +1,6 @@
 # modded | world seed 2 | EASY | 10 quests | day 30, Nether and End unlocked
 
-Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism], Minecraft 1.21.1 (neoforge)
+Generator v2: enabled, difficulty easy, 10 current + 0 retained, cycle 1790510400 (next rotation 2026-09-28 00:00), 0 claimed, Nether unlocked, End unlocked, profiles [vanilla, farmersdelight, create, mekanism, twilightforest], Minecraft 1.21.1 (neoforge)
 
 justquests:gen/1790510400_0  "Jungle Log Collector"  (EASY, cycle 1790510400, seed 0xDC9F…)
 objective collect_item minecraft:jungle_log ×32

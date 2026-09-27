@@ -23,65 +23,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_4": {
-    "title": "Stonemason",
-    "description": "The stonemason needs help: break 96 andesite and smelt 32 cracked deepslate bricks. Found deep underground.",
-    "category": "generated",
-    "sort": 12,
-    "mode": "all",
-    "objectives": [
-      {
-        "type": "justquests:mine_block",
-        "block": "minecraft:andesite",
-        "count": 96
-      },
-      {
-        "type": "justquests:smelt_item",
-        "item": "minecraft:cracked_deepslate_bricks",
-        "count": 32
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:diamond_pickaxe",
-        "count": 1
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 42
-      }
-    ]
-  },
-  "justquests:gen/1790510400_7": {
-    "title": "Cull the Endermen",
-    "description": "Hunt 24 endermen. Found in the End.",
-    "category": "generated",
-    "sort": 15,
-    "objectives": [
-      {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:enderman",
-        "count": 24
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:redstone",
-        "count": 32
-      },
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:glowstone_dust",
-        "count": 32
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 90
-      }
-    ]
-  },
   "justquests:gen/1790510400_1": {
     "title": "Cook Cooked Bacon",
     "description": "Cook 32 bacon. Cut porkchops on a cutting board, then cook. Use a Farmer's Delight knife.",
@@ -108,7 +49,7 @@
   },
   "justquests:gen/1790510400_5": {
     "title": "Lead Duty",
-    "description": "Gather 8 raw leads and mine 12 lead ore. Lead ore drops raw lead. Needs a stone pickaxe or better. Found in caves.",
+    "description": "Gather 8 raw lead and mine 12 lead ore. Lead ore drops raw lead. Needs a stone pickaxe or better. Found in caves.",
     "category": "generated",
     "sort": 16,
     "mode": "all",
@@ -140,58 +81,6 @@
       }
     ]
   },
-  "justquests:gen/1790510400_6": {
-    "title": "Horse Herd",
-    "description": "Breed 4 horses. Horses breed with golden carrots or apples. Common in plains.",
-    "category": "generated",
-    "sort": 16,
-    "objectives": [
-      {
-        "type": "justquests:breed_animal",
-        "entity": "minecraft:horse",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "minecraft:nautilus_shell",
-        "count": 2
-      },
-      {
-        "type": "justquests:loot_table",
-        "loot_table": "minecraft:chests/abandoned_mineshaft"
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 85
-      }
-    ]
-  },
-  "justquests:gen/1790510400_8": {
-    "title": "Honeyed Apple Tasting",
-    "description": "Eat 4 honeyed apples. Fill apples with honey using a spout.",
-    "category": "generated",
-    "sort": 16,
-    "objectives": [
-      {
-        "type": "justquests:consume_item",
-        "item": "create:honeyed_apple",
-        "count": 4
-      }
-    ],
-    "rewards": [
-      {
-        "type": "justquests:give_item",
-        "item": "create:zinc_ingot",
-        "count": 20
-      },
-      {
-        "type": "justquests:xp",
-        "amount": 70
-      }
-    ]
-  },
   "justquests:gen/1790510400_3": {
     "title": "Build Rose Quartz",
     "description": "Craft 16 rose quartz. Nether quartz and eight redstone dust.",
@@ -207,13 +96,65 @@
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "minecraft:slime_ball",
+        "item": "minecraft:lantern",
         "count": 8
       },
       {
         "type": "justquests:give_item",
-        "item": "minecraft:iron_ingot",
+        "item": "minecraft:experience_bottle",
+        "count": 13
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 80
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Steak Order",
+    "description": "Cook 48 steak. Cook raw beef. Common in plains.",
+    "category": "generated",
+    "sort": 19,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:cooked_beef",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:cooked_salmon",
         "count": 16
+      },
+      {
+        "type": "justquests:loot_table",
+        "loot_table": "minecraft:chests/abandoned_mineshaft"
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 90
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Stray Hunt",
+    "description": "Hunt 12 strays. Look in snowy biomes. They spawn at night and in dark caves.",
+    "category": "generated",
+    "sort": 19,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:stray",
+        "count": 12
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:raw_osmium",
+        "count": 30
       },
       {
         "type": "justquests:xp",
@@ -251,27 +192,86 @@
       }
     ]
   },
-  "justquests:gen/1790510400_9": {
-    "title": "Witch Bounty",
-    "description": "Defeat 2 witches. Look in swamps. Rare, so take your time.",
+  "justquests:gen/1790510400_4": {
+    "title": "Deep Dark Delve",
+    "description": "Descend into the deep dark: break 32 sculk and break 12 deepslate redstone ore. Move quietly: the warden listens. Found in the deep dark.",
     "category": "generated",
-    "sort": 21,
+    "sort": 22,
+    "mode": "all",
     "objectives": [
       {
-        "type": "justquests:kill_mob",
-        "entity": "minecraft:witch",
-        "count": 2
+        "type": "justquests:mine_block",
+        "block": "minecraft:sculk",
+        "count": 32
+      },
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:deepslate_redstone_ore",
+        "count": 12
       }
     ],
     "rewards": [
       {
         "type": "justquests:give_item",
-        "item": "mekanism:alloy_infused",
+        "item": "minecraft:cooked_salmon",
+        "count": 16
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:golden_carrot",
+        "count": 9
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 105
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Stop the Witches",
+    "description": "Hunt 3 witches. Look in swamps. Rare, so take your time.",
+    "category": "generated",
+    "sort": 31,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "minecraft:witch",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:diamond",
         "count": 7
       },
       {
         "type": "justquests:xp",
-        "amount": 80
+        "amount": 140
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Lich Hunt",
+    "description": "Hunt a lich. The Lich rules the tallest tower. Found in the Twilight Forest.",
+    "category": "generated",
+    "sort": 37,
+    "objectives": [
+      {
+        "type": "justquests:kill_mob",
+        "entity": "twilightforest:lich",
+        "count": 1
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "mekanism:ingot_tin",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 340
       }
     ]
   }

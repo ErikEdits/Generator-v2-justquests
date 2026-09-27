@@ -149,6 +149,8 @@
           "effort": 0.8,
           "min": 4,
           "max": 24,
+          "name": "Raw Lead",
+          "plural": "Raw Lead",
           "hint": "Lead ore drops raw lead."
         },
         {
