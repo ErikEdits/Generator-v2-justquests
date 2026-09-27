@@ -216,9 +216,10 @@ public final class Core {
             return;
         }
         state.lastSeenMillis = Math.max(state.lastSeenMillis, now());
-        write(GenState.FILE, Json.pretty(state.toJson()));
+        // compact JSON keeps months of play well below 256 KB; pretty-print it to read it
+        write(GenState.FILE, Json.compact(state.toJson()));
         if (config.statsEnabled()) {
-            write(StatsBook.FILE, Json.pretty(stats.toJson()));
+            write(StatsBook.FILE, Json.compact(stats.toJson()));
         }
     }
 
@@ -549,8 +550,10 @@ public final class Core {
             return noneResult;
         }
         long now = now();
-        if (state.cycleId == 0) {
-            RotationResult r = rotate(clock.boundaryAtOrBefore(now) / 1000L, "reroll", now, List.of());
+        long latest = clock.boundaryAtOrBefore(now) / 1000L;
+        if (state.cycleId == 0 || latest > state.cycleId) {
+            // no set yet, or a boundary passed before the next tick(): a fresh cycle is the reroll
+            RotationResult r = rotate(latest, "reroll", now, List.of());
             return new RotationResult(true, "reroll", r.cycleId(), r.added(), r.retained(), r.removed(), List.of());
         }
         List<String> removed = new ArrayList<>();
