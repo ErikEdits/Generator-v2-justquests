@@ -1,0 +1,282 @@
+{
+  "format": 1,
+  "titles": {
+    "collect_item": [
+      "{Name} Haul",
+      "{Name} Run",
+      "Gather {Name}",
+      "{Name} Stockpile",
+      "{Name} Supply",
+      "{Name} Collector",
+      "{Name} Pickup",
+      "Bring {Names}"
+    ],
+    "mine_block": [
+      "{Name} Miner",
+      "Mine {Name}",
+      "{Name} Dig",
+      "{Name} Quarry",
+      "Break {Name}",
+      "{Name} Excavation"
+    ],
+    "craft_item": [
+      "{Name} Order",
+      "Craft {Names}",
+      "{Name} Workshop",
+      "{Name} Crafter",
+      "Make {Names}",
+      "{Name} Commission"
+    ],
+    "smelt_item": [
+      "{Name} Supply",
+      "Smelt {Names}",
+      "{Name} Smeltery",
+      "Hot {Names}",
+      "{Name} Batch",
+      "Furnace: {Name}"
+    ],
+    "kill_mob": [
+      "{Name} Hunt",
+      "{Name} Patrol",
+      "Cull the {Names}",
+      "{Name} Bounty",
+      "{Name} Slayer",
+      "{Name} Trouble"
+    ],
+    "breed_animal": [
+      "{Name} Breeder",
+      "More {Names}",
+      "{Name} Ranch",
+      "{Name} Family",
+      "Breed {Names}"
+    ],
+    "tame_animal": [
+      "New Friend",
+      "Tame a {Name}",
+      "{Name} Companion",
+      "{Name} Whisperer",
+      "Loyal {Name}"
+    ],
+    "consume_item": [
+      "{Name} Feast",
+      "Taste {Name}",
+      "{Name} Tasting",
+      "{Name} Snack",
+      "Eat {Name}"
+    ],
+    "place_block": [
+      "{Name} Builder",
+      "Build with {Name}",
+      "Place {Names}",
+      "{Name} Project",
+      "{Name} Works"
+    ],
+    "visit_dimension": [
+      "{Dimension} Trip",
+      "Visit {Dimension}",
+      "{Dimension} Journey",
+      "Into {Dimension}"
+    ]
+  },
+  "phrases": {
+    "collect_item": [
+      "Collect {count} {names}",
+      "Gather {count} {names}",
+      "Pick up {count} {names}"
+    ],
+    "mine_block": [
+      "Mine {count} {names}",
+      "Break {count} {names}"
+    ],
+    "craft_item": [
+      "Craft {count} {names}"
+    ],
+    "smelt_item": [
+      "Smelt {count} {names}"
+    ],
+    "kill_mob": [
+      "Defeat {count} {names}",
+      "Hunt {count} {names}"
+    ],
+    "breed_animal": [
+      "Breed {count} {names}"
+    ],
+    "tame_animal": [
+      "Tame {count} {names}"
+    ],
+    "consume_item": [
+      "Eat or drink {count} {names}",
+      "Consume {count} {names}"
+    ],
+    "place_block": [
+      "Place {count} {names}"
+    ],
+    "visit_dimension": [
+      "Travel to {dimension}",
+      "Enter {dimension}"
+    ]
+  },
+  "fallbackTitles": [
+    "{Name} Task",
+    "{Name} Job",
+    "{Name} Errand",
+    "{Name} Duty"
+  ],
+  "comboTitles": [
+    "{Family} Order",
+    "{Family} Errand",
+    "{Family} Job",
+    "{Family} Supplies"
+  ],
+  "familyNames": {
+    "wood": "Lumber",
+    "forestry": "Forestry",
+    "stone": "Quarry",
+    "stonework": "Masonry",
+    "sand": "Sand",
+    "glass": "Glassworks",
+    "soil": "Earthworks",
+    "badlands": "Badlands",
+    "lush": "Lush Cave",
+    "snow": "Winter",
+    "plants": "Gardening",
+    "coal": "Coal",
+    "metals": "Metal",
+    "gems": "Gem",
+    "redstone": "Redstone",
+    "amethyst": "Amethyst",
+    "obsidian": "Obsidian",
+    "crops": "Farm",
+    "fruit": "Orchard",
+    "mushrooms": "Mushroom",
+    "flowers": "Flower",
+    "bees": "Beekeeping",
+    "livestock": "Ranch",
+    "wool": "Wool",
+    "wild_animals": "Wildlife",
+    "horses": "Stable",
+    "pets": "Pet",
+    "villagers": "Village",
+    "fishing": "Fishing",
+    "ocean": "Seafaring",
+    "undead": "Undead",
+    "arthropods": "Spider",
+    "monsters": "Monster",
+    "illagers": "Illager",
+    "trial": "Trial",
+    "lighting": "Lighting",
+    "woodwork": "Carpentry",
+    "baking": "Bakery",
+    "library": "Library",
+    "archery": "Fletcher",
+    "iron_tools": "Toolsmith",
+    "iron_armor": "Armorsmith",
+    "iron_works": "Ironworks",
+    "decor": "Decorator",
+    "copper_works": "Copper",
+    "golden_food": "Golden",
+    "diamond_gear": "Diamond",
+    "nether_travel": "Nether",
+    "nether_blocks": "Nether Stone",
+    "nether_ores": "Nether Mining",
+    "nether_plants": "Nether Garden",
+    "nether_mobs": "Nether Hunt",
+    "end_travel": "End",
+    "end_blocks": "End Stone",
+    "end_plants": "Chorus",
+    "end_mobs": "End Hunt",
+    "end_prep": "Stronghold",
+    "fd_crops": "Produce",
+    "fd_wild": "Forager",
+    "fd_straw": "Straw",
+    "fd_tools": "Cutlery",
+    "fd_kitchen": "Kitchen",
+    "fd_furniture": "Cabinet",
+    "fd_butchery": "Butcher",
+    "fd_seafood": "Seafood",
+    "fd_breakfast": "Breakfast",
+    "fd_meals": "Sandwich",
+    "fd_salads": "Salad",
+    "fd_sweets": "Dessert",
+    "fd_stews": "Stew",
+    "fd_plates": "Dinner",
+    "fd_drinks": "Drinks",
+    "fd_feasts": "Feast",
+    "fd_soil": "Compost",
+    "create_zinc": "Zinc",
+    "create_stone": "Stone Layer",
+    "create_masonry": "Masonry",
+    "create_alloy": "Alloy",
+    "create_kinetics": "Kinetics",
+    "create_power": "Mill",
+    "create_logistics": "Logistics",
+    "create_machines": "Machine",
+    "create_tools": "Engineer",
+    "create_decor": "Seating",
+    "create_sweets": "Treat",
+    "create_quartz": "Rose Quartz"
+  },
+  "tools": {
+    "stone": "Needs a stone pickaxe or better",
+    "iron": "Needs an iron pickaxe or better",
+    "diamond": "Needs a diamond pickaxe",
+    "netherite": "Needs a netherite pickaxe",
+    "shears": "Use shears",
+    "silk_touch": "Needs Silk Touch",
+    "fishing_rod": "Use a fishing rod",
+    "knife": "Use a Farmer's Delight knife",
+    "shovel": "Use a shovel"
+  },
+  "hints": {
+    "night": "They spawn at night and in dark caves.",
+    "desert": "Look in deserts.",
+    "swamp": "Look in swamps.",
+    "jungle": "Look in jungles.",
+    "taiga": "Look in taigas.",
+    "snowy": "Look in snowy biomes.",
+    "ocean": "Look in and near oceans.",
+    "beach": "Look along beaches.",
+    "savanna": "Look in savannas.",
+    "badlands": "Look in badlands.",
+    "mountains": "Look in the mountains.",
+    "plains": "Common in plains.",
+    "flower_forest": "Flower forests have the most.",
+    "dark_forest": "Dark forests have plenty.",
+    "mushroom_fields": "Look on mushroom islands.",
+    "lush_caves": "Look in lush caves.",
+    "dripstone_caves": "Look in dripstone caves.",
+    "cherry_grove": "Look in cherry groves.",
+    "mangrove_swamp": "Look in mangrove swamps.",
+    "pale_garden": "Look in pale gardens.",
+    "caves": "Found in caves.",
+    "deep": "Found deep underground.",
+    "geode": "Look inside amethyst geodes.",
+    "village": "Villages often have them.",
+    "farm": "Grow them on a farm.",
+    "bees": "Needs bees and flowers.",
+    "rare": "Rare, so take your time.",
+    "river": "Look along rivers.",
+    "fortress": "Found in Nether fortresses.",
+    "bastion": "Found in bastion remnants.",
+    "crimson_forest": "Found in crimson forests.",
+    "warped_forest": "Found in warped forests.",
+    "soul_sand_valley": "Found in soul sand valleys.",
+    "basalt_deltas": "Found in basalt deltas.",
+    "end_city": "Found in End cities.",
+    "outer_islands": "Grows on the outer End islands.",
+    "mineshaft": "Found in abandoned mineshafts.",
+    "outpost": "Found at pillager outposts.",
+    "monument": "Found at ocean monuments.",
+    "trial_chambers": "Found in trial chambers.",
+    "layers": "Found in thick stone layers underground."
+  },
+  "sentences": {
+    "tag": "Any {noun} counts.",
+    "dimension": "Found in {dimension}."
+  },
+  "dimensionNames": {
+    "minecraft:overworld": "the Overworld",
+    "minecraft:the_nether": "the Nether",
+    "minecraft:the_end": "the End"
+  }
+}

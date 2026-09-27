@@ -461,7 +461,7 @@ public final class SetBuilder {
             d.quick = sum <= quickLimit + 1e-9;
             return d.quick;
         }
-        double lo = level.minMinutes * (1.0 - balance.rangeSlack);
+        double lo = Math.max(level.minMinutes * (1.0 - balance.rangeSlack), d.targetMinutes * balance.minTargetFraction);
         double hi = level.maxMinutes * (1.0 + balance.rangeSlack);
         d.quick = sum <= quickLimit + 1e-9;
         return sum >= lo && sum <= hi;

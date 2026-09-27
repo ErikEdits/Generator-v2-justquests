@@ -6,7 +6,7 @@ import java.util.Set;
 /** Tiny English helpers for generated text: plurals, articles, casing. */
 public final class English {
     /** Last words that are mass nouns or invariant plurals ("24 raw iron", "8 sheep"). */
-    private static final Set<String> INVARIANT = Set.of("iron", "gold", "copper", "coal", "cobblestone", "dirt", "sand",
+    private static final Set<String> INVARIANT = new java.util.HashSet<>(java.util.Arrays.asList("iron", "gold", "copper", "coal", "cobblestone", "dirt", "sand",
         "gravel", "clay", "wheat", "kelp", "bamboo", "cane", "beef", "mutton", "porkchop", "cod", "salmon", "dust",
         "lazuli", "quartz", "netherrack", "stone", "deepslate", "gunpowder", "leather", "string", "wool", "snow", "ice",
         "obsidian", "bread", "rice", "straw", "glass", "terracotta", "basalt", "blackstone", "tuff", "calcite", "andesite",
@@ -16,10 +16,10 @@ public final class English {
         "crimsite", "ochrum", "veridium", "scoria", "scorchia", "zinc", "brass", "cabbage", "chicken", "rabbit", "squid",
         "cheesecake", "compost", "soil", "grass", "purpur", "prismarine", "shrub", "cactus", "seagrass", "coral",
         "firewood", "flesh", "ink", "wood", "alloy", "meat", "sulfur", "paper", "flint", "charcoal", "fruit", "cream",
-        "scaffolding", "tnt", "cocoa", "lava", "water", "netherite", "emerald_block");
+        "scaffolding", "tnt", "lava", "water", "netherite", "ratatouille"));
     /** Invariant entity plurals ("8 sheep"). */
     private static final Set<String> INVARIANT_ENTITY = Set.of("sheep", "fish", "cod", "salmon", "squid", "silverfish",
-        "bison", "deer", "moose");
+        "bison", "deer", "moose", "drowned", "bogged");
 
     private English() {
     }

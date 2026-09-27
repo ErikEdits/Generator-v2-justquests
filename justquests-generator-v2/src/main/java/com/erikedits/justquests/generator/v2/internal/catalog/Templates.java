@@ -26,8 +26,10 @@ public final class Templates {
     public final Map<String, String> sentences = new LinkedHashMap<>();
     /** Dimension display names. */
     public final Map<String, String> dimensionNames = new LinkedHashMap<>();
-    /** Multi-objective fallback titles when no theme applies ({Name}). */
+    /** Multi-objective fallback titles when no theme applies ({Family}, {Name}). */
     public final List<String> comboTitles = new ArrayList<>();
+    /** Display nouns for families, used by combo titles. */
+    public final Map<String, String> familyNames = new LinkedHashMap<>();
 
     public static Templates parse(JsonObject root) {
         Templates t = new Templates();
@@ -42,6 +44,7 @@ public final class Templates {
         readStrings(Json.obj(root, "tools"), t.tools);
         readStrings(Json.obj(root, "sentences"), t.sentences);
         readStrings(Json.obj(root, "dimensionNames"), t.dimensionNames);
+        readStrings(Json.obj(root, "familyNames"), t.familyNames);
         return t;
     }
 

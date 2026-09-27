@@ -39,6 +39,8 @@ dependencies {
 tasks.named('test', Test) {
     useJUnitPlatform()
     maxHeapSize = '1g'
+    // diagnostics only: ./gradlew test -Dprobe=true --tests '*RelaxationProbe*'
+    systemProperty 'probe', System.getProperty('probe', 'false')
     testLogging {
         events 'failed'
         exceptionFormat 'full'

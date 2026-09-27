@@ -93,8 +93,16 @@ public final class TextBuilder {
     }
 
     public String familyName(String family) {
-        String n = t.sentences.get("family." + family);
-        return n != null ? n : English.titleCase(family.replace('_', ' '));
+        String n = t.familyNames.get(family);
+        if (n != null) {
+            return n;
+        }
+        String f = family;
+        int us = f.indexOf('_');
+        if (us > 0 && us <= 7 && f.length() > us + 1) {
+            f = f.substring(us + 1); // drop a short mod prefix such as "fd_" or "create_"
+        }
+        return English.titleCase(f.replace('_', ' '));
     }
 
     public String dimensionName(String dim) {
@@ -112,6 +120,9 @@ public final class TextBuilder {
         if (c.isTag() && c.tagNoun() != null) {
             nameSingular = c.tagNoun();
             names = o.count() == 1 ? c.tagNoun() : English.plural(c.tagNoun());
+        }
+        if (o.count() == 1 && tpl.contains("{count} {names}")) {
+            tpl = tpl.replace("{count} {names}", "{a_name}");
         }
         return tpl.replace("{count}", Integer.toString(o.count()))
             .replace("{names}", names)

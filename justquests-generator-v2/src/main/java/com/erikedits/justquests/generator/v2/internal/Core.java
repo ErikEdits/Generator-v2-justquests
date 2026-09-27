@@ -383,43 +383,10 @@ public final class Core {
         }
     }
 
-    /** Result of one generation run. */
-    private record GenRun(List<QuestDraft> drafts, long seed, SetBuilder builder, CandidateResolver resolver) {
-    }
-
-    private GenRun generate(int n, List<SetBuilder.Kept> kept, long cycleId, long seed, Progression progression,
-                            Set<String> historySigs, int firstIndex) {
-        Difficulty diff = config.difficulty();
-        Map<String, Double> cal = config.adaptiveBalancing() ? state.calibration : Map.of();
-        CandidateResolver resolver = new CandidateResolver(catalog, host.content(), host.capabilities(), log, diff,
-            progression, cal, config.disabledProfiles());
-        CandidateResolver.Pool pool = resolver.resolve();
-        Set<String> activeIds = CandidateResolver.ids(pool.activeProfiles());
-        Set<String> rewardTypes;
-        try {
-            rewardTypes = host.capabilities().rewardTypes();
-        } catch (RuntimeException e) {
-            rewardTypes = Set.of();
-        }
-        RewardBuilder rewards = new RewardBuilder(catalog, diff, activeIds, resolver::exists, this::stackSize, rewardTypes);
-        TextBuilder text = new TextBuilder(catalog.templates);
-        Rng rng = new Rng(seed);
-        SetBuilder.Validator validator = (draft, json, ordinal) -> {
-            String id = Ids.GEN_PREFIX + cycleId + "_" + (firstIndex + ordinal);
-            return host.validator().validate(id, json.deepCopy());
-        };
-        SetBuilder builder = new SetBuilder(catalog, diff, pool, rng, historySigs, rewards, text, validator, log,
-            host.capabilities(), progression);
-        List<QuestDraft> drafts = builder.build(n, kept, kept.size() + n, config.moddedShare());
-        return new GenRun(drafts, seed, builder, resolver);
-    }
-
-    private int stackSize(String id) {
-        try {
-            return host.content().maxStackSize(id);
-        } catch (RuntimeException e) {
-            return -1;
-        }
+    private Generation.Result generate(int n, List<SetBuilder.Kept> kept, long cycleId, long seed, Progression progression,
+                                       Set<String> historySigs, int firstIndex) {
+        return Generation.run(catalog, host, config, progression, state.calibration, historySigs, kept, n, cycleId, seed,
+            firstIndex);
     }
 
     /** Generates and stores quests for the current cycle; returns the new ids. */
@@ -432,8 +399,8 @@ public final class Core {
         }
         long seed = Rng.cycleSeed(worldSeed, state.cycleId, state.rerollCounter);
         long t0 = System.nanoTime();
-        GenRun run = generate(n, kept, state.cycleId, seed, state.progression, new HashSet<>(state.history.keySet()),
-            state.nextIndex);
+        Generation.Result run = generate(n, kept, state.cycleId, seed, state.progression,
+            new HashSet<>(state.history.keySet()), state.nextIndex);
         long ms = (System.nanoTime() - t0) / 1_000_000L;
         List<String> added = new ArrayList<>();
         for (QuestDraft d : run.drafts()) {
@@ -446,12 +413,11 @@ public final class Core {
             }
         }
         if (record) {
-            stats.addRejections(run.resolver().rejections());
-            stats.addRejections(run.builder().rejections());
-            stats.addRelaxations(run.builder().relaxations());
+            stats.addRejections(run.rejections());
+            stats.addRelaxations(run.relaxations());
         }
-        if (!run.builder().relaxNotes().isEmpty()) {
-            log.warn("[GenV2] set rules relaxed: " + String.join(", ", run.builder().relaxNotes()));
+        if (!run.relaxNotes().isEmpty()) {
+            log.warn("[GenV2] set rules relaxed: " + String.join(", ", run.relaxNotes()));
         }
         if (added.size() < n) {
             log.warn("[GenV2] only " + added.size() + " of " + n + " quests could be generated (content pool too small)");
@@ -642,11 +608,12 @@ public final class Core {
             return ClaimResult.NOT_SERVED;
         }
         ClaimRecord c = r.claim;
+        if (c.holders.containsKey(player)) {
+            // checked first so a legacy second holder can still finish after the other completed
+            return ClaimResult.ALREADY_YOURS;
+        }
         if (config.exclusiveClaims() ? !c.completions.isEmpty() : c.completions.containsKey(player)) {
             return ClaimResult.COMPLETED;
-        }
-        if (c.holders.containsKey(player)) {
-            return ClaimResult.ALREADY_YOURS;
         }
         if (config.exclusiveClaims() && !c.holders.isEmpty()) {
             return ClaimResult.CLAIMED_BY_OTHER;
@@ -816,7 +783,7 @@ public final class Core {
         Progression copy = Progression.fromJson(state.progression.toJson());
         Set<String> hist = new HashSet<>(state.history.keySet());
         int n = Math.min(count, config.maxPerCycle());
-        GenRun run = generate(n, List.of(), nextCycle, Rng.cycleSeed(worldSeed, nextCycle, 0), copy, hist, 0);
+        Generation.Result run = generate(n, List.of(), nextCycle, Rng.cycleSeed(worldSeed, nextCycle, 0), copy, hist, 0);
         for (QuestDraft d : run.drafts()) {
             out.add(d.json.deepCopy());
         }

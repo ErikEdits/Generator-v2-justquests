@@ -81,6 +81,7 @@ public final class Balance {
     public double calibrationMaxStep = 0.10;
     public int maxAttemptsPerSlot = 40;
     public double rangeSlack = 0.25;
+    public double minTargetFraction = 0.5;
 
     /** Parses balance JSON; missing values keep their defaults. */
     public static Balance parse(JsonObject root) {
@@ -162,6 +163,7 @@ public final class Balance {
             b.themeChance = Json.dbl(rules, "themeChance", b.themeChance);
             b.maxAttemptsPerSlot = Json.integer(rules, "maxAttemptsPerSlot", b.maxAttemptsPerSlot);
             b.rangeSlack = Json.dbl(rules, "rangeSlack", b.rangeSlack);
+            b.minTargetFraction = Json.dbl(rules, "minTargetFraction", b.minTargetFraction);
         }
         JsonObject cal = Json.obj(root, "calibration");
         if (cal != null) {

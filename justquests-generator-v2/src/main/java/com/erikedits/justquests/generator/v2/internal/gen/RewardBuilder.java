@@ -225,7 +225,7 @@ public final class RewardBuilder {
                 continue;
             }
             int cap = Math.max(1, Math.min(it.max(), stackOf(it, id)));
-            double fit = itemBudget / it.value() <= cap ? 1.0 : 0.25;
+            double fit = itemBudget / it.value() <= cap ? 1.0 : 0.05;
             ok.add(it);
             resolved.add(id);
             weights.add(it.weight() * fit);
