@@ -1,0 +1,247 @@
+{
+  "justquests:gen/1790510400_4": {
+    "title": "Craft Beds",
+    "description": "Craft 4 beds. Three wool and three planks. Any bed counts.",
+    "category": "generated",
+    "sort": 4,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "#minecraft:beds",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:cooked_porkchop",
+        "count": 6
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 12
+      }
+    ]
+  },
+  "justquests:gen/1790510400_0": {
+    "title": "Mine Spruce Logs",
+    "description": "Break 40 spruce logs. Look in taigas.",
+    "category": "generated",
+    "sort": 5,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:spruce_log",
+        "count": 40
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:emerald",
+        "count": 1
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 28
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Bone Pickup",
+    "description": "Pick up 8 bones. They spawn at night and in dark caves.",
+    "category": "generated",
+    "sort": 5,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:bone",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:coal",
+        "count": 14
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 16
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Bring Flint",
+    "description": "Gather 16 flint. Gravel sometimes drops flint.",
+    "category": "generated",
+    "sort": 6,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:flint",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:arrow",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 19
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Fried Egg Batch",
+    "description": "Cook 8 fried eggs. Cook eggs in a furnace or skillet.",
+    "category": "generated",
+    "sort": 6,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "farmersdelight:fried_egg",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "farmersdelight:hamburger",
+        "count": 2
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 14
+      }
+    ]
+  },
+  "justquests:gen/1790510400_2": {
+    "title": "Bring Feathers",
+    "description": "Gather 24 feathers.",
+    "category": "generated",
+    "sort": 7,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:feather",
+        "count": 24
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:bone_meal",
+        "count": 32
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "create:cogwheel",
+        "count": 9
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 21
+      }
+    ]
+  },
+  "justquests:gen/1790510400_1": {
+    "title": "Cooked Bacon Kitchen",
+    "description": "Cook 16 bacon. Cut porkchops on a cutting board, then cook. Use a Farmer's Delight knife.",
+    "category": "generated",
+    "sort": 8,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "farmersdelight:cooked_bacon",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "create:cogwheel",
+        "count": 24
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 24
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Deepslate Zinc Ore Dig",
+    "description": "Break 8 deepslate zinc ore. Needs an iron pickaxe or better. Found in caves. Found deep underground.",
+    "category": "generated",
+    "sort": 8,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "create:deepslate_zinc_ore",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:cooked_beef",
+        "count": 12
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 23
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Grilled Salmon Break",
+    "description": "Eat 3 grilled salmon.",
+    "category": "generated",
+    "sort": 8,
+    "objectives": [
+      {
+        "type": "justquests:consume_item",
+        "item": "farmersdelight:grilled_salmon",
+        "count": 3
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:amethyst_shard",
+        "count": 16
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 26
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Book Order",
+    "description": "Craft 8 books.",
+    "category": "generated",
+    "sort": 10,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:book",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:slime_ball",
+        "count": 5
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 25
+      }
+    ]
+  }
+}

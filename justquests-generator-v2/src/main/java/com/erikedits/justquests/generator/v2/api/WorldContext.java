@@ -6,6 +6,8 @@ package com.erikedits.justquests.generator.v2.api;
  */
 public interface WorldContext {
     /**
+     * The world seed (mixed into every cycle seed).
+     *
      * @return the world seed
      */
     long worldSeed();
@@ -18,6 +20,8 @@ public interface WorldContext {
     long gameDay();
 
     /**
+     * Players online right now.
+     *
      * @return number of players online right now
      */
     int onlinePlayerCount();

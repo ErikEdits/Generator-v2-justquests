@@ -49,7 +49,9 @@ public final class English {
             return name;
         }
         String out;
-        if (lower.endsWith("man")) {
+        if (lower.endsWith("fungus")) {
+            out = last.substring(0, last.length() - 2) + "i";
+        } else if (lower.endsWith("man")) {
             out = last.substring(0, last.length() - 3) + keepCase(last, "men");
         } else if (lower.endsWith("f") && (lower.endsWith("lf") || lower.endsWith("af") || lower.endsWith("rf"))) {
             out = last.substring(0, last.length() - 1) + "ves";

@@ -75,9 +75,17 @@ public final class RewardBuilder {
             }
         }
         double itemBudget = Math.max(0, (budget - extraValue) * balance.itemShare);
-        QuestDraft.Reward item = allowed("justquests:give_item") ? pickItem(itemBudget, families, targets, questTier, rng) : null;
+        QuestDraft.Reward item = allowed("justquests:give_item") ? pickItem(itemBudget, families, targets, null, questTier, rng) : null;
         if (item != null) {
             d.rewards.add(item);
+            double left = itemBudget - item.value();
+            // a second item when the first one cannot carry the item budget (keeps XP sane)
+            if (extras.isEmpty() && left > itemBudget * 0.4 && left > 2.0) {
+                QuestDraft.Reward second = pickItem(left, families, targets, item.id(), questTier, rng);
+                if (second != null) {
+                    d.rewards.add(second);
+                }
+            }
         }
         d.rewards.addAll(extras);
         double used = d.totalRewardValue();
@@ -191,7 +199,8 @@ public final class RewardBuilder {
         return host > 0 ? host : it.stack() > 0 ? it.stack() : 64;
     }
 
-    private QuestDraft.Reward pickItem(double itemBudget, Set<String> families, Set<String> targets, int questTier, Rng rng) {
+    private QuestDraft.Reward pickItem(double itemBudget, Set<String> families, Set<String> targets, String exclude,
+                                       int questTier, Rng rng) {
         if (itemBudget <= 0) {
             return null;
         }
@@ -218,14 +227,16 @@ public final class RewardBuilder {
                 continue;
             }
             String id = resolveId(it);
-            if (id == null || targets.contains(id)) {
+            if (id == null || targets.contains(id) || id.equals(exclude)) {
                 continue;
             }
             if (it.value() > itemBudget * (1 + balance.rewardTolerance)) {
                 continue;
             }
             int cap = Math.max(1, Math.min(it.max(), stackOf(it, id)));
-            double fit = itemBudget / it.value() <= cap ? 1.0 : 0.05;
+            // capacity: share of the item budget this reward can carry (1 = fully)
+            double fit = Math.min(1.0, cap * it.value() / itemBudget);
+            fit = fit * fit;
             ok.add(it);
             resolved.add(id);
             weights.add(it.weight() * fit);

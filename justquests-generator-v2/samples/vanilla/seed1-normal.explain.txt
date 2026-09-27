@@ -1,0 +1,96 @@
+# vanilla | world seed 1 | NORMAL | 10 quests | day 30, Nether and End unlocked
+
+justquests:gen/1790510400_0  "Cooked Cod Snack"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective consume_item minecraft:cooked_cod ×6
+  effort 1.50 min/unit → 9.0 min (target 9.4, range 8–20 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
+estimated 9.0 min (quick)
+reward give_item minecraft:hay_block ×6 (value 8.4) + xp 29 (value 2.4)  → 10.8 / budget 10.8
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Break Dripstone Blocks"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:dripstone_block ×48
+  effort 0.15 min/unit (×1.30 dripstone_caves) → 9.4 min (target 9.9, range 8–20 min)
+  tier 1 (always available), family stone, profile vanilla, tool wood, hints dripstone_caves
+estimated 9.4 min (quick)
+reward give_item minecraft:baked_potato ×32 (value 8.0) + xp 39 (value 3.3)  → 11.3 / budget 11.2
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Bee Family"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective breed_animal minecraft:bee ×5
+  effort 1.50 min/unit (×1.20 bees) → 9.0 min (target 9.5, range 8–20 min)
+  tier 0 (always available), family bees, profile vanilla, hints bees
+estimated 9.0 min (quick)
+reward give_item minecraft:coal ×32 (value 8.0) + xp 34 (value 2.8)  → 10.8 / budget 10.8
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Charcoal Batch"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective smelt_item minecraft:charcoal ×64
+  effort 0.15 min/unit → 9.6 min (target 14.6, range 8–20 min)
+  tier 0 (always available), family wood, profile vanilla
+estimated 9.6 min (quick)
+reward give_item minecraft:coal ×32 (value 8.0) + xp 42 (value 3.5)  → 11.5 / budget 11.5
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Deep Dig"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective mine_block minecraft:deepslate_gold_ore ×4
+  effort 1.20 min/unit (×1.10 deep) → 5.3 min (target 10.8, range 8–20 min)
+  tier 2 (always available), family metals, profile vanilla, tool iron, hints deep
+objective mine_block minecraft:copper_ore ×16
+  effort 0.30 min/unit → 4.8 min (target 10.8, range 8–20 min)
+  tier 1 (always available), family metals, profile vanilla, tool stone, hints caves
+theme mining_expedition
+estimated 10.1 min (quick)
+reward give_item minecraft:experience_bottle ×8 (value 9.6) + xp 44 (value 3.7) + message  → 13.3 / budget 13.3
+rejected alternatives: collect_item minecraft:gold_ore (drops raw_gold, needs Silk Touch)
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Iron Chain Workshop"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective craft_item minecraft:iron_chain ×16
+  effort 0.70 min/unit → 11.2 min (target 12.8, range 8–20 min)
+  tier 1 (always available), family iron_works, profile vanilla
+estimated 11.2 min (quick)
+reward give_item minecraft:paper ×32 (value 3.8) + effect minecraft:night_vision 510s (value 3.4) + xp 75 (value 6.3)  → 13.5 / budget 13.4
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Harvest Festival"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:carrot ×32
+  effort 0.15 min/unit (×1.20 village) → 5.8 min (target 11.4, range 8–20 min)
+  tier 0 (always available), family crops, profile vanilla, hints village/farm
+objective collect_item minecraft:beetroot ×24
+  effort 0.20 min/unit (×1.20 village) → 5.8 min (target 11.4, range 8–20 min)
+  tier 0 (always available), family crops, profile vanilla, hints village/farm
+theme harvest_festival
+estimated 11.5 min (quick)
+reward give_item minecraft:lapis_lazuli ×32 (value 6.4) + give_item minecraft:leather ×13 (value 5.2) + xp 43 (value 3.6)  → 15.2 / budget 15.2
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Gather Raw Beef"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:beef ×48
+  effort 0.30 min/unit → 14.4 min (target 16.2, range 8–20 min)
+  tier 0 (always available), family livestock, profile vanilla, hints plains
+estimated 14.4 min
+reward give_item minecraft:coal ×32 (value 8.0) + xp 110 (value 9.2)  → 17.2 / budget 17.3
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Gather Redstone Dust"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective collect_item minecraft:redstone ×64
+  effort 0.20 min/unit (×1.10 deep) → 14.1 min (target 15.3, range 8–20 min)
+  tier 2 (always available), family redstone, profile vanilla, tool iron, hints deep
+estimated 14.1 min
+reward give_item minecraft:ender_pearl ×5 (value 12.5) + xp 55 (value 4.6)  → 17.1 / budget 16.9
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Wildlife Job"  (NORMAL, cycle 1790510400, seed 0x2897…)
+objective breed_animal minecraft:llama ×3
+  effort 2.50 min/unit (×1.20 savanna) → 9.0 min (target 15.4, range 8–20 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints savanna
+objective collect_item minecraft:rabbit_hide ×6
+  effort 1.00 min/unit (×1.30 desert) → 7.8 min (target 15.4, range 8–20 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints desert
+combo within family wild_animals
+estimated 16.8 min
+reward give_item minecraft:experience_bottle ×14 (value 16.8) + xp 65 (value 5.4)  → 22.2 / budget 22.2
+rejected alternatives: tame_animal minecraft:llama (not counted on Fabric)
+state: AVAILABLE
+

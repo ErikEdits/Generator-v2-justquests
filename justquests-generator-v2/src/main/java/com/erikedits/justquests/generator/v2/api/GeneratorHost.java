@@ -9,22 +9,46 @@ package com.erikedits.justquests.generator.v2.api;
  * cache the returned views.
  */
 public interface GeneratorHost {
-    /** Registries, tags, mod list, recipes. Never null. */
+    /**
+     * Registries, tags, mod list, recipes.
+     *
+     * @return the view, never null
+     */
     ContentView content();
 
-    /** World seed, game day, online players, advancement shares. Never null. */
+    /**
+     * World seed, game day, online players, advancement shares.
+     *
+     * @return the view, never null
+     */
     WorldContext world();
 
-    /** Reads/writes files in {@code <world>/justquests/}. Never null. */
+    /**
+     * Reads/writes files in {@code <world>/justquests/}.
+     *
+     * @return the view, never null
+     */
     StateStore store();
 
-    /** Runs the mod's real quest codec. Never null. */
+    /**
+     * Runs the mod's real quest codec.
+     *
+     * @return the view, never null
+     */
     QuestValidator validator();
 
-    /** Objective/reward types and tag support of this build. Never null. */
+    /**
+     * Objective/reward types and tag support of this build.
+     *
+     * @return the view, never null
+     */
     HostCapabilities capabilities();
 
-    /** Logging sink (the mod's logger). Never null. */
+    /**
+     * Logging sink (the mod's logger).
+     *
+     * @return the view, never null
+     */
     GenLog log();
 
     /**

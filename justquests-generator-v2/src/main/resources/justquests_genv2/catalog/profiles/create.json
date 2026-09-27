@@ -499,6 +499,9 @@
           "effort": 4.5,
           "min": 1,
           "max": 3,
+          "hints": [
+            "drink"
+          ],
           "hint": "Brewed by a mixer, bottled by a spout.",
           "minDifficulty": "hard"
         },

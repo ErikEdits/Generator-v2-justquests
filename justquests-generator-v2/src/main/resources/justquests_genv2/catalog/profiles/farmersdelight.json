@@ -38,9 +38,9 @@
         {
           "type": "consume_item",
           "id": "farmersdelight:cabbage",
-          "effort": 0.2,
+          "effort": 0.35,
           "min": 4,
-          "max": 16
+          "max": 8
         }
       ]
     },
@@ -73,9 +73,9 @@
         {
           "type": "consume_item",
           "id": "farmersdelight:tomato",
-          "effort": 0.2,
+          "effort": 0.3,
           "min": 4,
-          "max": 16
+          "max": 8
         }
       ]
     },
@@ -396,6 +396,9 @@
           "effort": 2.2,
           "min": 1,
           "max": 4,
+          "hints": [
+            "cook"
+          ],
           "hint": "Smoke ham in a smoker."
         },
         {
@@ -404,6 +407,9 @@
           "effort": 0.5,
           "min": 4,
           "max": 32,
+          "hints": [
+            "cook"
+          ],
           "hint": "Cut porkchops on a cutting board, then cook."
         },
         {
@@ -412,6 +418,9 @@
           "effort": 0.5,
           "min": 4,
           "max": 24,
+          "hints": [
+            "cook"
+          ],
           "hint": "Mince beef on a cutting board, then cook."
         },
         {
@@ -420,6 +429,9 @@
           "effort": 0.45,
           "min": 4,
           "max": 32,
+          "hints": [
+            "cook"
+          ],
           "hint": "Cut chicken on a cutting board, then cook."
         },
         {
@@ -428,6 +440,9 @@
           "effort": 0.5,
           "min": 4,
           "max": 32,
+          "hints": [
+            "cook"
+          ],
           "hint": "Cut mutton on a cutting board, then cook."
         }
       ]
@@ -445,6 +460,9 @@
           "effort": 0.6,
           "min": 4,
           "max": 24,
+          "hints": [
+            "cook"
+          ],
           "hint": "Slice cod on a cutting board, then cook."
         },
         {
@@ -453,6 +471,9 @@
           "effort": 0.9,
           "min": 4,
           "max": 16,
+          "hints": [
+            "cook"
+          ],
           "hint": "Slice salmon on a cutting board, then cook."
         },
         {
@@ -478,6 +499,9 @@
           "effort": 0.8,
           "min": 2,
           "max": 16,
+          "hints": [
+            "cook"
+          ],
           "hint": "Cook eggs in a furnace or skillet.",
           "stack": 64
         },
@@ -628,9 +652,9 @@
         {
           "type": "consume_item",
           "id": "farmersdelight:sweet_berry_cookie",
-          "effort": 0.15,
-          "min": 8,
-          "max": 32
+          "effort": 0.3,
+          "min": 4,
+          "max": 16
         },
         {
           "type": "craft_item",
@@ -862,6 +886,9 @@
           "effort": 1.6,
           "min": 1,
           "max": 4,
+          "hints": [
+            "drink"
+          ],
           "hint": "Brew it in a Cooking Pot."
         },
         {
@@ -870,6 +897,9 @@
           "effort": 1.6,
           "min": 1,
           "max": 4,
+          "hints": [
+            "drink"
+          ],
           "hint": "Brew it in a Cooking Pot."
         },
         {
@@ -893,7 +923,10 @@
           "id": "farmersdelight:melon_juice",
           "effort": 0.9,
           "min": 1,
-          "max": 6
+          "max": 6,
+          "hints": [
+            "drink"
+          ]
         },
         {
           "type": "craft_item",
@@ -973,6 +1006,9 @@
           "effort": 0.35,
           "min": 4,
           "max": 32,
+          "hints": [
+            "cook"
+          ],
           "hint": "Bake wheat dough in a furnace."
         },
         {

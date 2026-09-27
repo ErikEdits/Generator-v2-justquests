@@ -16,6 +16,11 @@ public final class Templates {
     public final Map<ObjectiveType, List<String>> titles = new EnumMap<>(ObjectiveType.class);
     /** Objective phrase per type, e.g. "Collect {count} {name}" (no final period). */
     public final Map<ObjectiveType, List<String>> phrases = new EnumMap<>(ObjectiveType.class);
+    /**
+     * Wording variants selected by a target hint (e.g. {@code cook} for smelted food, {@code drink}
+     * for drinks): variant → {@code phrases}/{@code titles} lists replacing the type defaults.
+     */
+    public final Map<String, Map<String, List<String>>> variants = new LinkedHashMap<>();
     /** Generic fallback titles ({Name}). */
     public final List<String> fallbackTitles = new ArrayList<>();
     /** Hint sentences keyed by hint word ({@code desert}, {@code fortress} …). */
@@ -39,6 +44,21 @@ public final class Templates {
         readTypeLists(Json.obj(root, "titles"), t.titles);
         readTypeLists(Json.obj(root, "phrases"), t.phrases);
         t.fallbackTitles.addAll(Json.strings(root, "fallbackTitles"));
+        JsonObject vars = Json.obj(root, "variants");
+        if (vars != null) {
+            for (Map.Entry<String, JsonElement> e : vars.entrySet()) {
+                if (e.getValue().isJsonObject()) {
+                    Map<String, List<String>> v = new LinkedHashMap<>();
+                    for (String k : new String[]{"phrases", "titles"}) {
+                        List<String> list = Json.strings(e.getValue().getAsJsonObject(), k);
+                        if (!list.isEmpty()) {
+                            v.put(k, list);
+                        }
+                    }
+                    t.variants.put(e.getKey(), v);
+                }
+            }
+        }
         t.comboTitles.addAll(Json.strings(root, "comboTitles"));
         readStrings(Json.obj(root, "hints"), t.hints);
         readStrings(Json.obj(root, "tools"), t.tools);
@@ -75,6 +95,17 @@ public final class Templates {
                 into.put(e.getKey(), e.getValue().getAsString());
             }
         }
+    }
+
+    /** Variant list (phrases/titles) for the first hint that has one, or null. */
+    public List<String> variant(List<String> hints, String kind) {
+        for (String h : hints) {
+            Map<String, List<String>> v = variants.get(h);
+            if (v != null && v.containsKey(kind)) {
+                return v.get(kind);
+            }
+        }
+        return null;
     }
 
     public String sentence(String key, String def) {

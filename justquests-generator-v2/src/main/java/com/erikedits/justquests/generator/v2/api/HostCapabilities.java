@@ -14,11 +14,15 @@ public interface HostCapabilities {
     boolean supportsTag(String objectiveType);
 
     /**
+     * Objective types this build of the mod can count.
+     *
      * @return objective type ids the running mod knows (e.g. {@code "justquests:smelt_item"})
      */
     Set<String> objectiveTypes();
 
     /**
+     * Reward types this build of the mod can grant.
+     *
      * @return reward type ids the running mod knows (e.g. {@code "justquests:give_item"})
      */
     Set<String> rewardTypes();

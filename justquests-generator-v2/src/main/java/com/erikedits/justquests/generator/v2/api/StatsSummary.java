@@ -57,6 +57,8 @@ public record StatsSummary(boolean enabled, long questsGenerated, long questsCla
      */
     public record Bucket(long generated, long claimed, long completed, long abandoned, long expired) {
         /**
+         * Share of claims that were completed.
+         *
          * @return completed / claimed, or 0 without claims
          */
         public double completionRate() {
@@ -64,6 +66,8 @@ public record StatsSummary(boolean enabled, long questsGenerated, long questsCla
         }
 
         /**
+         * Share of generated quests that were claimed.
+         *
          * @return claimed / generated, or 0 without quests
          */
         public double claimRate() {
@@ -72,6 +76,8 @@ public record StatsSummary(boolean enabled, long questsGenerated, long questsCla
     }
 
     /**
+     * Formats the summary for chat or console.
+     *
      * @return a multi-line English printout for chat or console
      */
     public String toText() {

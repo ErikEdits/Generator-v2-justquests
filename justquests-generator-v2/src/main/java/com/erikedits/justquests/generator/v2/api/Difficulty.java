@@ -35,6 +35,8 @@ public enum Difficulty {
     }
 
     /**
+     * The value as written in {@code settings.json}.
+     *
      * @return lower-case settings value ({@code "easy"}, {@code "normal"}, {@code "hard"})
      */
     public String settingsValue() {

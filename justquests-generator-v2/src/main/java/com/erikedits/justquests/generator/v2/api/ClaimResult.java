@@ -30,6 +30,8 @@ public enum ClaimResult {
     }
 
     /**
+     * Whether the accept may continue.
+     *
      * @return true if the mod should continue adding the quest to the player
      *         ({@link #OK}, {@link #ALREADY_YOURS}, {@link #NOT_GENERATED})
      */
@@ -38,6 +40,8 @@ public enum ClaimResult {
     }
 
     /**
+     * The suggested player-facing text when the accept is denied.
+     *
      * @return the suggested English player-facing deny message, or null when {@link #proceed()}
      */
     public String denyMessage() {

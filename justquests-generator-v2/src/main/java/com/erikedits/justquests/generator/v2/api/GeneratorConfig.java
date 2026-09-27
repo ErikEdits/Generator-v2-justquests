@@ -59,6 +59,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * The defaults from §13.
+     *
      * @return the defaults from §13 (enabled, 5 per cycle, max 20, NORMAL, exclusive, one active,
      *         release on abandon, no expiry, 12 h cycles anchored at 00:00 system time, 6-day history,
      *         35 % modded share, no disabled profiles, no adaptive balancing, stats on)
@@ -69,6 +71,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * A builder pre-filled with the defaults.
+     *
      * @return a builder pre-filled with {@link #defaults()}
      */
     public static Builder builder() {
@@ -76,6 +80,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * Sets {@code toBuilder}.
+     *
      * @return a builder pre-filled with this config
      */
     public Builder toBuilder() {
@@ -117,6 +123,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * Returns a copy with {@code enabled} replaced.
+     *
      * @param v new value
      * @return a copy with {@code enabled} replaced
      */
@@ -125,6 +133,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * Returns a copy with {@code questsPerCycle} replaced.
+     *
      * @param v new value
      * @return a copy with {@code questsPerCycle} replaced
      */
@@ -133,6 +143,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * Returns a copy with {@code difficulty} replaced.
+     *
      * @param v new value
      * @return a copy with {@code difficulty} replaced
      */
@@ -141,6 +153,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * Returns a copy with {@code exclusiveClaims} replaced.
+     *
      * @param v new value
      * @return a copy with {@code exclusiveClaims} replaced
      */
@@ -149,6 +163,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * Returns a copy with {@code oneActivePerPlayer} replaced.
+     *
      * @param v new value
      * @return a copy with {@code oneActivePerPlayer} replaced
      */
@@ -157,6 +173,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * Returns a copy with {@code claimExpiryHours} replaced.
+     *
      * @param v new value
      * @return a copy with {@code claimExpiryHours} replaced
      */
@@ -165,6 +183,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * Returns a copy with {@code zone} replaced.
+     *
      * @param v new value
      * @return a copy with {@code zone} replaced
      */
@@ -173,6 +193,8 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
     }
 
     /**
+     * Returns a copy with {@code moddedShare} replaced.
+     *
      * @param v new value
      * @return a copy with {@code moddedShare} replaced
      */
@@ -218,103 +240,185 @@ public record GeneratorConfig(boolean enabled, int questsPerCycle, int maxPerCyc
             statsEnabled = c.statsEnabled;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code enabled}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder enabled(boolean v) {
             enabled = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code questsPerCycle}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder questsPerCycle(int v) {
             questsPerCycle = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code maxPerCycle}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder maxPerCycle(int v) {
             maxPerCycle = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code difficulty}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder difficulty(Difficulty v) {
             difficulty = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code exclusiveClaims}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder exclusiveClaims(boolean v) {
             exclusiveClaims = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code oneActivePerPlayer}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder oneActivePerPlayer(boolean v) {
             oneActivePerPlayer = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code releaseOnAbandon}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder releaseOnAbandon(boolean v) {
             releaseOnAbandon = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code claimExpiryHours}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder claimExpiryHours(int v) {
             claimExpiryHours = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code cycleHours}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder cycleHours(int v) {
             cycleHours = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code cycleAnchorHour}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder cycleAnchorHour(int v) {
             cycleAnchorHour = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code zone}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder zone(ZoneId v) {
             zone = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code historyDays}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder historyDays(int v) {
             historyDays = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code moddedShare}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder moddedShare(double v) {
             moddedShare = v;
             return this;
         }
 
-        /** @param v value (profile ids) @return this builder */
+        /**
+         * Sets {@code disabledProfiles}.
+         *
+         * @param v profile ids
+         * @return this builder
+         */
         public Builder disabledProfiles(Set<String> v) {
             disabledProfiles = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code adaptiveBalancing}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder adaptiveBalancing(boolean v) {
             adaptiveBalancing = v;
             return this;
         }
 
-        /** @param v value @return this builder */
+        /**
+         * Sets {@code statsEnabled}.
+         *
+         * @param v value
+         * @return this builder
+         */
         public Builder statsEnabled(boolean v) {
             statsEnabled = v;
             return this;
         }
 
         /**
+         * Builds the configuration.
+         *
          * @return the config (not yet clamped; see {@link GeneratorConfig#sanitized(List)})
          */
         public GeneratorConfig build() {

@@ -152,6 +152,8 @@ public final class QuestGeneratorV2 {
     }
 
     /**
+     * Tells whether a quest id belongs to the generator (no state lookup).
+     *
      * @param questId any quest id (not null)
      * @return true if the id belongs to the generator ({@code justquests:gen/...})
      */
@@ -331,6 +333,8 @@ public final class QuestGeneratorV2 {
     }
 
     /**
+     * The configuration currently in effect, after clamping.
+     *
      * @return the active (sanitised) configuration
      */
     public GeneratorConfig config() {

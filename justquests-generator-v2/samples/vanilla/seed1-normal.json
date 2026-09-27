@@ -1,0 +1,275 @@
+{
+  "justquests:gen/1790510400_0": {
+    "title": "Cooked Cod Snack",
+    "description": "Eat 6 cooked cod. Use a fishing rod.",
+    "category": "generated",
+    "sort": 9,
+    "objectives": [
+      {
+        "type": "justquests:consume_item",
+        "item": "minecraft:cooked_cod",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:hay_block",
+        "count": 6
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 29
+      }
+    ]
+  },
+  "justquests:gen/1790510400_1": {
+    "title": "Break Dripstone Blocks",
+    "description": "Mine 48 dripstone blocks. Look in dripstone caves.",
+    "category": "generated",
+    "sort": 9,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:dripstone_block",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:baked_potato",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 39
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Bee Family",
+    "description": "Breed 5 bees. Bees breed with flowers. Needs bees and flowers.",
+    "category": "generated",
+    "sort": 9,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:bee",
+        "count": 5
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:coal",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 34
+      }
+    ]
+  },
+  "justquests:gen/1790510400_2": {
+    "title": "Charcoal Batch",
+    "description": "Smelt 64 charcoal. Smelt logs in a furnace.",
+    "category": "generated",
+    "sort": 10,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:charcoal",
+        "count": 64
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:coal",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 42
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Deep Dig",
+    "description": "Head underground: break 4 deepslate gold ore and mine 16 copper ore. Needs an iron pickaxe or better. Found deep underground.",
+    "category": "generated",
+    "sort": 10,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:deepslate_gold_ore",
+        "count": 4
+      },
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:copper_ore",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:experience_bottle",
+        "count": 8
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 44
+      },
+      {
+        "type": "justquests:message",
+        "message": "Well done, adventurer."
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Iron Chain Workshop",
+    "description": "Craft 16 iron chains.",
+    "category": "generated",
+    "sort": 11,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:iron_chain",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:paper",
+        "count": 32
+      },
+      {
+        "type": "justquests:effect",
+        "effect": "minecraft:night_vision",
+        "seconds": 510,
+        "amplifier": 0
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 75
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "Harvest Festival",
+    "description": "Bring in the harvest: collect 32 carrots and collect 24 beetroots. Villages often have them. Grow them on a farm.",
+    "category": "generated",
+    "sort": 12,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:carrot",
+        "count": 32
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:beetroot",
+        "count": 24
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:lapis_lazuli",
+        "count": 32
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:leather",
+        "count": 13
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 43
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Gather Raw Beef",
+    "description": "Pick up 48 raw beef. Common in plains.",
+    "category": "generated",
+    "sort": 14,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:beef",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:coal",
+        "count": 32
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 110
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Gather Redstone Dust",
+    "description": "Collect 64 redstone dust. Redstone ore drops dust. Needs an iron pickaxe or better. Found deep underground.",
+    "category": "generated",
+    "sort": 14,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:redstone",
+        "count": 64
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:ender_pearl",
+        "count": 5
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 55
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Wildlife Job",
+    "description": "Breed 3 llamas and pick up 6 rabbit hides. Llamas breed with hay bales. Look in savannas. Look in deserts.",
+    "category": "generated",
+    "sort": 17,
+    "mode": "all",
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:llama",
+        "count": 3
+      },
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:rabbit_hide",
+        "count": 6
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:experience_bottle",
+        "count": 14
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 65
+      }
+    ]
+  }
+}

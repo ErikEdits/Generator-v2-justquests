@@ -1,0 +1,251 @@
+{
+  "justquests:gen/1790510400_0": {
+    "title": "Mine Spruce Logs",
+    "description": "Break 40 spruce logs. Look in taigas.",
+    "category": "generated",
+    "sort": 5,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:spruce_log",
+        "count": 40
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:book",
+        "count": 3
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 14
+      }
+    ]
+  },
+  "justquests:gen/1790510400_3": {
+    "title": "Stone Bricks Builder",
+    "description": "Place 32 stone bricks.",
+    "category": "generated",
+    "sort": 5,
+    "objectives": [
+      {
+        "type": "justquests:place_block",
+        "block": "minecraft:stone_bricks",
+        "count": 32
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:hay_block",
+        "count": 3
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 7
+      }
+    ]
+  },
+  "justquests:gen/1790510400_5": {
+    "title": "Make Books",
+    "description": "Craft 4 books.",
+    "category": "generated",
+    "sort": 5,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:book",
+        "count": 4
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:redstone",
+        "count": 18
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 14
+      }
+    ]
+  },
+  "justquests:gen/1790510400_8": {
+    "title": "More Rabbits",
+    "description": "Breed 2 rabbits. Rabbits breed with carrots or dandelions. Look in deserts.",
+    "category": "generated",
+    "sort": 5,
+    "objectives": [
+      {
+        "type": "justquests:breed_animal",
+        "entity": "minecraft:rabbit",
+        "count": 2
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:pumpkin_pie",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 14
+      }
+    ]
+  },
+  "justquests:gen/1790510400_2": {
+    "title": "Flint Supply",
+    "description": "Gather 16 flint. Gravel sometimes drops flint.",
+    "category": "generated",
+    "sort": 6,
+    "objectives": [
+      {
+        "type": "justquests:collect_item",
+        "item": "minecraft:flint",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:lantern",
+        "count": 6
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 19
+      }
+    ]
+  },
+  "justquests:gen/1790510400_4": {
+    "title": "Taste Glow Berries",
+    "description": "Eat 8 glow berries. Look in lush caves.",
+    "category": "generated",
+    "sort": 6,
+    "objectives": [
+      {
+        "type": "justquests:consume_item",
+        "item": "minecraft:glow_berries",
+        "count": 8
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:nautilus_shell",
+        "count": 1
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 7
+      },
+      {
+        "type": "justquests:message",
+        "message": "Word of your deeds spreads."
+      }
+    ]
+  },
+  "justquests:gen/1790510400_7": {
+    "title": "Ice Quarry",
+    "description": "Mine 40 ice. Look in snowy biomes.",
+    "category": "generated",
+    "sort": 6,
+    "objectives": [
+      {
+        "type": "justquests:mine_block",
+        "block": "minecraft:ice",
+        "count": 40
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:cooked_porkchop",
+        "count": 9
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 21
+      }
+    ]
+  },
+  "justquests:gen/1790510400_6": {
+    "title": "Bread Order",
+    "description": "Craft 16 bread. Three wheat make a loaf.",
+    "category": "generated",
+    "sort": 7,
+    "objectives": [
+      {
+        "type": "justquests:craft_item",
+        "item": "minecraft:bread",
+        "count": 16
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:hay_block",
+        "count": 4
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 19
+      }
+    ]
+  },
+  "justquests:gen/1790510400_9": {
+    "title": "Hot Dried Kelp",
+    "description": "Cook 64 dried kelp. Smelt kelp. Look in and near oceans.",
+    "category": "generated",
+    "sort": 8,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:dried_kelp",
+        "count": 64
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:apple",
+        "count": 8
+      },
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:emerald",
+        "count": 1
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 24
+      }
+    ]
+  },
+  "justquests:gen/1790510400_1": {
+    "title": "Hot Green Dyes",
+    "description": "Smelt 48 green dyes. Smelt cactus. Look in deserts.",
+    "category": "generated",
+    "sort": 10,
+    "objectives": [
+      {
+        "type": "justquests:smelt_item",
+        "item": "minecraft:green_dye",
+        "count": 48
+      }
+    ],
+    "rewards": [
+      {
+        "type": "justquests:give_item",
+        "item": "minecraft:slime_ball",
+        "count": 5
+      },
+      {
+        "type": "justquests:xp",
+        "amount": 30
+      }
+    ]
+  }
+}

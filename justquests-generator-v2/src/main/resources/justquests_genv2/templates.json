@@ -4,7 +4,7 @@
     "collect_item": [
       "{Name} Haul",
       "{Name} Run",
-      "Gather {Name}",
+      "Gather {Names}",
       "{Name} Stockpile",
       "{Name} Supply",
       "{Name} Collector",
@@ -13,10 +13,10 @@
     ],
     "mine_block": [
       "{Name} Miner",
-      "Mine {Name}",
+      "Mine {Names}",
       "{Name} Dig",
       "{Name} Quarry",
-      "Break {Name}",
+      "Break {Names}",
       "{Name} Excavation"
     ],
     "craft_item": [
@@ -62,7 +62,7 @@
       "Taste {Name}",
       "{Name} Tasting",
       "{Name} Snack",
-      "Eat {Name}"
+      "{Name} Break"
     ],
     "place_block": [
       "{Name} Builder",
@@ -105,8 +105,7 @@
       "Tame {count} {names}"
     ],
     "consume_item": [
-      "Eat or drink {count} {names}",
-      "Consume {count} {names}"
+      "Eat {count} {names}"
     ],
     "place_block": [
       "Place {count} {names}"
@@ -115,6 +114,30 @@
       "Travel to {dimension}",
       "Enter {dimension}"
     ]
+  },
+  "variants": {
+    "drink": {
+      "phrases": [
+        "Drink {count} {names}"
+      ],
+      "titles": [
+        "{Name} Break",
+        "Taste {Name}",
+        "{Name} Round"
+      ]
+    },
+    "cook": {
+      "phrases": [
+        "Cook {count} {names}"
+      ],
+      "titles": [
+        "Cook {Names}",
+        "{Name} Batch",
+        "Hot {Names}",
+        "{Name} Kitchen",
+        "{Name} Order"
+      ]
+    }
   },
   "fallbackTitles": [
     "{Name} Task",

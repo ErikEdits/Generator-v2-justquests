@@ -26,6 +26,8 @@ public record RotationResult(boolean changed, String reason, long cycleId, List<
     }
 
     /**
+     * An "unchanged" result for the given cycle.
+     *
      * @param cycleId the current cycle id
      * @return an unchanged result with reason {@code "none"}
      */

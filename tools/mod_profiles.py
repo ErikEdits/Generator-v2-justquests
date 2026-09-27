@@ -7,12 +7,12 @@ FD_ENTRIES = [
     E("fd_cabbage", "fd_crops", 0, [
         T("collect_item", FD + "cabbage", 0.15, 8, 48, hint="Cabbage seeds come from wild cabbages on beaches."),
         T("craft_item", FD + "cabbage_crate", 1.5, 1, 6, hint="Nine cabbages fill a crate."),
-        T("consume_item", FD + "cabbage", 0.2, 4, 16),
+        T("consume_item", FD + "cabbage", 0.35, 4, 8),
     ], hints=["farm"]),
     E("fd_tomato", "fd_crops", 0, [
         T("collect_item", FD + "tomato", 0.15, 8, 48, hint="Tomato seeds come from wild tomatoes in warm, dry biomes."),
         T("craft_item", FD + "tomato_crate", 1.5, 1, 6, hint="Nine tomatoes fill a crate."),
-        T("consume_item", FD + "tomato", 0.2, 4, 16),
+        T("consume_item", FD + "tomato", 0.3, 4, 8),
     ], hints=["farm"]),
     E("fd_onion", "fd_crops", 0, [
         T("collect_item", FD + "onion", 0.15, 8, 48, hint="Onions come from wild onions; replant them."),
@@ -57,19 +57,19 @@ FD_ENTRIES = [
     ]),
     E("fd_butchery", "fd_butchery", 0, [
         T("collect_item", FD + "ham", 1.3, 1, 8, stack=64, hint="Pigs killed with a knife drop ham."),
-        T("smelt_item", FD + "smoked_ham", 2.2, 1, 4, hint="Smoke ham in a smoker."),
-        T("smelt_item", FD + "cooked_bacon", 0.5, 4, 32, hint="Cut porkchops on a cutting board, then cook."),
-        T("smelt_item", FD + "beef_patty", 0.5, 4, 24, hint="Mince beef on a cutting board, then cook."),
-        T("smelt_item", FD + "cooked_chicken_cuts", 0.45, 4, 32, hint="Cut chicken on a cutting board, then cook."),
-        T("smelt_item", FD + "cooked_mutton_chops", 0.5, 4, 32, hint="Cut mutton on a cutting board, then cook."),
+        T("smelt_item", FD + "smoked_ham", 2.2, 1, 4, hint="Smoke ham in a smoker.", hints=["cook"]),
+        T("smelt_item", FD + "cooked_bacon", 0.5, 4, 32, hint="Cut porkchops on a cutting board, then cook.", hints=["cook"]),
+        T("smelt_item", FD + "beef_patty", 0.5, 4, 24, hint="Mince beef on a cutting board, then cook.", hints=["cook"]),
+        T("smelt_item", FD + "cooked_chicken_cuts", 0.45, 4, 32, hint="Cut chicken on a cutting board, then cook.", hints=["cook"]),
+        T("smelt_item", FD + "cooked_mutton_chops", 0.5, 4, 32, hint="Cut mutton on a cutting board, then cook.", hints=["cook"]),
     ], tool="knife"),
     E("fd_fish", "fd_seafood", 0, [
-        T("smelt_item", FD + "cooked_cod_slice", 0.6, 4, 24, hint="Slice cod on a cutting board, then cook."),
-        T("smelt_item", FD + "cooked_salmon_slice", 0.9, 4, 16, hint="Slice salmon on a cutting board, then cook."),
+        T("smelt_item", FD + "cooked_cod_slice", 0.6, 4, 24, hint="Slice cod on a cutting board, then cook.", hints=["cook"]),
+        T("smelt_item", FD + "cooked_salmon_slice", 0.9, 4, 16, hint="Slice salmon on a cutting board, then cook.", hints=["cook"]),
         T("craft_item", FD + "kelp_roll", 1.5, 1, 6, hint="Rice, kelp and a carrot."),
     ], tool="fishing_rod"),
     E("fd_breakfast", "fd_breakfast", 0, [
-        T("smelt_item", FD + "fried_egg", 0.8, 2, 16, stack=64, hint="Cook eggs in a furnace or skillet."),
+        T("smelt_item", FD + "fried_egg", 0.8, 2, 16, stack=64, hint="Cook eggs in a furnace or skillet.", hints=["cook"]),
         T("craft_item", FD + "egg_sandwich", 1.8, 1, 6),
         T("consume_item", FD + "bacon_and_eggs", 2.4, 1, 4, tier=1),
     ]),
@@ -91,7 +91,7 @@ FD_ENTRIES = [
     E("fd_sweets", "fd_sweets", 0, [
         T("craft_item", FD + "sweet_berry_cookie", 0.12, 8, 64, hints=["taiga"]),
         T("craft_item", FD + "honey_cookie", 0.15, 8, 64, hints=["bees"]),
-        T("consume_item", FD + "sweet_berry_cookie", 0.15, 8, 32),
+        T("consume_item", FD + "sweet_berry_cookie", 0.3, 4, 16),
         T("craft_item", FD + "apple_pie", 3.0, 1, 3, hint="Needs a pie crust, apples and sugar."),
         T("craft_item", FD + "sweet_berry_cheesecake", 2.8, 1, 3),
         T("craft_item", FD + "melon_popsicle", 0.8, 2, 8, hint="Melon slices, ice and a stick."),
@@ -123,11 +123,11 @@ FD_ENTRIES = [
         T("craft_item", FD + "stuffed_potato", 1.8, 1, 4),
     ]),
     E("fd_drinks", "fd_drinks", 1, [
-        T("consume_item", FD + "apple_cider", 1.6, 1, 4, hint="Brew it in a Cooking Pot."),
-        T("consume_item", FD + "hot_cocoa", 1.6, 1, 4, hint="Brew it in a Cooking Pot."),
+        T("consume_item", FD + "apple_cider", 1.6, 1, 4, hints=["drink"], hint="Brew it in a Cooking Pot."),
+        T("consume_item", FD + "hot_cocoa", 1.6, 1, 4, hints=["drink"], hint="Brew it in a Cooking Pot."),
         T("consume_item", FD + "glow_berry_custard", 2.0, 1, 4, hint="Cook it in a Cooking Pot."),
         T("craft_item", FD + "melon_juice", 0.8, 1, 6, hint="Melon slices, sugar and a glass bottle."),
-        T("consume_item", FD + "melon_juice", 0.9, 1, 6),
+        T("consume_item", FD + "melon_juice", 0.9, 1, 6, hints=["drink"]),
         T("craft_item", FD + "milk_bottle", 0.2, 4, 16, stack=16, hint="Pour a milk bucket into glass bottles."),
     ]),
     E("fd_feasts", "fd_feasts", 1, [
@@ -138,7 +138,7 @@ FD_ENTRIES = [
     ]),
     E("fd_bakery", "baking", 0, [
         T("craft_item", FD + "wheat_dough", 0.2, 6, 48, hint="Wheat with an egg or water."),
-        T("smelt_item", "minecraft:bread", 0.35, 4, 32, hint="Bake wheat dough in a furnace."),
+        T("smelt_item", "minecraft:bread", 0.35, 4, 32, hint="Bake wheat dough in a furnace.", hints=["cook"]),
         T("craft_item", FD + "pie_crust", 0.5, 2, 8),
     ], notes="Baking bread from dough only exists with Farmer's Delight, so this smelt target lives in the profile."),
     E("fd_compost", "fd_soil", 0, [
@@ -290,7 +290,7 @@ CREATE_ENTRIES = [
     E("create_sweets", "create_sweets", 2, [
         T("consume_item", C + "bar_of_chocolate", 4.0, 1, 4, minDifficulty="hard", hint="Made with a mixer and a press."),
         T("consume_item", C + "honeyed_apple", 4.0, 1, 4, minDifficulty="hard", hint="Fill apples with honey using a spout."),
-        T("consume_item", C + "builders_tea", 4.5, 1, 3, minDifficulty="hard", hint="Brewed by a mixer, bottled by a spout."),
+        T("consume_item", C + "builders_tea", 4.5, 1, 3, minDifficulty="hard", hints=["drink"], hint="Brewed by a mixer, bottled by a spout."),
         T("consume_item", C + "sweet_roll", 4.0, 1, 4, minDifficulty="hard", hint="Fill bread with milk using a spout."),
         T("consume_item", C + "chocolate_glazed_berries", 4.0, 1, 4, minDifficulty="hard"),
     ], exclusions=["craft_item create:bar_of_chocolate (made by mixing and compacting, not a crafting grid)"]),

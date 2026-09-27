@@ -1,0 +1,83 @@
+# modded | world seed 2 | EASY | 10 quests | day 30, Nether and End unlocked
+
+justquests:gen/1790510400_4  "Craft Beds"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective craft_item #minecraft:beds ×4
+  effort 1.00 min/unit → 4.0 min (target 5.7, range 4–10 min)
+  tier 0 (always available), family decor, profile vanilla
+estimated 4.0 min (quick)
+reward give_item minecraft:cooked_porkchop ×6 (value 3.0) + xp 12 (value 1.0)  → 4.0 / budget 4.0
+state: AVAILABLE
+
+justquests:gen/1790510400_0  "Mine Spruce Logs"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:spruce_log ×40
+  effort 0.10 min/unit (×1.20 taiga) → 4.8 min (target 4.6, range 4–10 min)
+  tier 0 (always available), family wood, profile vanilla, hints taiga
+estimated 4.8 min (quick)
+reward give_item minecraft:emerald ×1 (value 2.5) + xp 28 (value 2.3)  → 4.8 / budget 4.8
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Bone Pickup"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:bone ×8
+  effort 0.60 min/unit → 4.8 min (target 5.3, range 4–10 min)
+  tier 0 (always available), family undead, profile vanilla, hints night
+estimated 4.8 min (quick)
+reward give_item minecraft:coal ×14 (value 3.5) + xp 16 (value 1.3)  → 4.8 / budget 4.8
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Bring Flint"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:flint ×16
+  effort 0.40 min/unit → 6.4 min (target 5.9, range 4–10 min)
+  tier 0 (always available), family soil, profile vanilla
+estimated 6.4 min
+reward give_item minecraft:arrow ×32 (value 4.8) + xp 19 (value 1.6)  → 6.4 / budget 6.4
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Fried Egg Batch"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item farmersdelight:fried_egg ×8
+  effort 0.80 min/unit → 6.4 min (target 6.9, range 4–10 min)
+  tier 0 (always available), family fd_breakfast, profile farmersdelight, hints cook
+estimated 6.4 min
+reward give_item farmersdelight:hamburger ×2 (value 5.2) + xp 14 (value 1.2)  → 6.4 / budget 6.4
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Bring Feathers"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:feather ×24
+  effort 0.30 min/unit → 7.2 min (target 7.7, range 4–10 min)
+  tier 0 (always available), family livestock, profile vanilla
+estimated 7.2 min
+reward give_item minecraft:bone_meal ×32 (value 3.2) + give_item create:cogwheel ×9 (value 2.3) + xp 21 (value 1.8)  → 7.2 / budget 7.2
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Cooked Bacon Kitchen"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item farmersdelight:cooked_bacon ×16
+  effort 0.50 min/unit → 8.0 min (target 9.5, range 4–10 min)
+  tier 0 (always available), family fd_butchery, profile farmersdelight, tool knife, hints cook
+estimated 8.0 min
+reward give_item create:cogwheel ×24 (value 6.0) + xp 24 (value 2.0)  → 8.0 / budget 8.0
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Deepslate Zinc Ore Dig"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective mine_block create:deepslate_zinc_ore ×8
+  effort 0.90 min/unit (×1.10 deep) → 7.9 min (target 7.2, range 4–10 min)
+  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves/deep
+estimated 7.9 min
+reward give_item minecraft:cooked_beef ×12 (value 6.0) + xp 23 (value 1.9)  → 7.9 / budget 7.9
+rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch); craft_item create:zinc_block (tier 1 above EASY cap)
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Grilled Salmon Break"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective consume_item farmersdelight:grilled_salmon ×3
+  effort 2.60 min/unit → 7.8 min (target 8.8, range 4–10 min)
+  tier 1 (always available), family fd_plates, profile farmersdelight
+estimated 7.8 min
+reward give_item minecraft:amethyst_shard ×16 (value 5.6) + xp 26 (value 2.2)  → 7.8 / budget 7.8
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Book Order"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:book ×8
+  effort 1.20 min/unit → 9.6 min (target 8.5, range 4–10 min)
+  tier 0 (always available), family library, profile vanilla
+estimated 9.6 min
+reward give_item minecraft:slime_ball ×5 (value 7.5) + xp 25 (value 2.1)  → 9.6 / budget 9.6
+state: AVAILABLE
+

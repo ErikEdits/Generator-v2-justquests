@@ -43,18 +43,24 @@ public interface ContentView {
     boolean isModLoaded(String modId);
 
     /**
+     * Item registry existence check (cheap, called often).
+     *
      * @param id item id
      * @return true if the item registry contains the key
      */
     boolean itemExists(String id);
 
     /**
+     * Block registry existence check (cheap, called often).
+     *
      * @param id block id
      * @return true if the block registry contains the key
      */
     boolean blockExists(String id);
 
     /**
+     * Entity type registry existence check (cheap, called often).
+     *
      * @param id entity type id
      * @return true if the entity type registry contains the key
      */

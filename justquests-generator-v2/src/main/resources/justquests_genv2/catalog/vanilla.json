@@ -1247,9 +1247,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:carrot",
-          "effort": 0.18,
+          "effort": 0.45,
           "min": 4,
-          "max": 16
+          "max": 8
         }
       ]
     },
@@ -1277,14 +1277,17 @@
           "effort": 0.2,
           "min": 8,
           "max": 48,
+          "hints": [
+            "cook"
+          ],
           "hint": "Bake potatoes in a furnace or smoker."
         },
         {
           "type": "consume_item",
           "id": "minecraft:baked_potato",
-          "effort": 0.25,
-          "min": 4,
-          "max": 16
+          "effort": 0.75,
+          "min": 2,
+          "max": 8
         }
       ]
     },
@@ -1309,9 +1312,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:beetroot_soup",
-          "effort": 1.4,
+          "effort": 2.0,
           "min": 1,
-          "max": 6,
+          "max": 3,
           "hint": "Six beetroots make a soup."
         }
       ]
@@ -1343,9 +1346,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:melon_slice",
-          "effort": 0.08,
-          "min": 8,
-          "max": 32
+          "effort": 0.28,
+          "min": 4,
+          "max": 16
         }
       ]
     },
@@ -1377,9 +1380,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:pumpkin_pie",
-          "effort": 1.1,
-          "min": 2,
-          "max": 8
+          "effort": 1.9,
+          "min": 1,
+          "max": 4
         }
       ]
     },
@@ -1403,7 +1406,7 @@
         {
           "type": "consume_item",
           "id": "minecraft:apple",
-          "effort": 2.0,
+          "effort": 2.4,
           "min": 1,
           "max": 3
         }
@@ -1513,14 +1516,17 @@
           "effort": 0.1,
           "min": 16,
           "max": 64,
+          "hints": [
+            "cook"
+          ],
           "hint": "Smelt kelp."
         },
         {
           "type": "consume_item",
           "id": "minecraft:dried_kelp",
-          "effort": 0.12,
+          "effort": 0.22,
           "min": 8,
-          "max": 32
+          "max": 16
         }
       ]
     },
@@ -1544,9 +1550,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:sweet_berries",
-          "effort": 0.15,
-          "min": 8,
-          "max": 32
+          "effort": 0.35,
+          "min": 4,
+          "max": 16
         }
       ]
     },
@@ -1571,9 +1577,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:glow_berries",
-          "effort": 0.3,
+          "effort": 0.5,
           "min": 4,
-          "max": 16
+          "max": 8
         }
       ]
     },
@@ -1623,9 +1629,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:mushroom_stew",
-          "effort": 0.8,
-          "min": 2,
-          "max": 8,
+          "effort": 1.4,
+          "min": 1,
+          "max": 4,
           "hint": "A bowl with a red and a brown mushroom."
         }
       ]
@@ -1716,9 +1722,12 @@
         {
           "type": "consume_item",
           "id": "minecraft:honey_bottle",
-          "effort": 1.2,
+          "effort": 1.8,
           "min": 1,
-          "max": 6,
+          "max": 4,
+          "hints": [
+            "drink"
+          ],
           "hint": "Use a glass bottle on a full hive."
         },
         {
@@ -1777,15 +1786,18 @@
           "effort": 0.4,
           "min": 8,
           "max": 48,
+          "hints": [
+            "cook"
+          ],
           "name": "Steak",
           "hint": "Cook raw beef."
         },
         {
           "type": "consume_item",
           "id": "minecraft:cooked_beef",
-          "effort": 0.45,
-          "min": 4,
-          "max": 16,
+          "effort": 1.25,
+          "min": 2,
+          "max": 6,
           "name": "Steak"
         }
       ]
@@ -1819,14 +1831,17 @@
           "effort": 0.4,
           "min": 8,
           "max": 48,
+          "hints": [
+            "cook"
+          ],
           "hint": "Cook raw porkchops."
         },
         {
           "type": "consume_item",
           "id": "minecraft:cooked_porkchop",
-          "effort": 0.45,
-          "min": 4,
-          "max": 16
+          "effort": 1.25,
+          "min": 2,
+          "max": 6
         }
       ]
     },
@@ -1867,6 +1882,9 @@
           "effort": 0.4,
           "min": 8,
           "max": 48,
+          "hints": [
+            "cook"
+          ],
           "hint": "Cook raw chicken."
         }
       ]
@@ -1909,7 +1927,10 @@
           "id": "minecraft:cooked_mutton",
           "effort": 0.45,
           "min": 8,
-          "max": 32
+          "max": 32,
+          "hints": [
+            "cook"
+          ]
         },
         {
           "type": "place_block",
@@ -1948,9 +1969,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:rabbit_stew",
-          "effort": 3.0,
+          "effort": 4.0,
           "min": 1,
-          "max": 3
+          "max": 2
         }
       ]
     },
@@ -2271,21 +2292,27 @@
           "id": "minecraft:cooked_cod",
           "effort": 0.9,
           "min": 4,
-          "max": 16
+          "max": 16,
+          "hints": [
+            "cook"
+          ]
         },
         {
           "type": "smelt_item",
           "id": "minecraft:cooked_salmon",
           "effort": 1.5,
           "min": 2,
-          "max": 12
+          "max": 12,
+          "hints": [
+            "cook"
+          ]
         },
         {
           "type": "consume_item",
           "id": "minecraft:cooked_cod",
-          "effort": 1.0,
+          "effort": 1.5,
           "min": 2,
-          "max": 8
+          "max": 6
         }
       ]
     },
@@ -2844,9 +2871,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:bread",
-          "effort": 0.5,
-          "min": 4,
-          "max": 16
+          "effort": 1.0,
+          "min": 2,
+          "max": 8
         },
         {
           "type": "craft_item",
@@ -2859,9 +2886,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:cookie",
-          "effort": 0.12,
-          "min": 8,
-          "max": 32
+          "effort": 0.32,
+          "min": 4,
+          "max": 16
         },
         {
           "type": "craft_item",
@@ -3101,6 +3128,9 @@
           "effort": 0.6,
           "min": 1,
           "max": 4,
+          "hints": [
+            "drink"
+          ],
           "hint": "Milk a cow with a bucket."
         }
       ]
@@ -3215,9 +3245,9 @@
         {
           "type": "consume_item",
           "id": "minecraft:golden_carrot",
-          "effort": 1.6,
-          "min": 2,
-          "max": 8
+          "effort": 2.2,
+          "min": 1,
+          "max": 4
         },
         {
           "type": "craft_item",

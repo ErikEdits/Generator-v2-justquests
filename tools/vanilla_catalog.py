@@ -157,30 +157,30 @@ ENTRIES = [
     ], hints=["farm"], exclusions=["mine_block minecraft:wheat (breaking crops at any stage counts)"]),
     E("carrots", "crops", 0, [
         T("collect_item", "minecraft:carrot", 0.15, 8, 64),
-        T("consume_item", "minecraft:carrot", 0.18, 4, 16),
+        T("consume_item", "minecraft:carrot", 0.45, 4, 8),
     ], hints=["village", "farm"]),
     E("potatoes", "crops", 0, [
         T("collect_item", "minecraft:potato", 0.15, 8, 64),
-        T("smelt_item", "minecraft:baked_potato", 0.2, 8, 48, hint="Bake potatoes in a furnace or smoker."),
-        T("consume_item", "minecraft:baked_potato", 0.25, 4, 16),
+        T("smelt_item", "minecraft:baked_potato", 0.2, 8, 48, hint="Bake potatoes in a furnace or smoker.", hints=["cook"]),
+        T("consume_item", "minecraft:baked_potato", 0.75, 2, 8),
     ], hints=["village", "farm"]),
     E("beetroot", "crops", 0, [
         T("collect_item", "minecraft:beetroot", 0.2, 8, 48),
-        T("consume_item", "minecraft:beetroot_soup", 1.4, 1, 6, hint="Six beetroots make a soup."),
+        T("consume_item", "minecraft:beetroot_soup", 2.0, 1, 3, hint="Six beetroots make a soup."),
     ], hints=["village", "farm"]),
     E("melon", "fruit", 0, [
         T("collect_item", "minecraft:melon_slice", 0.06, 16, 96),
         T("mine_block", "minecraft:melon", 0.4, 4, 24),
-        T("consume_item", "minecraft:melon_slice", 0.08, 8, 32),
+        T("consume_item", "minecraft:melon_slice", 0.28, 4, 16),
     ], hints=["jungle"]),
     E("pumpkin", "fruit", 0, [
         T("collect_item", "minecraft:pumpkin", 0.4, 4, 24),
         T("craft_item", "minecraft:pumpkin_pie", 1.0, 2, 8, hint="Pumpkin, sugar and an egg."),
-        T("consume_item", "minecraft:pumpkin_pie", 1.1, 2, 8),
+        T("consume_item", "minecraft:pumpkin_pie", 1.9, 1, 4),
     ], hints=["plains"]),
     E("apple", "fruit", 0, [
         T("collect_item", "minecraft:apple", 2.0, 1, 4, hint="Oak and dark oak leaves sometimes drop apples."),
-        T("consume_item", "minecraft:apple", 2.0, 1, 3),
+        T("consume_item", "minecraft:apple", 2.4, 1, 3),
     ], weight=0.5, notes="~0.5% leaf drop: counts kept tiny."),
     E("sugar_cane", "plants", 0, [
         T("collect_item", "minecraft:sugar_cane", 0.1, 16, 64),
@@ -196,22 +196,22 @@ ENTRIES = [
     ], hints=["jungle"]),
     E("kelp", "ocean", 0, [
         T("collect_item", "minecraft:kelp", 0.06, 16, 96),
-        T("smelt_item", "minecraft:dried_kelp", 0.1, 16, 64, hint="Smelt kelp."),
-        T("consume_item", "minecraft:dried_kelp", 0.12, 8, 32),
+        T("smelt_item", "minecraft:dried_kelp", 0.1, 16, 64, hint="Smelt kelp.", hints=["cook"]),
+        T("consume_item", "minecraft:dried_kelp", 0.22, 8, 16),
     ], hints=["ocean"]),
     E("sweet_berries", "fruit", 0, [
         T("collect_item", "minecraft:sweet_berries", 0.12, 16, 64),
-        T("consume_item", "minecraft:sweet_berries", 0.15, 8, 32),
+        T("consume_item", "minecraft:sweet_berries", 0.35, 4, 16),
     ], hints=["taiga"]),
     E("glow_berries", "lush", 1, [
         T("collect_item", "minecraft:glow_berries", 0.25, 8, 48),
-        T("consume_item", "minecraft:glow_berries", 0.3, 4, 16),
+        T("consume_item", "minecraft:glow_berries", 0.5, 4, 8),
     ], hints=["lush_caves"], since="1.17"),
     E("cocoa", "plants", 0, [T("collect_item", "minecraft:cocoa_beans", 0.3, 8, 32)], hints=["jungle"]),
     E("mushrooms", "mushrooms", 0, [
         T("collect_item", "minecraft:brown_mushroom", 0.3, 4, 32),
         T("collect_item", "minecraft:red_mushroom", 0.35, 4, 32),
-        T("consume_item", "minecraft:mushroom_stew", 0.8, 2, 8, hint="A bowl with a red and a brown mushroom."),
+        T("consume_item", "minecraft:mushroom_stew", 1.4, 1, 4, hint="A bowl with a red and a brown mushroom."),
     ], hints=["dark_forest"]),
     E("flowers", "flowers", 0, [
         T("collect_item", "minecraft:dandelion", 0.1, 8, 32, tag="small_flowers", hint="Pick flowers."),
@@ -222,7 +222,7 @@ ENTRIES = [
     E("lily_pad", "plants", 0, [T("collect_item", "minecraft:lily_pad", 0.2, 4, 32)], hints=["swamp"]),
     E("bees", "bees", 0, [
         T("collect_item", "minecraft:honeycomb", 1.0, 3, 16, tool="shears", hint="Shear a full bee nest."),
-        T("consume_item", "minecraft:honey_bottle", 1.2, 1, 6, hint="Use a glass bottle on a full hive."),
+        T("consume_item", "minecraft:honey_bottle", 1.8, 1, 4, hints=["drink"], hint="Use a glass bottle on a full hive."),
         T("craft_item", "minecraft:candle", 1.2, 1, 6),
         T("breed_animal", "minecraft:bee", 1.5, 2, 8, hint="Bees breed with flowers."),
     ], hints=["bees"]),
@@ -231,32 +231,32 @@ ENTRIES = [
         T("breed_animal", "minecraft:cow", 1.0, 2, 12, hint="Cows breed with wheat."),
         T("collect_item", "minecraft:beef", 0.3, 8, 48, name="Raw Beef"),
         T("collect_item", "minecraft:leather", 0.4, 4, 32),
-        T("smelt_item", "minecraft:cooked_beef", 0.4, 8, 48, name="Steak", hint="Cook raw beef."),
-        T("consume_item", "minecraft:cooked_beef", 0.45, 4, 16, name="Steak"),
+        T("smelt_item", "minecraft:cooked_beef", 0.4, 8, 48, name="Steak", hint="Cook raw beef.", hints=["cook"]),
+        T("consume_item", "minecraft:cooked_beef", 1.25, 2, 6, name="Steak"),
     ], hints=["plains"]),
     E("pigs", "livestock", 0, [
         T("breed_animal", "minecraft:pig", 1.0, 2, 12, hint="Pigs breed with carrots, potatoes or beetroots."),
         T("collect_item", "minecraft:porkchop", 0.3, 8, 48, name="Raw Porkchop"),
-        T("smelt_item", "minecraft:cooked_porkchop", 0.4, 8, 48, hint="Cook raw porkchops."),
-        T("consume_item", "minecraft:cooked_porkchop", 0.45, 4, 16),
+        T("smelt_item", "minecraft:cooked_porkchop", 0.4, 8, 48, hint="Cook raw porkchops.", hints=["cook"]),
+        T("consume_item", "minecraft:cooked_porkchop", 1.25, 2, 6),
     ]),
     E("chickens", "livestock", 0, [
         T("breed_animal", "minecraft:chicken", 0.8, 2, 12, hint="Chickens breed with seeds."),
         T("collect_item", "minecraft:feather", 0.3, 8, 32),
         T("collect_item", "minecraft:egg", 0.7, 4, 16, stack=16, hint="Chickens lay eggs over time."),
-        T("smelt_item", "minecraft:cooked_chicken", 0.4, 8, 48, hint="Cook raw chicken."),
+        T("smelt_item", "minecraft:cooked_chicken", 0.4, 8, 48, hint="Cook raw chicken.", hints=["cook"]),
     ]),
     E("sheep", "wool", 0, [
         T("breed_animal", "minecraft:sheep", 1.0, 2, 12, hint="Sheep breed with wheat."),
         T("collect_item", "minecraft:white_wool", 0.25, 8, 64, tag="wool", tool="shears", hint="Shear sheep."),
         T("collect_item", "minecraft:mutton", 0.35, 8, 32, name="Raw Mutton"),
-        T("smelt_item", "minecraft:cooked_mutton", 0.45, 8, 32),
+        T("smelt_item", "minecraft:cooked_mutton", 0.45, 8, 32, hints=["cook"]),
         T("place_block", "minecraft:white_wool", 0.3, 8, 32),
     ]),
     E("rabbits", "wild_animals", 0, [
         T("breed_animal", "minecraft:rabbit", 2.0, 2, 8, hint="Rabbits breed with carrots or dandelions."),
         T("collect_item", "minecraft:rabbit_hide", 1.0, 2, 12),
-        T("consume_item", "minecraft:rabbit_stew", 3.0, 1, 3),
+        T("consume_item", "minecraft:rabbit_stew", 4.0, 1, 2),
     ], hints=["desert"]),
     E("goats", "wild_animals", 0, [T("breed_animal", "minecraft:goat", 2.0, 2, 8, hint="Goats breed with wheat.")],
       hints=["mountains"], since="1.17"),
@@ -294,9 +294,9 @@ ENTRIES = [
     E("fishing", "fishing", 0, [
         T("collect_item", "minecraft:cod", 0.8, 4, 24, name="Raw Cod", tool="fishing_rod"),
         T("collect_item", "minecraft:salmon", 1.4, 2, 16, name="Raw Salmon", tool="fishing_rod"),
-        T("smelt_item", "minecraft:cooked_cod", 0.9, 4, 16),
-        T("smelt_item", "minecraft:cooked_salmon", 1.5, 2, 12),
-        T("consume_item", "minecraft:cooked_cod", 1.0, 2, 8),
+        T("smelt_item", "minecraft:cooked_cod", 0.9, 4, 16, hints=["cook"]),
+        T("smelt_item", "minecraft:cooked_salmon", 1.5, 2, 12, hints=["cook"]),
+        T("consume_item", "minecraft:cooked_cod", 1.5, 2, 6),
     ], tool="fishing_rod"),
     E("squid", "ocean", 0, [
         T("collect_item", "minecraft:ink_sac", 0.5, 4, 24, hint="Squid drop ink sacs."),
@@ -367,9 +367,9 @@ ENTRIES = [
     ]),
     E("baking", "baking", 0, [
         T("craft_item", "minecraft:bread", 0.45, 4, 32, hint="Three wheat make a loaf."),
-        T("consume_item", "minecraft:bread", 0.5, 4, 16),
+        T("consume_item", "minecraft:bread", 1.0, 2, 8),
         T("craft_item", "minecraft:cookie", 0.1, 8, 64, hint="Wheat and cocoa beans."),
-        T("consume_item", "minecraft:cookie", 0.12, 8, 32),
+        T("consume_item", "minecraft:cookie", 0.32, 4, 16),
         T("craft_item", "minecraft:cake", 3.0, 1, 2, tier=1, hint="Needs milk, sugar, wheat and an egg."),
     ], exclusions=["consume_item minecraft:cake (cake is eaten as a placed block, not a use action)"]),
     E("library", "library", 0, [
@@ -405,7 +405,7 @@ ENTRIES = [
         T("craft_item", "minecraft:minecart", 2.6, 1, 2),
         T("craft_item", "minecraft:hopper", 3.5, 1, 2),
     ], notes="minecraft:chain was renamed to iron_chain in 1.21.9; both ids are tried."),
-    E("milk", "iron_works", 1, [T("consume_item", "minecraft:milk_bucket", 0.6, 1, 4, hint="Milk a cow with a bucket.")]),
+    E("milk", "iron_works", 1, [T("consume_item", "minecraft:milk_bucket", 0.6, 1, 4, hints=["drink"], hint="Milk a cow with a bucket.")]),
     E("redstone_gadgets", "redstone", 2, [
         T("craft_item", "minecraft:piston", 1.2, 2, 8),
         T("craft_item", "minecraft:compass", 2.4, 1, 1),
@@ -423,7 +423,7 @@ ENTRIES = [
     ], since="1.17"),
     E("golden_food", "golden_food", 2, [
         T("craft_item", "minecraft:golden_carrot", 1.5, 2, 12),
-        T("consume_item", "minecraft:golden_carrot", 1.6, 2, 8),
+        T("consume_item", "minecraft:golden_carrot", 2.2, 1, 4),
         T("craft_item", "minecraft:golden_apple", 10.0, 1, 2, minDifficulty="hard"),
     ]),
     # ------------------------------------------------------------ diamond gear (hard)

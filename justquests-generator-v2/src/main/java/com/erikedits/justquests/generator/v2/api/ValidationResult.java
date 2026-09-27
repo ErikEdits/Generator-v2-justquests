@@ -11,6 +11,8 @@ public record ValidationResult(boolean ok, String message) {
     public static final ValidationResult OK = new ValidationResult(true, "");
 
     /**
+     * Creates a failed result.
+     *
      * @param message the reason
      * @return a failed result
      */

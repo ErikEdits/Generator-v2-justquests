@@ -49,6 +49,7 @@ class CatalogIntegrityTest {
         Set<String> hintTexts = Json.obj(templates, "hints").keySet();
         Set<String> toolTexts = Json.obj(templates, "tools").keySet();
         Set<String> hintKeys = Json.obj(res("balance.json"), "hintMultipliers").keySet();
+        Set<String> variants = Json.obj(templates, "variants").keySet();
         List<String> problems = new ArrayList<>();
         for (JsonObject p : profiles()) {
             String pid = Json.str(p, "id", "?");
@@ -117,7 +118,7 @@ class CatalogIntegrityTest {
                         problems.add(tw + " tame target not flagged tamable");
                     }
                     for (String h : Json.strings(t, "hints")) {
-                        if (!hintTexts.contains(h)) {
+                        if (!hintTexts.contains(h) && !variants.contains(h)) { // variant hints only switch the wording
                             problems.add(tw + " hint without text " + h);
                         }
                     }
@@ -145,6 +146,14 @@ class CatalogIntegrityTest {
             check(Json.str(Json.obj(t, "hints"), h, ""), Set.of(), problems);
         }
         check(Json.str(Json.obj(t, "sentences"), "tag", ""), Set.of("noun"), problems);
+        for (Map.Entry<String, JsonElement> v : Json.obj(t, "variants").entrySet()) {
+            for (String s : Json.strings(v.getValue().getAsJsonObject(), "phrases")) {
+                check(s, phraseOk, problems);
+            }
+            for (String s : Json.strings(v.getValue().getAsJsonObject(), "titles")) {
+                check(s, titleOk, problems);
+            }
+        }
         check(Json.str(Json.obj(t, "sentences"), "dimension", ""), Set.of("dimension"), problems);
         List<JsonObject> themes = new ArrayList<>(Json.objects(res("themes.json"), "themes"));
         for (JsonObject p : profiles()) {

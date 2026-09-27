@@ -1,0 +1,83 @@
+# vanilla | world seed 2 | EASY | 10 quests | day 30, Nether and End unlocked
+
+justquests:gen/1790510400_0  "Mine Spruce Logs"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:spruce_log ×40
+  effort 0.10 min/unit (×1.20 taiga) → 4.8 min (target 4.6, range 4–10 min)
+  tier 0 (always available), family wood, profile vanilla, hints taiga
+estimated 4.8 min (quick)
+reward give_item minecraft:book ×3 (value 3.6) + xp 14 (value 1.2)  → 4.8 / budget 4.8
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Stone Bricks Builder"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective place_block minecraft:stone_bricks ×32
+  effort 0.15 min/unit → 4.8 min (target 4.3, range 4–10 min)
+  tier 0 (always available), family stonework, profile vanilla
+estimated 4.8 min (quick)
+reward give_item minecraft:hay_block ×3 (value 4.2) + xp 7 (value 0.6)  → 4.8 / budget 4.8
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Make Books"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:book ×4
+  effort 1.20 min/unit → 4.8 min (target 4.2, range 4–10 min)
+  tier 0 (always available), family library, profile vanilla
+estimated 4.8 min (quick)
+reward give_item minecraft:redstone ×18 (value 3.6) + xp 14 (value 1.2)  → 4.8 / budget 4.8
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "More Rabbits"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective breed_animal minecraft:rabbit ×2
+  effort 2.00 min/unit (×1.30 desert) → 5.2 min (target 5.6, range 4–10 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints desert
+estimated 5.2 min (quick)
+reward give_item minecraft:pumpkin_pie ×4 (value 4.0) + xp 14 (value 1.2)  → 5.2 / budget 5.2
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Flint Supply"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective collect_item minecraft:flint ×16
+  effort 0.40 min/unit → 6.4 min (target 7.2, range 4–10 min)
+  tier 0 (always available), family soil, profile vanilla
+estimated 6.4 min
+reward give_item minecraft:lantern ×6 (value 4.8) + xp 19 (value 1.6)  → 6.4 / budget 6.4
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Taste Glow Berries"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective consume_item minecraft:glow_berries ×8
+  effort 0.50 min/unit (×1.40 lush_caves) → 5.6 min (target 8.2, range 4–10 min)
+  tier 1 (always available), family lush, profile vanilla, hints lush_caves
+estimated 5.6 min (quick)
+reward give_item minecraft:nautilus_shell ×1 (value 5.0) + xp 7 (value 0.6) + message  → 5.6 / budget 5.6
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Ice Quarry"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective mine_block minecraft:ice ×40
+  effort 0.12 min/unit (×1.30 snowy) → 6.2 min (target 5.9, range 4–10 min)
+  tier 0 (always available), family snow, profile vanilla, hints snowy
+estimated 6.2 min
+reward give_item minecraft:cooked_porkchop ×9 (value 4.5) + xp 21 (value 1.8)  → 6.3 / budget 6.2
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Bread Order"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective craft_item minecraft:bread ×16
+  effort 0.45 min/unit → 7.2 min (target 8.5, range 4–10 min)
+  tier 0 (always available), family baking, profile vanilla
+estimated 7.2 min
+reward give_item minecraft:hay_block ×4 (value 5.6) + xp 19 (value 1.6)  → 7.2 / budget 7.2
+rejected alternatives: consume_item minecraft:cake (cake is eaten as a placed block, not a use action)
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Hot Dried Kelp"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item minecraft:dried_kelp ×64
+  effort 0.10 min/unit (×1.20 ocean) → 7.7 min (target 7.0, range 4–10 min)
+  tier 0 (always available), family ocean, profile vanilla, hints ocean/cook
+estimated 7.7 min
+reward give_item minecraft:apple ×8 (value 3.2) + give_item minecraft:emerald ×1 (value 2.5) + xp 24 (value 2.0)  → 7.7 / budget 7.7
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Hot Green Dyes"  (EASY, cycle 1790510400, seed 0xDC9F…)
+objective smelt_item minecraft:green_dye ×48
+  effort 0.16 min/unit (×1.30 desert) → 10.0 min (target 9.5, range 4–10 min)
+  tier 0 (always available), family plants, profile vanilla, hints desert
+estimated 10.0 min
+reward give_item minecraft:slime_ball ×5 (value 7.5) + xp 30 (value 2.5)  → 10.0 / budget 10.0
+state: AVAILABLE
+

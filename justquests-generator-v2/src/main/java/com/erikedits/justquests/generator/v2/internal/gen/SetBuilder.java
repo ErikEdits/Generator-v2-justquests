@@ -419,7 +419,8 @@ public final class SetBuilder {
         if (singles.isEmpty()) {
             return null;
         }
-        Candidate c = rng.weighted(singles, this::weight);
+        final double want = targetMinutes;
+        Candidate c = rng.weighted(singles, x -> weight(x) * capacity(x, want));
         if (c == null) {
             return null;
         }
@@ -428,6 +429,12 @@ public final class SetBuilder {
         d.overhead = c.overhead();
         d.objectives.add(size(c, targetMinutes - c.overhead()));
         return checkRange(d, quick, lvl) ? d : null;
+    }
+
+    /** Prefers candidates whose count range can actually reach the target minutes. */
+    private static double capacity(Candidate c, double targetMinutes) {
+        double f = Math.min(1.0, c.maxMinutes() / Math.max(0.1, targetMinutes));
+        return f * f;
     }
 
     private QuestDraft.Objective size(Candidate c, double minutes) {

@@ -1,0 +1,104 @@
+# modded | world seed 3 | HARD | 10 quests | day 30, Nether and End unlocked
+
+justquests:gen/1790510400_2  "Ironworks Job"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item minecraft:bucket ×3
+  effort 1.60 min/unit → 4.8 min (target 20.4, range 15–35 min)
+  tier 1 (always available), family iron_works, profile vanilla
+objective place_block minecraft:rail ×32
+  effort 0.30 min/unit → 9.6 min (target 20.4, range 15–35 min)
+  tier 1 (always available), family iron_works, profile vanilla
+combo within family iron_works
+estimated 14.4 min (quick)
+reward give_item minecraft:gold_ingot ×14 (value 18.2) + xp 65 (value 5.4)  → 23.6 / budget 23.8
+state: AVAILABLE
+
+justquests:gen/1790510400_6  "Hot Cooked Salmon Slices"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective smelt_item farmersdelight:cooked_salmon_slice ×16
+  effort 0.90 min/unit → 14.4 min (target 25.6, range 15–35 min)
+  tier 0 (always available), family fd_seafood, profile farmersdelight, tool fishing_rod, hints cook
+estimated 14.4 min (quick)
+reward give_item minecraft:tnt ×4 (value 10.0) + xp 140 (value 11.7)  → 21.7 / budget 21.6
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Hamburger Workshop"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item farmersdelight:hamburger ×6
+  effort 2.60 min/unit → 15.6 min (target 20.4, range 15–35 min)
+  tier 1 (always available), family fd_meals, profile farmersdelight
+estimated 15.6 min (quick)
+reward give_item minecraft:gold_ingot ×14 (value 18.2) + xp 60 (value 5.0)  → 23.2 / budget 23.4
+state: AVAILABLE
+
+justquests:gen/1790510400_0  "Mine Zinc Ore"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective mine_block create:zinc_ore ×24
+  effort 0.80 min/unit → 19.2 min (target 19.8, range 15–35 min)
+  tier 1 (always available), family create_zinc, profile create, tool iron, hints caves
+estimated 19.2 min (quick)
+reward give_item create:bar_of_chocolate ×7 (value 21.0) + xp 95 (value 7.9)  → 28.9 / budget 28.8
+rejected alternatives: collect_item create:zinc_ore (drops raw zinc, needs Silk Touch)
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Rose Quartz Order"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective craft_item create:rose_quartz ×16
+  effort 1.20 min/unit → 19.2 min (target 29.0, range 15–35 min)
+  tier 3 (unlocked: 100% online have minecraft:story/enter_the_nether), family create_quartz, profile create
+estimated 19.2 min (quick)
+reward give_item minecraft:clock ×1 (value 5.0) + loot_table minecraft:chests/desert_pyramid (value 9.0) + xp 180 (value 15.0)  → 29.0 / budget 28.8
+rejected alternatives: craft_item create:polished_rose_quartz (sandpaper polishing is not crafting)
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Lumber Errand"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:jungle_log ×64
+  effort 0.10 min/unit (×1.40 jungle) → 9.0 min (target 18.5, range 15–35 min)
+  tier 0 (always available), family wood, profile vanilla, hints jungle
+objective collect_item minecraft:mangrove_log ×64
+  effort 0.10 min/unit (×1.50 mangrove_swamp) → 9.6 min (target 18.5, range 15–35 min)
+  tier 0 (always available), family wood, profile vanilla, hints mangrove_swamp
+combo within family wood
+estimated 18.6 min (quick)
+reward give_item minecraft:tnt ×4 (value 10.0) + give_item minecraft:cooked_porkchop ×16 (value 8.0) + xp 150 (value 12.5)  → 30.5 / budget 30.6
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Cull the Bogged"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:bogged ×8
+  effort 2.00 min/unit (×1.30 swamp) → 20.8 min (target 25.6, range 15–35 min)
+  tier 1 (always available), family undead, profile vanilla, hints swamp
+estimated 20.8 min (quick)
+reward give_item create:honeyed_apple ×8 (value 24.0) + xp 85 (value 7.1)  → 31.1 / budget 31.2
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Monster Order"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:slime_ball ×6
+  effort 1.50 min/unit (×1.30 swamp) → 11.7 min (target 29.8, range 15–35 min)
+  tier 1 (always available), family monsters, profile vanilla, hints swamp
+objective collect_item minecraft:ender_pearl ×4
+  effort 3.00 min/unit → 12.0 min (target 29.8, range 15–35 min)
+  tier 2 (always available), family monsters, profile vanilla, hints night
+combo within family monsters
+estimated 23.7 min
+reward give_item minecraft:iron_ingot ×24 (value 14.4) + effect minecraft:night_vision 600s (value 4.0) + xp 250 (value 20.8)  → 39.2 / budget 39.1
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Ranch Order"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective smelt_item minecraft:cooked_beef ×40
+  effort 0.40 min/unit → 16.0 min (target 30.7, range 15–35 min)
+  tier 0 (always available), family livestock, profile vanilla, hints plains/cook
+objective consume_item minecraft:cooked_porkchop ×6
+  effort 1.25 min/unit → 7.5 min (target 30.7, range 15–35 min)
+  tier 0 (always available), family livestock, profile vanilla
+combo within family livestock
+estimated 23.5 min
+reward give_item farmersdelight:hamburger ×6 (value 15.6) + give_item minecraft:experience_bottle ×11 (value 13.2) + xp 120 (value 10.0)  → 38.8 / budget 38.8
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Ocean Voyage"  (HARD, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:salmon ×16
+  effort 1.40 min/unit → 22.4 min (target 32.8, range 15–35 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
+objective collect_item minecraft:ink_sac ×24
+  effort 0.50 min/unit (×1.20 ocean) → 14.4 min (target 32.8, range 15–35 min)
+  tier 0 (always available), family ocean, profile vanilla, hints ocean
+theme ocean_voyage
+estimated 36.8 min
+reward give_item minecraft:cooked_porkchop ×16 (value 8.0) + give_item minecraft:coal ×32 (value 8.0) + xp 500 (value 41.7)  → 57.7 / budget 60.0
+state: AVAILABLE
+

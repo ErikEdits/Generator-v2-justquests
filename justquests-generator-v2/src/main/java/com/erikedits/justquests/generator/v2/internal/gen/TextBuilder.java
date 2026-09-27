@@ -37,6 +37,10 @@ public final class TextBuilder {
             }
         }
         List<String> typeTitles = t.titles.getOrDefault(main.c().type(), List.of());
+        List<String> variantTitles = t.variant(main.c().hints(), "titles");
+        if (variantTitles != null) {
+            typeTitles = variantTitles;
+        }
         for (String tpl : shuffled(typeTitles, rng)) {
             options.add(fill(tpl, main));
         }
@@ -114,12 +118,21 @@ public final class TextBuilder {
     public String phrase(QuestDraft.Objective o, Rng rng) {
         Candidate c = o.c();
         List<String> pool = t.phrases.getOrDefault(c.type(), List.of());
+        List<String> variant = t.variant(c.hints(), "phrases");
+        if (variant != null) {
+            pool = variant;
+        }
         String tpl = pool.isEmpty() ? defaultPhrase(c.type()) : pool.get(rng.nextInt(pool.size()));
         String nameSingular = English.inSentence(c.name());
         String names = o.count() == 1 ? nameSingular : English.inSentence(c.plural());
         if (c.isTag() && c.tagNoun() != null) {
             nameSingular = c.tagNoun();
             names = o.count() == 1 ? c.tagNoun() : English.plural(c.tagNoun());
+        }
+        if (variant != null && c.hints().contains("cook")) {
+            // "Cook 16 cooked bacon" → "Cook 16 bacon"
+            nameSingular = nameSingular.replaceFirst("^cooked ", "");
+            names = names.replaceFirst("^cooked ", "");
         }
         if (o.count() == 1 && tpl.contains("{count} {names}")) {
             tpl = tpl.replace("{count} {names}", "{a_name}");
@@ -152,13 +165,30 @@ public final class TextBuilder {
         List<String> sentences = new ArrayList<>();
         if (themeTemplates != null && !themeTemplates.isEmpty()) {
             String tpl = themeTemplates.get(rng.nextInt(themeTemplates.size()));
-            sentences.add(ensurePeriod(English.capitalize(tpl.replace("{list}", list))));
+            String inList = tpl.contains(": {list}") ? list.substring(0, 1).toLowerCase(Locale.ROOT) + list.substring(1) : list;
+            sentences.add(ensurePeriod(English.capitalize(tpl.replace("{list}", inList))));
         } else {
             sentences.add(ensurePeriod(English.capitalize(list)));
         }
         Set<String> hints = new LinkedHashSet<>();
+        String bestTool = null;
+        int bestLevel = -1;
         for (QuestDraft.Objective o : d.objectives) {
-            hints.addAll(hintSentences(o.c()));
+            String tool = o.c().tool();
+            int lvl = toolRank(tool);
+            if (lvl > bestLevel && t.tools.containsKey(tool)) {
+                bestLevel = lvl;
+                bestTool = tool;
+            }
+        }
+        for (QuestDraft.Objective o : d.objectives) {
+            for (String h : hintSentences(o.c())) {
+                // only the strongest pickaxe requirement is mentioned
+                if (isPickaxeHint(h) && (bestTool == null || !h.equals(ensurePeriod(t.tools.get(bestTool))))) {
+                    continue;
+                }
+                hints.add(h);
+            }
         }
         StringBuilder sb = new StringBuilder();
         for (String s : sentences) {
@@ -205,6 +235,34 @@ public final class TextBuilder {
             return lower.get(0) + " and " + lower.get(1);
         }
         return String.join(", ", lower.subList(0, lower.size() - 1)) + " and " + lower.get(lower.size() - 1);
+    }
+
+    private static int toolRank(String tool) {
+        if (tool == null) {
+            return -1;
+        }
+        switch (tool) {
+            case "netherite":
+                return 5;
+            case "diamond":
+                return 4;
+            case "iron":
+                return 3;
+            case "stone":
+                return 2;
+            default:
+                return 0;
+        }
+    }
+
+    private boolean isPickaxeHint(String sentence) {
+        for (String tool : new String[]{"stone", "iron", "diamond", "netherite"}) {
+            String p = t.tools.get(tool);
+            if (p != null && ensurePeriod(p).equals(sentence)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /** Hint sentences for one candidate, most useful first. */

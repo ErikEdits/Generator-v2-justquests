@@ -1,0 +1,95 @@
+# modded | world seed 3 | NORMAL | 10 quests | day 30, Nether and End unlocked
+
+justquests:gen/1790510400_6  "Break Wild Rice"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective mine_block farmersdelight:wild_rice ×12
+  effort 0.60 min/unit (×1.30 swamp) → 9.4 min (target 14.5, range 8–20 min)
+  tier 0 (always available), family fd_wild, profile farmersdelight, hints swamp
+estimated 9.4 min (quick)
+reward give_item create:cogwheel ×32 (value 8.0) + xp 39 (value 3.3)  → 11.3 / budget 11.2
+state: AVAILABLE
+
+justquests:gen/1790510400_8  "Potato Pickup"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:potato ×48
+  effort 0.15 min/unit (×1.20 village) → 8.6 min (target 8.2, range 8–20 min)
+  tier 0 (always available), family crops, profile vanilla, hints village/farm
+estimated 8.6 min (quick)
+reward give_item minecraft:string ×16 (value 6.4) + xp 48 (value 4.0)  → 10.4 / budget 10.4
+state: AVAILABLE
+
+justquests:gen/1790510400_0  "Taste Pumpkin Soup"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective consume_item farmersdelight:pumpkin_soup ×4
+  effort 2.40 min/unit → 9.6 min (target 10.9, range 8–20 min)
+  tier 1 (always available), family fd_stews, profile farmersdelight
+estimated 9.6 min (quick)
+reward give_item create:builders_tea ×2 (value 8.0) + xp 42 (value 3.5)  → 11.5 / budget 11.5
+rejected alternatives: craft_item farmersdelight:beef_stew (Cooking Pot output is not a crafting grid)
+state: AVAILABLE
+
+justquests:gen/1790510400_3  "Winter Supplies"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:ice ×48
+  effort 0.12 min/unit (×1.30 snowy) → 7.5 min (target 16.1, range 8–20 min)
+  tier 0 (always available), family snow, profile vanilla, hints snowy
+objective collect_item minecraft:snowball ×64
+  effort 0.03 min/unit (×1.30 snowy) → 2.5 min (target 16.1, range 8–20 min)
+  tier 0 (always available), family snow, profile vanilla, hints snowy
+combo within family snow
+estimated 10.0 min (quick)
+reward give_item minecraft:hay_block ×7 (value 9.8) + xp 41 (value 3.4)  → 13.2 / budget 13.2
+state: AVAILABLE
+
+justquests:gen/1790510400_2  "Tidal Work"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective collect_item minecraft:kelp ×64
+  effort 0.06 min/unit (×1.20 ocean) → 4.6 min (target 10.5, range 8–20 min)
+  tier 0 (always available), family ocean, profile vanilla, hints ocean
+objective collect_item minecraft:cod ×8
+  effort 0.80 min/unit → 6.4 min (target 10.5, range 8–20 min)
+  tier 0 (always available), family fishing, profile vanilla, tool fishing_rod
+theme ocean_voyage
+estimated 11.0 min (quick)
+reward give_item minecraft:amethyst_shard ×16 (value 5.6) + give_item farmersdelight:hamburger ×2 (value 5.2) + xp 45 (value 3.8)  → 14.6 / budget 14.5
+state: AVAILABLE
+
+justquests:gen/1790510400_4  "Break Coal Ore"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective mine_block minecraft:coal_ore ×48
+  effort 0.25 min/unit → 12.0 min (target 13.6, range 8–20 min)
+  tier 0 (always available), family coal, profile vanilla, tool wood, hints caves
+estimated 12.0 min
+reward give_item minecraft:cooked_beef ×16 (value 8.0) + xp 75 (value 6.3) + message  → 14.3 / budget 14.4
+state: AVAILABLE
+
+justquests:gen/1790510400_7  "Cooked Cod Slice Order"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective smelt_item farmersdelight:cooked_cod_slice ×24
+  effort 0.60 min/unit → 14.4 min (target 19.6, range 8–20 min)
+  tier 0 (always available), family fd_seafood, profile farmersdelight, tool fishing_rod, hints cook
+estimated 14.4 min
+reward give_item minecraft:redstone ×32 (value 6.4) + effect minecraft:night_vision 600s (value 4.0) + xp 85 (value 7.1)  → 17.5 / budget 17.3
+state: AVAILABLE
+
+justquests:gen/1790510400_9  "Undead Supplies"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective kill_mob minecraft:drowned ×5
+  effort 1.20 min/unit (×1.20 ocean) → 7.2 min (target 14.2, range 8–20 min)
+  tier 0 (always available), family undead, profile vanilla, hints ocean/night
+objective kill_mob minecraft:zombie ×10
+  effort 0.70 min/unit → 7.0 min (target 14.2, range 8–20 min)
+  tier 0 (always available), family undead, profile vanilla, hints night
+combo within family undead
+estimated 14.2 min
+reward give_item minecraft:hay_block ×8 (value 11.2) + xp 90 (value 7.5)  → 18.7 / budget 18.7
+state: AVAILABLE
+
+justquests:gen/1790510400_5  "Andesite Alloy Crafter"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective craft_item create:andesite_alloy ×48
+  effort 0.35 min/unit → 16.8 min (target 16.1, range 8–20 min)
+  tier 1 (always available), family create_alloy, profile create
+estimated 16.8 min
+reward give_item minecraft:emerald ×6 (value 15.0) + xp 60 (value 5.0)  → 20.0 / budget 20.2
+state: AVAILABLE
+
+justquests:gen/1790510400_1  "Breed Rabbits"  (NORMAL, cycle 1790510400, seed 0xEE71…)
+objective breed_animal minecraft:rabbit ×8
+  effort 2.00 min/unit (×1.30 desert) → 20.8 min (target 19.6, range 8–20 min)
+  tier 0 (always available), family wild_animals, profile vanilla, hints desert
+estimated 20.8 min
+reward give_item farmersdelight:bacon_sandwich ×8 (value 14.4) + xp 125 (value 10.4)  → 24.8 / budget 25.0
+state: AVAILABLE
+
